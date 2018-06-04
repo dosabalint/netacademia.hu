@@ -30,7 +30,6 @@ export default {
 .full-section {
   .multilayer {
     position: absolute;
-    z-index: 3;
     width: 100%;
     height: 100%;
   }

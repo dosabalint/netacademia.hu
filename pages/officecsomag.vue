@@ -6,15 +6,7 @@
       icon="decode-icon-briefcase"
     ></DPageHeader>
     <DFullSection theme="light">
-      <div slot="multilayer">
-        <parallax :speed-factor="0.44" class="multilayer">
-          <img src="~/assets/officecsomag/phone.svg" width="300" alt="">
-        </parallax>
-        <parallax :speed-factor="0.76" class="multilayer">
-          <img src="~/assets/officecsomag/glass.svg" width="700" alt="">
-        </parallax>
-      </div>
-      <Container>
+      <Container class="mb-5">
         <Row>
           <Column class="col-lg-6 col-md-8 ml-auto mr-auto">
             <DHeadline>
@@ -24,7 +16,7 @@
           </Column>
         </Row>
       </Container>
-      <Container>
+      <Container class="mb-3">
         <Row class="pb-4">
           <Column class="col-lg-8 col-md-10 ml-auto mr-auto">
             <p class="text-center">
@@ -37,7 +29,24 @@
         </Row>
       </Container>
       <Container>
-        <Row>
+        <Row class="mb-5">
+          <div class="d-none d-lg-block">
+            <DFullSectionMultilayer x-percent="0%" y-percent="40%">
+              <Parallax :speed-factor="0.05" direction="up">
+                <div class="flex-center">
+                  <img src="~/assets/officecsomag/phone.svg" alt="" style="width: 300px;">
+                </div>
+              </Parallax>
+            </DFullSectionMultilayer>
+            <DFullSectionMultilayer x-percent="0%" y-percent="85%">
+              <parallax :speed-factor="0.1" direction="down">
+                <div class="flex-center">
+                  <img src="~/assets/officecsomag/glass.svg" alt="" style="width: 700px;">
+                </div>
+              </parallax>
+            </DFullSectionMultilayer>
+          </div>
+
           <Column class="col-lg-4 col-md-5">
             <Bounce direction="left">
               <DServiceBox icon="decode-icon-padlock" icon-position="right">
@@ -98,7 +107,7 @@
           <Column class="col-md-12 text-center">
             <p>
               <DButton theme="default-outline" class="text-light"
-                      href="https://app.netacademia.hu/Subscription/Create/office">
+                       href="https://app.netacademia.hu/Subscription/Create/office">
                 Megveszem<i class="decode-icon-cursor"></i>
               </DButton>
             </p>
@@ -165,8 +174,10 @@
 
                   <br>
                   <p>Manapság már minden iroda elvárja alkalmazottaitól az Office programok ismeretét!</p>
-                  <p>Legyen akár Word, Excel, PowerPoint, Access vagy Outlook, MS Office tanfolyamaink gyakorlati tudást adnak az irodai szoftverek hatékony használataihoz.</p>
-                  <p>Sajátítsd el azokat a trükköket, melyeket csak nagyon kevesen használnak és kamatoztasd tudásod a mindennapi életben!</p>
+                  <p>Legyen akár Word, Excel, PowerPoint, Access vagy Outlook, MS Office tanfolyamaink gyakorlati tudást
+                    adnak az irodai szoftverek hatékony használataihoz.</p>
+                  <p>Sajátítsd el azokat a trükköket, melyeket csak nagyon kevesen használnak és kamatoztasd tudásod a
+                    mindennapi életben!</p>
 
                 </div>
                 <!-- tab-pane -->
@@ -179,8 +190,10 @@
                   <!-- headline -->
                   <br>
                   <p>Kommunikáció, asszertivitás, időgazdálkodás, prezentációs képességek…</p>
-                  <p>Az ún. soft skillek elsajátítására manapság egyre nagyobb szükség van, hiszen fontosságuk egyre inkább növekszik a nagyobb vállalatoknál is.</p>
-                  <p>Kínálatunkban megtalálhatók olyan képzések is, melyek nagyban megkönnyíthetik mindennapjaid mind a munka, mind pedig a magánélet területén.</p>
+                  <p>Az ún. soft skillek elsajátítására manapság egyre nagyobb szükség van, hiszen fontosságuk egyre
+                    inkább növekszik a nagyobb vállalatoknál is.</p>
+                  <p>Kínálatunkban megtalálhatók olyan képzések is, melyek nagyban megkönnyíthetik mindennapjaid mind a
+                    munka, mind pedig a magánélet területén.</p>
 
                 </div>
                 <!-- tab-pane -->
@@ -191,8 +204,10 @@
                   </div>
                   <!-- headline -->
                   <br>
-                  <p>Léteznek biztonsági előírások, melyek betartását minden munkahelyen megkövetelnek. Vajon mindenki tisztában van ezekkel?</p>
-                  <p>Oktatásaink során felhívjuk figyelmed a biztonságtudatosság minden fontos elemére, miközben sok érdekességeket is megtudhatsz az irodai munka- és tűzvédelemmel kapcsolatban.</p>
+                  <p>Léteznek biztonsági előírások, melyek betartását minden munkahelyen megkövetelnek. Vajon mindenki
+                    tisztában van ezekkel?</p>
+                  <p>Oktatásaink során felhívjuk figyelmed a biztonságtudatosság minden fontos elemére, miközben sok
+                    érdekességeket is megtudhatsz az irodai munka- és tűzvédelemmel kapcsolatban.</p>
                 </div>
                 <!-- tab-pane -->
 
@@ -217,8 +232,11 @@
                   <!-- headline -->
                   <br>
                   <p>Mindig is érdekelt a képszerkesztés, fotózás? Vagy inkább a videovágásban mélyülnél el?</p>
-                  <p>Final Cut Pro X kurzusunk segítségével elkészítheted első saját reklám videódat, DSLR óráinkon pedig megismerheted a tükörreflexes fényképezőgépek használatának alapjait.</p>
-                  <p>Corel Draw tanfolyamunkon egyszerűbb feliratok készítésétől kezdve, a színes design elemek megvalósításán keresztül juthatsz el a logó-, névjegy-, szórólap tervezésig és egyszerűbb kiadványok létrehozásáig!</p>
+                  <p>Final Cut Pro X kurzusunk segítségével elkészítheted első saját reklám videódat, DSLR óráinkon
+                    pedig megismerheted a tükörreflexes fényképezőgépek használatának alapjait.</p>
+                  <p>Corel Draw tanfolyamunkon egyszerűbb feliratok készítésétől kezdve, a színes design elemek
+                    megvalósításán keresztül juthatsz el a logó-, névjegy-, szórólap tervezésig és egyszerűbb kiadványok
+                    létrehozásáig!</p>
                 </div>
                 <!-- tab-pane -->
 
@@ -230,8 +248,10 @@
                   <!-- headline -->
                   <br>
                   <p>Késztísd el, és nyisd meg saját webshopod!</p>
-                  <p>8 részes tanfolyamsorozatunkban nem csak a webshop „fizikai” megalkotásával foglalkozunk, hanem minden ehhez kapcsolódó fontos témakört is boncolgatunk!</p>
-                  <p>Tudd meg, hogy érdemes-e termékeddel online piacra lépni, alkosd meg webshopod a Wordpress, Shopify és a Drop Shipping segítségével és ismerkedj meg az ügyfélkezelés, crm, hirdetések fortélyaival!</p>
+                  <p>8 részes tanfolyamsorozatunkban nem csak a webshop „fizikai” megalkotásával foglalkozunk, hanem
+                    minden ehhez kapcsolódó fontos témakört is boncolgatunk!</p>
+                  <p>Tudd meg, hogy érdemes-e termékeddel online piacra lépni, alkosd meg webshopod a Wordpress, Shopify
+                    és a Drop Shipping segítségével és ismerkedj meg az ügyfélkezelés, crm, hirdetések fortélyaival!</p>
                 </div>
                 <!-- tab-pane -->
               </div>
@@ -258,13 +278,15 @@ import Bounce from "../components/Bounce";
 import DServiceBox from "../components/DServiceBox";
 import Column from "../components/Column";
 import DButton from "../components/DButton";
-import Parallax from 'vue-parallaxy';
+import Parallax from "vue-parallaxy";
+import DFullSectionMultilayer from "../components/DFullSectionMultilayer";
 
 export default {
   name: "officecsomag",
   mixins: [GtmPageLoad("Termékoldal")],
   layout: "decode",
   components: {
+    DFullSectionMultilayer,
     Parallax,
     DButton,
     Column,

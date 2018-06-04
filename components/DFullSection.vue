@@ -1,6 +1,5 @@
 <template>
   <section class="full-section" :class="theme">
-    <slot name="multilayer"></slot>
     <div class="full-section-container">
       <slot></slot>
     </div>
@@ -97,41 +96,5 @@ export default {
       padding-bottom: 50px;
     }
   }
-
-  /* MULTILAYER PARALLAX */
-  .multilayer {
-    position: absolute;
-    z-index: 3;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  /*<!--.multilayer-parallax .parallax-layer {-->*/
-  /*<!--position: absolute;-->*/
-  /*<!--top: 0;-->*/
-  /*<!--left: 50%;-->*/
-  /*<!-- -webkit-transform: translateX(-50%);-->*/
-  /*<!-- -ms-transform: translateX(-50%);-->*/
-  /*<!--transform: translateX(-50%);-->*/
-  /*<!--}-->*/
-
-  /*.multilayer-parallax .parallax-layer img.resize-off {*/
-  /*max-width: none;*/
-  /*}*/
-
-  /*.multilayer-parallax .parallax-layer.rectangle {*/
-  /*width: 450px;*/
-  /*height: 330px;*/
-  /*border: 3px solid #00f0d1;*/
-  /*}*/
-
-  /*.multilayer-parallax .parallax-layer.trapezoid {*/
-  /*width: 400px;*/
-  /*height: 100%;*/
-  /*background-color: #00f0d1;*/
-  /*opacity: 0.75;*/
-  /*}*/
 }
 </style>

@@ -6,6 +6,14 @@
       icon="decode-icon-briefcase"
     ></DPageHeader>
     <DFullSection theme="light">
+      <div slot="multilayer">
+        <parallax :speed-factor="0.44" class="multilayer">
+          <img src="~/assets/officecsomag/phone.svg" width="300" alt="">
+        </parallax>
+        <parallax :speed-factor="0.76" class="multilayer">
+          <img src="~/assets/officecsomag/glass.svg" width="700" alt="">
+        </parallax>
+      </div>
       <Container>
         <Row>
           <Column class="col-lg-6 col-md-8 ml-auto mr-auto">
@@ -250,12 +258,14 @@ import Bounce from "../components/Bounce";
 import DServiceBox from "../components/DServiceBox";
 import Column from "../components/Column";
 import DButton from "../components/DButton";
+import Parallax from 'vue-parallaxy';
 
 export default {
   name: "officecsomag",
   mixins: [GtmPageLoad("Termékoldal")],
   layout: "decode",
   components: {
+    Parallax,
     DButton,
     Column,
     DServiceBox,

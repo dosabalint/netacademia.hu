@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import AOrNuxtLink from "./AOrNuxtLink";
+import AOrNuxtLink from "../AOrNuxtLink";
 
 export default {
   name: "DButton",

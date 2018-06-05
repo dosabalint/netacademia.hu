@@ -21,22 +21,24 @@
       </Container>
       <Container>
         <Row class="mb-5">
-          <div class="d-none d-lg-block">
-            <DFullSectionMultilayer x-percent="0%" y-percent="20%">
-              <Parallax :speed-factor="0.15" direction="up">
-                <div class="flex-center pt-5">
-                  <img src="~/assets/officecsomag/phone.svg" alt="" style="width: 300px;">
-                </div>
-              </Parallax>
-            </DFullSectionMultilayer>
-            <DFullSectionMultilayer x-percent="0%" y-percent="85%">
-              <parallax :speed-factor="0.1" direction="down">
-                <div class="flex-center">
-                  <img src="~/assets/officecsomag/glass.svg" alt="" style="width: 700px;">
-                </div>
-              </parallax>
-            </DFullSectionMultilayer>
-          </div>
+          <no-ssr>
+            <div class="d-none d-lg-block">
+              <DFullSectionMultilayer x-percent="0%" y-percent="20%">
+                <Parallax :speed-factor="0.15" direction="up">
+                  <div class="flex-center pt-5">
+                    <img src="~/assets/officecsomag/phone.svg" alt="" style="width: 300px;">
+                  </div>
+                </Parallax>
+              </DFullSectionMultilayer>
+              <DFullSectionMultilayer x-percent="0%" y-percent="85%">
+                <parallax :speed-factor="0.1" direction="down">
+                  <div class="flex-center">
+                    <img src="~/assets/officecsomag/glass.svg" alt="" style="width: 700px;">
+                  </div>
+                </parallax>
+              </DFullSectionMultilayer>
+            </div>
+          </no-ssr>
 
           <Column class="col-lg-4 col-md-5">
             <Bounce direction="left">

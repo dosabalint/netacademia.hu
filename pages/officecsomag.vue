@@ -12,7 +12,7 @@
           <Column class="col-lg-8 col-md-10 ml-auto mr-auto">
             <p class="text-center">
               Ma már mindenki informatikus, de ha mégsem az, akkor is az lesz. Az irodai feladatok nagy része
-              informatikai tudást igényel, így nagyon lelassulhat a munkavégzés, ha ez a tudás hiányzik. A MIA csomag
+              informatikai tudást igényel, így nagyon lelassulhat a munkavégzés, ha ez a tudás hiányzik. Az irodai hatékonyságnövelő csomag
               elsődleges feladata az irodai dolgozók informatika
               és más területre is kiterjedő hatékonyságnövelése.
             </p>

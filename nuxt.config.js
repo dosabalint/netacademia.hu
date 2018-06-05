@@ -75,7 +75,8 @@ module.exports = {
   plugins: [
     { src: "~/plugins/vue-observe-visibility", ssr: false },
     { src: "~/plugins/vue-youtube-embed", ssr: false },
-    { src: "~/plugins/vue-mq", ssr: false }
+    { src: "~/plugins/vue-mq", ssr: false },
+    { src: "~/plugins/vue-lazyload", ssr: false }
   ],
   modules: [["@nuxtjs/google-tag-manager", { id: gtmId }], "@nuxtjs/axios"],
   env: {

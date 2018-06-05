@@ -21,7 +21,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-12">
           <Row>
             <Container>
               <Row class="sticky-top bg-white pb-5">
@@ -69,7 +69,7 @@
                 </Column>
               </Row>
               <Row>
-                <Column class="col col-lg-6 col-xl-4"
+                <Column class="col-12 col-lg-6 col-xl-4"
                         v-for="course in filteredAndSortedCourses"
                         :key="course.UserfriedlyURL">
                   <TCard

@@ -10,7 +10,7 @@
       <div class="row">
         <div class="col-md-12">
           <i :class="[icon]"></i>
-          <h1>{{title}}</h1>
+          <slot></slot>
         </div>
       </div>
     </div>
@@ -22,10 +22,6 @@ export default {
   name: "DPageHeader",
   props: {
     assetImage: {
-      type: String,
-      required: true
-    },
-    title: {
       type: String,
       required: true
     },

@@ -2,20 +2,11 @@
   <div>
     <DPageHeader
       asset-image="~/assets/officecsomag/office-bg.svg"
-      title="Office/MIA"
       icon="decode-icon-briefcase"
-    ></DPageHeader>
+    >
+      <h1>Irodai hatékonyságnövelő csomag</h1>
+    </DPageHeader>
     <DFullSection theme="light">
-      <Container class="mb-5">
-        <Row>
-          <Column class="col-lg-6 col-md-8 ml-auto mr-auto">
-            <DHeadline>
-              <h6>NetAcademia</h6>
-              <h3>Modern Informatikai Alapismeretek <br> Office előfizetés</h3>
-            </DHeadline>
-          </Column>
-        </Row>
-      </Container>
       <Container class="mb-3">
         <Row class="pb-4">
           <Column class="col-lg-8 col-md-10 ml-auto mr-auto">
@@ -31,9 +22,9 @@
       <Container>
         <Row class="mb-5">
           <div class="d-none d-lg-block">
-            <DFullSectionMultilayer x-percent="0%" y-percent="40%">
-              <Parallax :speed-factor="0.05" direction="up">
-                <div class="flex-center">
+            <DFullSectionMultilayer x-percent="0%" y-percent="20%">
+              <Parallax :speed-factor="0.15" direction="up">
+                <div class="flex-center pt-5">
                   <img src="~/assets/officecsomag/phone.svg" alt="" style="width: 300px;">
                 </div>
               </Parallax>
@@ -96,13 +87,13 @@
         <Row>
           <Column class="col-md-12">
             <DHeadline>
-              <h6>Office/MIA csomag</h6>
+              <h6>Irodai hatékonyságnövelő csomag</h6>
               <h3>1 évre szóló előfizetés 49.900 Ft</h3>
             </DHeadline>
           </Column>
         </Row>
       </Container>
-      <Container class="mt-5">
+      <Container class="mt-4">
         <Row>
           <Column class="col-md-12 text-center">
             <p>

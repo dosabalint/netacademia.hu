@@ -88,7 +88,7 @@ module.exports = {
     imports: [
       {
         set: "@fortawesome/fontawesome-free-brands",
-        icons: ["faSuperpowers"]
+        icons: ["faSuperpowers", "faFacebook", "faTwitter", "faInstagram", "faLinkedin", "faYoutube"]
       }
     ]
   },

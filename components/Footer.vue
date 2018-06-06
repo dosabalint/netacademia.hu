@@ -22,10 +22,10 @@
               <nuxt-link to="/">Főoldal</nuxt-link>
             </li>
             <li class="py-1">
-              <a href="https://app.netacademia.hu/tanfolyamkeresov2">Tanfolyamkereső</a>
+              <nuxt-link to="/tanfolyamkereso">Tanfolyamkereső</nuxt-link>
             </li>
             <li class="py-1">
-              <a href="https://app.netacademia.hu/indulotanfolyamok">Induló tanfolyamok</a>
+              <nuxt-link to="/indulotanfolyamok">Induló tanfolyamok</nuxt-link>
             </li>
           </ul>
         </div>
@@ -50,19 +50,20 @@
       <h1 class="line">BARÁTKOZZUNK</h1>
       <div class="text-center px-0">
         <a class="px-3" href="https://www.facebook.com/Netacademia/">
-          <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+          <fa :icon="['fab', 'facebook']" size="2x"/>
         </a>
         <a class="px-3" href="https://twitter.com/netacademia">
-          <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+          <fa :icon="['fab', 'twitter']" size="2x"/>
         </a>
         <a class="px-3" href="https://www.instagram.com/netacademia.hu/">
+          <fa :icon="['fab', 'instagram']" size="2x"/>
           <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
         </a>
         <a class="px-3" href="https://www.linkedin.com/company/netacademia/">
-          <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+          <fa :icon="['fab', 'linkedin']" size="2x"/>
         </a>
         <a class="px-3" href="https://www.youtube.com/user/Trombita45">
-          <i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
+          <fa :icon="['fab', 'youtube']" size="2x"/>
         </a>
       </div>
     </div>
@@ -70,9 +71,9 @@
     <div class="container">
       <div class="row py-4">
         <div class="col-12 px-0 text-center">
-          <a class="mx-3" href="https://app.netacademia.hu/GeneralTermsAndConditions/Subscription">ÁSZF</a>
+          <nuxt-link class="mx-3" to="aszf">ÁSZF</nuxt-link>
           © NetAcademia 1998-{{currentYear}}
-          <a class="mx-3" href="https://app.netacademia.hu/GeneralTermsAndConditions/PrivacyStatement">Adatvédelem</a>
+          <nuxt-link class="mx-3" to="/adatvedelem">Adatvédelem</nuxt-link>
         </div>
       </div>
     </div>

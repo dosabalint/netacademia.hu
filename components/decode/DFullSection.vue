@@ -14,7 +14,7 @@ export default {
       type: String,
       default: "light",
       validator(val) {
-        return ["light", "dark"].indexOf(val) !== -1;
+        return ["light", "dark", "smoke"].indexOf(val) !== -1;
       }
     }
   }
@@ -85,15 +85,29 @@ export default {
     }
   }
 
+  &.smoke {
+    padding: 30px 30px;
+    margin-top: 0px;
+    margin-bottom: 0;
+    background-color: #f1f6f9;
+
+  }
+
+  @media (max-width: 767px) {
+    &.light {
+      padding-bottom: 50px;
+    }
+  }
+
   @media (min-width: 768px) and (max-width: 991px) {
     &.light {
       padding-bottom: 50px;
     }
   }
 
-  @media (max-width: 767px) {
-    &.light {
-      padding-bottom: 50px;
+  @media (min-width: 992px){
+    &.smoke {
+      padding: 100px 0 80px;
     }
   }
 }

@@ -78,7 +78,20 @@ module.exports = {
     { src: "~/plugins/vue-mq", ssr: false },
     { src: "~/plugins/vue-lazyload", ssr: false }
   ],
-  modules: [["@nuxtjs/google-tag-manager", { id: gtmId }], "@nuxtjs/axios"],
+  modules: [
+    ["@nuxtjs/google-tag-manager", { id: gtmId }],
+    "@nuxtjs/axios",
+    "nuxt-fontawesome"
+  ],
+  fontawesome: {
+    component: 'fa',
+    imports: [
+      {
+        set: "@fortawesome/fontawesome-free-brands",
+        icons: ["faSuperpowers"]
+      }
+    ]
+  },
   env: {
     baseUrl: process.env.BASE_URL || "http://localhost:3000",
     backendUrl: process.env.BACKEND_URL || "https://app.netacademia.hu"
@@ -111,6 +124,9 @@ module.exports = {
       ]
     },
     extend(config, { isDev, isClient }) {
+      config.resolve.alias["@fortawesome/fontawesome-free-brands$"] =
+        "@fortawesome/fontawesome-free-brands/shakable.es.js";
+
       const vueLoader = config.module.rules.find(
         rule => rule.loader === "vue-loader"
       );

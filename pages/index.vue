@@ -26,7 +26,7 @@
           <nuxt-link to="/aszf">ÁSZF</nuxt-link>
         </span>
           <span>
-          <a href="https://app.netacademia.hu/GeneralTermsAndConditions/PrivacyStatement">Adatvédelem</a>
+          <nuxt-link to="/adatvedelem">Adatvédelem</nuxt-link>
         </span>
           <span class="d-none d-sm-block">
           <a href="https://app.netacademia.hu/kapcsolat" class="hideonmobile">Kapcsolat</a>

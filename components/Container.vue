@@ -1,12 +1,18 @@
 <template>
-  <div class="container">
+  <div :class="{ container: !isFluid, 'container-fluid': isFluid} ">
     <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Container"
+  name: "Container",
+  props: {
+    isFluid: {
+      type: Boolean,
+      default: false
+    }
+  }
 };
 </script>
 

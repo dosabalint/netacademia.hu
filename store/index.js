@@ -9,6 +9,7 @@ export const state = () => ({
     login: "/Account/Logon",
     logout: "/Account/LogOffAjax",
     courses: "/api/Courses/1.0.0/CourseCards",
+    courseCardPicture: '/Picture/CourseCard',
     categories: "/api/Courses/1.0.0/PublicCategories"
   }
 });

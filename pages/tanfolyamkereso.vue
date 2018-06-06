@@ -1,30 +1,30 @@
 <template>
   <div>
-    <THeader :title="pageTitle"></THeader>
-    <div class="container-fluid">
+    <THeader title="tanfolyamkereső"></THeader>
+    <Container is-fluid>
       <Row class="flex-xl-nowrap">
-        <div class="col-xs-12 col-sm-5 col-lg-4 col-xl-3 bd-sidebar ">
-          <div class="form-group my-3">
-            <div class="form-group my-3">
-              <h3 class="d-none d-sm-block my-4 text-uppercase">Előfizetések:</h3>
-              <div id="category" role="radiogroup" tabindex="-1" class="w-100 btn-group-toggle btn-group-vertical">
-                <label v-for="c in categoryCollection" :key="c.text"
-                       class="btn btn-outline-primary" :class="{ active: c.value === category }">
-                  <input :id="c.value" type="radio" name="filter" autocomplete="off"
-                         :value="c.value" v-model="category">
-                  <span><span>{{c.text}}</span></span>
-                </label>
-              </div>
-              <div class="d-none d-sm-block mt-4">
-                <a href="/Home/AllCourses2Excel.xlsx" target="_self" class="btn btn-outline-primary w-100">Tanfolyamlista letöltése</a>
-              </div>
+        <Column class="col-12 col-md-5 col-lg-4 col-xl-3 bd-sidebar ">
+          <div class="form-group my-3 pt-2">
+            <h3 class="d-none d-sm-block my-4 text-uppercase">Előfizetések:</h3>
+            <div id="category" role="radiogroup" tabindex="-1" class="w-100 btn-group-toggle btn-group-vertical">
+              <label v-for="c in categoryCollection" :key="c.text"
+                     class="btn btn-outline-primary" :class="{ active: c.value === category }">
+                <input :id="c.value" type="radio" name="filter" autocomplete="off"
+                       :value="c.value" v-model="category">
+                <span><span>{{c.text}}</span></span>
+              </label>
+            </div>
+            <div class="d-none d-sm-block mt-4">
+              <a href="/Home/AllCourses2Excel.xlsx" target="_self" class="btn btn-outline-primary w-100">
+                Tanfolyamlista letöltése
+              </a>
             </div>
           </div>
-        </div>
-        <div class="col-12">
+        </Column>
+        <Column class="col">
           <Row>
             <Container>
-              <Row class="sticky-top bg-white pb-5">
+              <Row class="sticky-top bg-white pt-5 pb-5">
                 <Column class="col-12">
                   <div class="input-group my-4">
                     <div class="input-group-prepend">
@@ -54,18 +54,10 @@
                     </div>
                   </template>
                 </Column>
-                <Column class="my-auto">
+                <Column class="ml-auto pr-3">
                   <h5 class="p-0 m-0">
                     találatok száma: {{ filteredAndSortedCourses.length }}
                   </h5>
-                </Column>
-                <Column class="col-6 col-lg-4 col-xl-2">
-                  <select class="form-control custom-select" v-model="selectedSort">
-                    <option v-for="sort in sortByOptions" :key="sort.name"
-                            :value="sort">
-                      {{ sort.name }}
-                    </option>
-                  </select>
                 </Column>
               </Row>
               <Row>
@@ -74,13 +66,13 @@
                         :key="course.UserfriedlyURL">
                   <TCard
                     :user-friendly-url="course.UserfriedlyURL"
-                    :picture-url="`${baseUrl}/Picture/CourseCard/${course.PictureID}`"
+                    :picture-url="`${$store.state.url.backend}${$store.state.url.courseCardPicture}/${course.PictureID}`"
                     :title="course.Title"
                     :subtitle="course.SubTitle"
                     :trainers="course.TrainerNames"
                     :price="course.Price"
                     :length="course.LengthInHours"
-                    :url="`${baseUrl}/${course.UrlWithTreeStructure}`"
+                    :url="`${$store.state.url.backend}/${course.UrlWithTreeStructure}`"
                     :preliminary="course.IsPreliminary"
                     @click="productClick(course)"
                     @visible="productVisible"
@@ -89,9 +81,9 @@
               </Row>
             </Container>
           </Row>
-        </div>
+        </Column>
       </Row>
-    </div>
+    </Container>
   </div>
 </template>
 
@@ -101,8 +93,6 @@ import Row from "../components/Row";
 import Column from "../components/Column";
 import TCard from "../components/tanfolyamkereso/TCard";
 import THeader from "../components/tanfolyamkereso/THeader";
-
-const BASE_URL = "https://app.netacademia.hu";
 
 const FILTERS = [
   { text: "Kiemelt", value: "isPromoted", labelString: "#kiemelt#" },
@@ -156,26 +146,12 @@ const SEARCH_FIELDS = [
   "UserfriedlyURL"
 ];
 
-const MENU_ITEMS = [
-  { text: "induló tanfolyamok", link: "/indulotanfolyamok" },
-  { text: "kapcsolat", link: "/kapcsolat" },
-  { text: "tanfolyamkereső", link: "/tanfolyamkeresov2" },
-  { text: "előfizetés", link: "/elofizetes" },
-  { text: "akció", link: "/ultimateakcio" },
-  { text: "karrierközpont", link: "/karrierkozpont" }
-];
-
-const PAGE_TITLE = "tanfolyamkereső";
-
 export default {
   name: "tanfolyamkereso",
   components: { Container, Row, Column, TCard, THeader },
   layout: "nav-light",
   data() {
     return {
-      baseUrl: BASE_URL,
-      menuItems: MENU_ITEMS,
-      pageTitle: PAGE_TITLE,
       filterCollection: FILTERS,
       filter: FILTERS[0].value,
       categoryCollection: CATEGORIES,
@@ -201,10 +177,8 @@ export default {
     this.selectedSort = this.sortByOptions[0];
   },
   mounted: function() {
-    // https://netacademia.hu/api/Courses/1.0.0/PublicCategories
-    fetch("https://app.netacademia.hu/api/Courses/1.0.0/CourseCards")
-      // fetch('/img/e3bd8ea1/courses.json')
-      .then(resp => resp.json())
+    this.$axios
+      .$get(`${this.$store.state.url.backend}${this.$store.state.url.courses}`)
       .then(courses => courses.map(c => this.fixLastUpdate(c)))
       .then(courses => courses.map(c => this.fixCategories(c)))
       .then(courses =>

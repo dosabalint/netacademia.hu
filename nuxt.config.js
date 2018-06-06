@@ -85,7 +85,7 @@ module.exports = {
   },
   axios: {
     https: true,
-    credentials: true,
+    // credentials: true,
     baseURL: process.env.BACKEND_URL || "https://app.netacademia.hu",
     browserBaseURL: process.env.BACKEND_URL || "https://app.netacademia.hu"
   },

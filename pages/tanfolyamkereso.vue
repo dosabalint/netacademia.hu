@@ -1,6 +1,11 @@
 <template>
   <div>
-    <THeader title="tanfolyamkereső"></THeader>
+    <DPageHeader
+      asset-image="~/assets/default-header-bg.svg"
+      icon="decode-icon-search"
+    >
+      <h1>Tanfolyamkereső</h1>
+    </DPageHeader>
     <Container is-fluid>
       <Row class="flex-xl-nowrap">
         <Column class="col-12 col-md-5 col-lg-4 col-xl-3 bd-sidebar ">
@@ -64,7 +69,7 @@
                 <Column class="col-12 col-lg-6 col-xl-4"
                         v-for="course in filteredAndSortedCourses"
                         :key="course.UserfriedlyURL">
-                  <TCard
+                  <TanfolyamkeresoCard
                     :user-friendly-url="course.UserfriedlyURL"
                     :picture-url="`${$store.state.url.backend}${$store.state.url.courseCardPicture}/${course.PictureID}`"
                     :title="course.Title"
@@ -76,7 +81,7 @@
                     :preliminary="course.IsPreliminary"
                     @click="productClick(course)"
                     @visible="productVisible"
-                  ></TCard>
+                  ></TanfolyamkeresoCard>
                 </Column>
               </Row>
             </Container>
@@ -91,8 +96,8 @@
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Column from "../components/Column";
-import TCard from "../components/tanfolyamkereso/TCard";
-import THeader from "../components/tanfolyamkereso/THeader";
+import TanfolyamkeresoCard from "../components/TanfolyamkeresoCard";
+import DPageHeader from "../components/decode/DPageHeader";
 
 const FILTERS = [
   { text: "Kiemelt", value: "isPromoted", labelString: "#kiemelt#" },
@@ -113,7 +118,7 @@ const SEARCH_FIELDS = [
 
 export default {
   name: "tanfolyamkereso",
-  components: { Container, Row, Column, TCard, THeader },
+  components: {DPageHeader, Container, Row, Column, TanfolyamkeresoCard },
   layout: "nav-light",
   data() {
     return {

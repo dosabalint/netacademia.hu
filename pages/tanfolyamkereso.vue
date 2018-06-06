@@ -102,41 +102,6 @@ const FILTERS = [
   { text: "Mind", value: "" }
 ];
 
-const CATEGORIES = [
-  { text: "Ultimate", value: "NetAcademia Ultimate" },
-  { text: "Basic", value: "basic" },
-  {
-    text: "Webfejlesztő leszek! VueJS Edition",
-    value: "webfejleszto-leszek-vuejs-edition"
-  },
-  {
-    text: "Webfejlesztő leszek! Angular Edition",
-    value: "webfejleszto-leszek-angular-edition"
-  },
-  {
-    text: "Webfejlesztő leszek! Angular + VueJS",
-    value: "webfejleszto-leszek-angular-es-vuejs"
-  },
-  { text: "Ingyenes képzések", value: "ingyenes" },
-  { text: "Soproni egyetem", value: "soproniegyetem" },
-  { text: "Pécsi egyetem", value: "pecsiegyetem" },
-  { text: "Irodai alkalmazások használata", value: "office" },
-  { text: "C# tanfolyamsorozat kezdőknek", value: "kezdoc" },
-  {
-    text: "Certified Junior C# Developer",
-    value: "certified-junior-c-developer"
-  },
-  { text: "Certified Unity Developer", value: "certified-unity-developer" },
-  {
-    text: "Certified Windows Administrator",
-    value: "certified-windows-administrator"
-  },
-  {
-    text: "Certified E-commerce Specialist",
-    value: "certified-e-commerce-specialist"
-  }
-];
-
 const SEARCH_FIELDS = [
   "Title",
   "SubTitle",
@@ -154,8 +119,8 @@ export default {
     return {
       filterCollection: FILTERS,
       filter: FILTERS[0].value,
-      categoryCollection: CATEGORIES,
-      category: CATEGORIES[0].value,
+      categoryCollection: [],
+      category: "",
       searchFields: SEARCH_FIELDS,
       loading: true,
       isFirstLoad: true,
@@ -176,8 +141,8 @@ export default {
   created: function() {
     this.selectedSort = this.sortByOptions[0];
   },
-  mounted: function() {
-    this.$axios
+  async mounted() {
+    await this.$axios
       .$get(`${this.$store.state.url.backend}${this.$store.state.url.courses}`)
       .then(courses => courses.map(c => this.fixLastUpdate(c)))
       .then(courses => courses.map(c => this.fixCategories(c)))
@@ -207,6 +172,24 @@ export default {
       )
       .then(courses => (this.srcCourseCollection = [...courses]))
       .then(_ => (this.loading = false))
+      .catch(err => console.warn("course fetch fail: ", err));
+
+    await this.$axios
+      .$get(
+        `${this.$store.state.url.backend}${this.$store.state.url.categories}`
+      )
+      .then(r =>
+        // map api answer to view usage
+        r.map(c => {
+          return { text: c.Title, value: c.UserfriendlyUrl };
+        })
+      )
+      .then(r => {
+        r.unshift({ text: "Ultimate", value: "NetAcademia Ultimate" });
+        this.categoryCollection = r;
+        this.category = r[0].value;
+        return r;
+      })
       .catch(err => console.warn("course fetch fail: ", err));
   },
   computed: {

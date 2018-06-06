@@ -23,7 +23,7 @@
         <div class="lablec fixed-bottom flex-center">
           <span class="d-none d-sm-block">© NetAcademia 1998-{{ currentYear }}</span>
           <span>
-          <a href="https://app.netacademia.hu/GeneralTermsAndConditions/Subscription">ÁSZF</a>
+          <nuxt-link to="/aszf">ÁSZF</nuxt-link>
         </span>
           <span>
           <a href="https://app.netacademia.hu/GeneralTermsAndConditions/PrivacyStatement">Adatvédelem</a>

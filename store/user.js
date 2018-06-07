@@ -18,14 +18,14 @@ export const actions = {
   [AUTH_REQ_ACTION](ctx) {
     if (!ctx.state.isLoggedIn) {
       return this.$axios
-        .$get(ctx.rootState.url.user)
+        .$get(ctx.rootState.url.user, { withCredentials: true })
         .then(resp => ctx.commit(AUTH_SUCCESS_MUTATION, resp))
         .catch(err => ctx.dispatch(ERROR_ACTION, err, { root: true }));
     }
   },
   [AUTH_LOGOUT_ACTION](ctx) {
     return this.$axios
-      .$post(ctx.rootState.url.logout)
+      .$post(ctx.rootState.url.logout, { withCredentials: true })
       .then(resp => ctx.commit(AUTH_LOGOUT_MUTATION))
       .catch(err => ctx.dispatch(ERROR_ACTION, err, { root: true }));
   }

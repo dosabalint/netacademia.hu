@@ -10,7 +10,7 @@
           <div class="flex-center flex-wrap mt-2 mt-md-4">
             <nuxt-link class="gomb gomb-grey" to="/elofizetes#kepzes">Képzéseink</nuxt-link>
             <nuxt-link class="gomb gomb-grey" to="/elofizetes#elofizetes">Előfizetés</nuxt-link>
-            <a class="gomb gomb-red" href="https://www.netacademia.hu/ultimateakcio">Akció!</a>
+            <nuxt-link class="gomb gomb-red" to="/ultimateakcio">Akció!</nuxt-link>
           </div>
           <br/>
           <div class="hirlev">
@@ -23,13 +23,13 @@
         <div class="lablec fixed-bottom flex-center">
           <span class="d-none d-sm-block">© NetAcademia 1998-{{ currentYear }}</span>
           <span>
-          <a href="https://app.netacademia.hu/GeneralTermsAndConditions/Subscription">ÁSZF</a>
+          <nuxt-link to="/aszf">ÁSZF</nuxt-link>
         </span>
           <span>
-          <a href="https://app.netacademia.hu/GeneralTermsAndConditions/PrivacyStatement">Adatvédelem</a>
+          <nuxt-link to="/adatvedelem">Adatvédelem</nuxt-link>
         </span>
           <span class="d-none d-sm-block">
-          <a href="https://app.netacademia.hu/kapcsolat" class="hideonmobile">Kapcsolat</a>
+          <nuxt-link to="/kapcsolat" class="hideonmobile">Kapcsolat</nuxt-link>
         </span>
           <span>
           <a href="https://app.netacademia.hu/oktato">Jelentkezz oktatónak!</a>

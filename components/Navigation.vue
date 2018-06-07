@@ -18,7 +18,7 @@
       <ul class="navbar-nav ml-auto">
         <!--<ul class="navbar-nav mx-auto">-->
         <li class="nav-item flex-center">
-          <a class="nav-link" href="/tanfolyamkeresov2">Tanfolyamkereső</a>
+          <nuxt-link class="nav-link" to="/tanfolyamkereso">Tanfolyamkereső</nuxt-link>
         </li>
         <li class="nav-item flex-center">
           <a class="nav-link" href="/indulotanfolyamok">Induló tanfolyamok</a>

@@ -261,18 +261,18 @@
 </template>
 
 <script>
-import DPageHeader from "../components/DPageHeader";
+import DPageHeader from "../components/decode/DPageHeader";
 import { GtmPageLoad } from "../components/mixins/GtmPageLoad";
-import DFullSection from "../components/DFullSection";
-import DHeadline from "../components/DHeadline";
+import DFullSection from "../components/decode/DFullSection";
+import DHeadline from "../components/decode/DHeadline";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Bounce from "../components/Bounce";
-import DServiceBox from "../components/DServiceBox";
+import DServiceBox from "../components/decode/DServiceBox";
 import Column from "../components/Column";
-import DButton from "../components/DButton";
+import DButton from "../components/decode/DButton";
 import Parallax from "vue-parallaxy";
-import DFullSectionMultilayer from "../components/DFullSectionMultilayer";
+import DFullSectionMultilayer from "../components/decode/DFullSectionMultilayer";
 
 export default {
   name: "officecsomag",

@@ -15,7 +15,7 @@
           <br/>
           <div class="hirlev">
             <a href="https://app.netacademia.hu/www.netacademia.hu_NewsLetter">
-              Hírlevél-feliratkozás
+              Hírlevél-feliratkozas
             </a>
           </div>
         </div>

@@ -10,12 +10,12 @@
           <div class="flex-center flex-wrap mt-2 mt-md-4">
             <nuxt-link class="gomb gomb-grey" to="/elofizetes#kepzes">Képzéseink</nuxt-link>
             <nuxt-link class="gomb gomb-grey" to="/elofizetes#elofizetes">Előfizetés</nuxt-link>
-            <a class="gomb gomb-red" href="https://www.netacademia.hu/ultimateakcio">Akció!</a>
+            <nuxt-link class="gomb gomb-red" to="/ultimateakcio">Akció!</nuxt-link>
           </div>
           <br/>
           <div class="hirlev">
             <a href="https://app.netacademia.hu/www.netacademia.hu_NewsLetter">
-              Hírlevél-feliratkozas
+              Hírlevél-feliratkozás
             </a>
           </div>
         </div>

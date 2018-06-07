@@ -29,7 +29,7 @@
           <nuxt-link to="/adatvedelem">Adatvédelem</nuxt-link>
         </span>
           <span class="d-none d-sm-block">
-          <a href="https://app.netacademia.hu/kapcsolat" class="hideonmobile">Kapcsolat</a>
+          <nuxt-link to="/kapcsolat" class="hideonmobile">Kapcsolat</nuxt-link>
         </span>
           <span>
           <a href="https://app.netacademia.hu/oktato">Jelentkezz oktatónak!</a>

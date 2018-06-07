@@ -5,7 +5,7 @@
         <Column class="col-sm-6"
                 data-toggle="tooltip" data-placement="right"
                 data-html="true"
-                :title="`<h6>${c.title}</h6> <p>__csomag nev__</p> <p>Oktatók: __oktato nev__</p> <p>Tanfolyam kezdete: ${c.startDate}</p>`">
+                :title="`<h6>${c.title}</h6> <p> ${c.categoryTitle} </p> <p>Oktatók: ${c.trainerNames} </p> <p>Tanfolyam kezdete: ${new Date(c.startDate).toLocaleDateString('hu-HU')}</p>`">
           <li>
             <fa :icon="['fab', 'superpowers']" :style="{ color: iconColor(c)}"/>
             {{ c.title }}

@@ -1,54 +1,185 @@
 <template>
   <main>
-    <video-bg
-      :sources="['https://player.vimeo.com/external/264778690.hd.mp4?s=8b80ecb93aeb209e06951980b8d335424dc83c37&profile_id=174']"
-      img="/background.jpg">
+    <header class="hero-bg">
+      <Container is-fluid>
+        <Row class="justify-content-end text-left">
+          <Column class="col-11 col-md-10 col-lg-6">
+            <div class="text-special pt-5">
+              NetAcademia - online oktatás bárhol, bármikor
+            </div>
+            <div class="large-title mb-3">
+              Megszűnik a NetAcademia <br> Ultimate előfizetés!
+            </div>
+            <div class="large-text mb-3">
+              Már csak július 2-ig vásárolható korlátlan,<br> egy éves előfizetésünk, a NetAcademia Ultimate! <br>
+            </div>
+            <div class="small-text mb-4">
+              Jelen hirdetmény nem vonatkozik a külön megállapodásban elérhető <br> előfizetésekre, pl.
+              informatikatanárok vagy Telekom
+            </div>
+            <div>
+              <DButton theme="white-outline" :href="`${$store.state.url.base}/#reszletek`" class="text-light">
+                Részletek<i class="ml-2 decode-icon-cursor"></i>
+              </DButton>
+            </div>
+          </Column>
+        </Row>
+      </Container>
+      <BouncingDownArrow href="#reszletek"></BouncingDownArrow>
+    </header>
+    <DFullSection theme="dark">
+      <Container>
+        <Row>
+          <Column class="col-md-3 col-sm-6">
+            <DCounter>
+              <i class="decode-icon-video"></i>
+              <div class="counter-value">320+</div>
+              <div class="counter-details">tanfolyam</div>
+            </DCounter>
+          </Column>
+          <Column class="col-md-3 col-sm-6">
+            <DCounter>
+              <i class="decode-icon-presentation"></i>
+              <div class="counter-value">4000+</div>
+              <div class="counter-details">óra oktatás</div>
+            </DCounter>
+          </Column>
+          <Column class="col-md-3 col-sm-6">
+            <DCounter>
+              <i class="decode-icon-viral-marketing"></i>
+              <div class="counter-value">50k+</div>
+              <div class="counter-details">felhasználó</div>
+            </DCounter>
+          </Column>
+          <Column class="col-md-3 col-sm-6">
+            <DCounter>
+              <i class="decode-icon-translator"></i>
+              <div class="counter-value">100+</div>
+              <div class="counter-details">profi oktató</div>
+            </DCounter>
+          </Column>
+        </Row>
+      </Container>
+    </DFullSection>
+    <DFullSection>
+      <Container class="pb-lg-5 text-justify ">
+        <Row id="reszletek">
+          <Column class="col-12 mb-3">
+            <DHeadline class="text-left">
+              <h3 class="mb-4">Mi fog történni július 2-a után?</h3>
+            </DHeadline>
+          </Column>
+          <Column class="col-lg-6 mr-xl-auto pr-5 my-auto">
+            <p><b>Röviden: Az egyszemélyes Netacademia Ultimate előfizetésünket megszüntetjük, július 2 után már nem
+              lehet megvásárolni.</b></p>
+            <p><b>Vállalati</b> ügyfeleink számára érhetővé válik a <b>NetAcademia Bussiness előfizetés</b>, melyet a
+              legfontosabb vállalati szempontok alapján alakítottuk ki:</p>
 
-      <div>
-        <div class="flex-center flex-column">
-          <h1 class="text-center">Teremtsd meg a jövőd!</h1>
-          <div class="flex-center flex-wrap mt-2 mt-md-4">
-            <nuxt-link class="gomb gomb-grey" to="/elofizetes#kepzes">Képzéseink</nuxt-link>
-            <nuxt-link class="gomb gomb-grey" to="/elofizetes#elofizetes">Előfizetés</nuxt-link>
-            <nuxt-link class="gomb gomb-red" to="/ultimateakcio">Akció!</nuxt-link>
-          </div>
-          <br/>
-          <div class="hirlev">
-            <a href="https://app.netacademia.hu/www.netacademia.hu_NewsLetter">
-              Hírlevél-feliratkozás
-            </a>
-          </div>
-        </div>
+            <ul class="check-list">
+              <li>Legyen elérhető Magyarország legszélesebb oktatási palettája</li>
+              <li>Ne kelljen 4-5 oktatási intézménnyel kapcsolatot tartani</li>
+              <li>Pehelykönnyű adminisztráció</li>
+              <li>Lekérdezhető legyen a kollégák haladása, az előfizetés kihasználtsága</li>
+            </ul>
 
-        <div class="lablec fixed-bottom flex-center">
-          <span class="d-none d-sm-block">© NetAcademia 1998-{{ currentYear }}</span>
-          <span>
-          <nuxt-link to="/aszf">ÁSZF</nuxt-link>
-        </span>
-          <span>
-          <nuxt-link to="/adatvedelem">Adatvédelem</nuxt-link>
-        </span>
-          <span class="d-none d-sm-block">
-          <nuxt-link to="/kapcsolat" class="hideonmobile">Kapcsolat</nuxt-link>
-        </span>
-          <span>
-          <a href="https://app.netacademia.hu/oktato">Jelentkezz oktatónak!</a>
-        </span>
-        </div>
-      </div>
-    </video-bg>
+          </Column>
+          <Column class="col-lg-6 mr-xl-auto pl-5">
+            <ul class="check-list">
+              <li>Senior kollégák számára emeltszintű Mesterkurzusok tartása</li>
+              <li>Lehetőleg minden kolléga részt vehessen az oktatásokon</li>
+              <li>Nyelvi képzések is legyenek a csomagban</li>
+              <li>A dolgozók olyan képzésekhez is hozzájussanak, melyeket a munkahelyen kívül és hasznosítani tudnak
+              </li>
+            </ul>
+            <p>Ezeket az igényeket (különösen az összes dolgozó hozzáférését) csoportos előfizetéseink szolgálják ki.
+              Legkisebb csomagunk az <b>5 fős</b> NetAcademia Business előfizetés, mely akciósan, <b>499 000
+                Ft+áfa</b> lesz.</p>
+          </Column>
+        </Row>
+        <Row>
+          <Column class="col-lg-6 mr-xl-auto pr-5 my-auto">
+            <img src="~/assets/landing/index-image.svg" alt="">
+          </Column>
+          <Column class="col-lg-6 mr-xl-auto pl-5 my-auto">
+            <DHeadline class="text-left">
+              <h5 class="mb-3 font-weight-bold">Nekem jelenleg NetAcademia Ultimate előfizetésem van. Most mi lesz
+                velem?</h5>
+            </DHeadline>
+            <p><b>Semmi. Nem változik semmi.</b> Aki jelenleg aktív NetAcademia Ultimate előfizető, annak a lejárati
+              dátumig nincs változás. </p>
+
+            <DHeadline class="text-left">
+              <h5 class="mb-3 font-weight-bold">Nincs Ultimate előfizetésem, én mit tehetek?</h5>
+            </DHeadline>
+            <p>Mivel az egyszemélyes változat július 2-án megszűnik, <b>eddig a határidőig kell megvásárolnod az
+              Ultimate előfizetésünket</b> a következő évre. Július 2 után a legkisebb csomag 5 fős lesz.</p>
+          </Column>
+        </Row>
+      </Container>
+    </DFullSection>
+    <DFullSection theme="dark" is-blending style="background: #00f0d1;">
+      <Container>
+        <Row>
+          <div class="col-md-12">
+            <h3 class="text-center"><strong>Egyéni hallgatók számára ajánljuk</strong></h3>
+          </div>
+        </Row>
+      </Container>
+    </DFullSection>
+    <Container class="pt-lg-5">
+      <Row class="mt-5">
+        <Column class="col-lg-7">
+          <p>A tanulásodat úgy tudjuk a legjobban segíteni, hogy útmutatást adunk egy-egy témakör elsajátításához. Az
+            első billentyű leütésétől kezdve akár a bizonyítványod átvételéig fogjuk a kezed. Tanulási útvonalaink <b>6-8
+              egymásra épülő tanfolyamot</b> tartalmaznak
+            egy adott témából.</p>
+          <p>Ha minden témakör iránt érdeklődsz, vagy nem tudod eldönteni, az informatika melyik ágán indulj el, a <b>július
+            2-ával megszűnő Ultimate-csomagból még te is bespájzolhatsz.</b></p>
+          <DButton theme="default-outline" href="https://app.netacademia.hu/subscription/create">
+            Megveszem <i class="decode-icon-cursor"></i>
+          </DButton>
+        </Column>
+        <Column class="col-lg-4 my-auto pl-5">
+          <Bounce direction="right">
+            <p><img src="~/assets/landing/foldal-1.svg" alt=""></p>
+          </Bounce>
+        </Column>
+      </Row>
+    </Container>
   </main>
 </template>
 
 <script>
-import VideoBg from "~/components/VideoBG";
 import { GtmPageLoad } from "~/components/mixins/GtmPageLoad";
+import DPageHeader from "../components/decode/DPageHeader";
+import DFullSection from "../components/decode/DFullSection";
+import Container from "../components/Container";
+import Row from "../components/Row";
+import Column from "../components/Column";
+import DCounter from "../components/decode/DCounter";
+import DHeadline from "../components/decode/DHeadline";
+import Bounce from "../components/Bounce";
+import DButton from "../components/decode/DButton";
+import BouncingDownArrow from "../components/BouncingDownArrow";
+import Navigation from "../components/Navigation";
 
 export default {
   name: "landing",
-  layout: "landing",
+  components: {
+    Navigation,
+    BouncingDownArrow,
+    DButton,
+    Bounce,
+    DHeadline,
+    DCounter,
+    Column,
+    Row,
+    Container,
+    DFullSection,
+    DPageHeader
+  },
+  layout: "landing_decode",
   mixins: [GtmPageLoad("Főoldal")],
-  components: { VideoBg },
   computed: {
     currentYear: function() {
       return new Date().getFullYear();
@@ -57,113 +188,144 @@ export default {
 };
 </script>
 
-<style scoped>
-main {
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  font-family: "Work sans", Arial;
-  color: white;
-  font-size: 16px;
+<style lang="scss">
+header {
+  .text-special {
+    color: #ffffff;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-top: 6rem;
+  }
+
+  .large-title {
+    color: orange;
+    font-size: 1.6rem;
+    line-height: 35px;
+    font-weight: 600;
+  }
+
+  .large-text {
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
+  .small-text {
+    color: #fff;
+    font-size: 0.8rem;
+    line-height: 18px;
+  }
+
+  &.hero-bg {
+    height: 100vh;
+    background-color: #fafafa;
+    background-image: url("~/assets/landing/bg-2-v3.svg");
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+  }
+
+  @media (min-width: 400px) {
+    .large-title {
+      font-size: 2rem;
+      line-height: 40px;
+    }
+
+    .large-text {
+      font-size: 1.1rem;
+      line-height: 25px;
+      font-weight: 400;
+    }
+
+    .small-text {
+      font-size: 0.9rem;
+      line-height: 23px;
+    }
+  }
+
+  @media (min-width: 765px) {
+    .text-special {
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+      margin-top: 200px;
+    }
+
+    .large-title {
+      font-size: 2.5rem;
+      line-height: 50px;
+    }
+
+    .large-text {
+      font-size: 1.5rem;
+      line-height: 25px;
+      font-weight: 400;
+      margin-top: 30px;
+    }
+
+    .small-text {
+      font-size: 1.1rem;
+      line-height: 23px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .text-special {
+      color: #ffffff;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      margin-top: 16rem;
+    }
+
+    .small-text {
+      color: #fff;
+      font-size: 0.8rem;
+      line-height: 18px;
+    }
+
+    .large-text {
+      color: #fff;
+      line-height: 32px;
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+
+    .large-title {
+      color: orange;
+      font-size: 3rem;
+      line-height: 60px;
+      font-weight: 600;
+    }
+  }
 }
 
-a {
-  color: white;
-  text-decoration: none;
+/* CHECK LIST */
+.check-list {
+  list-style: none;
+  margin-bottom: 20px;
+  padding-left: 0;
 }
 
-h1 {
-  font-size: 3rem;
-  font-weight: 300;
-}
-
-.lablec {
-  font-family: Arial;
-  font-size: 14px;
+.check-list li {
   margin-bottom: 5px;
+  color: grey;
 }
 
-.lablec a {
-  margin: 0px 10px;
-  text-decoration: none;
+.check-list li:last-child {
+  margin-bottom: 0;
 }
 
-.lablec a:hover {
-  color: rgb(203, 203, 203);
-  transition-duration: 0.5s;
-}
-
-.gomb {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 13rem;
-  height: 1rem;
-  padding: 1.5rem;
-  margin: 0.75rem;
-  font-family: Arial;
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  border: 1px solid transparent;
-}
-
-.gomb:hover {
-  border: 1px solid white;
-  transition-duration: 0.5s;
-}
-
-.gomb-grey {
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.gomb-red {
-  background: rgba(255, 0, 0, 0.6);
-}
-
-.hirlev {
-  margin-top: 1.5rem;
-  text-decoration: none;
-  font-family: Arial;
+.check-list li:before {
   display: inline-block;
-}
-
-.hirlev a:hover {
-  color: rgb(203, 203, 203);
-  transition-duration: 0.5s;
-}
-
-.lablec {
-  font-family: Arial;
-  font-size: 14px;
-  margin-bottom: 5px;
-  text-align: center;
-}
-
-.lablec a {
-  margin: 0px 10px;
-  text-decoration: none;
-}
-
-.lablec a:hover {
-  color: rgb(203, 203, 203);
-  transition-duration: 0.5s;
-}
-
-@media (max-width: 340px) {
-  .gomb {
-    margin: 2px;
-    padding: 1.25rem;
-  }
-
-  .lablec {
-    font-size: 12px;
-  }
-
-  .hirlev {
-    margin-top: 0.1rem;
-  }
+  width: 8px;
+  height: 14px;
+  border: solid #00f0d1;
+  border-width: 0 2px 2px 0;
+  margin-right: 15px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  content: "";
 }
 </style>

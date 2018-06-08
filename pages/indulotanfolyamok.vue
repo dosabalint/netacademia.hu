@@ -9,7 +9,7 @@
     <Container class="py-5">
       <Row class="justify-content-center">
         <Column class="col-md-12">
-          <DHeadline class="pb-4">
+          <DHeadline class="pb-4 text-center">
             <h6>NetAcademia</h6>
             <h3 class="mb-4">Folyamatban lévő tanfolyamaink</h3>
           </DHeadline>
@@ -25,7 +25,7 @@
       <Container class="py-5">
         <Container class="row justify-content-center">
           <Column class="col-md-12">
-            <DHeadline>
+            <DHeadline class="text-center">
               <h6>NetAcademia</h6>
               <h3 class="pb-5">Hamarosan induló tanfolyamaink</h3>
             </DHeadline>
@@ -82,11 +82,10 @@ export default {
   async mounted() {
     await this.$axios
       .$get(
-        `${this.$store.state.url.base}/GetInProgressComingSoon.json`
-        // TODO: ezt átkötni, ha lesz cors az apin
-        // `${this.$store.state.url.newBackend}${
-        //   this.$store.state.url.commingSoonCourses
-        // }`
+        // `${this.$store.state.url.base}/GetInProgressComingSoon.json`
+        `${this.$store.state.url.newBackend}${
+          this.$store.state.url.commingSoonCourses
+        }`
       )
       .then(r => {
         this.courses = r;

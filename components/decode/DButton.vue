@@ -219,7 +219,7 @@ export default {
 .btn-outline:focus,
 .btn-outline:active:focus {
   background: transparent;
-  color: #fff;
+  color: #252525;
 
   &:after {
     position: absolute;

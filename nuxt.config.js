@@ -53,6 +53,11 @@ module.exports = {
         rel: "stylesheet",
         href:
           "https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700&subset=latin-ext"
+      },
+      {
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800%7C;Roboto:100,500"
       }
     ],
     script: [

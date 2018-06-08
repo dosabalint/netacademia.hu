@@ -1,16 +1,22 @@
 # static html landing/oldal kipakolas
 
+meg lehet nézni a static oldalt bekötve:
+http://test.netacademia.hu/index3.html
+
 ## kiegészítő infók
 * static mappa tartalma compile és generate esetében egy az egyben átmásolásra kerül a megfelelő helyre
   * generate esetén a /dist mappába
 * /static/hack/ -ben benne van mindenféle js, css, font és asset amit Annamari használt static buildnél
 * /static/index3.html-ben van az amit Annamari lebuildelt static html landingnek
   * ennek az a problélmái:
-    * nem responsive sem a carousel sem semmi
+    * nem responsive a carousel meg még pár dolog
       * a theme a resolutionslider jquery plugint használja
     * linkek nem jók rajta
-    * menü nem jó
-    *  vanank még nem jó szövegek
+    * menü linkek és struktúra nem jó
+    *  hiányzik belőle számláló
+    * lehet hogy hiányoznak még assetek
+      * ezeket az https://github.com/Anameee/anameee.github.io -ról lehet összeszedni
+      
     
 ## hogyan 
 

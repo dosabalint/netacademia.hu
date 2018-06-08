@@ -88,7 +88,7 @@
       <Container>
         <Row>
           <Column class="col-md-12">
-            <DHeadline>
+            <DHeadline class="text-center">
               <h6>Irodai hatékonyságnövelő csomag</h6>
               <h3>1 évre szóló előfizetés 49.900 Ft</h3>
             </DHeadline>

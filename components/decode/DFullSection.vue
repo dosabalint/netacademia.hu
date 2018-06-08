@@ -1,5 +1,6 @@
 <template>
   <section class="full-section" :class="theme">
+    <div v-if="isBlending" class="full-section-blending"></div>
     <div class="full-section-container">
       <slot></slot>
     </div>
@@ -16,6 +17,10 @@ export default {
       validator(val) {
         return ["light", "dark", "smoke"].indexOf(val) !== -1;
       }
+    },
+    isBlending: {
+      type: Boolean,
+      default: false
     }
   }
 };
@@ -96,6 +101,13 @@ export default {
   @media (max-width: 767px) {
     &.light {
       padding-bottom: 50px;
+    }
+
+    &.dark .full-section-container {
+      h3 {
+        font-size: 20px;
+        color: white;
+      }
     }
   }
 

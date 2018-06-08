@@ -65,7 +65,7 @@
     <DFullSection theme="light">
       <Container>
         <Row class="flex-center mb-5 pb-5">
-          <DHeadline>
+          <DHeadline class="text-center">
             <h3>Munkatársaink</h3>
           </DHeadline>
         </Row>

@@ -7,7 +7,7 @@
         <h2 class="mb-5 mt-2">
           <span class="text-uppercase">Ultimate</span> előfizetés</h2>
         <p class="lead mt-1 mb-5">
-          <span class="font-weight-bold">Ez a termékünk július 2-ával megszűnik!</span> A részletekről <span class="font-weight-bold"><a href="#" class="link">itt tájékozódhatsz.<a/></span>
+          <span class="font-weight-bold">Ez a termékünk július 2-ával megszűnik!</span> A részletekről <span class="font-weight-bold"><a href="#" class="link">itt tájékozódhatsz.</a></span>
           <br> GDPR, CISSP, C, ITIL, Android, Java, Webfeljesztés, Excel All-in. Ez
           csak néhány a több mint 300 tanfolyamunk közül.
           <span class="font-weight-bold">Spájzolj be még most!</span>

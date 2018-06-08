@@ -11,7 +11,7 @@
         <p class="lead mt-1 mb-5">A NetAcademia Certificate programunkban olyan szakmákat tanulhatsz, melyekkel akár
           távmunkában is dolgozhatsz, ezzel jelentősen növelve a munkakeresésed esélyeit! Mindegy, hogy Piripócson élsz,
           vagy a Bahamákon, velünk eljuthasz a következő szintre. Távmunkához távtanulás dukál!</p>
-          <h3>Július 2-ával <span class="text-danger">megszűnik</span> egyszemélyes NetAcademia Ultimate előfizetésünk! A részletekről <a href="#" class="link">itt tájékozódhatsz</a>!<h3>
+          <h3>Július 2-ával <span class="text-danger">megszűnik</span> egyszemélyes NetAcademia Ultimate előfizetésünk! A részletekről <a href="#" class="link">itt tájékozódhatsz</a>!</h3>
         <p class="lead mt-4">Több tanfolyamsorozatot is elvégeznél? <b>Július 2-ig</b> még megvásárolhatod
           <nuxt-link to="#ultimate" class="text-danger font-weight-bold">Ultimate előfizetésünket</nuxt-link>
           , mellyel mindegyik

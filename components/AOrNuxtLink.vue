@@ -8,6 +8,8 @@
 </template>
 
 <script>
+//TODO: nuxt-link valamiert nem jol viselkedik ha #id-t kap. Ezt fixelni kell
+// workaround: beadok telejs url-t state-bol es akkor a-t csinal
 export default {
   name: "AOrNuxtLink",
   props: {

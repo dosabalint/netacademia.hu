@@ -18,7 +18,7 @@
               informatikatanárok vagy Telekom
             </div>
             <div>
-              <DButton theme="white-outline" href="#reszletek" class="text-light">
+              <DButton theme="white-outline" :href="`${$store.state.url.base}/#reszletek`" class="text-light">
                 Részletek<i class="ml-2 decode-icon-cursor"></i>
               </DButton>
             </div>

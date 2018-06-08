@@ -16,8 +16,7 @@
     "analyze": "cross-env-shell nuxt build --analyze",
     "start": "cross-env-shell nuxt start",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint",
-    "postgenerate:develop": "rm ./dist/index.html && mv ./dist/index3.html ./dist/index.html"
+    "precommit": "npm run lint"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free-brands": "^5.0.13",

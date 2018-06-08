@@ -90,7 +90,7 @@
           <Column class="col-md-12">
             <DHeadline class="text-center">
               <h6>Irodai hatékonyságnövelő csomag</h6>
-              <h3>1 évre szóló előfizetés 49.900 Ft</h3>
+              <h3>1 főre szóló előfizetésünk július 2-án megszűnik! <br> Juss hozzá még most 49.900 Ft-ért!</h3>
             </DHeadline>
           </Column>
         </Row>
@@ -101,7 +101,7 @@
             <p>
               <DButton theme="default-outline" class="text-light"
                        href="https://app.netacademia.hu/Subscription/Create/office">
-                Megveszem<i class="decode-icon-cursor"></i>
+                Megveszem<i class="decode-icon-cursor ml-2"></i>
               </DButton>
             </p>
           </Column>

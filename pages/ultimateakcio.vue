@@ -7,9 +7,10 @@
         <h2 class="mb-5 mt-2">
           <span class="text-uppercase">Ultimate</span> előfizetés</h2>
         <p class="lead mt-1 mb-5">
-          <span class="font-weight-bold">GDPR, CISSP, C, ITIL, Android, Java, Webfeljesztés, Excel All-in</span>. Ez
-          csak néhány a több mint 300 tanfolyamunk közül. Ráadásul
-          <span class="font-weight-bold">július 2-ig 1 éves előfizetésünk 300.000 Ft helyett csak 119.900 Ft+áfa</span>.
+          <span class="font-weight-bold">Ez a termékünk július 2-ával megszűnik!</span> A részletekről <span class="font-weight-bold"><a href="/" class="link">itt tájékozódhatsz.</a></span>
+          <br> GDPR, CISSP, C, ITIL, Android, Java, Webfeljesztés, Excel All-in. Ez
+          csak néhány a több mint 300 tanfolyamunk közül.
+          <span class="font-weight-bold">Spájzolj be még most!</span>
         </p>
         <div class="row">
           <a href="https://app.netacademia.hu/subscription/create" class="btn-orange btn-lg ml-3">Megveszem</a>
@@ -257,6 +258,15 @@ h2 span {
   font-size: 3rem;
   color: #e55a0c;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.link{
+color: #fff;
+text-decoration: underline;
+}
+
+.link:hover{
+color: #e55a0c;
 }
 
 h2 {

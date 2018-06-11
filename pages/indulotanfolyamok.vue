@@ -82,10 +82,10 @@ export default {
   async mounted() {
     await this.$axios
       .$get(
-        `${this.$store.state.url.base}/GetInProgressComingSoon.json`
-        // `${this.$store.state.url.newBackend}${
-        //   this.$store.state.url.commingSoonCourses
-        // }`
+        // `${this.$store.state.url.base}/GetInProgressComingSoon.json`
+        `${this.$store.state.url.newBackend}${
+            this.$store.state.url.commingSoonCourses
+        }`
       )
       .then(r => {
         this.courses = r;

@@ -297,11 +297,11 @@
             </div>
           </div>
           <div class="col-12 text-center ulti pt-4">
-            <p>Ha kínálatunk elnyerte a tetszésed, fizess elő egy évre, hogy korlátlanul tanulhass! Most 99.900 Ft +
+            <p>Ha kínálatunk elnyerte a tetszésed, spájzolj be egy évre július 2-ig, hogy korlátlanul tanulhass, mert Ultimate előfizetésünk megszűnik! Most 119.900 Ft +
               áfa</p>
             <div class="mx-auto button-ulti">
-              <gtm-link :gtm-data="GTMProductCollection.ultimate" href="/ultimateakcio">
-                Előfizetek
+              <gtm-link :gtm-data="GTMProductCollection.ultimate" href="http://www.netacademia.hu">
+                Részletek
               </gtm-link>
             </div>
           </div>

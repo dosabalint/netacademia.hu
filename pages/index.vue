@@ -113,6 +113,9 @@
             </DHeadline>
             <p>Mivel az egyszemélyes változat július 2-án megszűnik, <b>eddig a határidőig kell megvásárolnod az
               Ultimate előfizetésünket</b> a következő évre. Július 2 után a legkisebb csomag 5 fős lesz.</p>
+            <DButton theme="default-outline" href="https://app.netacademia.hu/subscription/create">
+              Megveszem <i class="decode-icon-cursor"></i>
+            </DButton>
           </Column>
         </Row>
       </Container>

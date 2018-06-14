@@ -28,7 +28,7 @@
               <nuxt-link to="/indulotanfolyamok">Induló tanfolyamok</nuxt-link>
             </li>
             <li class="py-1">
-              <nuxt-link to="/oktato">Jelentkezz oktatónak!</nuxt-link>
+              <a href="/oktato">Jelentkezz oktatónak!</a>
             </li>
           </ul>
         </div>

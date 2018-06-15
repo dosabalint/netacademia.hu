@@ -50,7 +50,7 @@
     </div>
 
     <div class="container-fluid">
-      <h1 class="line">BARÁTKOZZUNK</h1>
+      <h1 class="line">BARÁTKOZZUNK!</h1>
       <div class="text-center px-0">
         <a class="px-3" href="https://www.facebook.com/Netacademia/">
           <fa :icon="['fab', 'facebook']" size="2x"/>

@@ -2,7 +2,7 @@
   <main>
     <CertiTopHero class="hero-bg"
                   page-title="Modern Android Fejlesztés"
-                  lead-text="MobilApp fejlesztés"
+                  lead-text="MobilApp-fejlesztés"
                   sales-pitch-text="Már régóta motoszkál benned valami, hogy te is képes lennél rá?
                   Vannak jó ötleteid, de eddig nem tudtad hogyan kezdj hozzá? Android képzéssorozatunkkal
                    most te is elkészítheted álmaid APP-ját. Nem kell, hogy Java fejlesztő vagy designer legyél,

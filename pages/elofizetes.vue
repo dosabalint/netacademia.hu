@@ -121,22 +121,28 @@
                class="mx-auto img-border">
         </elofizetes-product-card>
 
-        <!-- <elofizetes-product-card  title="Certified Android Developer"
-                                who="Az App-guru"
-                                description="Legyél Certified Android Developer, és legyél te a mobilAppok nagymestere!"
-                                link="/androidfejleszto"
-                                length="128 óra"
-                                :gtm-data="GTMProductCollection.ASDFSADFDSADSADFSDA">
-        <img src="~/assets/elofizetes/android-logo2.png" alt="android-logo" width="130" class="mx-auto img-border">
-      </elofizetes-product-card>      -->
-
         <elofizetes-product-card title="Certified Windows Administrator" who="A rendszergazda"
                                  description="Legyél Certified Windows Administrator, és üzemeltess Windows Server alapú rendszereket!"
                                  length="48 óra" link="/windowsserver"
                                  :gtm-data="GTMProductCollection.windowsserver">
           <img src="~/assets/elofizetes/server-logo.png" alt="server-logo" width="130" class="mx-auto img-border">
         </elofizetes-product-card>
+
       </div>
+
+      <div class="row pt-5 justify-content-center">  
+
+      <elofizetes-product-card  title="Modern Android fejlesztés"
+                              who="Az App-guru"
+                              description="Legyél Android Developer, és legyél te a mobilAppok nagymestere!"
+                              link="/androidfejleszto"
+                              length="49 óra"
+                              :gtm-data="GTMProductCollection.ASDFSADFDSADSADFSDA">
+      <img src="~/assets/elofizetes/android-logo2.png" alt="android-logo" width="130" class="mx-auto img-border">
+    </elofizetes-product-card>
+
+      </div>
+
     </div>
 
     <div class="container pt-md-3 mt-3">

@@ -6,7 +6,8 @@
     <Bounce class="cd-timeline-content" :direction="direction">
       <h3 class="py-3 text-center" :style="{ background: cardHeaderBg}"> {{title}}</h3>
       <hr>
-      <p class="font-weight-light m-0">{{length}} - {{price}}</p>
+      <p class="font-weight-light m-0" v-if="price.length === 0">{{length}}</p>
+      <p class="font-weight-light m-0" v-else>{{length}} - {{price}}</p>
       <p>{{description}}</p>
       <p v-if="description2">{{description2}}</p>
       <slot class="py-2" name="link"></slot>
@@ -29,7 +30,7 @@ export default {
     },
     price: {
       type: String,
-      required: true
+      default: ""
     },
     description: {
       type: String,

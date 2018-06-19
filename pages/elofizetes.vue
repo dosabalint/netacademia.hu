@@ -130,14 +130,14 @@
 
       </div>
 
-      <div class="row pt-5 justify-content-center">  
+      <div class="row pt-5 justify-content-center">
 
       <elofizetes-product-card  title="Modern Android fejlesztés"
                               who="Az App-guru"
                               description="Legyél Android Developer, és legyél te a mobilAppok nagymestere!"
                               link="/androidfejleszto"
                               length="49 óra"
-                              :gtm-data="GTMProductCollection.ASDFSADFDSADSADFSDA">
+                              :gtm-data="GTMProductCollection.android">
       <img src="~/assets/elofizetes/android-logo2.png" alt="android-logo" width="130" class="mx-auto img-border">
     </elofizetes-product-card>
 
@@ -374,6 +374,16 @@ export default {
           variant: "",
           list: "Előfizetés",
           position: 8
+        },
+        android: {
+          name: "Office és irodai alkalmazások 12 hónapos tanfolyamcsomag",
+          id: "0",
+          price: "59000",
+          brand: "NetAcademia",
+          category: "Elofizetes",
+          variant: "",
+          list: "Előfizetés",
+          position: 9
         }
       }
     };

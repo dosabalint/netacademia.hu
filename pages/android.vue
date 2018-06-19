@@ -1,191 +1,140 @@
 <template>
   <main>
     <CertiTopHero class="hero-bg"
-                  page-title="Androud"
-                  lead-text="Marketing"
-                  sales-pitch-text="Bele akarsz vágni az online kereskedésbe? Tanuld meg, hogyan készítheted el pár óra
-                  alatt saját webshopodat Shopify segítségével, végezz piackutatást, hogy maximalizálhasd a profitodat!
-                  Elkalauzolunk a marketing világába is, hogy képes legyél saját hirdetéseket létrehozni Facebookon és
-                  Google AdWordsben, és ki tudd aknázni a Facebook Marketplace adta megannyi lehetőséget!"
-    >
-      <img slot="lead-icon" src="~/assets/ecommerce/ecommerce-icon.png" alt="ecommerce-icon" class="img-fluid"
+                  page-title="Modern Android Fejlesztés"
+                  lead-text="MobilApp fejlesztés"
+                  sales-pitch-text="Már régóta motoszkál benned valami, hogy te is képes lennél rá? 
+                  Vannak jó ötleteid, de eddig nem tudtad hogyan kezdj hozzá? Android képzéssorozatunkkal
+                   most te is elkészítheted álmaid APP-ját. Nem kell, hogy Java fejlesztő vagy designer legyél,
+                    csak az ötlet kell és a többit itt megtanulod!">
+
+      <img slot="lead-icon" src="~/assets/android/android-icon.png" alt="android-icon.png" class="img-fluid"
            width="60">
       <nuxt-link slot="call-to-action" to="#reszletek" class="btn-cus btn-cus-darkred btn-lg ml-3 px-5">Részletek
       </nuxt-link>
     </CertiTopHero>
 
-    <CertiFeatures price="Most csak 39.900 Ft"></CertiFeatures>
+    <CertiFeatures price="Most csak 59.000 Ft"></CertiFeatures>
 
     <TimelineContainer id="reszletek">
-      <TimelineCard title="Validáljuk ötletünket!"
-                    length="6 óra"
-                    price="19.000 Ft + áfa"
-                    description="Dzsungel papucsokat árulnánk? Kutassuk fel a piacot! Validáljuk ötletünket, végezzünk
-                    piackutatást! Ezen a tanfolyamon megtanuljuk, hogyan határozhatjuk meg a célcsoportunkhat, hozhatunk
-                    létre egy mini Facebook kampányt, illetve hogyan tervezhetünk hatékonyan."
+      <TimelineCard title="Android bevezetés"
+                    length="24 óra"
+                    price="69.900 Ft + áfa"
+                    description="Bevezetés, mely során bemutatjuk az Android alkalmazás fejlesztés fő lépéseit az alapoktól kezdve
+                     egészen a komplex alkalmazások fejlesztéséig. 
+                     A tanfolyam során kiemelt figyelmet fordítunk a platform és alkalmazás struktúra bemutatására,
+                      mely elengedhetetlen tudás stabil alkalmazások fejlesztéséhez."
                     logo-bg="#6B273C"
                     card-header-bg="#6B273C"
                     direction="left"
       >
-        <img slot="picture" src="~/assets/ecommerce/ecommerce-icon.png" alt="ecommerce-icon">
+        <img slot="picture" src="~/assets/android/android-icon.png" alt="android-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.design"
-                  href="https://app.netacademia.hu/Tanfolyam/2018EcomPlan"
+                  href="https://app.netacademia.hu/Tanfolyam/androidintro"
         >Részletek...
         </gtm-link>
       </TimelineCard>
 
-      <TimelineCard title="Webshopunk létrehozása"
-                    length="12 óra"
-                    price="29.900 Ft+áfa"
-                    description="Készítsünk ütős weboldalt, és ökoszisztémát webshopunknak, a népszerű, Shopfiy
-                    platform, vagy Wordpress segítségével! Elhelyezzük majd első termékeinket is, illetve megnézzük,
-                    hogyan állíthatunk be úgynevezett dropshippinget, melynek lényege, hogy olyat árulunk, amivel
-                    tulajdonképpen nem is rendelkezünk, így pedig nem kell hatalmas raktárkészletet felhalmoznunk!"
+      <TimelineCard title="Bevezetés a Kotlin fejlesztésbe"
+                    length="3 óra"
+                    price="Ingyenes!"
+                    description="A Kotlin egy új generációs, managelt nyelv,
+                     mely célja hogy a modern programozási nyelvekben megszokott 
+                     eszközöket és paradigmákat elérhető tegye a JVM platformon. 
+                     A nyelv teljesen interoperábilis a Java-val, a Kotlin fájlok szabadon keverhetőek a
+                      Java osztályokkal, így a fejlesztők továbbra is használhatják jól megszokott eszköztárukat."
                     logo-bg="#284d5d"
                     card-header-bg="#284d5d"
                     direction="right"
       >
-        <img slot="picture" src="~/assets/ecommerce/ecommerce-icon.png" alt="ecommerce-icon">
+        <img slot="picture" src="~/assets/android/android-icon.png" alt="android-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.create"
-                  href="https://app.netacademia.hu/Tanfolyam/2018Ecomshop"
+                  href="https://app.netacademia.hu/Tanfolyam/kotlinbevezeto"
         >Részletek...
         </gtm-link>
       </TimelineCard>
 
-      <TimelineCard title="A Facebook bolti területe (Marketplace)"
-                    length="4 óra"
-                    price="19.900 Ft+áfa"
-                    description="A bolti terület a vállalkozásunk oldalához hozzáadható lapfül, amely az általunk árult
-                    termékek megjelenítését teszi lehetővé. Megtanuljuk, hogyan aknázhatjuk ki ezt az új lehetőséget,
-                    ami után semmiféle jutalékot nem kell fizetnünk, így kitűnő, mondhatni kötelező eleme egy induló
-                    vállalkozás kereskedési rendszerének."
+      <TimelineCard title="Android alapok: API-val töltött lista!"
+                    length="2 óra"
+                    price="Ingyenes!"
+                    description="Nap mint nap használunk olyan Android-alkalmazásokat, 
+                    ahol listákat görgetünk, és ezek internetes adatokkal vannak feltöltve. 
+                    Elgondolkoztál már rajta, hogy mi van mögötte? Hogy kerül oda az adat? 
+                    Hogyan épül fel a nézet? Esetleg betekintenél a színfalak mögé? 
+                    Ha a válaszod igen, csatlakozz hozzánk, és építsük fel közösen!"
                     logo-bg="#222c37"
                     card-header-bg="#222c37"
                     direction="left"
       >
-        <img slot="picture" src="~/assets/ecommerce/ecommerce-icon.png" alt="ecommerce-icon">
+        <img slot="picture" src="~/assets/android/android-icon.png" alt="android-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.facebook"
-                  href="https://app.netacademia.hu/Tanfolyam/2018Ecomfaceshop"
+                  href="https://app.netacademia.hu/Tanfolyam/andlist"
         >Részletek...
         </gtm-link>
       </TimelineCard>
 
-      <TimelineCard title="Hirdessük a termékeinket a Facebookon is!"
-                    length="8 óra"
-                    price="29.900 Ft+áfa"
-                    description="Ezen a kurzuson megtanuljuk, mi a különbség egy egyszerű kiemelés, illetve egy jól
-                    megkomponált Facebook hirdetésben, illetve, hogy melyek a legalkalmasabb hirdetési formák és
-                    beállítások a termékünk minél magassabb számban történő értékesítéséhez."
-                    description2="Beállítunk majd úgynevezett Facebook pixelt, hogy hirdetéseinket nyomon is tudjuk
-                    követni, így mérve az eredményességüket."
+      <TimelineCard title="Haladó Android Kotlin nyelven"
+                    length="10 óra"
+                    price="69.900 Ft+áfa"
+                    description="Ha már ismered az Android-fejlesztés alapjait, 
+                      és szeretnéd a tudásodat a következő szintre emelni, akkor ezt a
+                      képzést semmiképp se hagyd ki. Az előadások során az alkalmazásfejlesztésnek 
+                       olyan területeit fogjuk bejárni, mint a háttérfolyamatok, kommunikáció vagy a 
+                       különböző multimédiák kezelése."
+                    description2="A képzés sikeres elvégzése után szinte mindent meg fogsz
+                      tudni valósítani Androidon, ami szükséges ahhoz, hogy ötleteidet formába öntsd."
+
                     logo-bg="#6B273C"
                     card-header-bg="#6B273C"
                     direction="right"
       >
-        <img slot="picture" src="~/assets/ecommerce/ecommerce-icon.png" alt="ecommerce-icon">
+        <img slot="picture" src="~/assets/android/android-icon.png" alt="android-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.cone"
-                  href="https://app.netacademia.hu/Tanfolyam/2018Ecomfun"
+                  href="https://app.netacademia.hu/Tanfolyam/kotlin "
         >Részletek...
         </gtm-link>
       </TimelineCard>
 
-      <TimelineCard title="A Google és Adwords hirdetések elindítása"
-                    length="8 óra"
-                    price="29.900 Ft+áfa"
-                    description="Termékeinket nem csak a népszerű közösségi oldalon, de a Google rendszerében is
-                    hirdetni szeretnénk, hiszen így nem csak a Facebookon, de az világháló összes területén felbukkanhat
-                    vállalkozásunk. Ráadaásul csak a tényleges látogatók után kell fizetünk"
-                    description2="A kurzuson megismerkedünk az alapokkal, de az igazán profi technikákat is
-                    elsajátíthatjuk."
+      <TimelineCard title="Android fejlesztés Kotlin nyelven"
+                    length="10 óra"
+                    price="69.900 Ft+áfa"
+                    description="A Kotlin nyelv részletes bemutatása egy modern Android alkalmazás fejlesztésén keresztül."
+                    description2="Android Jetpack bemutatása: 
+                                  Nincs is szebb, mint amikor egy általános funkcionalitást 
+                                  nem kell negyvenkétszer leprogramoznunk minden projektben,
+                                   mert konyhakészen megkapjuk azt egyenesen az Android operációsrendszer fejlesztőitől."
                     logo-bg="#222c37"
                     card-header-bg="#222c37"
                     direction="left"
       >
-        <img slot="picture" src="~/assets/ecommerce/ecommerce-icon.png" alt="ecommerce-icon">
+        <img slot="picture" src="~/assets/android/android-icon.png" alt="android-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.adwords"
-                  href="https://app.netacademia.hu/Tanfolyam/2018EcomGoog"
+                  href="https://app.netacademia.hu/Tanfolyam/modernkotlin"
         >Részletek...
         </gtm-link>
       </TimelineCard>
 
-      <TimelineCard title="E-mail marketing!"
-                    length="4 óra"
-                    price="19.900 Ft+áfa"
-                    description="Nincs modern vállalkozás eDM (elektronikus direkt marketing) nélkül. De mit is jelent
-                    ez a gyakorlatban?"
-                    description2="A kurzus során megismerjük a Mailchimp nevű hírlevélkküldő, levelezőlista kezelő
-                    platformot, továbbá megtanuljuk összekötni a Shopfify és Wordpress alapú webshopunkkal."
-                    logo-bg="#284d5d"
-                    card-header-bg="#284d5d"
-                    direction="right"
-      >
-        <img slot="picture" src="~/assets/ecommerce/ecommerce-icon.png" alt="ecommerce-icon">
-        <gtm-link slot="link" :gtm-data="GTMProductCollection.email"
-                  href="https://app.netacademia.hu/Tanfolyam/2018EcomEmail"
-        >Részletek...
-        </gtm-link>
-      </TimelineCard>
+     
 
-      <TimelineCard title="CRM - Ügyfélkapcsolat kezelés"
-                    length="6 óra"
-                    price="29.900 Ft+áfa"
-                    description="Ahogy hirdetéseink egyre több vásárlót vonzanak be vállalkozásunk számára,
-                    elkerülhetetlen, hogy manageljük őket. Elképzelhető, hogy a későbbiekben is szeretnénk értesíteni
-                    őket az akciókról, esetleg személyre szabott kedvezményekről."
-                    description2="Megtanuljuk Mailchimp nevű, méltán népszerű hírlevélküldő rendszer használatát, a
-                    hatékony számlázás folyamatát, illetve a panaszok kezelését, a Trello nevű platformmal."
-                    logo-bg="#6B273C"
-                    card-header-bg="#6B273C"
-                    direction="left"
-      >
-        <img slot="picture" src="~/assets/ecommerce/ecommerce-icon.png" alt="ecommerce-icon">
-        <gtm-link slot="link" :gtm-data="GTMProductCollection.crm"
-                  href="https://app.netacademia.hu/Tanfolyam/2018EcomCus"
-        >Részletek...
-        </gtm-link>
-      </TimelineCard>
+      
 
-      <TimelineCard title="Google Analytics - értékeljük az eredményeket!"
-                    length="4 óra"
-                    price="19.900 Ft+áfa"
-                    description="Jól megy a webáruházunk? Itt az ideje értékelni a megtérülés mértékét (ROI), ennek
-                    fényében pedig döntéseket hozhatunk, hogy érdemes-e tovább foglalkoznunk vállalkozásunkkal, esetleg
-                    további tőkét is célszerű befektetnünk."
-                    description2="A kurzus során megtanuljuk a Google Analytics, a Facebook, a Shopify és a Wordpress értékelő eszközeinek használatát."
-                    logo-bg="#222c37"
-                    card-header-bg="#222c37"
-                    direction="right"
-      >
-        <img slot="picture" src="~/assets/ecommerce/ecommerce-icon.png" alt="ecommerce-icon">
-        <gtm-link slot="link" :gtm-data="GTMProductCollection.analytics"
-                  href="https://app.netacademia.hu/Tanfolyam/2018EcomMes"
-        >Részletek...
-        </gtm-link>
-      </TimelineCard>
+      
 
     </TimelineContainer>
     <div class="row justify-content-center text-center py-5 mx-0 align-self-center">
 
       <div class="col-12 col-lg-4 p-4 bg-card m-2 align-self-center py-5 px-3 single-special">
-        <p class="mb-4">A Certfied E-commerce Specialist tanfolyamcsomag ára
-          <del>49.900 Ft</del>
-          helyett, most <br>csak <span class="ar">39.900 Ft</span>
+        <p class="mb-4">A Modern Android Fejlesztés tanfolyamcsomag ára
+          <del>89.900 Ft</del>
+          helyett, most <br>csak <span class="ar">59.000 Ft</span>
         </p>
         <gtm-link isAddToCart :gtm-data="GTMProductCollection.addToCarteCommerce"
-                  href="https://app.netacademia.hu/Subscription/Create/certified-e-commerce-specialist"
+                  href="https://app.netacademia.hu/Subscription/Create/Android"
                   class="btn-cus btn-cus-darkred btn-lg ml-3 px-5"
         >Megveszem!
         </gtm-link>
       </div>
-      <div class="col-12 col-lg-4 p-4 bg-card m-2 align-self-center py-5 px-3 single-special">
-        <p class="mb-4">E-commerce útvonalunk az Office előfizetésünk részét képezi, mely sok ehhez hasonló képzést
-          foglal magában. Nézz körbe, további tanfolyamainkért!</p>
-        <gtm-link isAddToCart :gtm-data="GTMProductCollection.addToCartOffice"
-                  href="https://app.netacademia.hu/officecsomag"
-                  class="btn-cus btn-cus-darkred btn-lg ml-3 px-5"
-        >Érdekel!
-        </gtm-link>
-      </div>
+      
     </div>
 
     <!-- certificate, mas kurzusok -->
@@ -195,30 +144,14 @@
         <div class="row py-5">
           <div class="col-12 col-lg-7 mx-auto">
             <div class="row">
-              <div class="col-11 mx-auto col-lg-11 my-4">
-                <h4 class="pb-3">Ajánlott tanfolyamok</h4>
-                <p class="mb-3"><strong>Az adatvezérelt marketing alapjai</strong></p>
-                <p>A tanfolyam abban segít, hogy az adatvezérelt marketing által a webáruház (vagy vállalat) marketingje
-                  eredményesebb legyen, az arra szánt pénzt úgy és arra
-                  költsük el, hogy az számunkra a legnagyobb hasznot hozza.</p>
-                <a href="https://app.netacademia.hu/Tanfolyam/2017adatmarketing-az-adatvezerelt-marketing-alapjai"
-                   class="">Bővebben a tanfolyamról...</a>
-              </div>
-              <div class="col-11 mx-auto my-4">
-                <h4 class="pb-3">Szerezz NetAcademia Certificate-et!</h4>
-                <p class="mb-3">A NetAcademia Certificate-tel egy olyan tanúsítványt hoztunk létre, mely egyaránt
-                  leképezi oktatási hozzáállásunkat és módszertanunkat: gyakorlatias és projekt-alapú. A sikeres vizsga
-                  bizonyíték arra, hogy képes vagy egy modern, sikeres webáruházat felépíteni Shopify vagy Wordpress
-                  alapokon, ráadádasul hirdetési tudásodat kamatoztatva értékes vásárlóerőt szólíthatsz meg.</p>
-                <nuxt-link to="/certificate/">Bővebben a certificate-ről...</nuxt-link>
-              </div>
+            
             </div>
           </div>
-          <div class="col-12 mx-auto col-lg-5 border p-5 ulticol text-center my-auto">
+          <div align="center">
             <h2>Ultimate kedvezmény</h2>
-            <p class="mt-4">Van már E-commerce Specialist előfizetésed? Tanulj tovább, mélyítsd el velünk marketing
-              ismereteidet! Írj nekünk az <span class="text-success">iroda@netacademia.net</span> e-mail címre, és a
-              E-commerce előfizetésed árát most beszámítjuk Ultimate előfizetésünkbe!</p>
+            <p class="mt-4">Van már Modern Android Fejlesztés előfizetésed? Tanulj tovább, mélyítsd el velünk Androidos
+              ismereteidet! Írj nekünk az <span class="text-success">iroda@netacademia.net</span> e-mail címre, és
+             előfizetésed árát most beszámítjuk Ultimate előfizetésünkbe!</p>
           </div>
         </div>
       </div>
@@ -374,7 +307,7 @@ main {
       rgba(43, 45, 66, 0.65),
       rgba(43, 45, 66, 0.65)
     ),
-    url("~/assets/ecommerce/background.jpg");
+    url("~/assets/android/background.jpg");
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;

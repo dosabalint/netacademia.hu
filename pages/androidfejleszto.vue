@@ -3,7 +3,7 @@
     <CertiTopHero class="hero-bg"
                   page-title="Modern Android Fejlesztés"
                   lead-text="MobilApp fejlesztés"
-                  sales-pitch-text="Már régóta motoszkál benned valami, hogy te is képes lennél rá? 
+                  sales-pitch-text="Már régóta motoszkál benned valami, hogy te is képes lennél rá?
                   Vannak jó ötleteid, de eddig nem tudtad hogyan kezdj hozzá? Android képzéssorozatunkkal
                    most te is elkészítheted álmaid APP-ját. Nem kell, hogy Java fejlesztő vagy designer legyél,
                     csak az ötlet kell és a többit itt megtanulod!">
@@ -19,9 +19,8 @@
     <TimelineContainer id="reszletek">
       <TimelineCard title="Android bevezetés"
                     length="24 óra"
-                    price="69.900 Ft + áfa"
                     description="Bevezetés, mely során bemutatjuk az Android alkalmazás fejlesztés fő lépéseit az alapoktól kezdve
-                     egészen a komplex alkalmazások fejlesztéséig. 
+                     egészen a komplex alkalmazások fejlesztéséig.
                      A tanfolyam során kiemelt figyelmet fordítunk a platform és alkalmazás struktúra bemutatására,
                       mely elengedhetetlen tudás stabil alkalmazások fejlesztéséhez."
                     logo-bg="#6B273C"
@@ -37,10 +36,9 @@
 
       <TimelineCard title="Bevezetés a Kotlin fejlesztésbe"
                     length="3 óra"
-                    price="Ingyenes!"
                     description="A Kotlin egy új generációs, managelt nyelv,
-                     mely célja hogy a modern programozási nyelvekben megszokott 
-                     eszközöket és paradigmákat elérhető tegye a JVM platformon. 
+                     mely célja hogy a modern programozási nyelvekben megszokott
+                     eszközöket és paradigmákat elérhető tegye a JVM platformon.
                      A nyelv teljesen interoperábilis a Java-val, a Kotlin fájlok szabadon keverhetőek a
                       Java osztályokkal, így a fejlesztők továbbra is használhatják jól megszokott eszköztárukat."
                     logo-bg="#284d5d"
@@ -56,11 +54,10 @@
 
       <TimelineCard title="Android alapok: API-val töltött lista!"
                     length="2 óra"
-                    price="Ingyenes!"
-                    description="Nap mint nap használunk olyan Android-alkalmazásokat, 
-                    ahol listákat görgetünk, és ezek internetes adatokkal vannak feltöltve. 
-                    Elgondolkoztál már rajta, hogy mi van mögötte? Hogy kerül oda az adat? 
-                    Hogyan épül fel a nézet? Esetleg betekintenél a színfalak mögé? 
+                    description="Nap mint nap használunk olyan Android-alkalmazásokat,
+                    ahol listákat görgetünk, és ezek internetes adatokkal vannak feltöltve.
+                    Elgondolkoztál már rajta, hogy mi van mögötte? Hogy kerül oda az adat?
+                    Hogyan épül fel a nézet? Esetleg betekintenél a színfalak mögé?
                     Ha a válaszod igen, csatlakozz hozzánk, és építsük fel közösen!"
                     logo-bg="#222c37"
                     card-header-bg="#222c37"
@@ -75,11 +72,10 @@
 
       <TimelineCard title="Haladó Android Kotlin nyelven"
                     length="10 óra"
-                    price="69.900 Ft+áfa"
-                    description="Ha már ismered az Android-fejlesztés alapjait, 
+                    description="Ha már ismered az Android-fejlesztés alapjait,
                       és szeretnéd a tudásodat a következő szintre emelni, akkor ezt a
-                      képzést semmiképp se hagyd ki. Az előadások során az alkalmazásfejlesztésnek 
-                       olyan területeit fogjuk bejárni, mint a háttérfolyamatok, kommunikáció vagy a 
+                      képzést semmiképp se hagyd ki. Az előadások során az alkalmazásfejlesztésnek
+                       olyan területeit fogjuk bejárni, mint a háttérfolyamatok, kommunikáció vagy a
                        különböző multimédiák kezelése."
                     description2="A képzés sikeres elvégzése után szinte mindent meg fogsz
                       tudni valósítani Androidon, ami szükséges ahhoz, hogy ötleteidet formába öntsd."
@@ -97,10 +93,9 @@
 
       <TimelineCard title="Android fejlesztés Kotlin nyelven"
                     length="10 óra"
-                    price="69.900 Ft+áfa"
                     description="A Kotlin nyelv részletes bemutatása egy modern Android alkalmazás fejlesztésén keresztül."
-                    description2="Android Jetpack bemutatása: 
-                                  Nincs is szebb, mint amikor egy általános funkcionalitást 
+                    description2="Android Jetpack bemutatása:
+                                  Nincs is szebb, mint amikor egy általános funkcionalitást
                                   nem kell negyvenkétszer leprogramoznunk minden projektben,
                                    mert konyhakészen megkapjuk azt egyenesen az Android operációsrendszer fejlesztőitől."
                     logo-bg="#222c37"
@@ -114,11 +109,11 @@
         </gtm-link>
       </TimelineCard>
 
-     
 
-      
 
-      
+
+
+
 
     </TimelineContainer>
     <div class="row justify-content-center text-center py-5 mx-0 align-self-center">
@@ -134,7 +129,7 @@
         >Megveszem!
         </gtm-link>
       </div>
-      
+
     </div>
 
     <!-- certificate, mas kurzusok -->
@@ -144,7 +139,7 @@
         <div class="row py-5">
           <div class="col-12 col-lg-7 mx-auto">
             <div class="row">
-            
+
             </div>
           </div>
           <div align="center">
@@ -307,7 +302,7 @@ main {
       rgba(43, 45, 66, 0.65),
       rgba(43, 45, 66, 0.65)
     ),
-    url("~/assets/android/background.jpg");
+    url("~/assets/android/androidbackground.jpg");
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;

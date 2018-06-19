@@ -171,12 +171,7 @@
           </div>
           <div class="col-12 mx-auto col-lg-5 border p-5 ulticol text-center my-auto">
             <h2>Ultimate kedvezmény</h2>
-            <p class="mt-4">Van már Certfied Windows Administrator előfizetésed? Tanulj tovább, mélyítsd el velünk
-              marketing ismereteidet!
-              Írj nekünk az
-              <span class="text-success">iroda@netacademia.net</span> e-mail címre, és Certified Windows Administrator
-              előfizetésed árát most
-              beszámítjuk Ultimate előfizetésünkbe!</p>
+            <p class="mt-4">Tudtad, hogy ha Ultimate-előfizetést veszel, ennek a tanfolyamcsomagnak az ára két hónapig beszámít az előfizetés árába?</p>
           </div>
         </div>
       </div>

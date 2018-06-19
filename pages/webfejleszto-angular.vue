@@ -203,10 +203,7 @@
           </div>
           <div class="col-12 mx-auto col-lg-4 border p-5 ulticol text-center my-auto">
             <h2>Ultimate kedvezmény</h2>
-            <p class="mt-4">Van már Webfejlesztő leszek előfizetésed? Tanulj tovább full-stack fejlesztővé! Írj
-              nekünk az <span class="text-success">iroda@netacademia.net</span> e-mail címre, és a Webfejlesztő útvonal
-              árát most beszámítjuk Ultimate előfizetésünkbe!
-            </p>
+            <p class="mt-4">Tudtad, hogy ha Ultimate-előfizetést veszel, ennek a tanfolyamcsomagnak az ára két hónapig beszámít az előfizetés árába?</p>
           </div>
         </div>
       </div>

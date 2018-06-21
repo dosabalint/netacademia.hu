@@ -258,7 +258,7 @@
   import Navigation from "../components/Navigation";
 
   export default {
-    // name: "landing",
+    name: "landing",
     components: {
       Navigation,
       BouncingDownArrow,
@@ -278,33 +278,12 @@
       link: [
         {
           rel: "stylesheet",
-          href: "/hack/plugins/revolutionslider/css/settings.css"
+          href: "/revolutionslider/css/settings.css"
         },
-        {rel: "stylesheet", href: "/hack/plugins/revolutionslider/css/layers.css"},
-        {rel: "stylesheet", href: "/hack/plugins/revolutionslider/css/navigation.css"}
-      ],
-      script: [
-        {src: "/hack/plugins/revolutionslider/js/jquery.themepunch.tools.min.js"},
-        {src: "/hack/plugins/revolutionslider/js/jquery.themepunch.revolution.min.js"},
-        // {src: "/hack/plugins/revolutionslider/js/extensions/revolution.extension.actions.min.js"},
-        // {src: "/hack/plugins/revolutionslider/js/extensions/revolution.extension.carousel.min.js"},
-        // {src: "/hack/plugins/revolutionslider/js/extensions/revolution.extension.kenburn.min.js"},
-        {src: "/hack/plugins/revolutionslider/js/extensions/revolution.extension.layeranimation.min.js"},
-        // {src: "/hack/plugins/revolutionslider/js/extensions/revolution.extension.migration.min.js"},
-        {src: "/hack/plugins/revolutionslider/js/extensions/revolution.extension.navigation.min.js"},
-        // {src: "/hack/plugins/revolutionslider/js/extensions/revolution.extension.parallax.min.js"},
-        {src: "/hack/plugins/revolutionslider/js/extensions/revolution.extension.slideanims.min.js"},
-        // {src: "/hack/plugins/revolutionslider/js/extensions/revolution.extension.video.min.js"}
+        {rel: "stylesheet", href: "/revolutionslider/css/layers.css"},
+        {rel: "stylesheet", href: "/revolutionslider/css/navigation.css"}
       ]
     },
-    activated() {
-      console.warn(this.firstShow);
-      console.warn('asdfasdfsdadfsadsa');
-      if (process.client) {
-        window.location.reload();
-      }
-    },
-
     mounted() {
       $(".rev_slider").revolution({
         sliderType: "standard",
@@ -363,17 +342,15 @@
         gridwidth: 1170,
         gridheight: 1000
       });
+      setTimeout(function () {
+        window.dispatchEvent(new Event('fullscreenchange'));
+      }, 100);
     },
     computed: {
       currentYear: function () {
         return new Date().getFullYear();
-      },
+      }
     },
-    data() {
-      return {
-        firstShow: true
-      };
-    }
   };
 </script>
 

@@ -21,7 +21,7 @@
           <nuxt-link class="nav-link" to="/tanfolyamkereso">Tanfolyamkereső</nuxt-link>
         </li>
         <li class="nav-item flex-center">
-          <a class="nav-link" href="/indulotanfolyamok">Induló tanfolyamok</a>
+          <nuxt-link class="nav-link" to="/indulotanfolyamok">Induló tanfolyamok</nuxt-link>
         </li>
         <li class="nav-item flex-center">
           <nuxt-link class="nav-link" to="/certificate">NetAcademia Certificate</nuxt-link>

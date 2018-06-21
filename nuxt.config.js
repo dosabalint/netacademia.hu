@@ -1,3 +1,5 @@
+const webpack = require('webpack');
+
 const scroll = function(to, from, savedPosition) {
   if (to.hash) {
     return new Promise(resolve => {
@@ -60,17 +62,6 @@ module.exports = {
           "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800%7C;Roboto:100,500"
       }
     ],
-    script: [
-      { src: "https://code.jquery.com/jquery-3.3.1.slim.min.js" },
-      {
-        src:
-          "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-      },
-      {
-        src:
-          "https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-      }
-    ]
   },
   /*
   ** Customize the progress bar color
@@ -81,7 +72,7 @@ module.exports = {
     { src: "~/plugins/vue-observe-visibility", ssr: false },
     { src: "~/plugins/vue-youtube-embed", ssr: false },
     { src: "~/plugins/vue-mq", ssr: false },
-    { src: "~/plugins/vue-lazyload", ssr: false }
+    { src: "~/plugins/vue-lazyload", ssr: false },
   ],
   modules: [
     ["@nuxtjs/google-tag-manager", { id: gtmId }],
@@ -114,7 +105,24 @@ module.exports = {
     vendor: [
       "intersection-observer",
       "vue-observe-visibility",
-      "babel-polyfill"
+      "babel-polyfill",
+      "~/static/bootstrap/jquery-3.3.1.slim.min.js",
+      "~/static/bootstrap/popper.min.js",
+      "~/static/bootstrap/bootstrap.min.js",
+      // "~/static/revolutionslider/js/jquery.themepunch.tools.min.js",
+      "~/static/revolutionslider/js/jquery.themepunch.revolution.min.js",
+      "~/static/revolutionslider/js/extensions/revolution.extension.layeranimation.min.js",
+      "~/static/revolutionslider/js/extensions/revolution.extension.navigation.min.js",
+      "~/static/revolutionslider/js/extensions/revolution.extension.slideanims.min.js"
+    ],
+    plugins: [
+      new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery",
+        jquery: "jquery",
+        "window.jQuery": "jquery",
+        "punchgs": 'gsap/all',
+      })
     ],
     analyze: true,
     babel: {

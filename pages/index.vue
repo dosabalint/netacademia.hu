@@ -306,63 +306,19 @@
     },
 
     mounted() {
-      $(".rev_slider").revolution({
-        sliderType: "standard",
-        sliderLayout: "auto",
-        delay: 9000,
-        spinner: "none",
-        navigation: {
-          arrows: {
-            style: "custom waves",
-            enable: true,
-            hide_onmobile: true,
-            hide_onleave: false,
-            hide_delay: 200,
-            hide_delay_mobile: 1200,
-            hide_under: 0,
-            hide_over: 9999,
-            tmp: "",
-            left: {
-              h_align: "left",
-              v_align: "center",
-              h_offset: 20,
-              v_offset: 0
-            },
-            right: {
-              h_align: "right",
-              v_align: "center",
-              h_offset: 20,
-              v_offset: 0
-            }
-          },
-          bullets: {
-            style: "custom",
-            enable: true,
-            hide_onmobile: false,
-            hide_onleave: false,
-            hide_delay: 200,
-            hide_delay_mobile: 1200,
-            hide_under: 0,
-            hide_over: 9999,
-            tmp: "",
-            direction: "horizontal",
-            space: 5,
-            h_align: "center",
-            v_align: "bottom",
-            h_offset: 0,
-            v_offset: 40
-          },
-          touch: {
-            touchenabled: "on",
-            swipe_treshold: 75,
-            swipe_min_touches: 1,
-            drag_block_vertical: false,
-            swipe_direction: "horizontal"
-          }
-        },
-        gridwidth: 1170,
-        gridheight: 1000
-      });
+
+      if (typeof $.fn.revolution !== "undefined") {
+        console.log("rev slider init ran (was defined)");
+        this.initRevSlider();
+      }
+      else {
+        console.log("rev slider init hooked");
+
+        window.addEventListener("revSlider/Ready", () => {
+          console.log("rev slider init ran (from hook)");
+          this.initRevSlider();
+        });
+      }
     },
     computed: {
       currentYear: function () {
@@ -373,6 +329,68 @@
       return {
         firstShow: true
       };
+    },
+    methods: {
+      initRevSlider() {
+        $(".rev_slider").revolution({
+          sliderType: "standard",
+          sliderLayout: "auto",
+          delay: 9000,
+          spinner: "none",
+          navigation: {
+            arrows: {
+              style: "custom waves",
+              enable: true,
+              hide_onmobile: true,
+              hide_onleave: false,
+              hide_delay: 200,
+              hide_delay_mobile: 1200,
+              hide_under: 0,
+              hide_over: 9999,
+              tmp: "",
+              left: {
+                h_align: "left",
+                v_align: "center",
+                h_offset: 20,
+                v_offset: 0
+              },
+              right: {
+                h_align: "right",
+                v_align: "center",
+                h_offset: 20,
+                v_offset: 0
+              }
+            },
+            bullets: {
+              style: "custom",
+              enable: true,
+              hide_onmobile: false,
+              hide_onleave: false,
+              hide_delay: 200,
+              hide_delay_mobile: 1200,
+              hide_under: 0,
+              hide_over: 9999,
+              tmp: "",
+              direction: "horizontal",
+              space: 5,
+              h_align: "center",
+              v_align: "bottom",
+              h_offset: 0,
+              v_offset: 40
+            },
+            touch: {
+              touchenabled: "on",
+              swipe_treshold: 75,
+              swipe_min_touches: 1,
+              drag_block_vertical: false,
+              swipe_direction: "horizontal"
+            }
+          },
+          gridwidth: 1170,
+          gridheight: 1000
+        });
+
+      }
     }
   };
 </script>
@@ -380,8 +398,11 @@
 <style lang="scss">
   /* REVOLUTION SLIDER */
   .rev_slider_wrapper {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     height: 100vh;
+
+    height: 100vh !important;
+    width: 100% !important;
   }
 
   /* ARROWS */

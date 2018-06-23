@@ -258,7 +258,7 @@
   import Navigation from "../components/Navigation";
 
   export default {
-    // name: "landing",
+    name: "landing",
     components: {
       Navigation,
       BouncingDownArrow,
@@ -297,38 +297,24 @@
         // {src: "/hack/plugins/revolutionslider/js/extensions/revolution.extension.video.min.js"}
       ]
     },
-    activated() {
-      console.warn(this.firstShow);
-      console.warn('asdfasdfsdadfsadsa');
-      if (process.client) {
-        window.location.reload();
-      }
-    },
-
     mounted() {
-
-      if (typeof $.fn.revolution !== "undefined") {
-        console.log("rev slider init ran (was defined)");
+      console.log("rev slider init hooked");
+      if (typeof $.fn.revolution === 'function') {
         this.initRevSlider();
-      }
-      else {
-        console.log("rev slider init hooked");
-
+      } else {
         window.addEventListener("revSlider/Ready", () => {
           console.log("rev slider init ran (from hook)");
           this.initRevSlider();
         });
       }
     },
+  destroyed() {
+      $.fn.revolution = undefined;
+    },
     computed: {
-      currentYear: function () {
+      currentYear() {
         return new Date().getFullYear();
       },
-    },
-    data() {
-      return {
-        firstShow: true
-      };
     },
     methods: {
       initRevSlider() {
@@ -389,7 +375,6 @@
           gridwidth: 1170,
           gridheight: 1000
         });
-
       }
     }
   };
@@ -400,9 +385,6 @@
   .rev_slider_wrapper {
     margin-bottom: 0;
     height: 100vh;
-
-    height: 100vh !important;
-    width: 100% !important;
   }
 
   /* ARROWS */

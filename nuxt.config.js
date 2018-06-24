@@ -109,6 +109,7 @@ module.exports = {
       "~/static/bootstrap/jquery-3.3.1.slim.min.js",
       "~/static/bootstrap/popper.min.js",
       "~/static/bootstrap/bootstrap.min.js",
+      "jquery-touchswipe",
       // "~/static/revolutionslider/js/jquery.themepunch.tools.min.js",
       "~/static/revolutionslider/js/jquery.themepunch.revolution.min.js",
       "~/static/revolutionslider/js/extensions/revolution.extension.layeranimation.min.js",

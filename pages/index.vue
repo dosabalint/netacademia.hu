@@ -6,113 +6,192 @@
           <div class="rev_slider" data-version="5.0">
             <ul>
               <li data-transition="fade">
-
                 <img src="~/assets/landing/bg-2-v3.svg" alt="">
 
-                <div class="tp-caption large-title tp-resizeme" data-x="520" data-y="center" data-hoffset="-150"
-                     data-voffset="-103" data-start="1200" data-speed="300"
+                <div class="tp-caption text-special"
+                     data-x="['580', '200', '30', '10']"
+                     data-y="middle"
+                     data-hoffset="['-150', -150', -150', 0']"
+                     data-voffset="['-180', '-180', '-180', '-180']"
+                     data-fontsize="['24', '24', '22', '18']"
+                     data-lineheight="['32', '32', '32', '24']"
+                     data-start="1500"
+                     data-speed="300"
+                     data-transform_in="o:0;y:-50;s:400;e:Power2.easeInOut;"
+                     data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
+                >
+                  NetAcademia - online oktatás bárhol, bármikor
+                </div>
+
+                <div class="tp-caption large-title tp-resizeme"
+                     data-x="['580', '200', '30', '10']"
+                     data-y="middle"
+                     data-hoffset="['-150', '-150', '-150', '0']"
+                     data-voffset="['-103', '-103', '-103', '-103']"
+                     data-fontsize="['50', '50', '40', '35']"
+                     data-lineheight="['60', '60', '45', '40']"
+                     data-color="orange"
+                     data-start="1200"
+                     data-speed="300"
                      data-transform_in="o:0;x:100;s:400;e:Power2.easeInOut;"
-                     data-transform_out="o:0;y:-100;s:400;e:Power2.easeInOut;">
+                     data-transform_out="o:0;y:-100;s:400;e:Power2.easeInOut;"
+                >
                   Megszűnik a NetAcademia <br> Ultimate előfizetés!
                 </div>
 
-                <div class="tp-caption large-text tp-resizeme" data-x="520" data-y="center" data-hoffset="-150" data-voffset="0"
-                     data-start="1300" data-speed="300" data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
-                     data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;">
+                <div class="tp-caption large-text tp-resizeme"
+                     data-x="['580', '200', '30', '10']"
+                     data-y="middle"
+                     data-hoffset="['-150', '-150', '-150', '0']"
+                     data-voffset="['0', '0', '0', '-20']"
+                     data-fontsize="['24', '24', '30', '18']"
+                     data-lineheight="['32', '32', '32', '24']"
+                     data-color="white"
+                     data-start="1300"
+                     data-speed="300"
+                     data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
+                     data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
+                >
                   Már csak július 2-ig vásárolható korlátlan,<br> egyéves előfizetésünk, a NetAcademia Ultimate! <br>
                 </div>
 
-                <div class="tp-caption small-text tp-resizeme" data-x="520" data-y="center" data-hoffset="-150" data-voffset="70"
-                     data-start="1300" data-speed="300" data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
-                     data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;">
+                <div class="tp-caption small-text tp-resizeme"
+                     data-x="['580', '200', '30', '10']"
+                     data-y="middle"
+                     data-hoffset="['-150', '-150', '-150', '0']"
+                     data-voffset="['70', '70', '70', '70']"
+                     data-fontsize="['14', '14', '14', '14']"
+                     data-lineheight="['18', '18', '24', '18']"
+                     data-start="1300"
+                     data-speed="300"
+                     data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
+                     data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
+                >
                   Jelen hirdetmény nem vonatkozik a külön megállapodásban elérhető <br> előfizetésekre, pl.
                   informatikatanárok vagy Telekom
                 </div>
 
-                <div class="tp-caption tp-resizeme" data-x="520" data-y="center" data-hoffset="-150" data-voffset="150"
-                     data-start="1400" data-speed="300" data-transform_in="o:0;y:100;s:500;e:Power2.easeInOut;"
-                     data-transform_out="o:0;y:100;s:500;e:Power2.easeInOut;">
+                <div class="tp-caption tp-resizeme"
+                     data-x="['580', '200', '30', '10']"
+                     data-y="middle"
+                     data-hoffset="['-150', '-150', '-150', '0']"
+                     data-voffset="['150', '150', '150', '150']"
+                     data-start="1400"
+                     data-speed="300"
+                     data-transform_in="o:0;y:100;s:500;e:Power2.easeInOut;"
+                     data-transform_out="o:0;y:100;s:500;e:Power2.easeInOut;"
+                >
                   <DButton theme="white-outline" :href="`${$store.state.url.base}/#reszletek`" class="text-light">
                     Részletek<i class="ml-2 decode-icon-cursor"></i>
                   </DButton>
                 </div>
 
-                <div class="tp-caption text-special tp-resizeme" data-x="520" data-y="center" data-hoffset="-150"
-                     data-voffset="-180" data-start="1500" data-speed="300"
-                     data-transform_in="o:0;y:-50;s:400;e:Power2.easeInOut;"
-                     data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;">
-                  NetAcademia - online oktatás bárhol, bármikor
-                </div>
-
-                <div class="tp-caption navigation" data-x="right" data-y="bottom" data-hoffset="30" data-voffset="30"
-                     data-start="0" data-speed="300" data-transform_in="o:0;s:500;e:Power2.easeInOut;"
-                     data-transform_out="o:0;s:500;e:Power2.easeInOut;">
+                <div class="tp-caption navigation"
+                     data-x="center"
+                     data-y="middle"
+                     data-hoffset="['600', '30', '30', '150']"
+                     data-voffset="['400', '30', '30', '400']"
+                     data-start="0"
+                     data-speed="300"
+                     data-transform_in="o:0;s:500;e:Power2.easeInOut;"
+                     data-transform_out="o:0;s:500;e:Power2.easeInOut;"
+                >
                   <span>01</span>/02
                 </div>
 
               </li>
-
               <li data-transition="fade">
 
                 <img src="~/assets/landing/bg-1.svg" alt="">
 
-                <div class="tp-caption" data-x="-170" data-y="center" data-voffset="-40" data-start="1200"
-                     data-speed="300" data-transform_in="o:0;y:[100%];s:500;e:Power2.easeInOut;"
-                     data-transform_out="o:0;y:[100%];s:500;e:Power2.easeInOut;" data-mask_in="x:0;y:0;"
+                <div class="tp-caption"
+                     data-x="-170"
+                     data-y="center"
+                     data-voffset="['-40', '-4000', '-4000', '-4000']"
+                     data-start="1200"
+                     data-speed="300"
+                     data-transform_in="o:0;y:[100%];s:500;e:Power2.easeInOut;"
+                     data-transform_out="o:0;y:[100%];s:500;e:Power2.easeInOut;"
+                     data-mask_in="x:0;y:0;"
                      data-mask_out="x:0;y:0;">
                   <img src="~/assets/landing/pic-1.png" alt="">
                 </div>
 
-                <div class="tp-caption" data-x="265" data-y="center" data-voffset="40" data-start="1300"
-                     data-speed="300" data-transform_in="o:0;y:[100%];s:500;e:Power2.easeInOut;"
-                     data-transform_out="o:0;y:[100%];s:500;e:Power2.easeInOut;" data-mask_in="x:0;y:0;"
+                <div class="tp-caption tp-resizeme"
+                     data-x="['265', '500', '400', '265']"
+                     data-y="center"
+                     data-voffset="40"
+                     data-start="1300"
+                     data-speed="300"
+                     data-transform_in="o:0;y:[100%];s:500;e:Power2.easeInOut;"
+                     data-transform_out="o:0;y:[100%];s:500;e:Power2.easeInOut;"
+                     data-mask_in="x:0;y:0;"
                      data-mask_out="x:0;y:0;">
                   <img src="~/assets/landing/pic-2.png" alt="">
                 </div>
 
-                <div class="tp-caption large-title-2" data-x="520" data-y="center" data-voffset="-120"
-                     data-start="1400" data-speed="300" data-transform_in="o:0;x:100;s:500;e:Power2.easeInOut;"
-                     data-transform_out="o:0;x:100;s:500;e:Power2.easeInOut;">
+                <div class="tp-caption large-title-2"
+                     data-x="['580', '200', '30', '10']"
+                     data-y="center"
+                     data-voffset="-120"
+                     data-width="450"
+                     data-whitespace="['nowrap', 'nowrap', 'normal', 'normal']"
+                     data-start="1400"
+                     data-speed="300"
+                     data-transform_in="o:0;x:100;s:500;e:Power2.easeInOut;"
+                     data-transform_out="o:0;x:100;s:500;e:Power2.easeInOut;"
+                >
                   Gyakorlatias online oktatás
                 </div>
 
-                <div class="tp-caption text" data-x="520" data-y="center" data-start="1450" data-speed="300"
+                <div class="tp-caption text"
+                     data-x="['580', '200', '30', '10']"
+                     data-y="center"
+                     data-voffset="['0', '0', '20', '30']"
+                     data-fontsize="['24', '24', '22', '16']"
+                     data-start="1450"
+                     data-speed="300"
                      data-transform_in="o:0;y:100;s:500;e:Power2.easeInOut;"
-                     data-transform_out="o:0;y:100;s:500;e:Power2.easeInOut;">
-                  Tanuld azt amit szeretnél, akkor és ott, ahol csak szeretnéd!
-                  <br>Oktatóanyagaink segítségével óriási sikereket érhetsz el az élet számos területén! <br> Tegyél
-                  szert online, a saját tempódban azokra az ismeretekre és készségekre,<br> mellyekkel
-                  előremozdíthatod karrieredet.<br>
-
+                     data-transform_out="o:0;y:100;s:500;e:Power2.easeInOut;"
+                >
+                  Tanuld azt amit szeretnél, akkor és ott, ahol csak szeretnéd!<br>
+                  Tegyél szert online, a saját tempódban azokra az ismeretekre<br>
+                  és készségekre, mellyekkel előremozdíthatod karrieredet.<br>
+                  Oktatóanyagaink segítségével óriási sikereket érhetsz el<br>
+                  az élet számos területén! <br>
                 </div>
 
-                <div class="tp-caption" data-x="520" data-y="center" data-hoffset="-120" data-voffset="120"
-                     data-start="1500" data-speed="300" data-transform_in="o:0;y:100;s:500;e:Power2.easeInOut;"
-                     data-transform_out="o:0;y:100;s:500;e:Power2.easeInOut;">
+                <div class="tp-caption tp-resizeme"
+                     data-x="['580', '200', '30', '10']"
+                     data-y="center"
+                     data-hoffset="-120"
+                     data-voffset="160"
+                     data-start="1500"
+                     data-speed="300"
+                     data-transform_in="o:0;y:100;s:500;e:Power2.easeInOut;"
+                     data-transform_out="o:0;y:100;s:500;e:Power2.easeInOut;"
+                >
                   <DButton theme="white" class="text-dark"
                            href="https://app.netacademia.hu/Account/Register?returnUrl=/Registration">
                     Ingyenes regisztráció<i class="ml-2 decode-icon-cursor"></i>
                   </DButton>
                 </div>
 
-                <div class="tp-caption navigation" data-x="right" data-y="bottom" data-hoffset="30" data-voffset="30"
-                     data-start="0" data-speed="300" data-transform_in="o:0;s:500;e:Power2.easeInOut;"
-                     data-transform_out="o:0;s:500;e:Power2.easeInOut;">
+                <div class="tp-caption navigation"
+                     data-x="center"
+                     data-y="middle"
+                     data-hoffset="['600', '300', '250', '150']"
+                     data-voffset="['450', '400', '400', '450']"
+                     data-start="0"
+                     data-speed="300"
+                     data-transform_in="o:0;s:500;e:Power2.easeInOut;"
+                     data-transform_out="o:0;s:500;e:Power2.easeInOut;"
+                >
                   01/<span>02</span>
                 </div>
 
               </li>
-
             </ul>
-
-            <div class="tp-static-layers">
-              <div class="tp-caption tp-resizeme tp-static-layer" data-x="30" data-y="bottom" data-voffset="20"
-                   data-start="0" data-startslide="0" data-transform_in="o:0;s:500;e:Power2.easeInOut;"
-                   data-transform_out="o:0;s:500;e:Power2.easeInOut;">
-                <a id="next-section" href="#next-section">Görgess le!</a>
-              </div>
-            </div>
-
           </div>
         </div>
       </Row>
@@ -174,7 +253,7 @@
             </ul>
 
           </Column>
-          <Column class="col-lg-6 mr-xl-auto pl-5">
+          <Column class="col-lg-6 mr-xl-auto pl-lg-5">
             <ul class="check-list">
               <li>Senior kollégák számára emeltszintű Mesterkurzusok tartása</li>
               <li>Lehetőleg minden kolléga részt vehessen az oktatásokon</li>
@@ -285,71 +364,71 @@
       ]
     },
     mounted() {
-        this.slider = $(".rev_slider").revolution({
-          sliderType: "standard",
-          sliderLayout: "fullscreen",
-          fullScreenOffset: '10%',
-          delay: 9000,
-          spinner: "none",
-          navigation: {
-            arrows: {
-              style: "custom waves",
-              enable: true,
-              hide_onmobile: false,
-              hide_onleave: false,
-              hide_delay: 200,
-              hide_delay_mobile: 1200,
-              hide_under: 0,
-              hide_over: 9999,
-              tmp: "",
-              left: {
-                h_align: "left",
-                v_align: "center",
-                h_offset: 20,
-                v_offset: 0
-              },
-              right: {
-                h_align: "right",
-                v_align: "center",
-                h_offset: 20,
-                v_offset: 0
-              }
+      this.slider = $(".rev_slider").revolution({
+        sliderType: "standard",
+        sliderLayout: "fullscreen",
+        fullScreenOffset: '10%',
+        delay: 100000,
+        spinner: "none",
+        navigation: {
+          arrows: {
+            style: "custom waves",
+            enable: true,
+            hide_onmobile: false,
+            hide_onleave: false,
+            hide_delay: 200,
+            hide_delay_mobile: 1200,
+            hide_under: 0,
+            hide_over: 9999,
+            tmp: "",
+            left: {
+              h_align: "left",
+              v_align: "center",
+              h_offset: 20,
+              v_offset: 0
             },
-            bullets: {
-              style: "custom",
-              enable: true,
-              hide_onmobile: false,
-              hide_onleave: false,
-              hide_delay: 200,
-              hide_delay_mobile: 1200,
-              hide_under: 0,
-              hide_over: 9999,
-              tmp: "",
-              direction: "horizontal",
-              space: 5,
-              h_align: "center",
-              v_align: "bottom",
-              h_offset: 0,
-              v_offset: 40
-            },
-            touch: {
-              touchenabled: "on",
-              swipe_treshold: 75,
-              swipe_min_touches: 1,
-              drag_block_vertical: false,
-              swipe_direction: "horizontal"
+            right: {
+              h_align: "right",
+              v_align: "center",
+              h_offset: 20,
+              v_offset: 0
             }
           },
-          // responsiveLevels: [1240, 1024, 778, 480],
-          // gridwidth:[1240, 1024, 778, 480],
-          // gridheight:[400, 768, 960, 720],
+          bullets: {
+            style: "custom",
+            enable: true,
+            hide_onmobile: false,
+            hide_onleave: false,
+            hide_delay: 200,
+            hide_delay_mobile: 1200,
+            hide_under: 0,
+            hide_over: 9999,
+            tmp: "",
+            direction: "horizontal",
+            space: 5,
+            h_align: "center",
+            v_align: "bottom",
+            h_offset: 0,
+            v_offset: 40
+          },
+          touch: {
+            touchenabled: "on",
+            swipe_treshold: 75,
+            swipe_min_touches: 1,
+            drag_block_vertical: false,
+            swipe_direction: "horizontal"
+          }
+        },
+        responsiveLevels: [1240, 1024, 778, 480],
+        gridwidth: [1240, 1024, 778, 480],
+        gridheight: [1000, 768, 800, 720],
 
-          /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
-          // visibilityLevels:[1240, 1024, 1024, 480],
-          gridwidth: 1170,
-          gridheight: 1000
-        });
-        window.dispatchEvent(new Event('fullscreenchange'));
+        /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
+        visibilityLevels: [1240, 1024, 1024, 480],
+        // gridwidth: 1170,
+        // gridheight: 1000
+      });
+      window.dispatchEvent(new Event('fullscreenchange'));
     },
     beforeDestroy() {
       this.slider.revkill();

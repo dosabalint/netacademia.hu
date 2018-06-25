@@ -85,6 +85,10 @@ module.exports = {
       {
         set: "@fortawesome/fontawesome-free-brands",
         icons: ["faSuperpowers", "faFacebook", "faTwitter", "faInstagram", "faLinkedin", "faYoutube"]
+      },
+      {
+        set: "@fortawesome/fontawesome-free-solid",
+        icons: ["faAngleDown"]
       }
     ]
   },
@@ -138,8 +142,8 @@ module.exports = {
       ]
     },
     extend(config, { isDev, isClient }) {
-      config.resolve.alias["@fortawesome/fontawesome-free-brands$"] =
-        "@fortawesome/fontawesome-free-brands/shakable.es.js";
+      config.resolve.alias["@fortawesome/fontawesome-free-brands$"] = "@fortawesome/fontawesome-free-brands/shakable.es.js";
+      config.resolve.alias["@fortawesome/fontawesome-free-solid$"] = "@fortawesome/fontawesome-free-solid/shakable.es.js";
 
       const vueLoader = config.module.rules.find(
         rule => rule.loader === "vue-loader"

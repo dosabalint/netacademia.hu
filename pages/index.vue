@@ -290,7 +290,7 @@
           sliderLayout: "fullscreen",
           fullScreenOffset: '10%',
           delay: 9000,
-          spinner: "spinner3",
+          spinner: "none",
           navigation: {
             arrows: {
               style: "custom waves",

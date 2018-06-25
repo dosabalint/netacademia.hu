@@ -368,7 +368,7 @@
         sliderType: "standard",
         sliderLayout: "fullscreen",
         fullScreenOffset: '10%',
-        delay: 100000,
+        delay: 9000,
         spinner: "none",
         navigation: {
           arrows: {

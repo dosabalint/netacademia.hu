@@ -1,7 +1,9 @@
+export const LANDING_FIRST = "LANDING_FIRST";
 export const ERROR_ACTION = "ERROR";
 
 export const state = () => ({
   cookieOK: false,
+  isLandingFirstShow: true,
   url: {
     base: process.env.baseUrl,
     backend: process.env.backendUrl,
@@ -20,4 +22,10 @@ export const actions = {
   [ERROR_ACTION]: ({ commit, dispatch }, err) => {
     console.warn(err);
   }
+};
+
+export const mutations = {
+  [LANDING_FIRST](state) {
+    state.isLandingFirstShow = false;
+  },
 };

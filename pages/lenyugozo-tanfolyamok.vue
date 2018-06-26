@@ -107,7 +107,7 @@
                   <div class="button">
                     <!-- Google Store Btn -->
                     <gtm-link :gtm-data="GTMProductCollection.unity"
-                              href="https://app.netacademia.hu/Tanfolyam/2018unitylenyug-lenyugozo-unity">
+                              href="https://app.netacademia.hu/Tanfolyam/UnityFree-lenyugozo-unity">
                       <p class="mb-0">Részt veszek a tanfolyamon!</p>
                     </gtm-link>
                   </div>

@@ -28,7 +28,7 @@
       >
         <img slot="picture" src="~/assets/unity-developer/unity-icon.png" alt="unity-logo">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.lenyugozo"
-                 href="https://app.netacademia.hu/Tanfolyam/2018unitylenyug-lenyugozo-unity"
+                 href="https://app.netacademia.hu/Tanfolyam/UnityFree-lenyugozo-unity"
         >Részletek...
         </gtm-link>
       </TimelineCard>
@@ -46,7 +46,7 @@
       >
         <img slot="picture" src="~/assets/unity-developer/unity-icon.png" alt="unity-logo">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.modern"
-                 href="https://app.netacademia.hu/Tanfolyam/2017unity-unity---jatekfejlesztes-modern-eszkozokkel"
+                 href="https://app.netacademia.hu/Tanfolyam/Unity-unity---jatekfejlesztes-modern-eszkozokkel"
         >Részletek...
         </gtm-link>
       </TimelineCard>
@@ -185,7 +185,7 @@ export default {
       GTMProductCollection: {
         lenyugozo: {
           name: "Lenyűgöző Unity",
-          id: "2018unitylenyug-lenyugozo-unity",
+          id: "UnityFree-lenyugozo-unity",
           price: "0",
           brand: "NetAcademia",
           category: "Tanfolyam",
@@ -196,7 +196,7 @@ export default {
         },
         modern: {
           name: "Unity - játékfejlesztés modern eszközökkel",
-          id: "2017unity-unity---jatekfejlesztes-modern-eszkozokkel",
+          id: "Unity-unity---jatekfejlesztes-modern-eszkozokkel",
           price: "74930",
           brand: "NetAcademia",
           category: "Tanfolyam",

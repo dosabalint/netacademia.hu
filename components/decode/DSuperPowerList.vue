@@ -1,6 +1,6 @@
 <template>
   <ul class="superpower-list">
-    <a v-for="c in courses" :key="c.code" :href="`${$store.state.url.backend}/${c.userfriedlyURL}`" class="text-dark">
+    <nuxt-link v-for="c in courses" :key="c.code" :to="'/tanfolyam/' + c.userfriedlyURL" class="text-dark">
       <Row>
         <Column class="col-sm-6"
                 data-toggle="tooltip" data-placement="right"
@@ -15,7 +15,7 @@
           <p>{{c.dateColumn}}</p>
         </div>
       </Row>
-    </a>
+    </nuxt-link>
   </ul>
 </template>
 f2dd

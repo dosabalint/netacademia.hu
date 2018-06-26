@@ -1,6 +1,6 @@
 <template>
-  <a class="card card-animation" target="_blank"
-     :href="url"
+  <nuxt-link class="card card-animation"
+     :to="`/tanfolyam/${userFriendlyUrl}`"
      @click="handleClick"
      v-observe-visibility="visibilityChanged">
     <div class="card-header">
@@ -20,7 +20,7 @@
     <div class="card-footer">
       <p class="text-primary">Részletek...</p>
     </div>
-  </a>
+  </nuxt-link>
 </template>
 
 <script>
@@ -34,7 +34,6 @@ export default {
     "trainers",
     "price",
     "length",
-    "url",
     "preliminary"
   ],
   template: "#na-card-template",

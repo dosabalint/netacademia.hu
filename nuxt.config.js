@@ -1,4 +1,5 @@
-const webpack = require('webpack');
+const webpack = require("webpack");
+const axios = require("axios");
 
 const scroll = function(to, from, savedPosition) {
   if (to.hash) {
@@ -22,6 +23,29 @@ const scroll = function(to, from, savedPosition) {
 const gtmId = process.env.GTM || "GTM-MWT4847";
 
 module.exports = {
+  generate: {
+    minify: false,
+    subFolders: false,
+    routes: function() {
+      return axios
+        .get(`${process.env.BACKEND_URL}/api/Courses/v2/CourseCard`)
+        .then(r => r.data)
+        .then(courses => {
+          return courses
+            .filter(
+              //TODO: Szar adat hack. Torolni, ha megjavult az adat
+              c => c.userFriendlyUrl && c.userFriendlyUrl !== "2018fed-fed"
+            )
+            .map(course => {
+              return {
+                route: "/tanfolyam/" + course.userFriendlyUrl,
+                payload: course
+              };
+            });
+        })
+        .catch(console.info);
+    }
+  },
   router: {
     linkActiveClass: "active",
     scrollBehavior: scroll
@@ -73,6 +97,7 @@ module.exports = {
     { src: "~/plugins/vue-youtube-embed", ssr: false },
     { src: "~/plugins/vue-mq", ssr: false },
     { src: "~/plugins/vue-lazyload", ssr: false },
+    { src: "~/plugins/nuxt-client-init.js", ssr: false }
   ],
   modules: [
     ["@nuxtjs/google-tag-manager", { id: gtmId }],

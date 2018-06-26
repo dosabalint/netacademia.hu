@@ -7,8 +7,11 @@
           }"
     ></div>
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
+      <div class="row" v-if="layout === 'free'">
+          <slot></slot>
+      </div>
+      <div v-else>
+        <div class="col-12">
           <i :class="[icon]"></i>
           <slot></slot>
         </div>
@@ -27,11 +30,18 @@ export default {
     },
     icon: {
       type: String,
-      required: true
+      default: ""
     },
     hasBgGradient: {
       type: Boolean,
       default: false
+    },
+    layout: {
+      type: String,
+      default: 'standard',
+      validator(val) {
+        return ['standard', 'free'].indexOf(val) !== -1;
+      }
     }
   }
 };

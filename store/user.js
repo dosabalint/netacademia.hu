@@ -9,7 +9,7 @@ export const AUTH_LOGOUT_MUTATION = "AUTH_LOGOUT";
 
 export const state = () => ({
   isLoggedIn: false,
-  isLoading: false,
+  loading: false,
   name: "",
   email: ""
 });

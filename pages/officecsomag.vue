@@ -4,7 +4,7 @@
       asset-image="~/assets/officecsomag/office-bg.svg"
       icon="decode-icon-briefcase"
     >
-      <h1>Irodai hatékonyságnövelő csomag</h1>
+      <h1>Irodai hatékonyságnövelés az egész csapatnak!</h1>
     </DPageHeader>
     <DFullSection theme="light">
       <Container class="mb-3">
@@ -90,7 +90,7 @@
           <Column class="col-md-12">
             <DHeadline class="text-center">
               <h6>Irodai hatékonyságnövelő csomag</h6>
-              <h3>1 főre szóló előfizetésünk július 2-án megszűnik! <br> Juss hozzá még most 49.900 Ft-ért!</h3>
+              <h3>5 főre szóló előfizetésünk július 31-ig bevezető áron! <br> Rendeld meg még ma 249.900 Ft-ért!</h3>
             </DHeadline>
           </Column>
         </Row>

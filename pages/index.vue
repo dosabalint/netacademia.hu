@@ -48,32 +48,33 @@
                      data-voffset="['50', '20', '40', '60']"
                      data-fontsize="['24', '24', '24', '18']"
                      data-lineheight="['32', '32', '32', '24']"
-                      data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
-                      data-width="450"
+                     data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
+                     data-width="450"
                      data-color="white"
                      data-start="1300"
                      data-speed="300"
                      data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
                 >
-                  Vállalati ügyfeleink számára mostantól elérhető <br> a NetAcademia Bussiness előfizetés, <br> melyet a legfontosabb vállalati szempontok alapján alakítottuk ki!<br>
+                  Vállalati ügyfeleink számára mostantól elérhető <br> a NetAcademia Bussiness előfizetés, <br> melyet a
+                  legfontosabb vállalati szempontok alapján alakítottuk ki!<br>
                 </div>
 
-                  <!--<div class="tp-caption small-text tp-resizeme"
-                     data-x="['580', '200', '30', '10']"
-                     data-y="middle"
-                     data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['70', '70', '70', '70']"
-                     data-fontsize="['14', '14', '14', '14']"
-                     data-lineheight="['18', '18', '24', '18']"
-                     data-start="1300"
-                     data-speed="300"
-                     data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
-                     data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
-                >
-                Jelen hirdetmény nem vonatkozik a külön megállapodásban elérhető <br> előfizetésekre, pl.
-                  informatikatanárok vagy Telekom
-                </div> -->
+                <!--<div class="tp-caption small-text tp-resizeme"
+                   data-x="['580', '200', '30', '10']"
+                   data-y="middle"
+                   data-hoffset="['-150', '-150', '-150', '0']"
+                   data-voffset="['70', '70', '70', '70']"
+                   data-fontsize="['14', '14', '14', '14']"
+                   data-lineheight="['18', '18', '24', '18']"
+                   data-start="1300"
+                   data-speed="300"
+                   data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
+                   data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
+              >
+              Jelen hirdetmény nem vonatkozik a külön megállapodásban elérhető <br> előfizetésekre, pl.
+                informatikatanárok vagy Telekom
+              </div> -->
 
                 <div class="tp-caption tp-resizeme"
                      data-x="['580', '200', '30', '10']"
@@ -156,9 +157,9 @@
                      data-y="center"
                      data-voffset="['0', '0', '-40', '30']"
                      data-fontsize="['22', '18', '26', '18']"
-                      data-lineheight="['36', '30', '35', '26']"
-                      data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
-                      data-width="450"
+                     data-lineheight="['36', '30', '35', '26']"
+                     data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
+                     data-width="450"
                      data-start="1450"
                      data-speed="300"
                      data-transform_in="o:0;y:100;s:500;e:Power2.easeInOut;"
@@ -251,7 +252,8 @@
           </Column>
           <Column class="col-lg-6 mr-xl-auto pr-5 my-auto">
 
-            <p><b>Vállalati</b> ügyfeleink számára mostantól elérhető a <b>NetAcademia Bussiness előfizetés</b>, melyet a
+            <p><b>Vállalati</b> ügyfeleink számára mostantól elérhető a <b>NetAcademia Bussiness előfizetés</b>, melyet
+              a
               legfontosabb vállalati szempontok alapján alakítottunk ki:</p>
 
             <ul class="check-list">
@@ -273,10 +275,10 @@
             <p>Ezeket az igényeket (különösen az összes dolgozó hozzáférését) csoportos előfizetéseink szolgálják ki.
               Legkisebb csomagunk az <b>5 fős</b> NetAcademia Business előfizetés, mely akciósan, <b>499 000
                 Ft+áfa</b> lesz.</p>
-                </br>
-               <DButton theme="default-outline" href="https://app.netacademia.hu/subscription/create">
-            Megveszem <i class="decode-icon-cursor"></i>
-          </DButton>
+            <br/>
+            <DButton theme="default-outline" href="https://app.netacademia.hu/subscription/create">
+              Megveszem <i class="decode-icon-cursor"></i>
+            </DButton>
           </Column>
         </Row>
         <Row>
@@ -285,9 +287,9 @@
           </Column>
           <Column class="col-lg-6 mr-xl-auto pl-lg-5 my-auto">
             <DHeadline class="text-left">
-                <h3 class="mb-4">Nekem jelenleg NetAcademia Ultimate előfizetésem van. Most mi lesz
-                  velem?</h3>
-              </DHeadline>
+              <h3 class="mb-4">Nekem jelenleg NetAcademia Ultimate előfizetésem van. Most mi lesz
+                velem?</h3>
+            </DHeadline>
             <p><b>Semmi. Nem változik semmi.</b> Aki jelenleg aktív NetAcademia Ultimate előfizető, annak a lejárati
               dátumig nincs változás. </p>
           </Column>
@@ -325,7 +327,7 @@
 </template>
 
 <script>
-  import {GtmPageLoad} from "~/components/mixins/GtmPageLoad";
+  import { GtmPageLoad } from "~/components/mixins/GtmPageLoad";
   import DPageHeader from "../components/decode/DPageHeader";
   import DFullSection from "../components/decode/DFullSection";
   import Container from "../components/Container";
@@ -361,15 +363,15 @@
           rel: "stylesheet",
           href: "/revolutionslider/css/settings.css"
         },
-        {rel: "stylesheet", href: "/revolutionslider/css/layers.css"},
-        {rel: "stylesheet", href: "/revolutionslider/css/navigation.css"}
+        { rel: "stylesheet", href: "/revolutionslider/css/layers.css" },
+        { rel: "stylesheet", href: "/revolutionslider/css/navigation.css" }
       ]
     },
     mounted() {
       this.slider = $(".rev_slider").revolution({
         sliderType: "standard",
         sliderLayout: "fullscreen",
-        fullScreenOffset: '10%',
+        fullScreenOffset: "10%",
         delay: 9000,
         spinner: "none",
         navigation: {
@@ -426,11 +428,11 @@
         gridheight: [1000, 768, 800, 720],
 
         /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
-        visibilityLevels: [1240, 1024, 1024, 480],
+        visibilityLevels: [1240, 1024, 1024, 480]
         // gridwidth: 1170,
         // gridheight: 1000
       });
-      window.dispatchEvent(new Event('fullscreenchange'));
+      window.dispatchEvent(new Event("fullscreenchange"));
     },
     beforeDestroy() {
       this.slider.revkill();
@@ -438,13 +440,13 @@
     data() {
       return {
         slider: null
-      }
+      };
     },
     computed: {
-      currentYear: function () {
+      currentYear: function() {
         return new Date().getFullYear();
       }
-    },
+    }
   };
 </script>
 

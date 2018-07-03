@@ -11,12 +11,7 @@
         <p class="lead mt-1 mb-5">A NetAcademia Certificate programunkban olyan szakmákat tanulhatsz, melyekkel akár
           távmunkában is dolgozhatsz, ezzel jelentősen növelve a munkakeresésed esélyeit! Mindegy, hogy Piripócson élsz,
           vagy a Bahamákon, velünk eljuthasz a következő szintre. Távmunkához távtanulás dukál!</p>
-          <h3>Július 2-ával <span class="text-danger">megszűnik</span> egyszemélyes NetAcademia Ultimate előfizetésünk! A részletekről <a href="/" class="link">itt tájékozódhatsz</a>!</h3>
-        <p class="lead mt-4">Több tanfolyamsorozatot is elvégeznél? <b>Július 2-ig</b> még megvásárolhatod
-          <nuxt-link to="#ultimate" class="text-danger font-weight-bold">Ultimate előfizetésünket</nuxt-link>
-          , mellyel mindegyik
-          elérhető!
-        </p>
+
         <div class="row pt-2">
           <div class="col-3 col-lg-1 my-auto">
             <nuxt-link to="/unity-developer">
@@ -157,7 +152,6 @@
               <h2 class="mb-3 mt-2">
                 <span class="text-uppercase">Előfizetés</span>
               </h2>
-              <h5 class="kiemelt">Egyszemélyes előfizetéseink <span class="text-danger">már csak július 2-ig</span> elérhetők, spájzolj be még most! A részletekről <a href ="/" class="link">itt olvashatsz!</a></h5>
             </div>
           </div>
         </div>
@@ -172,8 +166,8 @@
               </div>
               <div class="col-11 col-lg-9 mb-4">
                 <h4>
-                  <img src="~/assets/elofizetes/logo-ultimate.svg" alt="logo" width="70" class="mr-2">Ultimate
-                  előfizetés</h4>
+                  <img src="~/assets/elofizetes/logo-ultimate.svg" alt="logo" width="70" class="mr-2">Bussiness
+                  előfizetés (5 fős)</h4>
               </div>
               <div class="col-11 col-lg-9">
                 <p class="text-justify">Minden informatikus álma! Korlátlan tanulás és fejlődés! Itt nincs mit
@@ -206,7 +200,9 @@
               <div class="col-11 col-lg-9 mb-4">
                 <h4>
                   <img src="~/assets/elofizetes/logo-office.svg" alt="logo" width="70" class="mr-2">Office előfizetés
+                  (5 fős)
                 </h4>
+
               </div>
               <div class="col-11 col-lg-9">
                 <p class="text-justify">Minden irodai dolgozó álma! Hatékonyság és produktivitás növelés telefonon és

@@ -27,35 +27,39 @@
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['-103', '-103', '-103', '-103']"
-                     data-fontsize="['50', '50', '40', '35']"
-                     data-lineheight="['60', '60', '45', '40']"
+                     data-voffset="['-85', '-103', '-95', '-90']"
+                     data-fontsize="['50', '40', '40', '35']"
+                     data-lineheight="['60', '45', '45', '40']"
+                     data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
+                     data-width="450"
                      data-color="orange"
                      data-start="1200"
                      data-speed="300"
                      data-transform_in="o:0;x:100;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:-100;s:400;e:Power2.easeInOut;"
                 >
-                  Megszűnik a NetAcademia <br> Ultimate előfizetés!
+                  Bemutatkozik a NetAcademia <br> Bussiness előfizetés!
                 </div>
 
                 <div class="tp-caption large-text tp-resizeme"
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['0', '0', '0', '-20']"
-                     data-fontsize="['24', '24', '30', '18']"
+                     data-voffset="['50', '20', '40', '60']"
+                     data-fontsize="['24', '24', '24', '18']"
                      data-lineheight="['32', '32', '32', '24']"
+                      data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
+                      data-width="450"
                      data-color="white"
                      data-start="1300"
                      data-speed="300"
                      data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
                 >
-                  Már csak július 2-ig vásárolható korlátlan,<br> egyéves előfizetésünk, a NetAcademia Ultimate! <br>
+                  Vállalati ügyfeleink számára mostantól elérhető <br> a NetAcademia Bussiness előfizetés, <br> melyet a legfontosabb vállalati szempontok alapján alakítottuk ki!<br>
                 </div>
 
-                <div class="tp-caption small-text tp-resizeme"
+                  <!--<div class="tp-caption small-text tp-resizeme"
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
@@ -67,15 +71,15 @@
                      data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
                 >
-                  Jelen hirdetmény nem vonatkozik a külön megállapodásban elérhető <br> előfizetésekre, pl.
+                Jelen hirdetmény nem vonatkozik a külön megállapodásban elérhető <br> előfizetésekre, pl.
                   informatikatanárok vagy Telekom
-                </div>
+                </div> -->
 
                 <div class="tp-caption tp-resizeme"
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['150', '150', '150', '150']"
+                     data-voffset="['150', '130', '180', '150']"
                      data-start="1400"
                      data-speed="300"
                      data-transform_in="o:0;y:100;s:500;e:Power2.easeInOut;"
@@ -133,9 +137,12 @@
                 <div class="tp-caption large-title-2"
                      data-x="['580', '200', '30', '10']"
                      data-y="center"
-                     data-voffset="-120"
+                     data-voffset="['-160', '-130', '-250', '-150']"
                      data-width="450"
                      data-whitespace="['nowrap', 'nowrap', 'normal', 'normal']"
+                     data-fontsize="['50', '45', '55', '35']"
+                     data-lineheight="['60', '50', '60', '40']"
+                     data-color="white"
                      data-start="1400"
                      data-speed="300"
                      data-transform_in="o:0;x:100;s:500;e:Power2.easeInOut;"
@@ -147,8 +154,11 @@
                 <div class="tp-caption text"
                      data-x="['580', '200', '30', '10']"
                      data-y="center"
-                     data-voffset="['0', '0', '20', '30']"
-                     data-fontsize="['24', '24', '22', '16']"
+                     data-voffset="['0', '0', '-40', '30']"
+                     data-fontsize="['22', '18', '26', '18']"
+                      data-lineheight="['36', '30', '35', '26']"
+                      data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
+                      data-width="450"
                      data-start="1450"
                      data-speed="300"
                      data-transform_in="o:0;y:100;s:500;e:Power2.easeInOut;"
@@ -157,15 +167,15 @@
                   Tanuld azt amit szeretnél, akkor és ott, ahol csak szeretnéd!<br>
                   Tegyél szert online, a saját tempódban azokra az ismeretekre<br>
                   és készségekre, mellyekkel előremozdíthatod karrieredet.<br>
-                  Oktatóanyagaink segítségével óriási sikereket érhetsz el<br>
-                  az élet számos területén! <br>
+                  Oktatóanyagaink segítségével óriási sikereket érhetsz <br>
+                  el az élet számos területén! <br>
                 </div>
 
                 <div class="tp-caption tp-resizeme"
                      data-x="['580', '200', '30', '10']"
                      data-y="center"
                      data-hoffset="-120"
-                     data-voffset="160"
+                     data-voffset="['160', '130', '130', '210']"
                      data-start="1500"
                      data-speed="300"
                      data-transform_in="o:0;y:100;s:500;e:Power2.easeInOut;"
@@ -231,19 +241,18 @@
         </Row>
       </Container>
     </DFullSection>
-    <DFullSection>
+    <DFullSection class="pb-3">
       <Container class="pb-lg-5 text-justify ">
         <Row id="reszletek">
           <Column class="col-12 mb-3">
             <DHeadline class="text-left">
-              <h3 class="mb-4">Mi fog történni július 2-a után?</h3>
+              <h3 class="mb-4">NetAcademia Bussiness</h3>
             </DHeadline>
           </Column>
           <Column class="col-lg-6 mr-xl-auto pr-5 my-auto">
-            <p><b>Röviden: Az egyszemélyes Netacademia Ultimate előfizetésünket megszüntetjük, július 2 után már nem
-              lehet megvásárolni.</b></p>
-            <p><b>Vállalati</b> ügyfeleink számára érhetővé válik a <b>NetAcademia Bussiness előfizetés</b>, melyet a
-              legfontosabb vállalati szempontok alapján alakítottuk ki:</p>
+
+            <p><b>Vállalati</b> ügyfeleink számára mostantól elérhető a <b>NetAcademia Bussiness előfizetés</b>, melyet a
+              legfontosabb vállalati szempontok alapján alakítottunk ki:</p>
 
             <ul class="check-list">
               <li>Legyen elérhető Magyarország legszélesebb oktatási palettája</li>
@@ -270,22 +279,13 @@
           <Column class="col-lg-6 mr-xl-auto pr-5 my-auto">
             <img src="~/assets/landing/index-image.svg" alt="">
           </Column>
-          <Column class="col-lg-6 mr-xl-auto pl-5 my-auto">
+          <Column class="col-lg-6 mr-xl-auto pl-lg-5 my-auto">
             <DHeadline class="text-left">
-              <h5 class="mb-3 font-weight-bold">Nekem jelenleg NetAcademia Ultimate előfizetésem van. Most mi lesz
-                velem?</h5>
-            </DHeadline>
+                <h3 class="mb-4">Nekem jelenleg NetAcademia Ultimate előfizetésem van. Most mi lesz
+                  velem?</h3>
+              </DHeadline>
             <p><b>Semmi. Nem változik semmi.</b> Aki jelenleg aktív NetAcademia Ultimate előfizető, annak a lejárati
               dátumig nincs változás. </p>
-
-            <DHeadline class="text-left">
-              <h5 class="mb-3 font-weight-bold">Nincs Ultimate előfizetésem, én mit tehetek?</h5>
-            </DHeadline>
-            <p>Mivel az egyszemélyes változat július 2-án megszűnik, <b>eddig a határidőig kell megvásárolnod az
-              Ultimate előfizetésünket</b> a következő évre. Július 2 után a legkisebb csomag 5 fős lesz.</p>
-            <DButton theme="default-outline" href="https://app.netacademia.hu/subscription/create">
-              Megveszem <i class="decode-icon-cursor"></i>
-            </DButton>
           </Column>
         </Row>
       </Container>
@@ -294,22 +294,20 @@
       <Container>
         <Row>
           <div class="col-md-12">
-            <h3 class="text-center"><strong>Egyéni hallgatók számára ajánljuk</strong></h3>
+            <h2 class="text-center">Egyéni hallgatók számára ajánljuk</h2>
           </div>
         </Row>
       </Container>
     </DFullSection>
     <Container class="pt-lg-5">
       <Row class="mt-5">
-        <Column class="col-lg-7">
+        <Column class="col-lg-7 my-auto">
           <p>A tanulásodat úgy tudjuk a legjobban segíteni, hogy útmutatást adunk egy-egy témakör elsajátításához. Az
             első billentyű leütésétől kezdve akár a bizonyítványod átvételéig fogjuk a kezed. Tanulási útvonalaink <b>6-8
               egymásra épülő tanfolyamot</b> tartalmaznak
             egy adott témából.</p>
-          <p>Ha minden témakör iránt érdeklődsz, vagy nem tudod eldönteni, az informatika melyik ágán indulj el, a <b>július
-            2-ával megszűnő Ultimate-csomagból még te is bespájzolhatsz.</b></p>
-          <DButton theme="default-outline" href="https://app.netacademia.hu/subscription/create">
-            Megveszem <i class="decode-icon-cursor"></i>
+          <DButton theme="default-outline" href="/elofizetes">
+            Érdekel <i class="decode-icon-cursor"></i>
           </DButton>
         </Column>
         <Column class="col-lg-4 my-auto pl-5">

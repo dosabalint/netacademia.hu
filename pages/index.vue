@@ -274,7 +274,7 @@
               Legkisebb csomagunk az <b>5 fős</b> NetAcademia Business előfizetés, mely akciósan, <b>499 000
                 Ft+áfa</b> lesz.</p>
                 </br>
-               <DButton theme="default-outline" href="/subscription/create">
+               <DButton theme="default-outline" href="https://app.netacademia.hu/subscription/create">
             Megveszem <i class="decode-icon-cursor"></i>
           </DButton>
           </Column>

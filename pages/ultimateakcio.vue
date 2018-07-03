@@ -5,12 +5,11 @@
         <h1 class="display-2 mb-3">
           <span class="red">Net</span>Academia</h1>
         <h2 class="mb-5 mt-2">
-          <span class="text-uppercase">Ultimate</span> előfizetés</h2>
-        <p class="lead mt-1 mb-5">
-          <span class="font-weight-bold">Ez a termékünk július 2-ával megszűnik!</span> A részletekről <span class="font-weight-bold"><a href="/" class="link">itt tájékozódhatsz.</a></span>
-          <br> GDPR, CISSP, C, ITIL, Android, Java, Webfeljesztés, Excel All-in. Ez
-          csak néhány a több mint 300 tanfolyamunk közül.
-          <span class="font-weight-bold">Spájzolj be még most!</span>
+          <span class="text-uppercase">Bussiness</span> előfizetés</h2>
+        <p class="mt-1 mb-5 lead">
+          <span class="font-weight-bold">5 fős</span> előfizetésünket a legfontosabb vállalati szempontok alapján alakítottuk ki.
+           <span class="font-weight-bold">1 évre</span> szóló csomagunkban minden olyan tanfolyamunk megtalálható,
+          amely a hatékony vállalati munkavégzésnél hasznos lehet!
         </p>
         <div class="row">
           <a href="https://app.netacademia.hu/subscription/create" class="btn-orange btn-lg ml-3">Megveszem</a>

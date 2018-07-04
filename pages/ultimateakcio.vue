@@ -12,7 +12,7 @@
           amely a hatékony vállalati munkavégzésnél hasznos lehet!
         </p>
         <div class="row">
-          <a href="https://app.netacademia.hu/subscription/create" class="btn-orange btn-lg ml-3">Megveszem</a>
+          <a href="https://app.netacademia.hu/subscription/business" class="btn-orange btn-lg ml-3">Megveszem</a>
         </div>
         <div class="text-center mt-5 d-none d-sm-block">
           <BouncingDownArrow href="#akcio"></BouncingDownArrow>
@@ -138,7 +138,7 @@
               vissza tudod nézni. A gyakorlatorientált oktatás, a rugalmas időbeosztás, a gyakorló szakember oktatók
               mind-mind lehetővé teszik, hogy úgy tanulj, ahogyan Neked a legjobb: KÉNYELMESEN, OTTHONRÓL, ONLINE.</p>
             <div class="text-center pt-3">
-              <a href="https://app.netacademia.hu/subscription/create" class="btn-orange btn-lg">Megveszem</a>
+              <a href="https://app.netacademia.hu/subscription/business" class="btn-orange btn-lg">Megveszem</a>
             </div>
           </div>
         </div>

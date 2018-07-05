@@ -100,7 +100,7 @@
           <Column class="col-md-12 text-center">
             <p>
               <DButton theme="default-outline" class="text-light"
-                       href="https://app.netacademia.hu/Subscription/Create/office">
+                       href="https://app.netacademia.hu/subscription/business/office">
                 Megveszem<i class="decode-icon-cursor ml-2"></i>
               </DButton>
             </p>

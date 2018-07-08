@@ -1,3 +1,5 @@
+circle ci test test2
+
 # static html landing/oldal kipakolas
 
 meg lehet nézni a static oldalt bekötve:

@@ -1,0 +1,34 @@
+version: 2
+jobs:
+  build:
+    branches:
+      only:
+        - DEV-244
+    working_directory: ~/repo
+    docker:
+      - image: circleci/node:8:11
+    steps:
+      # Checkout repository
+      - checkout
+
+      # Restore cache
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          - v1-dependencies-
+
+      # Install dependencies
+      - run:
+          name: Install Dependencies
+          command: yarn install
+
+      # Keep cache
+      - save_cache:
+          key: v1-dependencies-{{ checksum "package.json" }}
+          paths:
+            - "node_modules"
+
+       Build
+       - run:
+           name: Build
+           command: yarn run generte:test

@@ -1,6 +1,6 @@
 <template>
   <main>
-    <header id="home" class="top-hero jumbotron-fluid pb-5 bg-faded">
+    <header id="home" class="top-hero-ulti jumbotron-fluid pb-5 bg-faded">
       <div class="container">
         <h1 class="display-2 mb-3">
           <span class="red">Net</span>Academia</h1>
@@ -215,18 +215,18 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 /*header*/
 main {
   font-size: 16px;
 }
 
-.top-hero {
+.top-hero-ulti {
   background-image: linear-gradient(
       rgba(43, 45, 66, 0.65),
       rgba(43, 45, 66, 0.65)
     ),
-    url("~/assets/ultimateakcio/background-image.png");
+    url("~/assets/ultimateakcio/background-image.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -234,23 +234,23 @@ main {
   padding-top: 20px;
   display: flex;
   align-items: center;
-}
 
-.top-hero h1 {
-  color: #ffffff;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-  letter-spacing: -1px;
-  line-height: 0.9;
-  margin-top: 10px;
-  font-size: 2.5rem;
-}
+  & h1 {
+    color: #ffffff;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    letter-spacing: -1px;
+    line-height: 0.9;
+    margin-top: 10px;
+    font-size: 2.5rem;
+  }
 
-.top-hero h1 span {
-  color: #a52b23;
-}
+  & h1 span {
+    color: #a52b23;
+  }
 
-.top-hero p {
-  color: #edf2f4;
+  & p {
+    color: #edf2f4;
+  }
 }
 
 h2 span {
@@ -275,60 +275,60 @@ h2 {
 }
 
 @media only screen and (min-width: 395px) {
-  .top-hero h1 {
+  .top-hero-ulti h1 {
     font-size: 3.5rem;
     margin-top: 20px;
   }
 
-  .top-hero h2 {
+  .top-hero-ulti h2 {
     font-size: 3rem;
     margin-top: 110px;
   }
 
-  .top-hero h2 span {
+  .top-hero-ulti h2 span {
     font-size: 4rem;
     margin-top: 110px;
   }
 
-  .top-hero p {
+  .top-hero-ulti p {
     font-size: 20px;
   }
 }
 
 @media only screen and (min-width: 550px) {
-  .top-hero h1 {
+  .top-hero-ulti h1 {
     font-size: 3.5rem;
     margin-top: 120px;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .top-hero h1 {
+  .top-hero-ulti h1 {
     font-size: 4rem;
     margin-top: 70px;
   }
 
-  .top-hero h2 {
+  .top-hero-ulti h2 {
     font-size: 4rem;
     margin-top: 110px;
   }
 
-  .top-hero h2 span {
+  .top-hero-ulti h2 span {
     font-size: 5.5rem;
     margin-top: 110px;
   }
 
-  .top-hero p {
+  .top-hero-ulti p {
     font-size: 20px;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .top-hero h1 {
+  .top-hero-ulti h1 {
     margin-top: 90px;
   }
 
-  .top-hero p {
+  .top-hero-ulti p {
     font-size: 28px;
   }
 }
@@ -433,7 +433,6 @@ h2 {
 
 .header h3 {
   font-weight: 800;
-  text-transform: ;
   color: #fff;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
 }

@@ -209,20 +209,6 @@
           <Column class="col-8 col-lg-2 col-sm-5 px-lg-0">
             <div class="about-me">
               <div class="about-me-thumbnail rounded-circle">
-                <img src="~/assets/kapcsolat/nemeth-szilvi.png" alt="Németh Szilvia">
-              </div>
-              <!-- about-me-thumbnail -->
-              <h6>Németh Szilvia</h6>
-              <span>Értékesítő</span>
-              <!--p class="mb-0">+3670 941 9011</p>-->
-              <p><small>nemeth.szilvia@netacademia.hu</small></p>
-            </div>
-            <!-- about-me -->
-          </Column>
-
-          <Column class="col-8 col-lg-2 col-sm-5 px-lg-0">
-            <div class="about-me">
-              <div class="about-me-thumbnail rounded-circle">
                 <img src="~/assets/kapcsolat/hevesi-attila.jpg" alt="Hevesi Attila">
               </div>
               <!-- about-me-thumbnail -->

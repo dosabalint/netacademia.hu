@@ -61,7 +61,7 @@ module.exports = {
         href:
           "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800%7C;Roboto:100,500"
       }
-    ],
+    ]
   },
   /*
   ** Customize the progress bar color
@@ -80,15 +80,26 @@ module.exports = {
     "nuxt-fontawesome"
   ],
   fontawesome: {
-    component: 'fa',
+    component: "fa",
     imports: [
       {
         set: "@fortawesome/fontawesome-free-brands",
-        icons: ["faSuperpowers", "faFacebook", "faTwitter", "faInstagram", "faLinkedin", "faYoutube"]
+        icons: [
+          "faSuperpowers",
+          "faFacebook",
+          "faTwitter",
+          "faInstagram",
+          "faLinkedin",
+          "faYoutube"
+        ]
       },
       {
         set: "@fortawesome/fontawesome-free-solid",
-        icons: ["faAngleDown"]
+        icons: ["faHeart", "faBook", "faCheck", "faStar"]
+      },
+      {
+        set: "@fortawesome/fontawesome-free-regular",
+        icons: ["faCalendar", "faClock", "faMoneyBillAlt", "faPlayCircle"]
       }
     ]
   },
@@ -97,7 +108,7 @@ module.exports = {
     backendUrl: process.env.BACKEND_URL || "https://app.netacademia.hu"
   },
   axios: {
-    https: true,
+    https: process.env.NODE_ENV === "production" ? true : false,
     // credentials: true,
     baseURL: process.env.BACKEND_URL || "https://app.netacademia.hu",
     browserBaseURL: process.env.BACKEND_URL || "https://app.netacademia.hu"
@@ -110,9 +121,9 @@ module.exports = {
       "intersection-observer",
       "vue-observe-visibility",
       "babel-polyfill",
-      "~/static/bootstrap/jquery-3.3.1.slim.min.js",
-      "~/static/bootstrap/popper.min.js",
-      "~/static/bootstrap/bootstrap.min.js",
+      "jquery", //alias-bol jon extend-nel
+      "popper.js", //alias-bol jon extend-nel
+      "bootstrap", //alias-bol jon extend-nel
       "jquery-touchswipe",
       // "~/static/revolutionslider/js/jquery.themepunch.tools.min.js",
       "~/static/revolutionslider/js/jquery.themepunch.revolution.min.js",
@@ -122,11 +133,11 @@ module.exports = {
     ],
     plugins: [
       new webpack.ProvidePlugin({
-        $: "jquery",
-        jQuery: "jquery",
-        jquery: "jquery",
-        "window.jQuery": "jquery",
-        "punchgs": 'gsap/all',
+        $: "jquery", //alias-bol jon extend-nel
+        jQuery: "jquery", //alias-bol jon extend-nel
+        jquery: "jquery", //alias-bol jon extend-nel
+        "window.jQuery": "jquery", //alias-bol jon extend-nel
+        punchgs: "gsap/all"
       })
     ],
     analyze: true,
@@ -142,8 +153,19 @@ module.exports = {
       ]
     },
     extend(config, { isDev, isClient }) {
-      config.resolve.alias["@fortawesome/fontawesome-free-brands$"] = "@fortawesome/fontawesome-free-brands/shakable.es.js";
-      config.resolve.alias["@fortawesome/fontawesome-free-solid$"] = "@fortawesome/fontawesome-free-solid/shakable.es.js";
+      config.resolve.alias["@fortawesome/fontawesome-free-brands$"] =
+        "@fortawesome/fontawesome-free-brands/shakable.es.js";
+      config.resolve.alias["@fortawesome/fontawesome-free-solid$"] =
+        "@fortawesome/fontawesome-free-solid/shakable.es.js";
+      config.resolve.alias["@fortawesome/fontawesome-free-regular"] =
+        "@fortawesome/fontawesome-free-regular/shakable.es.js";
+
+      config.resolve.alias["jquery"] =
+        "~/static/bootstrap/jquery-3.3.1.slim.min.js";
+      config.resolve.alias["popper.js"] =
+        "~/static/bootstrap/popper.min.js";
+      config.resolve.alias["bootstrap"] =
+        "~/static/bootstrap/bootstrap.min.js";
 
       const vueLoader = config.module.rules.find(
         rule => rule.loader === "vue-loader"

@@ -29,8 +29,8 @@ jobs:
               npm run generate:prod
             fi
       - run:
-        name: deploy to gh pages
-        command: |
+          name: deploy to gh pages
+          command: |
             if [ $CIRCLE_BRANCH == "DEV-244" ]; then
               npm run deploy:test
             elif [ $CIRCLE_BRANCH == "master" ]; then

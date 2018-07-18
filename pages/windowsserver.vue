@@ -50,7 +50,7 @@
       >
         <img slot="picture" src="~/assets/windowsserver/windowsserver.png" alt="windowsserver-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.powerShell"
-                  href="ttps://app.netacademia.hu/Tanfolyam/2018wu01-server-core-kezeles-powershell-ismeretek"
+                  href="https://app.netacademia.hu/Tanfolyam/2018wu01-server-core-kezeles-powershell-ismeretek"
         >Részletek...
         </gtm-link>
       </TimelineCard>

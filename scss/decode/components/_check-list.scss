@@ -1,0 +1,26 @@
+/* CHECK LIST */
+.check-list {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.check-list li {
+  margin-bottom: 5px;
+}
+
+.check-list li:last-child {
+  margin-bottom: 0;
+}
+
+.check-list li:before {
+  display: inline-block;
+  width: 8px;
+  height: 14px;
+  border: solid #00f0d1;
+  border-width: 0 2px 2px 0;
+  margin-right: 15px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  content: "";
+}

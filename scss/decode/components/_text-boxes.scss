@@ -1,0 +1,130 @@
+.erdekel{
+  color: #252525;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.text-box {
+  padding: 20px 30px;
+  margin-bottom: 15px;
+  background: #f4f8f9 no-repeat center;
+  background-size: cover;
+  color: #838383;
+}
+
+.text-box.rounded {
+  border-radius: 10px !important;
+}
+
+.text-box.large {
+  padding: 75px 55px;
+  margin-bottom: 50px;
+}
+
+.text-box .bullet {
+  position: relative;
+  top: -5px;
+  right: -10px;
+  float: right;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-bottom: 13px;
+  background-color: #00f0d1;
+  box-shadow: 0 11px 8px rgba(0, 0, 0, 0.26);
+}
+
+.text-box .bullet + *:before {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.text-box h6 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.text-box p small {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 600;
+}
+
+.text-box .headline {
+  margin-bottom: 40px;
+}
+
+.text-box > *:last-child {
+  margin-bottom: 0;
+}
+
+/* TEXT BOXES DARK */
+.text-box.dark {
+  background-color: #252525;
+  color: #fff;
+}
+
+.text-box.dark a {
+  color: #fff;
+}
+
+.text-box.dark h1,
+.text-box.dark h2,
+.text-box.dark h3,
+.text-box.dark h4,
+.text-box.dark h5,
+.text-box.dark h6 {
+  color: inherit;
+}
+
+.text-box.dark a:hover {
+  opacity: 0.7;
+}
+
+.text-box.dark .service-box.style-5 > i {
+  color: #fff;
+}
+
+/* TEXT BOXES DEFAULT */
+.text-box.default {
+  background: #00f0d1;
+  background: -webkit-linear-gradient(45deg, #00f0d1, #a966ee);
+  background: -ms-linear-gradient(45deg, #00f0d1, #a966ee);
+  background: linear-gradient(45deg, #00f0d1, #a966ee);
+  color: #fff;
+}
+
+.text-box.default a {
+  color: #fff;
+}
+
+.text-box.default h1,
+.text-box.default h2,
+.text-box.default h3,
+.text-box.default h4,
+.text-box.default h5,
+.text-box.default h6 {
+  color: inherit;
+}
+
+.text-box.default a:hover {
+  opacity: 0.7;
+}
+
+.text-box.default .service-box.style-5 > i {
+  color: #fff;
+}
+
+/* DARK SECTION */
+.full-section.dark-section .text-box a,
+.full-section.dark-section .text-box h1,
+.full-section.dark-section .text-box h2,
+.full-section.dark-section .text-box h3,
+.full-section.dark-section .text-box h4,
+.full-section.dark-section .text-box h5,
+.full-section.dark-section .text-box h6 {
+  color: inherit;
+}

@@ -1,0 +1,97 @@
+/***********************************************************************************
+ *	- HEADER TOP
+ ***********************************************************************************/
+
+#header-top {
+  padding: 10px 0;
+  background-color: #232c3d;
+}
+
+#header-top h1,
+#header-top h2,
+#header-top h3,
+#header-top h4,
+#header-top h5,
+#header-top h6 {
+  color: #afafaf;
+}
+
+#header-top .btn-outline {
+  color: #fff;
+}
+
+#header-top .btn-white {
+  color: #838383;
+}
+
+#header-top .widget:last-child {
+  margin-bottom: 0;
+}
+
+#header-top .widget-contact ul li {
+  float: left;
+  margin-bottom: 0;
+  margin-right: 20px;
+}
+
+#header-top .widget-contact ul li i {
+  margin-right: 5px;
+}
+
+#header-top .widget-contact ul li:last-child {
+  margin-right: 0;
+}
+
+#header-top .widget-search #s {
+  float: right;
+  width: 320px;
+  height: 40px;
+  padding-left: 20px;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.09);
+  color: #fff;
+}
+
+#header-top .widget-search #s:focus {
+  border-color: #838383;
+}
+
+#header-top .widget-search input[type="submit"] {
+  background-image: url(../images/search-2.png);
+}
+
+#header-top .widget-recent-posts ul li .post-title,
+#header-top .widget-recent-posts ul li .post-details a,
+#header-top .widget-latest-posts ul li .post-title,
+#header-top .widget-latest-posts ul li .post-details a.post-category,
+#header-top .widget-latest-posts ul li .post-details a:last-of-type,
+#header-top .widget-recent-comments ul li,
+#header-top .widget-recent-comments ul li a {
+  color: inherit;
+}
+
+#header-top .widget-recent-posts ul li .post-title:hover,
+#header-top .widget-recent-posts ul li .post-details a:hover,
+#header-top .widget-latest-posts ul li .post-title:hover,
+#header-top .widget-latest-posts ul li .post-details a.post-category:hover,
+#header-top .widget-latest-posts ul li .post-details a:last-of-type:hover,
+#header-top .widget-recent-comments ul li a:hover {
+  color: #00f0d1;
+}
+
+@media (min-width: 1200px) {
+
+  #header-top .container-fluid {
+    padding: 0 50px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  #header-top {
+    display: none;
+  }
+
+}

@@ -1,0 +1,855 @@
+.social-media {
+  margin-bottom: 20px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 16px;
+  line-height: 32px;
+  color: #8f8f8f;
+  text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.social-media.bordered,
+.social-media.rounded {
+  margin-top: -5px;
+}
+
+.social-media.bordered a {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #c7c7c7;
+  border-radius: 50%;
+  margin: 5px 15px 5px 0;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.social-media.rounded a {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 5px 10px 5px 0;
+  background-color: #636b75;
+  color: #fff;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-media a:last-child {
+  margin-right: 0;
+}
+
+.social-media a.facebook:hover { color: #0e59a0; }
+.social-media a.twitter:hover { color: #0ea4ff; }
+.social-media a.dribbble:hover { color: #ea73a0; }
+.social-media a.pinterest:hover { color: #d73532; }
+.social-media a.google:hover { color: #da4835; }
+.social-media a.tumblr:hover { color: #2a445f; }
+.social-media a.instagram:hover { color: #82685a; }
+.social-media a.rss:hover { color: #f79638; }
+.social-media a.linkedin:hover { color: #018faf; }
+.social-media a.skype:hover { color: #00b0f6; }
+.social-media a.flickr:hover { color: #0061db; }
+.social-media a.vimeo:hover { color: #4cb2d9; }
+.social-media a.github:hover { color: #3b3b3b; }
+.social-media a.youtube:hover { color: #cc181e; }
+.social-media a.windows:hover { color: #6dc2e9; }
+.social-media a.dropbox:hover { color: #007ee5; }
+.social-media a.xing:hover { color: #026566; }
+.social-media a.adn:hover { color: #1ea076; }
+.social-media a.android:hover { color: #98cb02; }
+.social-media a.apple:hover { color: #a6b1b7; }
+.social-media a.behance:hover { color: #2d9ad2; }
+.social-media a.bitbucket:hover { color: #214f81; }
+.social-media a.bitcoin:hover { color: #f7931b; }
+.social-media a.codepan:hover { color: #000; }
+.social-media a.css3:hover { color: #3289ce; }
+.social-media a.delicious:hover { color: #3399fe; }
+.social-media a.deviantart:hover { color: #c8da30; }
+.social-media a.digg:hover { color: #0080c2; }
+.social-media a.drupal:hover { color: #0077b9; }
+.social-media a.empire:hover { color: #000; }
+.social-media a.foursquare:hover { color: #daecb0; }
+.social-media a.git:hover { color: #f34f29; }
+.social-media a.gitti:hover { color: #634c3e; }
+.social-media a.hacker-news:hover { color: #f18642; }
+.social-media a.html5:hover { color: #e54c1f; }
+.social-media a.joomla:hover { color: #016fb9; }
+.social-media a.jsfiddle:hover { color: #4679a4; }
+.social-media a.linux:hover { color: #fece0e; }
+.social-media a.maxcdn:hover { color: #f36f20; }
+.social-media a.openid:hover { color: #fe6101; }
+.social-media a.pagelines:hover { color: #3783e3; }
+.social-media a.pied-piper:hover { color: #0c7b48; }
+.social-media a.qq:hover { color: #23286c; }
+.social-media a.rebel:hover { color: #000; }
+.social-media a.reddit:hover { color: #cee3f8; }
+.social-media a.renren:hover { color: #0d81e4; }
+.social-media a.share:hover { color: #252525; }
+.social-media a.slack:hover { color: #453744; }
+.social-media a.soundcloud:hover { color: #fe4e00; }
+.social-media a.spotify:hover { color: #80bb41; }
+.social-media a.stack-exchange:hover { color: #265a93; }
+.social-media a.stackoverflow:hover { color: #fea501; }
+.social-media a.steam:hover { color: #191919; }
+.social-media a.stumbleupon:hover { color: #f04f23; }
+.social-media a.tencent-weibo:hover { color: #0063a7; }
+.social-media a.trello:hover { color: #226784; }
+.social-media a.vine:hover { color: #00b081; }
+.social-media a.vk:hover { color: #50769d; }
+.social-media a.wechat:hover { color: #a4dc31; }
+.social-media a.weibo:hover { color: #d82828; }
+.social-media a.wordpress:hover { color: #454442; }
+.social-media a.yahoo:hover { color: #4b04a8; }
+.social-media a.ftpx:hover { color: #000; }
+.social-media a.amazon:hover { color: #ff9900; }
+.social-media a.angellist:hover { color: #000; }
+.social-media a.btc:hover { color: #f7931b; }
+.social-media a.black-tie:hover { color: #000; }
+.social-media a.bluetooth:hover { color: #0a3d91; }
+.social-media a.buysellads:hover { color: #ba0202; }
+.social-media a.cc-amex:hover { color: #016dd2; }
+.social-media a.cc-diners-club:hover { color: #0069aa; }
+.social-media a.cc-discover:hover { color: #f88737; }
+.social-media a.cc-jcb:hover { color: #29166f; }
+.social-media a.cc-mastercard:hover { color: #fe9611; }
+.social-media a.paypal:hover { color: #012069; }
+.social-media a.cc-stripe:hover { color: #49b802; }
+.social-media a.cc-visa:hover { color: #1b4da2; }
+.social-media a.chrome:hover { color: #edcd16; }
+.social-media a.codepen:hover { color: #1b1c1b; }
+.social-media a.codiepie:hover { color: #000; }
+.social-media a.connectdevelop:hover { color: #023cb0; }
+.social-media a.contao:hover { color: #e4790f; }
+.social-media a.dashcube:hover { color: #000; }
+.social-media a.edge:hover { color: #2c74be; }
+.social-media a.expeditedssl:hover { color: #2e2e2e; }
+.social-media a.firefox:hover { color: #df731b; }
+.social-media a.fonticons:hover { color: #1d1e2a; }
+.social-media a.fort-awesome:hover { color: #000; }
+.social-media a.forumbee:hover { color: #85ac2f; }
+.social-media a.get-pocket:hover { color: #e84352; }
+.social-media a.gg:hover { color: #fd0002; }
+.social-media a.gratipay:hover { color: #653614; }
+.social-media a.houzz:hover { color: #9bc545; }
+.social-media a.internet-explorer:hover { color: #00bcf2; }
+.social-media a.ioxhost:hover { color: #f6a814; }
+.social-media a.lastfm:hover { color: #e2152b; }
+.social-media a.leanpub:hover { color: #231f20; }
+.social-media a.meanpath:hover { color: #538dd6; }
+.social-media a.medium:hover { color: #00ab6c; }
+.social-media a.mixcloud:hover { color: #040204; }
+.social-media a.modx:hover { color: #8ed547; }
+.social-media a.odnoklassniki:hover { color: #f68634; }
+.social-media a.opencart:hover { color: #00c1f2; }
+.social-media a.opera:hover { color: #e81617; }
+.social-media a.optin-monster:hover { color: #8ed31e; }
+.social-media a.product-hunt:hover { color: #d6573d; }
+.social-media a.reddit:hover { color: #ff4500; }
+.social-media a.safari:hover { color: #2973d9; }
+.social-media a.scribd:hover { color: #382d29; }
+.social-media a.sellsy:hover { color: #006ca2; }
+.social-media a.shirtsinbulk:hover { color: #dd3a26; }
+.social-media a.simplybuilt:hover { color: #322f34; }
+.social-media a.skyatlas:hover { color: #01aebe; }
+.social-media a.slideshare:hover { color: #13999a; }
+.social-media a.stack-overflow:hover { color: #ef532a; }
+.social-media a.tripadvisor:hover { color: #1e892f; }
+.social-media a.twitch:hover { color: #6441a5; }
+.social-media a.usb:hover { color: #000; }
+.social-media a.viacoin:hover { color: #2376a2; }
+.social-media a.whatsapp:hover { color: #44c254; }
+.social-media a.wikipedia:hover { color: #0c0c0c; }
+.social-media a.y-combinator:hover { color: #ff6501; }
+.social-media a.yelp:hover { color: #bf311b; }
+.social-media a.email:hover { color: #689c49; }
+.social-media a.envira:hover { color: #75bd3b; }
+.social-media a.gitlab:hover { color: #e24329; }
+.social-media a.glide:hover { color: #00a7ff; }
+.social-media a.snapchat:hover { color: #efe200; }
+.social-media a.viadeo:hover { color: #f4982b; }
+.social-media a.wpbeginner:hover { color: #ff6600; }
+.social-media a.wpforms:hover { color: #b6581a; }
+
+.social-media.bordered a.facebook:hover {
+  color: #0e59a0;
+  border-color: #0e59a0;
+}
+.social-media.bordered a.twitter:hover {
+  color: #0ea4ff;
+  border-color: #0ea4ff;
+}
+.social-media.bordered a.dribbble:hover {
+  color: #ea73a0;
+  border-color: #ea73a0;
+}
+.social-media.bordered a.pinterest:hover {
+  color: #d73532;
+  border-color: #d73532;
+}
+.social-media.bordered a.google:hover {
+  color: #da4835;
+  border-color: #da4835;
+}
+.social-media.bordered a.tumblr:hover {
+  color: #2a445f;
+  border-color: #2a445f;
+}
+.social-media.bordered a.instagram:hover {
+  color: #82685a;
+  border-color: #82685a;
+}
+.social-media.bordered a.rss:hover {
+  color: #f79638;
+  border-color: #f79638;
+}
+.social-media.bordered a.linkedin:hover {
+  color: #018faf;
+  border-color: #018faf;
+}
+.social-media.bordered a.skype:hover {
+  color: #00b0f6;
+  border-color: #00b0f6;
+}
+.social-media.bordered a.flickr:hover {
+  color: #0061db;
+  border-color: #0061db;
+}
+.social-media.bordered a.vimeo:hover {
+  color: #4cb2d9;
+  border-color: #4cb2d9;
+}
+.social-media.bordered a.github:hover {
+  color: #3b3b3b;
+  border-color: #3b3b3b;
+}
+.social-media.bordered a.youtube:hover {
+  color: #cc181e;
+  border-color: #cc181e;
+}
+.social-media.bordered a.windows:hover {
+  color: #6dc2e9;
+  border-color: #6dc2e9;
+}
+.social-media.bordered a.dropbox:hover {
+  color: #007ee5;
+  border-color: #007ee5;
+}
+.social-media.bordered a.xing:hover {
+  color: #026566;
+  border-color: #026566;
+}
+.social-media.bordered a.adn:hover {
+  color: #1ea076;
+  border-color: #1ea076;
+}
+.social-media.bordered a.android:hover {
+  color: #98cb02;
+  border-color: #98cb02;
+}
+.social-media.bordered a.apple:hover {
+  color: #a6b1b7;
+  border-color: #a6b1b7;
+}
+.social-media.bordered a.behance:hover {
+  color: #2d9ad2;
+  border-color: #2d9ad2;
+}
+.social-media.bordered a.bitbucket:hover {
+  color: #214f81;
+  border-color: #214f81;
+}
+.social-media.bordered a.bitcoin:hover {
+  color: #f7931b;
+  border-color: #f7931b;
+}
+.social-media.bordered a.codepan:hover {
+  color: #000;
+  border-color: #000;
+}
+.social-media.bordered a.css3:hover {
+  color: #3289ce;
+  border-color: #3289ce;
+}
+.social-media.bordered a.delicious:hover {
+  color: #3399fe;
+  border-color: #3399fe;
+}
+.social-media.bordered a.deviantart:hover {
+  color: #c8da30;
+  border-color: #c8da30;
+}
+.social-media.bordered a.digg:hover {
+  color: #0080c2;
+  border-color: #0080c2;
+}
+.social-media.bordered a.drupal:hover {
+  color: #0077b9;
+  border-color: #0077b9;
+}
+.social-media.bordered a.empire:hover {
+  color: #000;
+  border-color: #000;
+}
+.social-media.bordered a.foursquare:hover {
+  color: #daecb0;
+  border-color: #daecb0;
+}
+.social-media.bordered a.git:hover {
+  color: #f34f29;
+  border-color: #f34f29;
+}
+.social-media.bordered a.gitti:hover {
+  color: #634c3e;
+  border-color: #634c3e;
+}
+.social-media.bordered a.hacker-news:hover {
+  color: #f18642;
+  border-color: #f18642;
+}
+.social-media.bordered a.html5:hover {
+  color: #e54c1f;
+  border-color: #e54c1f;
+}
+.social-media.bordered a.joomla:hover {
+  color: #016fb9;
+  border-color: #016fb9;
+}
+.social-media.bordered a.jsfiddle:hover {
+  color: #4679a4;
+  border-color: #4679a4;
+}
+.social-media.bordered a.linux:hover {
+  color: #fece0e;
+  border-color: #fece0e;
+}
+.social-media.bordered a.maxcdn:hover {
+  color: #f36f20;
+  border-color: #f36f20;
+}
+.social-media.bordered a.openid:hover {
+  color: #fe6101;
+  border-color: #fe6101;
+}
+.social-media.bordered a.pagelines:hover {
+  color: #3783e3;
+  border-color: #3783e3;
+}
+.social-media.bordered a.pied-piper:hover {
+  color: #0c7b48;
+  border-color: #0c7b48;
+}
+.social-media.bordered a.qq:hover {
+  color: #23286c;
+  border-color: #23286c;
+}
+.social-media.bordered a.rebel:hover {
+  color: #000;
+  border-color: #000;
+}
+.social-media.bordered a.reddit:hover {
+  color: #cee3f8;
+  border-color: #cee3f8;
+}
+.social-media.bordered a.renren:hover {
+  color: #0d81e4;
+  border-color: #0d81e4;
+}
+.social-media.bordered a.share:hover {
+  color: #252525;
+  border-color: #252525;
+}
+.social-media.bordered a.slack:hover {
+  color: #453744;
+  border-color: #453744;
+}
+.social-media.bordered a.soundcloud:hover {
+  color: #fe4e00;
+  border-color: #fe4e00;
+}
+.social-media.bordered a.spotify:hover {
+  color: #80bb41;
+  border-color: #80bb41;
+}
+.social-media.bordered a.stack-exchange:hover {
+  color: #265a93;
+  border-color: #265a93;
+}
+.social-media.bordered a.stackoverflow:hover {
+  color: #fea501;
+  border-color: #fea501;
+}
+.social-media.bordered a.steam:hover {
+  color: #191919;
+  border-color: #191919;
+}
+.social-media.bordered a.stumbleupon:hover {
+  color: #f04f23;
+  border-color: #f04f23;
+}
+.social-media.bordered a.tencent-weibo:hover {
+  color: #0063a7;
+  border-color: #0063a7;
+}
+.social-media.bordered a.trello:hover {
+  color: #226784;
+  border-color: #226784;
+}
+.social-media.bordered a.vine:hover {
+  color: #00b081;
+  border-color: #00b081;
+}
+.social-media.bordered a.vk:hover {
+  color: #50769d;
+  border-color: #50769d;
+}
+.social-media.bordered a.wechat:hover {
+  color: #a4dc31;
+  border-color: #a4dc31;
+}
+.social-media.bordered a.weibo:hover {
+  color: #d82828;
+  border-color: #d82828;
+}
+.social-media.bordered a.wordpress:hover {
+  color: #454442;
+  border-color: #454442;
+}
+.social-media.bordered a.yahoo:hover {
+  color: #4b04a8;
+  border-color: #4b04a8;
+}
+.social-media.bordered a.ftpx:hover {
+  color: #000;
+  border-color: #000;
+}
+.social-media.bordered a.amazon:hover {
+  color: #ff9900;
+  border-color: #ff9900;
+}
+.social-media.bordered a.angellist:hover {
+  color: #000;
+  border-color: #000;
+}
+.social-media.bordered a.btc:hover {
+  color: #f7931b;
+  border-color: #f7931b;
+}
+.social-media.bordered a.black-tie:hover {
+  color: #000;
+  border-color: #000;
+}
+.social-media.bordered a.bluetooth:hover {
+  color: #0a3d91;
+  border-color: #0a3d91;
+}
+.social-media.bordered a.buysellads:hover {
+  color: #ba0202;
+  border-color: #ba0202;
+}
+.social-media.bordered a.cc-amex:hover {
+  color: #016dd2;
+  border-color: #016dd2;
+}
+.social-media.bordered a.cc-diners-club:hover {
+  color: #0069aa;
+  border-color: #0069aa;
+}
+.social-media.bordered a.cc-discover:hover {
+  color: #f88737;
+  border-color: #f88737;
+}
+.social-media.bordered a.cc-jcb:hover {
+  color: #29166f;
+  border-color: #29166f;
+}
+.social-media.bordered a.cc-mastercard:hover {
+  color: #fe9611;
+  border-color: #fe9611;
+}
+.social-media.bordered a.paypal:hover {
+  color: #012069;
+  border-color: #012069;
+}
+.social-media.bordered a.cc-stripe:hover {
+  color: #49b802;
+  border-color: #49b802;
+}
+.social-media.bordered a.cc-visa:hover {
+  color: #1b4da2;
+  border-color: #1b4da2;
+}
+.social-media.bordered a.chrome:hover {
+  color: #edcd16;
+  border-color: #edcd16;
+}
+.social-media.bordered a.codepen:hover {
+  color: #1b1c1b;
+  border-color: #1b1c1b;
+}
+.social-media.bordered a.codiepie:hover {
+  color: #000;
+  border-color: #000;
+}
+.social-media.bordered a.connectdevelop:hover {
+  color: #023cb0;
+  border-color: #023cb0;
+}
+.social-media.bordered a.contao:hover {
+  color: #e4790f;
+  border-color: #e4790f;
+}
+.social-media.bordered a.dashcube:hover {
+  color: #000;
+  border-color: #000;
+}
+.social-media.bordered a.edge:hover {
+  color: #2c74be;
+  border-color: #2c74be;
+}
+.social-media.bordered a.expeditedssl:hover {
+  color: #2e2e2e;
+  border-color: #2e2e2e;
+}
+.social-media.bordered a.firefox:hover {
+  color: #df731b;
+  border-color: #df731b;
+}
+.social-media.bordered a.fonticons:hover {
+  color: #1d1e2a;
+  border-color: #1d1e2a;
+}
+.social-media.bordered a.fort-awesome:hover {
+  color: #000;
+  border-color: #000;
+}
+.social-media.bordered a.forumbee:hover {
+  color: #85ac2f;
+  border-color: #85ac2f;
+}
+.social-media.bordered a.get-pocket:hover {
+  color: #e84352;
+  border-color: #e84352;
+}
+.social-media.bordered a.gg:hover {
+  color: #fd0002;
+  border-color: #fd0002;
+}
+.social-media.bordered a.gratipay:hover {
+  color: #653614;
+  border-color: #653614;
+}
+.social-media.bordered a.houzz:hover {
+  color: #9bc545;
+  border-color: #9bc545;
+}
+.social-media.bordered a.internet-explorer:hover {
+  color: #00bcf2;
+  border-color: #00bcf2;
+}
+.social-media.bordered a.ioxhost:hover {
+  color: #f6a814;
+  border-color: #f6a814;
+}
+.social-media.bordered a.lastfm:hover {
+  color: #e2152b;
+  border-color: #e2152b;
+}
+.social-media.bordered a.leanpub:hover {
+  color: #231f20;
+  border-color: #231f20;
+}
+.social-media.bordered a.meanpath:hover {
+  color: #538dd6;
+  border-color: #538dd6;
+}
+.social-media.bordered a.medium:hover {
+  color: #00ab6c;
+  border-color: #00ab6c;
+}
+.social-media.bordered a.mixcloud:hover {
+  color: #040204;
+  border-color: #040204;
+}
+.social-media.bordered a.modx:hover {
+  color: #8ed547;
+  border-color: #8ed547;
+}
+.social-media.bordered a.odnoklassniki:hover {
+  color: #f68634;
+  border-color: #f68634;
+}
+.social-media.bordered a.opencart:hover {
+  color: #00c1f2;
+  border-color: #00c1f2;
+}
+.social-media.bordered a.opera:hover {
+  color: #e81617;
+  border-color: #e81617;
+}
+.social-media.bordered a.optin-monster:hover {
+  color: #8ed31e;
+  border-color: #8ed31e;
+}
+.social-media.bordered a.product-hunt:hover {
+  color: #d6573d;
+  border-color: #d6573d;
+}
+.social-media.bordered a.reddit:hover {
+  color: #ff4500;
+  border-color: #ff4500;
+}
+.social-media.bordered a.safari:hover {
+  color: #2973d9;
+  border-color: #2973d9;
+}
+.social-media.bordered a.scribd:hover {
+  color: #382d29;
+  border-color: #382d29;
+}
+.social-media.bordered a.sellsy:hover {
+  color: #006ca2;
+  border-color: #006ca2;
+}
+.social-media.bordered a.shirtsinbulk:hover {
+  color: #dd3a26;
+  border-color: #dd3a26;
+}
+.social-media.bordered a.simplybuilt:hover {
+  color: #322f34;
+  border-color: #322f34;
+}
+.social-media.bordered a.skyatlas:hover {
+  color: #01aebe;
+  border-color: #01aebe;
+}
+.social-media.bordered a.slideshare:hover {
+  color: #13999a;
+  border-color: #13999a;
+}
+.social-media.bordered a.stack-overflow:hover {
+  color: #ef532a;
+  border-color: #ef532a;
+}
+.social-media.bordered a.tripadvisor:hover {
+  color: #1e892f;
+  border-color: #1e892f;
+}
+.social-media.bordered a.twitch:hover {
+  color: #6441a5;
+  border-color: #6441a5;
+}
+.social-media.bordered a.usb:hover {
+  color: #000;
+  border-color: #000;
+}
+.social-media.bordered a.viacoin:hover {
+  color: #2376a2;
+  border-color: #2376a2;
+}
+.social-media.bordered a.whatsapp:hover {
+  color: #44c254;
+  border-color: #44c254;
+}
+.social-media.bordered a.wikipedia:hover {
+  color: #0c0c0c;
+  border-color: #0c0c0c;
+}
+.social-media.bordered a.y-combinator:hover {
+  color: #ff6501;
+  border-color: #ff6501;
+}
+.social-media.bordered a.yelp:hover {
+  color: #bf311b;
+  border-color: #bf311b;
+}
+.social-media.bordered a.email:hover {
+  color: #689c49;
+  border-color: #689c49;
+}
+.social-media.bordered a.envira:hover {
+  color: #75bd3b;
+  border-color: #75bd3b;
+}
+.social-media.bordered a.gitlab:hover {
+  color: #e24329;
+  border-color: #e24329;
+}
+.social-media.bordered a.glide:hover {
+  color: #00a7ff;
+  border-color: #00a7ff;
+}
+.social-media.bordered a.snapchat:hover {
+  color: #efe200;
+  border-color: #efe200;
+}
+.social-media.bordered a.viadeo:hover {
+  color: #f4982b;
+  border-color: #f4982b;
+}
+.social-media.bordered a.wpbeginner:hover {
+  color: #ff6600;
+  border-color: #ff6600;
+}
+.social-media.bordered a.wpforms:hover {
+  color: #b6581a;
+  border-color: #b6581a;
+}
+
+.social-media.rounded a:hover {
+  color: #fff !important;
+}
+
+.social-media.rounded a.facebook:hover { background-color: #0e59a0; }
+.social-media.rounded a.twitter:hover { background-color: #0ea4ff; }
+.social-media.rounded a.dribbble:hover { background-color: #ea73a0; }
+.social-media.rounded a.pinterest:hover { background-color: #d73532; }
+.social-media.rounded a.google:hover { background-color: #da4835; }
+.social-media.rounded a.tumblr:hover { background-color: #2a445f; }
+.social-media.rounded a.instagram:hover { background-color: #82685a; }
+.social-media.rounded a.rss:hover { background-color: #f79638; }
+.social-media.rounded a.linkedin:hover { background-color: #018faf; }
+.social-media.rounded a.skype:hover { background-color: #00b0f6; }
+.social-media.rounded a.flickr:hover { background-color: #0061db; }
+.social-media.rounded a.vimeo:hover { background-color: #4cb2d9; }
+.social-media.rounded a.github:hover { background-color: #3b3b3b; }
+.social-media.rounded a.youtube:hover { background-color: #cc181e; }
+.social-media.rounded a.windows:hover { background-color: #6dc2e9; }
+.social-media.rounded a.dropbox:hover { background-color: #007ee5; }
+.social-media.rounded a.xing:hover { background-color: #026566; }
+.social-media.rounded a.adn:hover { background-color: #1ea076; }
+.social-media.rounded a.android:hover { background-color: #98cb02; }
+.social-media.rounded a.apple:hover { background-color: #a6b1b7; }
+.social-media.rounded a.behance:hover { background-color: #2d9ad2; }
+.social-media.rounded a.bitbucket:hover { background-color: #214f81; }
+.social-media.rounded a.bitcoin:hover { background-color: #f7931b; }
+.social-media.rounded a.codepan:hover { background-color: #000; }
+.social-media.rounded a.css3:hover { background-color: #3289ce; }
+.social-media.rounded a.delicious:hover { background-color: #3399fe; }
+.social-media.rounded a.deviantart:hover { background-color: #c8da30; }
+.social-media.rounded a.digg:hover { background-color: #0080c2; }
+.social-media.rounded a.drupal:hover { background-color: #0077b9; }
+.social-media.rounded a.empire:hover { background-color: #000; }
+.social-media.rounded a.foursquare:hover { background-color: #daecb0; }
+.social-media.rounded a.git:hover { background-color: #f34f29; }
+.social-media.rounded a.gitti:hover { background-color: #634c3e; }
+.social-media.rounded a.hacker-news:hover { background-color: #f18642; }
+.social-media.rounded a.html5:hover { background-color: #e54c1f; }
+.social-media.rounded a.joomla:hover { background-color: #016fb9; }
+.social-media.rounded a.jsfiddle:hover { background-color: #4679a4; }
+.social-media.rounded a.linux:hover { background-color: #fece0e; }
+.social-media.rounded a.maxcdn:hover { background-color: #f36f20; }
+.social-media.rounded a.openid:hover { background-color: #fe6101; }
+.social-media.rounded a.pagelines:hover { background-color: #3783e3; }
+.social-media.rounded a.pied-piper:hover { background-color: #0c7b48; }
+.social-media.rounded a.qq:hover { background-color: #23286c; }
+.social-media.rounded a.rebel:hover { background-color: #000; }
+.social-media.rounded a.reddit:hover { background-color: #cee3f8; }
+.social-media.rounded a.renren:hover { background-color: #0d81e4; }
+.social-media.rounded a.share:hover { background-color: #252525; }
+.social-media.rounded a.slack:hover { background-color: #453744; }
+.social-media.rounded a.soundcloud:hover { background-color: #fe4e00; }
+.social-media.rounded a.spotify:hover { background-color: #80bb41; }
+.social-media.rounded a.stack-exchange:hover { background-color: #265a93; }
+.social-media.rounded a.stackoverflow:hover { background-color: #fea501; }
+.social-media.rounded a.steam:hover { background-color: #191919; }
+.social-media.rounded a.stumbleupon:hover { background-color: #f04f23; }
+.social-media.rounded a.tencent-weibo:hover { background-color: #0063a7; }
+.social-media.rounded a.trello:hover { background-color: #226784; }
+.social-media.rounded a.vine:hover { background-color: #00b081; }
+.social-media.rounded a.vk:hover { background-color: #50769d; }
+.social-media.rounded a.wechat:hover { background-color: #a4dc31; }
+.social-media.rounded a.weibo:hover { background-color: #d82828; }
+.social-media.rounded a.wordpress:hover { background-color: #454442; }
+.social-media.rounded a.yahoo:hover { background-color: #4b04a8; }
+.social-media.rounded a.ftpx:hover { background-color: #000; }
+.social-media.rounded a.amazon:hover { background-color: #ff9900; }
+.social-media.rounded a.angellist:hover { background-color: #000; }
+.social-media.rounded a.btc:hover { background-color: #f7931b; }
+.social-media.rounded a.black-tie:hover { background-color: #000; }
+.social-media.rounded a.bluetooth:hover { background-color: #0a3d91; }
+.social-media.rounded a.buysellads:hover { background-color: #ba0202; }
+.social-media.rounded a.cc-amex:hover { background-color: #016dd2; }
+.social-media.rounded a.cc-diners-club:hover { background-color: #0069aa; }
+.social-media.rounded a.cc-discover:hover { background-color: #f88737; }
+.social-media.rounded a.cc-jcb:hover { background-color: #29166f; }
+.social-media.rounded a.cc-mastercard:hover { background-color: #fe9611; }
+.social-media.rounded a.paypal:hover { background-color: #012069; }
+.social-media.rounded a.cc-stripe:hover { background-color: #49b802; }
+.social-media.rounded a.cc-visa:hover { background-color: #1b4da2; }
+.social-media.rounded a.chrome:hover { background-color: #edcd16; }
+.social-media.rounded a.codepen:hover { background-color: #1b1c1b; }
+.social-media.rounded a.codiepie:hover { background-color: #000; }
+.social-media.rounded a.connectdevelop:hover { background-color: #023cb0; }
+.social-media.rounded a.contao:hover { background-color: #e4790f; }
+.social-media.rounded a.dashcube:hover { background-color: #000; }
+.social-media.rounded a.edge:hover { background-color: #2c74be; }
+.social-media.rounded a.expeditedssl:hover { background-color: #2e2e2e; }
+.social-media.rounded a.firefox:hover { background-color: #df731b; }
+.social-media.rounded a.fonticons:hover { background-color: #1d1e2a; }
+.social-media.rounded a.fort-awesome:hover { background-color: #000; }
+.social-media.rounded a.forumbee:hover { background-color: #85ac2f; }
+.social-media.rounded a.get-pocket:hover { background-color: #e84352; }
+.social-media.rounded a.gg:hover { background-color: #fd0002; }
+.social-media.rounded a.gratipay:hover { background-color: #653614; }
+.social-media.rounded a.houzz:hover { background-color: #9bc545; }
+.social-media.rounded a.internet-explorer:hover { background-color: #00bcf2; }
+.social-media.rounded a.ioxhost:hover { background-color: #f6a814; }
+.social-media.rounded a.lastfm:hover { background-color: #e2152b; }
+.social-media.rounded a.leanpub:hover { background-color: #231f20; }
+.social-media.rounded a.meanpath:hover { background-color: #538dd6; }
+.social-media.rounded a.medium:hover { background-color: #00ab6c; }
+.social-media.rounded a.mixcloud:hover { background-color: #040204; }
+.social-media.rounded a.modx:hover { background-color: #8ed547; }
+.social-media.rounded a.odnoklassniki:hover { background-color: #f68634; }
+.social-media.rounded a.opencart:hover { background-color: #00c1f2; }
+.social-media.rounded a.opera:hover { background-color: #e81617; }
+.social-media.rounded a.optin-monster:hover { background-color: #8ed31e; }
+.social-media.rounded a.product-hunt:hover { background-color: #d6573d; }
+.social-media.rounded a.reddit:hover { background-color: #ff4500; }
+.social-media.rounded a.safari:hover { background-color: #2973d9; }
+.social-media.rounded a.scribd:hover { background-color: #382d29; }
+.social-media.rounded a.sellsy:hover { background-color: #006ca2; }
+.social-media.rounded a.shirtsinbulk:hover { background-color: #dd3a26; }
+.social-media.rounded a.simplybuilt:hover { background-color: #322f34; }
+.social-media.rounded a.skyatlas:hover { background-color: #01aebe; }
+.social-media.rounded a.slideshare:hover { background-color: #13999a; }
+.social-media.rounded a.stack-overflow:hover { background-color: #ef532a; }
+.social-media.rounded a.tripadvisor:hover { background-color: #1e892f; }
+.social-media.rounded a.twitch:hover { background-color: #6441a5; }
+.social-media.rounded a.usb:hover { background-color: #000; }
+.social-media.rounded a.viacoin:hover { background-color: #2376a2; }
+.social-media.rounded a.whatsapp:hover { background-color: #44c254; }
+.social-media.rounded a.wikipedia:hover { background-color: #0c0c0c; }
+.social-media.rounded a.y-combinator:hover { background-color: #ff6501; }
+.social-media.rounded a.yelp:hover { background-color: #bf311b; }
+.social-media.rounded a.email:hover { background-color: #689c49; }
+.social-media.rounded a.envira:hover { background-color: #75bd3b; }
+.social-media.rounded a.gitlab:hover { background-color: #e24329; }
+.social-media.rounded a.glide:hover { background-color: #00a7ff; }
+.social-media.rounded a.snapchat:hover { background-color: #efe200; }
+.social-media.rounded a.viadeo:hover { background-color: #f4982b; }
+.social-media.rounded a.wpbeginner:hover { background-color: #ff6600; }
+.social-media.rounded a.wpforms:hover { background-color: #b6581a; }
+
+
+/* DEFAULT COLOR */
+.social-media.default-color a:hover {
+  color: #00f0d1;
+}
+
+.social-media.bordered.default-color a:hover {
+  border-color: #00f0d1;
+  color: #00f0d1;
+}
+
+.social-media.rounded.default-color a:hover {
+  background-color: #00f0d1;
+  color: #fff;
+}

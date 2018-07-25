@@ -1,0 +1,226 @@
+#contact-form {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+#alert-area {
+  margin: 20px 0;
+}
+
+#contact-form p {
+  position: relative;
+  margin-bottom: 0;
+}
+
+#contact-form textarea,
+#contact-form input[type="text"] {
+  padding-left: 0;
+  border: none;
+  border-bottom: 2px solid #ebebeb;
+}
+
+#contact-form label {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 0;
+  color: #aaa;
+  font-size: 14px;
+  font-style: italic;
+  pointer-events:none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+#contact-form input ~ span,
+#contact-form textarea ~ span {
+  position: absolute;
+  z-index: 20;
+  bottom: 20px;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #00f0d1;
+  background: -webkit-linear-gradient(90deg, #00f0d1, #a966ee);
+  background: -ms-linear-gradient(90deg, #00f0d1, #a966ee);
+  background: linear-gradient(90deg, #00f0d1, #a966ee);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+#contact-form input:focus ~ label,
+#contact-form textarea:focus ~ label,
+#contact-form input:valid ~ label,
+#contact-form textarea:valid ~ label {
+  top: -10px;
+  font-size: 12px;
+  font-style: normal;
+}
+
+#contact-form input:focus ~ span,
+#contact-form textarea:focus ~ span {
+  width: 100%;
+}
+
+#contact-form label.error,
+#contact-form #name-error,
+#contact-form #email-error,
+#contact-form #subject-error,
+#contact-form #message-error,
+#contact-form input:focus ~ label.error,
+#contact-form textarea:focus ~ label.error {
+  position: absolute;
+  top: 100%;
+  margin-top: -20px;
+  color: #ff0050;
+  font-size: 11px;
+  font-style: normal;
+}
+
+#contact-form button[type="submit"] {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+#contact-form p:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+/* QUICK CONTACT FORM */
+.quick-contact-form {
+  padding: 40px 20px;
+  border: 2px solid #ebebeb;
+  margin-bottom: 50px;
+}
+
+.quick-contact-form h6 {
+  font-weight: 600;
+}
+
+.quick-contact-form #contact-form {
+  margin-bottom: 0;
+}
+
+.quick-contact-form.style-3 {
+  position: relative;
+  padding: 40px 80px 40px;
+  border: 2px solid #ebebeb;
+  background: #ffffff;
+}
+
+.quick-contact-form.style-2 {
+  position: relative;
+  padding: 40px 80px 40px;
+  border: none;
+}
+
+.quick-contact-form.style-2:before,
+.quick-contact-form.style-2:after {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+}
+
+.quick-contact-form.style-2:before {
+  background-color: #000;
+  opacity: 0.61;
+}
+
+.quick-contact-form.style-2:after {
+  background: #00f0d1;
+  background: -webkit-linear-gradient(45deg, #00f0d1, #a966ee);
+  background: -ms-linear-gradient(45deg, #00f0d1, #a966ee);
+  background: linear-gradient(45deg, #00f0d1, #a966ee);
+  opacity: 0.61;
+}
+
+.quick-contact-form.style-2 #contact-form button[type="submit"] {
+  border-radius: 2px;
+  width: 100%;
+}
+
+/*general-form*/
+
+#general-form label.error,
+#general-form #name-error,
+#general-form #email-error,
+#general-form #subject-error,
+#general-form #message-error,
+#general-form input:focus ~ label.error,
+#general-form textarea:focus ~ label.error {
+  margin-top: -50px;
+  color: #ff0050;
+  font-size: 12px;
+  font-style: normal;
+}
+
+/* DARK SECTION */
+.full-section.dark-section #contact-form label {
+  color: inherit;
+}
+
+@media (max-width: 991px) {
+
+  .quick-contact-form {
+    margin-top: 50px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .quick-contact-form.style-2 {
+    padding: 40px 30px 40px;
+  }
+
+}
+
+/* CONTACT BOXES */
+.contact-box {
+  position: relative;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.contact-box > i {
+  display: inline-block;
+  margin-bottom: 45px;
+  color: #00f0d1;
+  font-size: 52px;
+  line-height: 52px;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.contact-box .contact-box-content h6 {
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.contact-box .contact-box-content a {
+  color: #838383;
+}
+
+.contact-box .contact-box-content > *:last-child {
+  margin-bottom: 0;
+}
+
+.contact-box:hover > i {
+  color: #00f0d1;
+  background: -webkit-linear-gradient(51deg, #00f0d1, #a966ee);
+  background: -ms-linear-gradient(51deg, #00f0d1, #a966ee);
+  background: linear-gradient(51deg, #00f0d1, #a966ee);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

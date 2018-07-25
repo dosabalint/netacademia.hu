@@ -1,0 +1,52 @@
+
+.logos-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+  text-align: center;
+  list-style: none;
+}
+
+.logos-list-2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  text-align: center;
+  list-style: none;
+}
+
+.logos-list li {
+  flex-basis: 20%;
+}
+
+.logos-list li a {
+  display: block;
+  height: 90px;
+  padding: 0 20px;
+  margin: 20px 0;
+  text-align: center;
+  background: no-repeat top center;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.logos-list li a:hover {
+  background-position: bottom center;
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+
+  .logos-list li {
+    flex-basis: 33.3333%;
+  }
+
+}
+
+@media (max-width: 575px) {
+
+  .logos-list li {
+    flex-basis: 50%;
+  }
+
+}

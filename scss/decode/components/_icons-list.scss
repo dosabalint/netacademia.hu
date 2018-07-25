@@ -1,0 +1,36 @@
+/* ICONS LIST */
+.icons-list {
+  list-style: none;
+}
+
+.icons-list li {
+  float: left;
+  margin-right: 10px;
+}
+
+.icons-list li:last-child {
+  margin-right: 0;
+}
+
+.icons-list li i {
+  display: block;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.icons-list li a {
+  color: #838383;
+  text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.icons-list li a:hover {
+  color: #00f0d1;
+}
+
+.icons-list:after {
+  display: table;
+  clear: both;
+  content: "";
+}

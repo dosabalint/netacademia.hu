@@ -1,0 +1,157 @@
+/***********************************************************************************
+ *	- INDEX
+ ***********************************************************************************/
+
+/* SMARTPHONES SECTION */
+#smartphones-section {}
+
+#smartphones-section img {
+  position: relative;
+}
+
+#smartphones-section img:nth-child(1) {
+  z-index: 3;
+}
+
+#smartphones-section img:nth-child(2) {
+  z-index: 2;
+  margin-top: 135px;
+  margin-left: -120px;
+}
+
+#smartphones-section img:nth-child(3) {
+  z-index: 1;
+  margin-top: 20px;
+  margin-left: -120px;
+}
+
+@media (max-width: 1199px) {
+
+  #smartphones-section img {
+    max-width: 45%;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  #smartphones-section {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  #smartphones-section img {
+    max-width: 100%;
+  }
+
+  #smartphones-section img:nth-child(1),
+  #smartphones-section img:nth-child(2),
+  #smartphones-section img:nth-child(3) {
+    margin-left: 0;
+  }
+
+}
+
+/* SCREENS SECTION */
+#screens-section {
+  position: relative;
+  margin-top: 90px;
+}
+
+#screens-section img {
+  position: relative;
+}
+
+#screens-section img:nth-child(1) {
+  z-index: 1;
+  margin-top: 80px;
+}
+
+#screens-section img:nth-child(2) {
+  z-index: 2;
+  margin-left: 90px;
+  margin-top: -40px;
+}
+
+#screens-section img:nth-child(3) {
+  position: absolute;
+  right: 100px;
+  top: -55px;
+  z-index: 1;
+}
+
+@media (max-width: 1199px) {
+
+  #screens-section img {
+    max-width: 60%;
+  }
+
+}
+
+@media (max-width: 991px) {
+
+  #screens-section {
+    margin-top: 20px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  #screens-section {
+    text-align: center;
+  }
+
+  #screens-section img {
+    max-width: 100%;
+  }
+
+  #screens-section img:nth-child(1),
+  #screens-section img:nth-child(2),
+  #screens-section img:nth-child(3) {
+    margin-left: 0;
+  }
+
+  #screens-section img:nth-child(2) {
+    margin-top: 75px;
+  }
+
+  #screens-section img:nth-child(3) {
+    position: relative;
+    right: 0;
+  }
+
+}
+
+/* SIGNATURE */
+.signature {
+  position: relative;
+  float: right;
+  padding-right: 110px;
+  margin-top: 20px;
+  color: #252525;
+  font-weight: 600;
+}
+
+.signature img {
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+}
+
+/* CIRCLE TEXT */
+.circle-text {
+  float: right;
+  width: 164px;
+  padding: 50px 0;
+  border-radius: 50%;
+  margin-right: 50px;
+  background-color: #ff0050;
+  color: #fff;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 45px 90px 40px 0 rgba(0, 0, 0, 0.27);
+}

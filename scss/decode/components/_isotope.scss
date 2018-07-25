@@ -1,0 +1,72 @@
+.isotope {
+  margin-bottom: 50px;
+}
+
+.isotope.gutter {
+  margin: -15px -15px 35px;
+}
+
+.isotope .isotope-item {
+  float: left;
+  width: 25%;
+}
+
+.isotope.gutter .isotope-item {
+  padding: 15px;
+}
+
+.isotope.cols-3 .isotope-item {
+  width: 33.333333%;
+}
+
+.isotope.cols-4 .isotope-item {
+  width: 25%;
+}
+
+.isotope .portfolio-item {
+  margin-bottom: 0;
+}
+
+.isotope:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .isotope.gutter {
+    margin: -5px -5px 30px;
+  }
+
+  .isotope.gutter .isotope-item {
+    padding: 5px;
+  }
+
+  .isotope.cols-4 .isotope-item {
+    width: 33.33333%;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .isotope .isotope-item,
+  .isotope.cols-3 .isotope-item,
+  .isotope.cols-4 .isotope-item {
+    float: none;
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .isotope .isotope-item,
+  .isotope.cols-3 .isotope-item,
+  .isotope.cols-4 .isotope-item {
+    float: left;
+    width: 50%;
+  }
+
+}

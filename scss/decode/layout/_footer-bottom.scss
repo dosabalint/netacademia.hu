@@ -1,0 +1,81 @@
+/***********************************************************************************
+ *	- FOOTER BOTTOM
+ ***********************************************************************************/
+
+#footer-bottom {
+  padding: 15px 0;
+  background-color: #e5eef3;
+}
+
+#footer-bottom .widget {
+  margin-bottom: 30px;
+}
+
+#footer-bottom .widget:last-child {
+  margin-bottom: 0;
+}
+
+#footer-bottom .widget-social {
+  text-align: right;
+}
+
+/* DARK FOOTER */
+.footer-dark #footer-bottom {
+  background-color: #222032;
+}
+
+.footer-dark #footer-bottom h1,
+.footer-dark #footer-bottom h2,
+.footer-dark #footer-bottom h3,
+.footer-dark #footer-bottom h4,
+.footer-dark #footer-bottom h5,
+.footer-dark #footer-bottom h6 {
+  color: #afafaf;
+}
+
+.footer-dark #footer-bottom .btn-outline {
+  color: #fff;
+}
+
+.footer-dark #footer-bottom .btn-white {
+  color: #838383;
+}
+
+#footer-bottom .widget:last-child {
+  margin-bottom: 0;
+}
+
+.footer-dark #footer-bottom .widget-recent-posts ul li .post-title,
+.footer-dark #footer-bottom .widget-recent-posts ul li .post-details a,
+.footer-dark #footer-bottom .widget-latest-posts ul li .post-title,
+.footer-dark #footer-bottom .widget-latest-posts ul li .post-details a.post-category,
+.footer-dark #footer-bottom .widget-latest-posts ul li .post-details a:last-of-type,
+.footer-dark #footer-bottom .widget-recent-comments ul li,
+.footer-dark #footer-bottom .widget-recent-comments ul li a {
+  color: inherit;
+}
+
+.footer-dark #footer-bottom .widget-recent-posts ul li .post-title:hover,
+.footer-dark #footer-bottom .widget-recent-posts ul li .post-details a:hover,
+.footer-dark #footer-bottom .widget-latest-posts ul li .post-title:hover,
+.footer-dark #footer-bottom .widget-latest-posts ul li .post-details a.post-category:hover,
+.footer-dark #footer-bottom .widget-latest-posts ul li .post-details a:last-of-type:hover,
+.footer-dark #footer-bottom .widget-recent-comments ul li a:hover {
+  color: #00f0d1;
+}
+
+@media (max-width: 767px) {
+
+  #footer-bottom [class^="col-"] + [class^="col-"] {
+    margin-top: 10px;
+  }
+
+  #footer-bottom .widget-social {
+    text-align: center;
+  }
+
+  #footer-bottom .copyright {
+    text-align: center;
+  }
+
+}

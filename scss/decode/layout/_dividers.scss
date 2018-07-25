@@ -1,0 +1,16 @@
+.hr {
+  height: 1px;
+  margin: 50px 0;
+  background-color: #e1e1e1;
+}
+
+.hr.default-color {
+  background: #00f0d1;
+  background: -webkit-linear-gradient(90deg, #00f0d1, #a966ee);
+  background: -ms-linear-gradient(90deg, #00f0d1, #a966ee);
+  background: linear-gradient(90deg, #00f0d1, #a966ee);
+}
+
+.hr.black {
+  background-color: #252525;
+}

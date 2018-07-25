@@ -1,0 +1,143 @@
+#header {
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.boxed #header .container-fluid {
+  padding: 0;
+}
+
+/* HEADER TRANSPARENT */
+.header-transparent #header {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.header-transparent #header-top + #header {
+  top: 61px;
+}
+
+.header-transparent .menu > li > a {
+  color: #fff;
+}
+
+.header-transparent #header-sticky .menu > li > a {
+  color: #252525;
+}
+
+.header-transparent #page-header {
+  padding-top: 170px;
+}
+
+.header-transparent .mobile-menu-button {
+  color: #fff;
+}
+
+/* HEADER MODERN */
+.header-modern #header {
+  background-color: #232c3d;
+}
+
+.header-modern #header-top + #header {
+  border-top: 1px solid rgba(255, 255, 255, 0.19);
+}
+
+.header-modern .menu > li > a {
+  color: #fff;
+}
+
+.header-modern #header-sticky .menu > li > a {
+  color: #252525;
+}
+
+.header-modern .mobile-menu-button {
+  color: #fff;
+}
+
+/* HEADER BORDERED */
+.header-bordered #header {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.header-bordered #header-top + #header {
+  top: 61px;
+}
+
+.header-bordered .menu > li > a {
+  color: #fff;
+}
+
+.header-bordered .menu > li > a:before {
+  margin-bottom: -1px;
+}
+
+.header-bordered #header-sticky .menu > li > a {
+  color: #252525;
+}
+
+.header-bordered #page-header {
+  padding-top: 170px;
+}
+
+.header-bordered .mobile-menu-button {
+  color: #fff;
+}
+
+/* HEADER CREATIVE */
+.header-creative #header {
+  position: relative;
+  z-index: 100;
+  width: 970px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 33px 51px 0 rgba(0, 0, 0, 0.41);
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+.header-creative #page-header {
+  padding-top: 180px;
+}
+
+@media (min-width: 1200px) {
+
+  #header .container-fluid {
+    padding: 0 50px;
+  }
+
+  .header-creative #header {
+    width: 1240px;
+  }
+
+}
+
+@media (max-width: 991px) {
+
+  .boxed #header .container-fluid {
+    padding: 0 15px;
+  }
+
+  .header-creative #header {
+    width: 90%;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .header-transparent #header-top + #header,
+  .header-bordered #header-top + #header {
+    top: 0;
+  }
+
+}

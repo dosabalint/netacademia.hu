@@ -110,12 +110,12 @@ input[type="checkbox"] ~ span {
 }
 
 input[type="checkbox"] ~ span {
-  background: url(../images/check.png) no-repeat top center;
+  background: url('/decode/check.png') no-repeat top center;
 }
 
 input[type="radio"] ~ span {
   border-radius: 50%;
-  background: url(../images/radio.png) no-repeat top center;
+  background: url('/decode/radio.png') no-repeat top center;
 }
 
 input[type="radio"]:checked ~ span,

@@ -71,7 +71,7 @@
   display: block;
   width: 135px;
   height: 132px;
-  background: url(../images/dots.png) no-repeat center center;
+  background: url('/decode/dots.png') no-repeat center center;
   content: "";
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
@@ -96,7 +96,7 @@
 }
 
 .service-box.style-1:hover > i:after {
-  background-image: url(../images/dots-hover.png);
+  background-image: url('/decode/dots-hover.png');
 }
 
 /* STYLE 2 */

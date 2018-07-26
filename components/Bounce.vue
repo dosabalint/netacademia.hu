@@ -1,5 +1,6 @@
 <template>
-  <div :class="[{ animatable: !visible }, { animated: visible }, bounceDirectionClass]" v-observe-visibility="VisibilityChanged">
+  <div :class="[{ animatable: !visible }, { animated: visible }, bounceDirectionClass]"
+       v-observe-visibility="VisibilityChanged">
     <slot></slot>
   </div>
 </template>
@@ -11,7 +12,7 @@ export default {
       type: String,
       validator: function(value) {
         // The value must match one of these strings
-        return ["in", "left", "right"].indexOf(value) !== -1;
+        return ["in", "left", "right", "fadeInUp"].indexOf(value) !== -1;
       }
     }
   },
@@ -24,8 +25,12 @@ export default {
     bounceDirectionClass: function() {
       if (this.direction === "in") {
         return "bounceIn";
+      } else if (this.direction === "left") {
+        return "bounceInLeft";
+      } else if (this.direction === "right") {
+        return "bounceInRight";
       }
-      return this.direction === "left" ? "bounceInLeft" : "bounceInRight";
+      return this.direction;
     }
   },
   methods: {
@@ -319,6 +324,41 @@ export default {
       opacity: 1;
       transform: scale(1);
     }
+  }
+
+  @-webkit-keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(20px);
+      -ms-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+
+  .fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
   }
 }
 </style>

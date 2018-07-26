@@ -1,0 +1,43 @@
+.filter {
+  margin-bottom: 100px;
+  list-style: none;
+}
+
+.filter li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.filter li:last-child {
+  margin-right: 0;
+}
+
+.filter li a {
+  display: inline-block;
+  color: #252525;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.filter li a:hover,
+.filter li a.active {
+  color: #00f0d1;
+}
+
+@media (max-width: 767px) {
+
+  .filter li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .filter li:last-child {
+    margin-bottom: 0;
+  }
+
+}

@@ -1,0 +1,16 @@
+.fancybox-arrow {
+  outline: none !important;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.fancybox-arrow:hover {
+  opacity: 1;
+}
+
+.fancybox-arrow:after {
+  font-family: "FontAwesome";
+  font-size: 22px;
+  line-height: 44px;
+  content: "\f105";
+}

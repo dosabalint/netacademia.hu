@@ -30,10 +30,10 @@
           <nuxt-link class="nav-link" to="/lenyugozo-tanfolyamok">Lenyűgöző tanfolyamok</nuxt-link>
         </li>
         <li class="nav-item flex-center">
-          <nuxt-link class="nav-link" to="/ultimateakcio">Akció</nuxt-link>
+          <nuxt-link class="nav-link" to="/elofizetes">Előfizetés</nuxt-link>
         </li>
         <li class="nav-item flex-center">
-          <nuxt-link class="nav-link" to="/elofizetes">Előfizetés</nuxt-link>
+          <nuxt-link class="nav-link" to="/business">Business előfizetés</nuxt-link>
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">

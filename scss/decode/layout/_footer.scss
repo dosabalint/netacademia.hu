@@ -1,0 +1,98 @@
+/***********************************************************************************
+ *	- FOOTER
+ ***********************************************************************************/
+
+#footer {
+  padding: 100px 0 95px;
+  background-color: #f1f6f9;
+}
+
+#footer .widget-title {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: none;
+}
+
+#footer .widget-pages ul li {
+  margin-bottom: 7px;
+}
+
+#footer .widget-pages ul li:last-child {
+  margin-bottom: 0;
+}
+
+#footer .widget-pages ul li a {
+  font-size: inherit;
+}
+
+/* FOOTER WHITE */
+.footer-white #footer {
+  padding-top: 0;
+  background-color: #fff;
+}
+
+.footer-white #footer .widget {
+  margin-bottom: 60px;
+}
+
+/* FOOTER DARK */
+.footer-dark #footer {
+  background-color: #29273a;
+}
+
+.footer-dark #footer h1,
+.footer-dark #footer h2,
+.footer-dark #footer h3,
+.footer-dark #footer h4,
+.footer-dark #footer h5,
+.footer-dark #footer h6 {
+  color: #afafaf;
+}
+
+.footer-dark #footer .btn-outline {
+  color: #fff;
+}
+
+.footer-dark #footer .btn-white {
+  color: #838383;
+}
+
+#footer .widget:last-child {
+  margin-bottom: 0;
+}
+
+.footer-dark #footer .widget-recent-posts ul li .post-title,
+.footer-dark #footer .widget-recent-posts ul li .post-details a,
+.footer-dark #footer .widget-latest-posts ul li .post-title,
+.footer-dark #footer .widget-latest-posts ul li .post-details a.post-category,
+.footer-dark #footer .widget-latest-posts ul li .post-details a:last-of-type,
+.footer-dark #footer .widget-recent-comments ul li,
+.footer-dark #footer .widget-recent-comments ul li a {
+  color: inherit;
+}
+
+.footer-dark #footer .widget-recent-posts ul li .post-title:hover,
+.footer-dark #footer .widget-recent-posts ul li .post-details a:hover,
+.footer-dark #footer .widget-latest-posts ul li .post-title:hover,
+.footer-dark #footer .widget-latest-posts ul li .post-details a.post-category:hover,
+.footer-dark #footer .widget-latest-posts ul li .post-details a:last-of-type:hover,
+.footer-dark #footer .widget-recent-comments ul li a:hover {
+  color: #00f0d1;
+}
+
+@media (max-width: 767px) {
+
+  #footer [class^="col-"] + [class^="col-"] {
+    margin-top: 50px;
+  }
+
+  #footer .widget {
+    margin-bottom: 30px;
+  }
+
+  #footer .widget-title {
+    margin-top: 0;
+  }
+
+}

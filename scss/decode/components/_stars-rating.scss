@@ -1,0 +1,23 @@
+.stars-rating i {
+  color: #ececec;
+}
+
+.stars-rating.stars-5 i {
+  color: #ffea00;
+}
+
+.stars-rating.stars-4 i:nth-child(-n+4) {
+  color: #ffea00;
+}
+
+.stars-rating.stars-3 i:nth-child(-n+3) {
+  color: #ffea00;
+}
+
+.stars-rating.stars-2 i:nth-child(-n+2) {
+  color: #ffea00;
+}
+
+.stars-rating.stars-1 i:nth-child(-n+1) {
+  color: #ffea00;
+}

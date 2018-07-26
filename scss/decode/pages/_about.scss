@@ -1,0 +1,116 @@
+/***********************************************************************************
+ *	- ABOUT
+ ***********************************************************************************/
+
+.about-me {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.about-me-thumbnail {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.about-me-hover a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #00f0d1;
+  background: -webkit-linear-gradient(15deg, #a966ee, #00f0d1);
+  background: -ms-linear-gradient(15deg, #a966ee, #00f0d1);
+  background: linear-gradient(15deg, #a966ee, #00f0d1);
+  color: #fff;
+  opacity: 0;
+  cursor: url(../images/zoom.png), auto;
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.about-me-thumbnail.rounded-circle .about-me-hover a {
+  border-radius: 50%;
+}
+
+.about-me h6 {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.about-me h6 + span {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #00f0d1;
+  font-size: 13px;
+}
+
+.about-me > a {
+  display: inline-block;
+  color: #252525;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.about-me > a:after {
+  display: block;
+  width: auto;
+  height: 2px;
+  margin-top: -5px;
+  background: #00f0d1;
+  background: -webkit-linear-gradient(90deg, #00f0d1, #a966ee);
+  background: -ms-linear-gradient(90deg, #00f0d1, #a966ee);
+  background: linear-gradient(90deg, #00f0d1, #a966ee);
+  content: "";
+}
+
+.about-me > a:hover {
+  color: #00f0d1;
+}
+
+.about-me:hover .about-me-hover a {
+  opacity: 0.7;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+
+.about-me > *:last-child {
+  margin-bottom: 0;
+}
+
+/* STYLE 2 */
+.about-me.style-2 {
+  text-align: left;
+}
+
+.about-me.style-2 .about-me-thumbnail {
+  float: left;
+  width: 30%;
+  margin-right: 30px;
+}
+
+.about-me.style-2:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+@media (max-width: 991px) {
+
+  .about-me.style-2 .about-me-thumbnail {
+    float: none;
+    width: 50%;
+  }
+
+}

@@ -86,7 +86,7 @@
                      data-transform_in="o:0;y:100;s:500;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:100;s:500;e:Power2.easeInOut;"
                 >
-                  <DButton theme="white-outline" :href="`${$store.state.url.base}/#reszletek`" class="text-light">
+                  <DButton theme="white-outline" href="/business" class="text-light">
                     Részletek<i class="ml-2 decode-icon-cursor"></i>
                   </DButton>
                 </div>

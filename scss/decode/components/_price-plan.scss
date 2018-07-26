@@ -1,0 +1,152 @@
+.price-plan {
+  position: relative;
+  padding: 0 30px 20px;
+  border: 2px solid #e3e9ec;
+  margin-bottom: 50px;
+  background-color: #fff;
+  color: #838383;
+  text-align: center;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.price-plan:before,
+.price-plan:after {
+  position: absolute;
+  z-index: 1;
+  right: -1px;
+  left: -1px;
+  height: 2px;
+  background: -webkit-linear-gradient(90deg, #00f0d1, #a966ee);
+  background: -ms-linear-gradient(90deg, #00f0d1, #a966ee);
+  background: linear-gradient(90deg, #00f0d1, #a966ee);
+  opacity: 0;
+  content: "";
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.price-plan:before {
+  top: -2px;
+}
+
+.price-plan:after {
+  bottom: -2px;
+}
+
+.price-plan-header {
+  position: relative;
+  padding: 60px 0;
+}
+
+.price-plan-header span {
+  position: absolute;
+  top: 0;
+  left: -30px;
+  right: -30px;
+  background: -webkit-linear-gradient(83deg, #00f0d1, #4766c8, #c44fcb);
+  background: -ms-linear-gradient(83deg, #00f0d1, #4766c8, #c44fcb);
+  background: linear-gradient(83deg, #00f0d1, #4766c8, #c44fcb);
+  color: #fff;
+  font-size: 14px;
+  opacity: 0.51;
+}
+
+.price-plan-header h1,
+.price-plan-header h3,
+.price-plan-header h5 {
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.price-plan-header h1 {
+  position: relative;
+  color: #00f0d1;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 600;
+}
+
+.price-plan-header h1 sup {
+  position: absolute;
+  top: 17px;
+  font-size: 18px;
+}
+
+.price-plan-header h3 {
+  padding-top: 18px;
+  color: #00f0d1;
+  line-height: 38px;
+  font-weight: 600;
+}
+
+.price-plan-header h1 + p,
+.price-plan-header h3 + p {
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.price-plan-header h5 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.price-plan ul {
+  margin-bottom: 35px;
+  list-style: none;
+}
+
+.price-plan ul li {
+  margin-bottom: 20px;
+}
+
+.price-plan ul li:last-child {
+  margin-bottom: 0;
+}
+
+.price-plan ul li i {
+  font-size: 20px;
+  color: #00f0d1;
+}
+
+.price-plan:hover,
+.price-plan.recommended {
+  border-right-color: #c44fcb;
+  border-left-color: #00f0d1;
+  background-color: transparent;
+}
+
+.price-plan:hover:before,
+.price-plan:hover:after,
+.price-plan.recommended:before,
+.price-plan.recommended:after {
+  opacity: 1;
+}
+
+/* DARK SECTION */
+.full-section.dark-section .price-plan-header h1,
+.full-section.dark-section .price-plan-header h3,
+.full-section.dark-section .price-plan-header h5 {
+  color: #252525;
+}
+
+.full-section.dark-section .price-plan:hover,
+.full-section.dark-section .price-plan:hover .price-plan-header h1,
+.full-section.dark-section .price-plan:hover .price-plan-header h3,
+.full-section.dark-section .price-plan:hover .price-plan-header h5,
+.full-section.dark-section .price-plan.recommended,
+.full-section.dark-section .price-plan.recommended .price-plan-header h1,
+.full-section.dark-section .price-plan.recommended .price-plan-header h3,
+.full-section.dark-section .price-plan.recommended .price-plan-header h5 {
+  color: #fff;
+}
+
+.full-section.dark-section .price-plan .btn-outline {
+  color: #252525;
+}
+
+.full-section.dark-section .price-plan:hover .btn-outline,
+.full-section.dark-section .price-plan.recommended .btn-outline {
+  color: #fff;
+}

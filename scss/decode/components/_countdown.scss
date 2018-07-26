@@ -1,0 +1,51 @@
+.countdown {
+  margin-bottom: 150px;
+}
+
+.countdown > div {
+  position: relative;
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+.countdown .count {
+  margin-bottom: 15px;
+  font-size: 75px;
+  line-height: 75px;
+}
+
+.countdown > div > span {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.countdown:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+@media (max-width: 767px) {
+
+  .countdown > div {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .countdown > div:last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .countdown > div {
+    width: 50%;
+  }
+
+}

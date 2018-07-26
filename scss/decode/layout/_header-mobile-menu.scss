@@ -1,0 +1,141 @@
+/***********************************************************************************
+ *	- MOBILE MENU
+ ***********************************************************************************/
+
+.mobile-menu-button {
+  position: relative;
+  z-index: 100;
+  float: right;
+  display: none;
+  color: #00f0d1;
+  font-size: 24px;
+  line-height: 46px;
+  text-decoration: none;
+}
+
+.mobile-menu-button:hover,
+.mobile-menu-button:focus {
+  text-decoration: none;
+}
+
+#mobile-menu,
+#mobile-menu ul {
+  list-style: none;
+  margin: 0;
+  background-color: #fff;
+  color: #252525;
+}
+
+#mobile-menu {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  bottom: 0;
+  left: -260px;
+  width: 240px;
+  overflow-y: auto;
+  padding-top: 15px;
+  box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.06);
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+#mobile-menu.open {
+  left: 0;
+}
+
+#mobile-menu li {
+  position: relative;
+}
+
+#mobile-menu li a {
+  display: block;
+  padding: 10px 20px 10px 30px;
+  color: #252525;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#mobile-menu > li > a {
+  font-size: 15px;
+}
+
+#mobile-menu ul a {
+  padding-left: 40px;
+}
+
+#mobile-menu ul ul a {
+  padding-left: 60px;
+}
+
+#mobile-menu .megamenu-container {
+  display: none;
+  margin-left: 0;
+}
+
+#mobile-menu .megamenu-container .section {
+  float: none;
+  width: 100%;
+  margin-bottom: -1px;
+  padding: 0 20px 20px 20px;
+}
+
+#mobile-menu .megamenu-container .section ul {
+  display: block;
+  margin: 0 -20px -20px;
+}
+
+#mobile-menu .megamenu-container .section ul a {
+  padding-left: 40px;
+}
+
+#mobile-menu .megamenu-container .section > ul li a:before {
+  display: none;
+}
+
+#mobile-menu li.dropdown > span:after,
+#mobile-menu li.megamenu > span:after {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 48px;
+  height: 48px;
+  color: #4e4e4e;
+  font-family: "FontAwesome";
+  font-size: 18px;
+  line-height: 44px;
+  text-align: center;
+  cursor: pointer;
+  content: "\f107";
+}
+
+#mobile-menu li.dropdown > span.open:after,
+#mobile-menu li.megamenu > span.open:after {
+  content: "\f106";
+}
+
+#mobile-menu li a.waves .waves-ripple {
+  background-color: #00f0d1;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .mobile-menu-button {
+    display: block;
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .mobile-menu-button {
+    position: absolute;
+    top: -61px;
+    left: 15px;
+    display: block;
+  }
+
+}

@@ -1,0 +1,24 @@
+/***********************************************************************************
+ *	- LOGO
+ ***********************************************************************************/
+
+#logo {
+  max-width: 100%;
+  margin: 24px 0 25px;
+}
+
+#logo a {
+  display: inline-block;
+  max-width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+
+  #logo {
+    max-width: 75%;
+    margin: 24px auto 25px;
+    text-align: center;
+  }
+
+}

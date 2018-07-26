@@ -1,0 +1,229 @@
+/* BLOCKQUOTE */
+blockquote {
+  padding: 0;
+  border-left: none;
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+blockquote footer {
+  color: inherit;
+  font-size: 14px;
+  font-style: normal;
+}
+
+blockquote footer small {
+  color: inherit;
+}
+
+blockquote footer:before,
+blockquote footer small:before {
+  display: none;
+}
+
+blockquote footer img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+  position: relative;
+  padding: 70px 40px 65px;
+  margin-bottom: 50px;
+  background-color: #f4f8f9;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.full-section .testimonial {
+  background-color: #fff;
+}
+
+.testimonial-2 {
+  position: relative;
+  padding: 50px 40px 55px;
+  margin-bottom: 50px;
+  background-color: #fff;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  height: 365px;
+}
+
+.testimonial-author-2 {
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.testimonial-author-2 img {
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  text-align:center;
+  height: 50px;
+}
+
+.testimonial-author {
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.testimonial-author-2 h6 {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.testimonial-2:hover {
+  z-index: 100;
+  background-color: #fff;
+  box-shadow: 20px 40px 38px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*.testimonial-author img {
+	position: absolute;
+	top: 30%;
+	left: 0%;
+	text-align:center;
+	/*border-radius: 50%;*/
+/*-webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 50px;
+}*/
+
+.testimonial-author img {
+  height: 50px;
+}
+
+.testimonial-author h6 {
+  margin-bottom: 0;
+  line-height: 27px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.testimonial-author > *:last-child,
+.testimonial > *:last-child {
+  margin-bottom: 0;
+}
+
+.testimonial:hover {
+  z-index: 100;
+  background-color: #fff;
+  box-shadow: 20px 40px 38px 0 rgba(0, 0, 0, 0.2);
+}
+
+.testimonial ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin:  0 -10px;
+  list-style: none;
+}
+
+.testimonial ul li {
+  flex-basis: 20%;
+  padding: 0 10px;
+}
+
+/* STYLE 2 */
+.testimonial.style-2 {
+  padding: 0;
+  background-color: transparent;
+  text-align: center;
+}
+
+.testimonial.style-2 blockquote {
+  font-size: 18px;
+  line-height: 30px;
+  font-style: italic;
+}
+
+.testimonial.style-2 blockquote p:first-child:first-letter {
+  font-size: 36px;
+}
+
+.testimonial.style-2:hover {
+  background-color: transparent;
+}
+
+.testimonial.style-2 .testimonial-author {
+  padding-left: 0;
+  margin-top: 50px;
+}
+
+.testimonial.style-2 .testimonial-author img {
+  position: relative;
+  top: 0;
+  margin: 0 auto 20px;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.testimonial.style-2 .testimonial-author p {
+  color: #c2c2c2;
+}
+
+.testimonial.style-2:hover {
+  box-shadow: none;
+}
+
+/* STYLE 3 */
+.testimonial.style-3 {
+  padding: 0;
+  background-color: transparent;
+}
+
+.testimonial.style-3 .testimonial-author {
+  margin-left: 30px;
+}
+
+.testimonial.style-3:hover {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+/* DARK SECTION */
+.full-section.dark-section .testimonial {
+  color: #838383;
+}
+
+.full-section.dark-section .testimonial h6 {
+  color: #252525;
+}
+
+.full-section.dark-section .testimonial.style-2,
+.full-section.dark-section .testimonial.style-3,
+.full-section.dark-section .testimonial.style-2 h6,
+.full-section.dark-section .testimonial.style-3 h6 {
+  color: inherit;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .testimonial {
+    padding: 40px 20px 35px;
+  }
+
+  .testimonial-author {
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .testimonial-author img {
+    position: relative;
+    top: 0;
+    display: block;
+    margin-bottom: 10px;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+}

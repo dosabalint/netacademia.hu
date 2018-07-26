@@ -1,0 +1,66 @@
+/*SUPERPWER-LIST*/
+
+.superpower-list {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.superpower-list li {
+  margin-bottom: 5px;
+}
+
+.superpower-list li:last-child {
+  margin-bottom: 0;
+}
+
+.superpower-list a li,p{
+  color: #434343;
+  text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  margin-bottom: 10px;
+}
+
+.superpower-list a li:hover {
+  color: #00f0d1;
+  text-decoration: none;
+}
+
+.superpower-list a p:hover {
+  color: #00f0d1;
+  text-decoration: none;
+}
+
+.superpower-list i.angular-list:before {
+  color: #ed1c24;
+}
+
+.superpower-list i.vue-list:before {
+  color: #41b883;
+}
+
+.superpower-list i.ultimate-list:before {
+  color: #870010;
+}
+
+.superpower-list i.csharp-list:before {
+  color: #9c5097;
+}
+
+.superpower-list i.winadmin-list:before {
+  color: #bee3ed;
+}
+
+.superpower-list i.free-list:before {
+  color: #ff84fc;
+}
+
+.superpower-list i.unity-list:before {
+  color: #000000;
+}
+.superpower-list i.ecommerece-list:before {
+  color: #3b5998;
+}
+.superpower-list i.office-list:before {
+  color: #ff931e;
+}

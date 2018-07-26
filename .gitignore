@@ -14,3 +14,9 @@ dist-ghpages
 # ide
 .idea
 .vscode
+
+\.DS_Store
+
+
+# csak webstorm path alias miatt kell, nuxt.config-bol jon egyebkent minden
+webpack.config.js

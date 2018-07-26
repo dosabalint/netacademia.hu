@@ -1,0 +1,44 @@
+.pie-chart-container {
+  margin-bottom: 50px;
+}
+
+.pie-chart {
+  position: relative;
+  margin-bottom: 20px;
+  text-align: center;
+  min-height: 160px;
+}
+
+.pie-chart canvas {
+  max-width: 100%;
+}
+
+.pie-chart-percent {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  color: #252525;
+  font-size: 42px;
+  line-height: 42px;
+  font-weight: 300;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.pie-chart-details {
+  text-align: center;
+}
+
+.pie-chart-details h6 {
+  margin-bottom: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* DARK SECTION */
+.full-section.dark-section .pie-chart-percent {
+  color: inherit;
+}

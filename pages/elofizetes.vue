@@ -185,7 +185,7 @@
             </div>
             <div class="col-12 text-center mb-5">
               <gtm-link :gtm-data="GTMProductCollection.ultimate" class="btn btn-primary"
-                        href="/ultimateakcio" role="button">
+                        href="/business" role="button">
                 Megnézem
               </gtm-link>
             </div>

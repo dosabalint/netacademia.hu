@@ -40,7 +40,7 @@
   transition: all 0.25s;
 }
 
-#mobile-menu.open {
+#mobile-menu.show {
   left: 0;
 }
 
@@ -112,8 +112,8 @@
   content: "\f107";
 }
 
-#mobile-menu li.dropdown > span.open:after,
-#mobile-menu li.megamenu > span.open:after {
+#mobile-menu li.dropdown > span.show:after,
+#mobile-menu li.megamenu > span.show:after {
   content: "\f106";
 }
 
@@ -137,5 +137,4 @@
     left: 15px;
     display: block;
   }
-
 }

@@ -20,7 +20,7 @@
         <div class="row justify-content-center">
           <div class="col-12 col-md-3 blockk">
             <nuxt-link to="#htmlcss">
-              <bounce class="single-special text-center" direction="in">
+              <bounce class="single-special text-center" direction="bounceIn">
                 <img src="~/assets/lenyugozo-tanfolyamok/htmlcss.svg" alt="" width="145" class="img-fluid mb-4">
                 <h4>HTML, CSS</h4>
               </bounce>
@@ -29,7 +29,7 @@
 
           <div class="col-12 col-md-3 blockk">
             <nuxt-link to="#unity">
-              <Bounce class="single-special text-center" direction="in">
+              <Bounce class="single-special text-center" direction="bounceIn">
                 <img src="~/assets/lenyugozo-tanfolyamok/unity-3d-vector-icon-logo.svg" alt="" width="75"
                      class="img-fluid mb-4">
                 <h4>UNITY</h4>
@@ -39,7 +39,7 @@
 
           <div class="col-12 col-md-3 blockk">
             <nuxt-link to="#csharp">
-              <Bounce class="single-special text-center" direction="in">
+              <Bounce class="single-special text-center" direction="bounceIn">
                 <img src="~/assets/lenyugozo-tanfolyamok/icon-cloud-c.svg" alt="" width="70" class="img-fluid mb-4">
                 <h4>C#</h4>
               </Bounce>
@@ -48,7 +48,7 @@
 
           <div class="col-12 col-md-3 blockk">
             <nuxt-link to="#windows">
-              <Bounce class="single-special text-center" direction="in">
+              <Bounce class="single-special text-center" direction="bounceIn">
                 <img src="~/assets/lenyugozo-tanfolyamok/windowsserverlogo.png" alt="" width="80" class="img-fluid mb-4">
                 <h5>Windows Server</h5>
               </Bounce>
@@ -65,7 +65,7 @@
         <div class="container py-lg-5">
           <div class="row" id="htmlcss">
             <div class="col-7 col-lg-6 my-auto mx-auto p-lg-5">
-              <Bounce class="mb-5 mb-lg-0" direction="left">
+              <Bounce class="mb-5 mb-lg-0" direction="bounceInLeft">
                 <img src="~/assets/lenyugozo-tanfolyamok/weblap.png" alt="" class="img-fluid">
               </Bounce>
             </div>
@@ -115,7 +115,7 @@
               </div>
             </div>
             <div class="col-11 pb-5 col-lg-6 order-1 order-lg-2 mx-auto p-lg-2 my-auto">
-              <Bounce direction="right">
+              <Bounce direction="bounceInRight">
                 <div class="embed-responsive embed-responsive-16by9">
                   <no-ssr>
                     <youtube class="embed-responsive-item animated" video-id="A3DuZSWu-mA"></youtube>
@@ -132,7 +132,7 @@
         <div class="container py-lg-5">
           <div class="row" id="csharp">
             <div class="col-7 col-lg-6 my-auto mb-5 mb-lg-0 mx-auto p-lg-5">
-              <Bounce direction="left">
+              <Bounce direction="bounceInLeft">
                 <img src="~/assets/lenyugozo-tanfolyamok/chat-robot.png" alt="" class="img-fluid">
               </Bounce>
             </div>
@@ -180,7 +180,7 @@
               </div>
             </div>
             <div class="col-7 col-lg-6 my-auto mb-5 mb-lg-0 mx-auto p-lg-5 order-1 order-lg-2">
-              <Bounce direction="right">
+              <Bounce direction="bounceInRight">
                 <img src="~/assets/lenyugozo-tanfolyamok/server.png" alt="" class="img-fluid">
               </Bounce>
             </div>
@@ -238,7 +238,7 @@
           <!-- Single Feature Start -->
           <!-- product: cissp -->
           <div class="col-12 col-sm-6 col-lg-4">
-            <div class="single-feature">
+            <div class="single-feature">../
               <h5>CISSP</h5>
               <p class="mb-2">A képzés alatt az információbiztonság legkülönfélébb összetevőit vizsgáljuk egészen a
                 rendszerüzemeltetéstől a hálózatbiztonságig.</p>
@@ -314,9 +314,9 @@
 </template>
 
 <script>
-import GtmLink from "~/components/GtmLink.vue";
-import Bounce from "~/components/Bounce.vue";
-import { GtmPageLoad } from "~/components/mixins/GtmPageLoad";
+import GtmLink from "@/components/base/GtmLink.vue";
+import Bounce from "@/components/base/Bounce";
+import { GtmPageLoad } from "@/components/mixins/GtmPageLoad";
 
 export default {
   name: "lenyugozo",

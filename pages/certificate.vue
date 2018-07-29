@@ -237,7 +237,7 @@
 </template>
 
 <script>
-import { GtmPageLoad } from "~/components/mixins/GtmPageLoad";
+import { GtmPageLoad } from "@/components/mixins/GtmPageLoad";
 
 export default {
   name: "certi",

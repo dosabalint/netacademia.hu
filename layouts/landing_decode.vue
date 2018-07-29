@@ -8,8 +8,8 @@
   </div>
 </template>
 <script>
-import Navigation from "~/components/Navigation";
-import Footer from "../components/Footer";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import DContainer from "@/components/decode/DContainer";
 
 export default {

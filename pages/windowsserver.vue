@@ -28,7 +28,7 @@
                     későbbi tanfolyamaihoz fel tudunk használni."
                     logo-bg="#6B293D"
                     card-header-bg="#6B293D"
-                    direction="left"
+                    direction="bounceInLeft"
       >
         <img slot="picture" src="~/assets/windowsserver/windowsserver.png" alt="windowsserver-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.install"
@@ -46,7 +46,7 @@
                     A kurzuson a fontosabb utasításokat próbáljuk ki a gyakorlatban."
                     logo-bg="#2B4E5D"
                     card-header-bg="#2B4E5D"
-                    direction="right"
+                    direction="bounceInRight"
       >
         <img slot="picture" src="~/assets/windowsserver/windowsserver.png" alt="windowsserver-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.powerShell"
@@ -63,7 +63,7 @@
                     egészen a több tartományvezérlős környezetig bezáróan mindent kipróbálunk."
                     logo-bg="#242E38"
                     card-header-bg="#242E38"
-                    direction="left"
+                    direction="bounceInLeft"
       >
         <img slot="picture" src="~/assets/windowsserver/windowsserver.png" alt="windowsserver-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.activeDirectory"
@@ -79,7 +79,7 @@
                     A kurzuson elmélyülünk ezek létrehozásában, alkalmazási stratégiájában, struktúrájában."
                     logo-bg="#6B293D"
                     card-header-bg="#6B293D"
-                    direction="right"
+                    direction="bounceInRight"
       >
         <img slot="picture" src="~/assets/windowsserver/windowsserver.png" alt="windowsserver-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.centralManagement"
@@ -98,7 +98,7 @@
                     megértésében."
                     logo-bg="#242E38"
                     card-header-bg="#242E38"
-                    direction="left"
+                    direction="bounceInLeft"
       >
         <img slot="picture" src="~/assets/windowsserver/windowsserver.png" alt="windowsserver-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.permissions"
@@ -117,7 +117,7 @@
                     szükséges lépésekkel."
                     logo-bg="#2B4E5D"
                     card-header-bg="#2B4E5D"
-                    direction="right"
+                    direction="bounceInRight"
       >
         <img slot="picture" src="~/assets/windowsserver/windowsserver.png" alt="windowsserver-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.activeDirectoryExtend"
@@ -180,12 +180,12 @@
 </template>
 
 <script>
-import TimelineCard from "~/components/TimelineCard";
-import GtmLink from "~/components/GtmLink";
-import TimelineContainer from "~/components/TimelineContainer";
-import CertiFeatures from "~/components/CertiFeatures";
-import CertiTopHero from "~/components/CertiTopHero";
-import { GtmPageLoad } from "~/components/mixins/GtmPageLoad";
+import TimelineCard from "@/components/TimelineCard";
+import GtmLink from "@/components/base/GtmLink";
+import TimelineContainer from "@/components/TimelineContainer";
+import CertiFeatures from "@/components/CertiFeatures";
+import CertiTopHero from "@/components/CertiTopHero";
+import { GtmPageLoad } from "@/components/mixins/GtmPageLoad";
 
 export default {
   name: "windows-path",

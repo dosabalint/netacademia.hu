@@ -95,7 +95,6 @@ export default {
     margin-top: 0px;
     margin-bottom: 0;
     background-color: #f1f6f9;
-
   }
 
   @media (max-width: 767px) {
@@ -117,7 +116,7 @@ export default {
     }
   }
 
-  @media (min-width: 992px){
+  @media (min-width: 992px) {
     &.smoke {
       padding: 100px 0 80px;
     }

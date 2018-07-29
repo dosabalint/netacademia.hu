@@ -254,13 +254,13 @@
 
 <script>
   //TODO: about-me componentet kiszervezno. Most mashova nem kell, ugyhogy jo itt
-  import DPageHeader from "../components/decode/DPageHeader";
-  import DFullSection from "../components/decode/DFullSection";
-  import DWidget from "../components/decode/DWidget";
-  import Container from "../components/Container";
-  import Row from "../components/Row";
-  import Column from "../components/Column";
-  import DHeadline from "../components/decode/DHeadline";
+  import DPageHeader from "@/components/decode/DPageHeader";
+  import DFullSection from "@/components/decode/DFullSection";
+  import DWidget from "@/components/decode/DWidget";
+  import Container from "@/components/base/Container";
+  import Row from "@/components/base/Row";
+  import Column from "@/components/base/Column";
+  import DHeadline from "@/components/decode/DHeadline";
 
   export default {
     name: "kapcsolat",

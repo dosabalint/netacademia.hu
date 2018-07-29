@@ -26,7 +26,7 @@
                     pedig ismerkedj meg a Bootstrap 4 használatával és komponenseivel."
                     logo-bg="#5d3f85"
                     card-header-bg="#5d3f85"
-                    direction="left"
+                    direction="bounceInLeft"
       >
         <img slot="picture" src="~/assets/webfejleszto-angular/bootstrap-icon.png" alt="bootstrap">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.bootstrap"
@@ -42,7 +42,7 @@
                     szó új elemekről, funkciókról, effektekről vagy a szerverrel való kommunikációról."
                     logo-bg="#ffffff"
                     card-header-bg="#21609b"
-                    direction="right"
+                    direction="bounceInRight"
       >
         <img slot="picture" src="~/assets/webfejleszto-angular/jquery-icon.png" alt="jquery">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.jquery"
@@ -59,7 +59,7 @@
                     részleteinek megjelenítése, mindezt Angular segítségével."
                     logo-bg="#ffffff"
                     card-header-bg="#e23237"
-                    direction="left"
+                    direction="bounceInLeft"
       >
         <img slot="picture" src="~/assets/webfejleszto-angular/angular-icon.png" alt="angular">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.angularIntro"
@@ -76,7 +76,7 @@
                     továbbfejlesztve ezzel a jegyértékesítést."
                     logo-bg="#ffffff"
                     card-header-bg="#e23237"
-                    direction="right"
+                    direction="bounceInRight"
       >
         <img slot="picture" src="~/assets/webfejleszto-angular/angular-icon.png" alt="angular">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.angularAdvanced"
@@ -93,7 +93,7 @@
                     nemzetközi szinten is megállja a helyét."
                     logo-bg="#ffffff"
                     card-header-bg="#e23237"
-                    direction="left"
+                    direction="bounceInLeft"
       >
         <img slot="picture" src="~/assets/webfejleszto-angular/angular-icon.png" alt="angular">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.angularPro"
@@ -109,7 +109,7 @@
                     eszközökre az Ionic segítségével, legyen a cél Android, IoS vagy Windows Phone."
                     logo-bg="#ffffff"
                     card-header-bg="#4e8ef7"
-                    direction="right"
+                    direction="bounceInRight"
       >
         <img slot="picture" src="~/assets/webfejleszto-angular/ionic-icon.png" alt="vue">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.ionic"
@@ -126,7 +126,7 @@
                     felületéhez."
                     logo-bg="#ffffff"
                     card-header-bg="#47848f"
-                    direction="left"
+                    direction="bounceInLeft"
       >
         <img slot="picture" src="~/assets/webfejleszto-angular/electron-icon.png" alt="electron">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.electron"
@@ -212,12 +212,12 @@
 </template>
 
 <script>
-import TimelineCard from "~/components/TimelineCard";
-import GtmLink from "~/components/GtmLink";
-import TimelineContainer from "~/components/TimelineContainer";
-import CertiFeatures from "~/components/CertiFeatures";
-import CertiTopHero from "~/components/CertiTopHero";
-import { GtmPageLoad } from "~/components/mixins/GtmPageLoad";
+import TimelineCard from "@/components/TimelineCard";
+import GtmLink from "@/components/base/GtmLink";
+import TimelineContainer from "@/components/TimelineContainer";
+import CertiFeatures from "@/components/CertiFeatures";
+import CertiTopHero from "@/components/CertiTopHero";
+import { GtmPageLoad } from "@/components/mixins/GtmPageLoad";
 
 export default {
   name: "angular-path",

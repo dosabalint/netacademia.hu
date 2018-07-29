@@ -12,14 +12,14 @@ export default {
       type: String,
       required: true,
       validator(val) {
-        return val.indexOf('%') !== -1;
+        return val.indexOf("%") !== -1;
       }
     },
     xPercent: {
       type: String,
       required: true,
       validator(val) {
-        return val.indexOf('%') !== -1;
+        return val.indexOf("%") !== -1;
       }
     }
   }

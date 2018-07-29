@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import AOrNuxtLink from "./AOrNuxtLink";
+import AOrNuxtLink from "@/components/base/AOrNuxtLink";
 
 export default {
   components: { AOrNuxtLink },

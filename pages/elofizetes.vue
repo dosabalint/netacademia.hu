@@ -275,10 +275,10 @@
 </template>
 
 <script>
-import GtmLink from "~/components/GtmLink.vue";
-import ElofizetesProductCard from "~/components/ElofizetesProductCard.vue";
-import BouncingDownArrow from "~/components/BouncingDownArrow";
-import { GtmPageLoad } from "~/components/mixins/GtmPageLoad";
+import GtmLink from "@/components/base/GtmLink.vue";
+import ElofizetesProductCard from "@/components/ElofizetesProductCard.vue";
+import BouncingDownArrow from "@/components/BouncingDownArrow";
+import { GtmPageLoad } from "@/components/mixins/GtmPageLoad";
 
 export default {
   name: "elofizetes",

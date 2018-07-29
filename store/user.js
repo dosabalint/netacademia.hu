@@ -1,4 +1,4 @@
-import { ERROR_ACTION } from "./index";
+import { ERROR_ACTION } from "@/store/index";
 
 export const AUTH_REQ_ACTION = "AUTH_REQ";
 export const AUTH_LOGOUT_ACTION = "AUTH_LOGOUT";

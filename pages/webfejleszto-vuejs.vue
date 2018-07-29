@@ -28,7 +28,7 @@
                     Ismerd meg a webfejlesztés alapjait és készítsd el a fizu.hu-t!"
                     logo-bg="#5d3f85"
                     card-header-bg="#5d3f85"
-                    direction="left"
+                    direction="bounceInLeft"
       >
         <img slot="picture" src="~/assets/webfejleszto-vuejs/bootstrap-icon.png" alt="bootstrap">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.bootstrap"
@@ -45,7 +45,7 @@
                     jelenítünk meg."
                     logo-bg="#ffffff"
                     card-header-bg="#21609b"
-                    direction="right"
+                    direction="bounceInRight"
       >
         <img slot="picture" src="~/assets/webfejleszto-vuejs/jquery-icon.png" alt="jquery">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.jquery"
@@ -63,7 +63,7 @@
                     fogjuk azt is, ahol a többiek csak pislognak."
                     logo-bg="#f0ca45"
                     card-header-bg="#f0ca45"
-                    direction="left"
+                    direction="bounceInLeft"
       >
         <img slot="picture" src="~/assets/webfejleszto-vuejs/javascript-icon.png" alt="javascript">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.javascript"
@@ -80,7 +80,7 @@
                     fésülnünk a munkánkat más fejlesztőkével. Ebben van segítségünkre a GIT."
                     logo-bg="#f05133"
                     card-header-bg="#f05133"
-                    direction="right"
+                    direction="bounceInRight"
       >
         <img slot="picture" src="~/assets/webfejleszto-vuejs/git-icon.png" alt="git">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.git"
@@ -97,7 +97,7 @@
                     kezdeni, majd tovább haladunk a kész alkalmazás irányába."
                     logo-bg="#ffffff"
                     card-header-bg="#41b883"
-                    direction="left"
+                    direction="bounceInLeft"
       >
         <img slot="picture" src="~/assets/webfejleszto-vuejs/vue-icon.png" alt="vue">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.vue"
@@ -114,7 +114,7 @@
                     elhúzódó fejlesztési időt és közben támogasson minket a józan eszünk megőrzésében is."
                     logo-bg="#ffffff"
                     card-header-bg="#41b883"
-                    direction="right"
+                    direction="bounceInRight"
       >
         <img slot="picture" src="~/assets/webfejleszto-vuejs/vue-icon.png" alt="vue">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.vueAdvanced"
@@ -210,12 +210,12 @@
 </template>
 
 <script>
-import TimelineCard from "~/components/TimelineCard";
-import GtmLink from "~/components/GtmLink";
-import TimelineContainer from "~/components/TimelineContainer";
-import CertiFeatures from "~/components/CertiFeatures";
-import CertiTopHero from "~/components/CertiTopHero";
-import { GtmPageLoad } from "~/components/mixins/GtmPageLoad";
+import TimelineCard from "@/components/TimelineCard";
+import GtmLink from "@/components/base/GtmLink";
+import TimelineContainer from "@/components/TimelineContainer";
+import CertiFeatures from "@/components/CertiFeatures";
+import CertiTopHero from "@/components/CertiTopHero";
+import { GtmPageLoad } from "@/components/mixins/GtmPageLoad";
 
 export default {
   name: "vue-path",

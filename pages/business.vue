@@ -23,7 +23,7 @@
         </Column>
 
         <Column class="ml-xl-auto col-lg-5">
-          <Bounce direction="right">
+          <Bounce direction="bounceInRight">
             <img src="~/assets/business/business2.svg" width="400" alt="">
           </Bounce>
         </Column>
@@ -42,7 +42,7 @@
           </Column>
           <Column class="col-md-6 col-xl-4">
 
-            <Bounce direction="left">
+            <Bounce direction="bounceInLeft">
               <div class="service-box style-4">
 
                 <i class="decode-icon-ranking"></i>
@@ -89,7 +89,7 @@
           <!-- col -->
           <Column class="col-md-6 col-xl-4">
 
-            <Bounce direction="right">
+            <Bounce direction="bounceInRight">
               <div class="service-box style-4">
 
                 <i class="decode-icon-browser"></i>
@@ -114,7 +114,7 @@
 
           <Column class="col-md-6 col-xl-4">
 
-            <Bounce direction="left">
+            <Bounce direction="bounceInLeft">
               <div class="service-box style-4">
 
                 <i class="decode-icon-analytics"></i>
@@ -160,7 +160,7 @@
           </Column>
           <Column class="col-md-6 col-xl-4">
 
-            <Bounce direction="right">
+            <Bounce direction="bounceInRight">
               <div class="service-box style-4">
 
                 <i class="decode-icon-resume"></i>
@@ -296,13 +296,13 @@
 </template>
 
 <script>
-import DPageHeader from "../components/decode/DPageHeader";
-import Container from "../components/Container";
-import Column from "../components/Column";
-import Row from "../components/Row";
-import DFullSection from "../components/decode/DFullSection";
-import Bounce from "../components/Bounce";
-import DButton from "../components/decode/DButton";
+import DPageHeader from "@/components/decode/DPageHeader";
+import Container from "@/components/base/Container";
+import Column from "@/components/base/Column";
+import Row from "@/components/base/Row";
+import DFullSection from "@/components/decode/DFullSection";
+import Bounce from "@/components/base/Bounce";
+import DButton from "@/components/decode/DButton";
 
 export default {
   name: "business",

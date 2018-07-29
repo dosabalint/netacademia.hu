@@ -41,19 +41,19 @@
           </no-ssr>
 
           <Column class="col-lg-4 col-md-5">
-            <Bounce direction="left">
+            <Bounce direction="bounceInLeft">
               <DServiceBox icon="decode-icon-padlock" icon-position="right">
                 <h6>Biztonság</h6>
                 <p>Tudd magad biztonságban, ismerd a jogaidat: munka- és tűzvédelem!</p>
               </DServiceBox>
             </Bounce>
-            <Bounce direction="left">
+            <Bounce direction="bounceInLeft">
               <DServiceBox icon="decode-icon-typewriter" icon-position="right">
                 <h6>Microsoft Office</h6>
                 <p>Légy irodai ninja: profi dokumentumkezelés, Excel és OneNote használat hatékonyan!</p>
               </DServiceBox>
             </Bounce>
-            <Bounce direction="left">
+            <Bounce direction="bounceInLeft">
               <DServiceBox icon="decode-icon-customer" icon-position="right">
                 <h6>Soft Skill</h6>
                 <p>Prezentálj asszertívan, gazdálkodj az időddel, fejleszd érzelmi intelligenciádat!</p>
@@ -62,19 +62,19 @@
           </Column>
 
           <Column class="col-lg-4 col-md-5 ml-md-auto">
-            <Bounce direction="right">
+            <Bounce direction="bounceInRight">
               <DServiceBox icon="decode-icon-video" icon-position="left">
                 <h6>Kép- és videószerkesztés</h6>
                 <p>Éld ki a kreativitásodat: fotózás, grafika és videóvágás!</p>
               </DServiceBox>
             </Bounce>
-            <Bounce direction="right">
+            <Bounce direction="bounceInRight">
               <DServiceBox icon="decode-icon-viral-marketing" icon-position="left">
                 <h6>Online Marketing</h6>
                 <p>Hirdess profin: Facebook bolt terület, Google Analytics elemzés és Email marketing!</p>
               </DServiceBox>
             </Bounce>
-            <Bounce direction="right">
+            <Bounce direction="bounceInRight">
               <DServiceBox icon="decode-icon-coins" icon-position="left">
                 <h6>E-kereskedelem</h6>
                 <p>Hozd létre, és nyisd meg saját webshopod: Wordpress, Shopify és Drop shipping!</p>
@@ -261,18 +261,18 @@
 </template>
 
 <script>
-import DPageHeader from "../components/decode/DPageHeader";
-import { GtmPageLoad } from "../components/mixins/GtmPageLoad";
-import DFullSection from "../components/decode/DFullSection";
-import DHeadline from "../components/decode/DHeadline";
-import Container from "../components/Container";
-import Row from "../components/Row";
-import Bounce from "../components/Bounce";
-import DServiceBox from "../components/decode/DServiceBox";
-import Column from "../components/Column";
-import DButton from "../components/decode/DButton";
+import DPageHeader from "@/components/decode/DPageHeader";
+import { GtmPageLoad } from "@/components/mixins/GtmPageLoad";
+import DFullSection from "@/components/decode/DFullSection";
+import DHeadline from "@/components/decode/DHeadline";
+import Container from "@/components/base/Container";
+import Row from "@/components/base/Row";
+import Bounce from "@/components/base/Bounce";
+import DServiceBox from "@/components/decode/DServiceBox";
+import Column from "@/components/base/Column";
+import DButton from "@/components/decode/DButton";
 import Parallax from "vue-parallaxy";
-import DFullSectionMultilayer from "../components/decode/DFullSectionMultilayer";
+import DFullSectionMultilayer from "@/components/decode/DFullSectionMultilayer";
 
 export default {
   name: "officecsomag",

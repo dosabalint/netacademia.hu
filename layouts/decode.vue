@@ -8,12 +8,12 @@
   </div>
 </template>
 <script>
-import Navigation from "../components/Navigation";
-import Footer from "../components/Footer";
-import DContainer from "@/components/decode/DContainer";
+  import Navigation from "@/components/Navigation";
+  import Footer from "@/components/Footer";
+  import DContainer from "@/components/decode/DContainer";
 
-export default {
-  name: "decode",
-  components: { DContainer, Navigation, Footer }
-};
+  export default {
+    name: "decode",
+    components: { DContainer, Navigation, Footer }
+  };
 </script>

@@ -25,7 +25,7 @@
                     minden lépés."
                     logo-bg="#193D94"
                     card-header-bg="#048DD6"
-                    direction="left"
+                    direction="bounceInLeft"
       >
         <img slot="picture" src="~/assets/junior-csharp-developer/csharp-icon.svg" alt="csharp-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.lenyugozo"
@@ -42,7 +42,7 @@
                     yerünk a C# programozás világába."
                     logo-bg="#048DD6"
                     card-header-bg="#193D94"
-                    direction="right"
+                    direction="bounceInRight"
       >
         <img slot="picture" src="~/assets/junior-csharp-developer/csharp-icon.svg" alt="csharp-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.xaml"
@@ -61,7 +61,7 @@
                     megismerjük."
                     logo-bg="#193D94"
                     card-header-bg="#048DD6"
-                    direction="left"
+                    direction="bounceInLeft"
       >
         <img slot="picture" src="~/assets/junior-csharp-developer/csharp-icon.svg" alt="csharp-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.todo"
@@ -79,7 +79,7 @@
                     a kígyót. Irányíts, egyél, szerezz pontot, nőj meg!"
                     logo-bg="#048DD6"
                     card-header-bg="#193D94"
-                    direction="right"
+                    direction="bounceInRight"
       >
         <img slot="picture" src="~/assets/junior-csharp-developer/csharp-icon.svg" alt="csharp-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.snake"
@@ -98,7 +98,7 @@
                     foglalhatunk!"
                     logo-bg="#193D94"
                     card-header-bg="#048DD6"
-                    direction="left"
+                    direction="bounceInLeft"
       >
         <img slot="picture" src="~/assets/junior-csharp-developer/csharp-icon.svg" alt="csharp-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.etterem"
@@ -119,7 +119,7 @@
                     keresztül benézünk az ágy alá, és jön a felismerés: nem is akkora szörnyeteg ez a programozás!"
                     logo-bg="#048DD6"
                     card-header-bg="#193D94"
-                    direction="right"
+                    direction="bounceInRight"
       >
         <img slot="picture" src="~/assets/junior-csharp-developer/csharp-icon.svg" alt="csharp-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.multi"
@@ -140,7 +140,7 @@
                     bosszantó sorokat!"
                     logo-bg="#193D94"
                     card-header-bg="#048DD6"
-                    direction="left"
+                    direction="bounceInLeft"
       >
         <img slot="picture" src="~/assets/junior-csharp-developer/csharp-icon.svg" alt="csharp-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.sajat"
@@ -192,12 +192,12 @@
 </template>
 
 <script>
-  import TimelineCard from "~/components/TimelineCard";
-  import GtmLink from "~/components/GtmLink";
-  import TimelineContainer from "~/components/TimelineContainer";
-  import CertiFeatures from "~/components/CertiFeatures";
-  import CertiTopHero from "~/components/CertiTopHero";
-  import {GtmPageLoad} from "~/components/mixins/GtmPageLoad";
+  import TimelineCard from "@/components/TimelineCard";
+  import GtmLink from "@/components/base/GtmLink";
+  import TimelineContainer from "@/components/TimelineContainer";
+  import CertiFeatures from "@/components/CertiFeatures";
+  import CertiTopHero from "@/components/CertiTopHero";
+  import {GtmPageLoad} from "@/components/mixins/GtmPageLoad";
 
   export default {
     name: 'csharp-path',

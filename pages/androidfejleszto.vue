@@ -25,7 +25,7 @@
                       mely elengedhetetlen tudás stabil alkalmazások fejlesztéséhez."
                     logo-bg="#6B273C"
                     card-header-bg="#6B273C"
-                    direction="left"
+                    direction="bounceInLeft"
       >
         <img slot="picture" src="~/assets/android/android-icon.png" alt="android-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.design"
@@ -43,7 +43,7 @@
                       Java osztályokkal, így a fejlesztők továbbra is használhatják jól megszokott eszköztárukat."
                     logo-bg="#284d5d"
                     card-header-bg="#284d5d"
-                    direction="right"
+                    direction="bounceInRight"
       >
         <img slot="picture" src="~/assets/android/android-icon.png" alt="android-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.create"
@@ -61,7 +61,7 @@
                     Ha a válaszod igen, csatlakozz hozzánk, és építsük fel közösen!"
                     logo-bg="#222c37"
                     card-header-bg="#222c37"
-                    direction="left"
+                    direction="bounceInLeft"
       >
         <img slot="picture" src="~/assets/android/android-icon.png" alt="android-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.facebook"
@@ -82,7 +82,7 @@
 
                     logo-bg="#6B273C"
                     card-header-bg="#6B273C"
-                    direction="right"
+                    direction="bounceInRight"
       >
         <img slot="picture" src="~/assets/android/android-icon.png" alt="android-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.cone"
@@ -100,7 +100,7 @@
                                    mert konyhakészen megkapjuk azt egyenesen az Android operációsrendszer fejlesztőitől."
                     logo-bg="#222c37"
                     card-header-bg="#222c37"
-                    direction="left"
+                    direction="bounceInLeft"
       >
         <img slot="picture" src="~/assets/android/android-icon.png" alt="android-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.adwords"
@@ -153,12 +153,12 @@
 </template>
 
 <script>
-import TimelineCard from "~/components/TimelineCard";
-import GtmLink from "~/components/GtmLink";
-import TimelineContainer from "~/components/TimelineContainer";
-import CertiFeatures from "~/components/CertiFeatures";
-import CertiTopHero from "~/components/CertiTopHero";
-import { GtmPageLoad } from "~/components/mixins/GtmPageLoad";
+import TimelineCard from "@/components/TimelineCard";
+import GtmLink from "@/components/base/GtmLink";
+import TimelineContainer from "@/components/TimelineContainer";
+import CertiFeatures from "@/components/CertiFeatures";
+import CertiTopHero from "@/components/CertiTopHero";
+import { GtmPageLoad } from "@/components/mixins/GtmPageLoad";
 
 export default {
   name: "ecoomerce-path",

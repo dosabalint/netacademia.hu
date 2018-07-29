@@ -170,8 +170,8 @@
 </template>
 
 <script>
-import Footer from "../components/Footer";
-import Navigation from "../components/Navigation";
+import Footer from "@/components/Footer";
+import Navigation from "@/components/Navigation";
 export default {
   name: "nagykovetbruno",
   components: {Navigation, Footer},

@@ -21,24 +21,24 @@
 </template>
 
 <script>
-    export default {
-      props: {
-        price: {
-          type: String,
-          required: true
-        }
-      }
+export default {
+  props: {
+    price: {
+      type: String,
+      required: true
     }
+  }
+};
 </script>
 
 <style scoped>
-  .icon-table {
-    margin-top: -180px;
-    margin-bottom: 100px;
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  }
+.icon-table {
+  margin-top: -180px;
+  margin-bottom: 100px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
 
-  .icon-table-bg {
-    height: 220px;
-  }
+.icon-table-bg {
+  height: 220px;
+}
 </style>

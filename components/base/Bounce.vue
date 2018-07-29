@@ -1,5 +1,5 @@
 <template>
-  <div :class="[{ animatable: !visible }, { animated: visible }, bounceDirectionClass]"
+  <div :class="[{ animatable: !visible }, { animated: visible }, direction]"
        v-observe-visibility="VisibilityChanged">
     <slot></slot>
   </div>
@@ -12,7 +12,11 @@ export default {
       type: String,
       validator: function(value) {
         // The value must match one of these strings
-        return ["in", "left", "right", "fadeInUp"].indexOf(value) !== -1;
+        return (
+          ["bounceIn", "bounceInLeft", "bounceInRight", "fadeInUp"].indexOf(
+            value
+          ) !== -1
+        );
       }
     }
   },
@@ -20,18 +24,6 @@ export default {
     return {
       visible: false
     };
-  },
-  computed: {
-    bounceDirectionClass: function() {
-      if (this.direction === "in") {
-        return "bounceIn";
-      } else if (this.direction === "left") {
-        return "bounceInLeft";
-      } else if (this.direction === "right") {
-        return "bounceInRight";
-      }
-      return this.direction;
-    }
   },
   methods: {
     VisibilityChanged: function(isVisible) {

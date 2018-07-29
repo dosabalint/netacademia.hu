@@ -41,8 +41,8 @@
 </template>
 
 <script>
-import VideoBg from "~/components/VideoBG";
-import { GtmPageLoad } from "~/components/mixins/GtmPageLoad";
+import VideoBg from "@/components/VideoBG";
+import { GtmPageLoad } from "@/components/mixins/GtmPageLoad";
 
 export default {
   name: "landing",

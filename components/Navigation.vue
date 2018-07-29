@@ -58,7 +58,7 @@
 </template>
 
 <script>
-import { AUTH_LOGOUT_ACTION, AUTH_REQ_ACTION } from "../store/user";
+import { AUTH_LOGOUT_ACTION, AUTH_REQ_ACTION } from "@/store/user";
 import { mapState } from "vuex";
 
 export default {

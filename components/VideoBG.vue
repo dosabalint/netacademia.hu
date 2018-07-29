@@ -32,7 +32,7 @@ export default {
 
   computed: {
     shouldPlayVideo: function() {
-      return this.$mq === "md" || this.$mq === "lg" || this.$mq === 'xl';
+      return this.$mq === "md" || this.$mq === "lg" || this.$mq === "xl";
     }
   },
   mounted() {

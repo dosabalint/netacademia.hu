@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import GtmLink from "~/components/GtmLink.vue";
+import GtmLink from "@/components/base/GtmLink.vue";
 
 export default {
   props: {

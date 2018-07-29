@@ -24,7 +24,7 @@
                     3D játékot fejlesztünk okostelefonokra."
                     logo-bg="#6B273C"
                     card-header-bg="#6B273C"
-                    direction="left"
+                    direction="bounceInLeft"
       >
         <img slot="picture" src="~/assets/unity-developer/unity-icon.png" alt="unity-logo">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.lenyugozo"
@@ -42,7 +42,7 @@
                                 virtuális és kiterjesztett valóság alapú játékok fejlesztésébe is!"
                     logo-bg="#284d5d"
                     card-header-bg="#284d5d"
-                    direction="right"
+                    direction="bounceInRight"
       >
         <img slot="picture" src="~/assets/unity-developer/unity-icon.png" alt="unity-logo">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.modern"
@@ -60,7 +60,7 @@
                     description2=" A kurzus során bemutatásra kerül a Unity új 2D szerkesztője, a Tilemap is."
                     logo-bg="#222c37"
                     card-header-bg="#222c37"
-                    direction="left"
+                    direction="bounceInLeft"
       >
         <img slot="picture" src="~/assets/unity-developer/unity-icon.png" alt="unity-logo">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.ketd"
@@ -80,7 +80,7 @@
                               származó UI témákat és megoldásokat."
                     logo-bg="#6B273C"
                     card-header-bg="#6B273C"
-                    direction="right"
+                    direction="bounceInRight"
       >
         <img slot="picture" src="~/assets/unity-developer/unity-icon.png" alt="unity-logo">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.ui"
@@ -98,7 +98,7 @@
                                 megismerjük a Unity felhőszolgátatásait és a Backend-as-a-Service megoldasait."
                     logo-bg="#222c37"
                     card-header-bg="#222c37"
-                    direction="left"
+                    direction="bounceInLeft"
       >
         <img slot="picture" src="~/assets/unity-developer/unity-icon.png" alt="unity-logo">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.advanced"
@@ -162,12 +162,12 @@
 </template>
 
 <script>
-import TimelineCard from "~/components/TimelineCard";
-import GtmLink from "~/components/GtmLink";
-import TimelineContainer from "~/components/TimelineContainer";
-import CertiFeatures from "~/components/CertiFeatures";
-import CertiTopHero from "~/components/CertiTopHero";
-import {GtmPageLoad} from "~/components/mixins/GtmPageLoad";
+import TimelineCard from "@/components/TimelineCard";
+import GtmLink from "@/components/base/GtmLink";
+import TimelineContainer from "@/components/TimelineContainer";
+import CertiFeatures from "@/components/CertiFeatures";
+import CertiTopHero from "@/components/CertiTopHero";
+import {GtmPageLoad} from "@/components/mixins/GtmPageLoad";
 
 export default {
   name: 'unity-path',

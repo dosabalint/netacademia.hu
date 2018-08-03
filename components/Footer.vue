@@ -42,7 +42,7 @@
               <nuxt-link to="/certificate">NetAcademia Certificate</nuxt-link>
             </li>
             <li class="py-1">
-              <nuxt-link to="/lenyugozo-tanfolyamok">Lenyűgöző tanfolyamok</nuxt-link>
+              <a href="https://www.netacademia.hu/Home/AllCourses2Excel.xlsx">Tanfolyamlista letöltése (XLS)</a>
             </li>
           </ul>
         </div>

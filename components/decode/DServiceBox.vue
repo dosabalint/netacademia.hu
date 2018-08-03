@@ -22,9 +22,9 @@ export default {
   },
   computed: {
     iconPositionClass() {
-      return this.iconPosition === 'left' ? 'icon-left' : 'icon-right';
+      return this.iconPosition === "left" ? "icon-left" : "icon-right";
     }
-  },
+  }
 };
 </script>
 

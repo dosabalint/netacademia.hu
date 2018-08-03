@@ -20,8 +20,8 @@
 </template>
 f2dd
 <script>
-import Row from "../Row";
-import Column from "../Column";
+import Row from "@/components/base/Row";
+import Column from "@/components/base/Column";
 
 export default {
   name: "DSuperPowerList",

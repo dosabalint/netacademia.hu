@@ -93,11 +93,11 @@
 </template>
 
 <script>
-import Container from "../components/Container";
-import Row from "../components/Row";
-import Column from "../components/Column";
-import TanfolyamkeresoCard from "../components/TanfolyamkeresoCard";
-import DPageHeader from "../components/decode/DPageHeader";
+import Container from "@/components/base/Container";
+import Row from "@/components/base/Row";
+import Column from "@/components/base/Column";
+import TanfolyamkeresoCard from "@/components/TanfolyamkeresoCard";
+import DPageHeader from "@/components/decode/DPageHeader";
 
 const FILTERS = [
   { text: "Kiemelt", value: "isPromoted", labelString: "#kiemelt#" },

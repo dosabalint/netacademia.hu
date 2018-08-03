@@ -15,7 +15,7 @@
   </div>
 </template>
 <script>
-import Bounce from "~/components/Bounce.vue";
+import Bounce from "@/components/base/Bounce";
 
 export default {
   components: { Bounce },
@@ -37,7 +37,7 @@ export default {
       required: true
     },
     description2: {
-      type: String,
+      type: String
     },
     logoBg: {
       type: String,

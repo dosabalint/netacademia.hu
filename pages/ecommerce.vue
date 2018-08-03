@@ -25,7 +25,7 @@
                     létre egy mini Facebook kampányt, illetve hogyan tervezhetünk hatékonyan."
                     logo-bg="#6B273C"
                     card-header-bg="#6B273C"
-                    direction="left"
+                    direction="bounceInLeft"
       >
         <img slot="picture" src="~/assets/ecommerce/ecommerce-icon.png" alt="ecommerce-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.design"
@@ -43,7 +43,7 @@
                     tulajdonképpen nem is rendelkezünk, így pedig nem kell hatalmas raktárkészletet felhalmoznunk!"
                     logo-bg="#284d5d"
                     card-header-bg="#284d5d"
-                    direction="right"
+                    direction="bounceInRight"
       >
         <img slot="picture" src="~/assets/ecommerce/ecommerce-icon.png" alt="ecommerce-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.create"
@@ -61,7 +61,7 @@
                     vállalkozás kereskedési rendszerének."
                     logo-bg="#222c37"
                     card-header-bg="#222c37"
-                    direction="left"
+                    direction="bounceInLeft"
       >
         <img slot="picture" src="~/assets/ecommerce/ecommerce-icon.png" alt="ecommerce-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.facebook"
@@ -80,7 +80,7 @@
                     követni, így mérve az eredményességüket."
                     logo-bg="#6B273C"
                     card-header-bg="#6B273C"
-                    direction="right"
+                    direction="bounceInRight"
       >
         <img slot="picture" src="~/assets/ecommerce/ecommerce-icon.png" alt="ecommerce-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.cone"
@@ -99,7 +99,7 @@
                     elsajátíthatjuk."
                     logo-bg="#222c37"
                     card-header-bg="#222c37"
-                    direction="left"
+                    direction="bounceInLeft"
       >
         <img slot="picture" src="~/assets/ecommerce/ecommerce-icon.png" alt="ecommerce-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.adwords"
@@ -117,7 +117,7 @@
                     platformot, továbbá megtanuljuk összekötni a Shopfify és Wordpress alapú webshopunkkal."
                     logo-bg="#284d5d"
                     card-header-bg="#284d5d"
-                    direction="right"
+                    direction="bounceInRight"
       >
         <img slot="picture" src="~/assets/ecommerce/ecommerce-icon.png" alt="ecommerce-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.email"
@@ -136,7 +136,7 @@
                     hatékony számlázás folyamatát, illetve a panaszok kezelését, a Trello nevű platformmal."
                     logo-bg="#6B273C"
                     card-header-bg="#6B273C"
-                    direction="left"
+                    direction="bounceInLeft"
       >
         <img slot="picture" src="~/assets/ecommerce/ecommerce-icon.png" alt="ecommerce-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.crm"
@@ -154,7 +154,7 @@
                     description2="A kurzus során megtanuljuk a Google Analytics, a Facebook, a Shopify és a Wordpress értékelő eszközeinek használatát."
                     logo-bg="#222c37"
                     card-header-bg="#222c37"
-                    direction="right"
+                    direction="bounceInRight"
       >
         <img slot="picture" src="~/assets/ecommerce/ecommerce-icon.png" alt="ecommerce-icon">
         <gtm-link slot="link" :gtm-data="GTMProductCollection.analytics"
@@ -225,12 +225,12 @@
 </template>
 
 <script>
-import TimelineCard from "~/components/TimelineCard";
-import GtmLink from "~/components/GtmLink";
-import TimelineContainer from "~/components/TimelineContainer";
-import CertiFeatures from "~/components/CertiFeatures";
-import CertiTopHero from "~/components/CertiTopHero";
-import { GtmPageLoad } from "~/components/mixins/GtmPageLoad";
+import TimelineCard from "@/components/TimelineCard";
+import GtmLink from "@/components/base/GtmLink";
+import TimelineContainer from "@/components/TimelineContainer";
+import CertiFeatures from "@/components/CertiFeatures";
+import CertiTopHero from "@/components/CertiTopHero";
+import { GtmPageLoad } from "@/components/mixins/GtmPageLoad";
 
 export default {
   name: "ecoomerce-path",

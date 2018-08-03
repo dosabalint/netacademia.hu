@@ -24,10 +24,7 @@
           <nuxt-link class="nav-link" to="/indulotanfolyamok">Induló tanfolyamok</nuxt-link>
         </li>
         <li class="nav-item flex-center">
-          <nuxt-link class="nav-link" to="/certificate">NetAcademia Certificate</nuxt-link>
-        </li>
-        <li class="nav-item flex-center">
-          <nuxt-link class="nav-link" to="/lenyugozo-tanfolyamok">Lenyűgöző tanfolyamok</nuxt-link>
+          <nuxt-link class="nav-link" to="/certificate">Certificate</nuxt-link>
         </li>
         <li class="nav-item flex-center">
           <nuxt-link class="nav-link" to="/elofizetes">Előfizetés</nuxt-link>

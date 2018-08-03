@@ -1,44 +1,45 @@
 <template>
+  <div :class="{'header-transparent': !isMobileMenu}">
+    <header :id="headerVersion" :class="[headerVersion]">
+      <Container is-fluid>
+        <Row>
+          <Column class="col-md-1">
 
-  <header :id="headerVersion" :class="[headerVersion]">
-    <Container is-fluid @scroll="scrollListener">
-      <Row>
-        <Column class="col-md-1">
+            <div id="logo">
+              <nuxt-link class="navbar-brand" to="/">
+                <img width="40px" src="~/assets/logo-ikon.svg" alt="NetAcademia Oktatóközpont Kft."/>
+              </nuxt-link>
+            </div>
 
-          <div id="logo">
-            <nuxt-link class="navbar-brand" to="/">
-              <img width="40px" src="~/assets/logo-ikon.svg" alt="NetAcademia Oktatóközpont Kft."/>
-            </nuxt-link>
-          </div>
+          </Column>
+          <Column class="col-md-11">
+            <no-ssr>
+              <nav class="transparent" :class="{'mt-2': isMobileMenu}">
+                <a class="mobile-menu-button" href="#"
+                   v-if="isMobileMenu"
+                   @click="menuOpen = !menuOpen"
+                >
+                  <i class="decode-icon-menu"></i>
+                </a>
 
-        </Column>
-        <Column class="col-md-11">
-          <no-ssr>
-            <nav class="transparent" v-if="!isMobileMenu">
-              <ul class="menu clearfix">
-                <li v-for="m in menu" :key="m.link">
-                  <nuxt-link :to="m.link">{{m.text}}</nuxt-link>
-                </li>
-              </ul>
-            </nav>
-
-            <nav v-else>
-              <a class="mobile-menu-button" href="#" data-toggle="collapse" data-target="#menu">
-                <i class="decode-icon-menu"></i>
-              </a>
-
-              <ul class="navbar-nav clearfix collapse navbar-collapse" id="menu">
-                <li v-for="m in menu" :key="m.link">
-                  <nuxt-link :to="m.link" class="waves">{{m.text}}</nuxt-link>
-                </li>
-              </ul>
-
-            </nav>
-          </no-ssr>
-        </Column>
-      </Row>
-    </Container>
-  </header>
+                <ul id="menu" class="clearfix"
+                    :class="{
+                      'navbar-nav collapse navbar-collapse': isMobileMenu,
+                      'menu': !isMobileMenu,
+                      'show': menuOpen
+                    }"
+                >
+                  <li v-for="m in menu" :key="m.link">
+                    <nuxt-link :to="m.link" :class="{'waves': isMobileMenu}">{{m.text}}</nuxt-link>
+                  </li>
+                </ul>
+              </nav>
+            </no-ssr>
+          </Column>
+        </Row>
+      </Container>
+    </header>
+  </div>
 </template>
 
 <script>
@@ -51,22 +52,6 @@ import Column from "@/components/base/Column";
 export default {
   name: "DNavigation",
   components: { Column, Container, Row },
-  // props: {
-  //   theme: {
-  //     type: String,
-  //     default: "light",
-  //     validator: function(val) {
-  //       return ["light", "dark", "transparent", "logo"].indexOf(val) !== -1;
-  //     }
-  //   }
-  // },
-  head() {
-    return {
-      bodyAttrs: {
-        class: "header-transparent"
-      }
-    };
-  },
   computed: {
     ...mapState({
       user: state => state.user,
@@ -80,32 +65,11 @@ export default {
     isMobileMenu() {
       return this.$mq !== "xl";
     }
-    // themeClass: function() {
-    //   switch (this.theme) {
-    //     case "transparent":
-    //       return {
-    //         nav: ["navbar-dark", "bg-under-md"],
-    //         dropdownMenu: ["bg-under-md"],
-    //         dropdownItem: ["text-light-under-md"]
-    //       };
-    //     case "dark":
-    //       return {
-    //         nav: ["navbar-dark", "bg-dark"],
-    //         dropdownMenu: ["bg-dark"],
-    //         dropdownItem: ["text-light dark-hover"]
-    //       };
-    //     default:
-    //       return {
-    //         nav: ["navbar-light", "bg-light"],
-    //         dropdownMenu: [],
-    //         dropdownItem: []
-    //       };
-    //   }
-    // }
   },
   data() {
     return {
-      headerVersion: 'header',
+      headerVersion: "header",
+      menuOpen: false,
       menu: [
         { text: "Tanfolyamkereső", link: "/tanfolyamkereso" },
         { text: "Induló tanfolyamok", link: "/indulotanfolyamok" },
@@ -119,7 +83,7 @@ export default {
   methods: {
     scrollListener() {
       if (!this.isMobileMenu) {
-        this.headerVersion = window.scrollY < 100 ? 'header' : 'header-sticky';
+        this.headerVersion = window.scrollY < 100 ? "header" : "header-sticky";
       }
     },
     logOut() {
@@ -128,10 +92,10 @@ export default {
   },
   mounted: function() {
     this.$store.dispatch(`user/${AUTH_REQ_ACTION}`);
-    window.addEventListener('scroll', this.scrollListener);
+    window.addEventListener("scroll", this.scrollListener);
   },
   beforeDestroy() {
-    window.removeEventListener('scroll', this.scrollListener);
+    window.removeEventListener("scroll", this.scrollListener);
   }
 };
 </script>

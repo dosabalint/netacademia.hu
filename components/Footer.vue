@@ -1,86 +1,5 @@
 <template>
-  <footer class="pt-5 text-light footer-dark">
-    <!--<div class="container-fluid footer-container">-->
-
-    <!--<div class="row py-3 mx-auto justify-content-center text-uppercase font-weight-bold">-->
-
-    <!--<div class="col-12 col-sm-6 col-lg-3 my-auto ">-->
-    <!--<nuxt-link to="/"><img src="~/assets/logo.svg" alt="logo" width="220" class="lg-px-3"></nuxt-link>-->
-    <!--</div>-->
-
-    <!--<div class="col-12 col-sm-6 col-lg-3">-->
-    <!--<ul class="list-unstyled">-->
-    <!--<li class="py-1">+36 20 385 3332</li>-->
-    <!--<li class="py-1">iroda@netacademia.hu</li>-->
-    <!--<li class="py-1">Adószám: 13702355-2-42</li>-->
-    <!--</ul>-->
-    <!--</div>-->
-
-    <!--<div class="col-12 col-sm-6 col-lg-3">-->
-    <!--<ul class="list-unstyled">-->
-    <!--<li class="py-1">-->
-    <!--<nuxt-link to="/">Főoldal</nuxt-link>-->
-    <!--</li>-->
-    <!--<li class="py-1">-->
-    <!--<nuxt-link to="/tanfolyamkereso">Tanfolyamkereső</nuxt-link>-->
-    <!--</li>-->
-    <!--<li class="py-1">-->
-    <!--<nuxt-link to="/indulotanfolyamok">Induló tanfolyamok</nuxt-link>-->
-    <!--</li>-->
-    <!--<li class="py-1">-->
-    <!--<a href="/oktato">Jelentkezz oktatónak!</a>-->
-    <!--</li>-->
-    <!--</ul>-->
-    <!--</div>-->
-
-    <!--<div class="col-12 col-sm-6 col-lg-3">-->
-    <!--<ul class="list-unstyled">-->
-    <!--<li class="py-1">-->
-    <!--<nuxt-link to="/elofizetes">Előfizetés</nuxt-link>-->
-    <!--</li>-->
-    <!--<li class="py-1">-->
-    <!--<nuxt-link to="/certificate">NetAcademia Certificate</nuxt-link>-->
-    <!--</li>-->
-    <!--<li class="py-1">-->
-    <!--<a href="https://www.netacademia.hu/Home/AllCourses2Excel.xlsx">Tanfolyamlista letöltése (XLS)</a>-->
-    <!--</li>-->
-    <!--</ul>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</div>-->
-
-    <!--<div class="container-fluid">-->
-    <!--<h1 class="line">BARÁTKOZZUNK!</h1>-->
-    <!--<div class="text-center px-0">-->
-    <!--<a class="px-3" href="https://www.facebook.com/Netacademia/">-->
-    <!--<fa :icon="['fab', 'facebook']" size="2x"/>-->
-    <!--</a>-->
-    <!--<a class="px-3" href="https://twitter.com/netacademia">-->
-    <!--<fa :icon="['fab', 'twitter']" size="2x"/>-->
-    <!--</a>-->
-    <!--<a class="px-3" href="https://www.instagram.com/netacademia.hu/">-->
-    <!--<fa :icon="['fab', 'instagram']" size="2x"/>-->
-    <!--<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>-->
-    <!--</a>-->
-    <!--<a class="px-3" href="https://www.linkedin.com/company/netacademia/">-->
-    <!--<fa :icon="['fab', 'linkedin']" size="2x"/>-->
-    <!--</a>-->
-    <!--<a class="px-3" href="https://www.youtube.com/user/Trombita45">-->
-    <!--<fa :icon="['fab', 'youtube']" size="2x"/>-->
-    <!--</a>-->
-    <!--</div>-->
-    <!--</div>-->
-
-    <!--<div class="container">-->
-    <!--<div class="row py-4">-->
-    <!--<div class="col-12 px-0 text-center">-->
-    <!--<nuxt-link class="mx-3" to="aszf">ÁSZF</nuxt-link>-->
-    <!--© NetAcademia 1998-{{currentYear}}-->
-    <!--<nuxt-link class="mx-3" to="/adatvedelem">Adatvédelem</nuxt-link>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</div>-->
-
+  <footer class="pt-5">
     <div id="footer">
 
       <div class="container">
@@ -110,11 +29,11 @@
               <h6 class="widget-title">Menü</h6>
 
               <ul>
-                <li><a href="https://www.netacademia.hu/">Főoldal</a></li>
-                <li><a href="http://app.netacademia.hu/indulotanfolyamok">Induló tanfolyamok</a></li>
-                <li><a href="https://app.netacademia.hu/elofizetes">Előfizetések</a></li>
-                <li><a href="https://app.netacademia.hu/tanfolyamkeresov2">Tanfolyamkereső</a></li>
-                <li><a href="http://app.netacademia.hu/certificate">Certificate</a></li>
+                <li><nuxt-link to="/">Főoldal</nuxt-link></li>
+                <li><nuxt-link to="/tanfolyamkereso">Tanfolyamkereső</nuxt-link></li>
+                <li><nuxt-link to="/indulotanfolyamok">Induló tanfolyamok</nuxt-link></li>
+                <li><a href="https://www.netacademia.hu/Home/AllCourses2Excel.xlsx">Tanfolyamlista letöltése (XLS)</a></li>
+                <li><a href="/oktato">Jelentkezz oktatónak!</a></li>
               </ul>
 
             </div>
@@ -129,10 +48,10 @@
               <h6 class="widget-title">Menü</h6>
 
               <ul>
-                <li><a href="#">Rólunk</a></li>
-                <li><a href="#">Kapcsolat</a></li>
-                <li><a href="http://app.netacademia.hu/GeneralTermsAndConditions/PrivacyStatement">Adatvédelem</a></li>
-                <li><a href="http://app.netacademia.hu/GeneralTermsAndConditions/Subscription">ÁSZF</a></li>
+                <li><nuxt-link to="/elofizetes">Előfizetés</nuxt-link></li>
+                <li><nuxt-link to="/certificate">NetAcademia Certificate</nuxt-link></li>
+                <li><nuxt-link to="/adatvedelem">Adatvédelem</nuxt-link></li>
+                <li><nuxt-link to="aszf">ÁSZF</nuxt-link></li>
                 <li><a href="https://app.netacademia.hu/www.netacademia.hu_NewsLetter">Hírlevél-feliratkozás</a></li>
               </ul>
 

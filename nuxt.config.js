@@ -95,7 +95,7 @@ module.exports = {
       },
       {
         set: "@fortawesome/fontawesome-free-solid",
-        icons: ["faHeart", "faBook", "faCheck", "faStar"]
+        icons: ["faHeart", "faBook", "faCheck", "faStar", "faAngleUp"]
       },
       {
         set: "@fortawesome/fontawesome-free-regular",
@@ -161,7 +161,7 @@ module.exports = {
         "@fortawesome/fontawesome-free-regular/shakable.es.js";
 
       config.resolve.alias["jquery"] =
-        "~/static/bootstrap/jquery-3.3.1.slim.min.js";
+        "~/static/bootstrap/jquery-3.3.1.min.js";
       config.resolve.alias["popper.js"] =
         "~/static/bootstrap/popper.min.js";
       config.resolve.alias["bootstrap"] =

@@ -43,9 +43,9 @@
           </nuxt-link>
           <div class="dropdown-menu" :class="themeClass.dropdownMenu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" :class="themeClass.dropdownItem"
-               href="/Adataim">Profil</a>
+               href="/Adataim">Adataim</a>
             <button class="dropdown-item" :class="themeClass.dropdownItem" @click.prevent="logOut">
-              Kijelentkezes
+              Kijelentkezés
             </button>
           </div>
         </li>

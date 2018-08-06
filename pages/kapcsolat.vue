@@ -105,7 +105,7 @@
               </div>
               <!-- about-me-thumbnail -->
               <h6>Bardóczi Ákos</h6>
-              <span>Blogger</span>
+              <span>Méregkeverő && zugfilozófus</span>
               <p>
                 <small>bardoczi.akos@netacademia.hu</small>
               </p>
@@ -241,7 +241,7 @@
               </div>
               <!-- about-me-thumbnail -->
               <h6>Fóti Marcell</h6>
-              <span>Alapító, oktató</span>
+              <span>Nem cipész!!!</span>
               <p><small>foti.marcell@netacademia.net</small></p>
             </div>
             <!-- about-me -->

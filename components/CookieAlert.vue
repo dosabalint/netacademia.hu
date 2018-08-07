@@ -4,7 +4,7 @@
       <cookie-law theme="na-theme"
                   buttonText="Elfogadom"
                   buttonLink="/adatvedelem"
-                  buttonLinkText="Adatvédelmi Szabályzat">
+                  buttonLinkText="Adatvédelem">
         <div slot="message">
           Ez az oldal is sütiket használ, nyilván.
         </div>
@@ -27,11 +27,11 @@
   .Cookie--na-theme {
     background: #424851;
     color: #fff;
-    padding: 2rem 1.5rem;
+    padding: 1rem 1.5rem;
 
     .Cookie__button {
       background: rgb(255, 165, 0);
-      padding: 0.625em 3.125em;
+      padding: 0.625em 1.125em;
       color: #fff;
       font-weight: 700;
       border-radius: 0;

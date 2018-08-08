@@ -67,7 +67,7 @@ export default {
     padding: 100px 0 100px;
     margin-bottom: 0;
     background: #fff;
-    color: #d0d0d0;
+    /*color: #d0d0d0;*/
   }
 
   &.dark {

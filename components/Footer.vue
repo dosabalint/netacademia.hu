@@ -51,7 +51,7 @@
                 <li><nuxt-link to="/elofizetes">Előfizetés</nuxt-link></li>
                 <li><nuxt-link to="/certificate">NetAcademia Certificate</nuxt-link></li>
                 <li><nuxt-link to="/adatvedelem">Adatvédelem</nuxt-link></li>
-                <li><nuxt-link to="aszf">ÁSZF</nuxt-link></li>
+                <li><nuxt-link to="/aszf">ÁSZF</nuxt-link></li>
                 <li><a href="https://app.netacademia.hu/www.netacademia.hu_NewsLetter">Hírlevél-feliratkozás</a></li>
               </ul>
 
@@ -64,9 +64,10 @@
 
             <div class="widget widget-contact">
 
-              <h6 class="widget-title">Kapcsolat info</h6>
+              <h6 class="widget-title">Kapcsolat</h6>
 
               <ul>
+                <li><nuxt-link to="/kapcsolat">További részletek</nuxt-link></li>
                 <li>+36 20 385 3332</li>
                 <li><a href="mailto:iroda@netacademia.net">iroda@netacademia.net</a></li>
                 <li>adószám: 13702355-2-42</li>

@@ -32,6 +32,9 @@
         <li class="nav-item flex-center">
           <nuxt-link class="nav-link" to="/business">Business előfizetés</nuxt-link>
         </li>
+        <li class="nav-item flex-center">
+          <nuxt-link class="nav-link" to="/rolunk">Rólunk</nuxt-link>
+        </li>
       </ul>
       <ul class="navbar-nav ml-auto">
         <li v-if="!user.isLoggedIn">

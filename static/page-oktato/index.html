@@ -58,100 +58,6 @@
 
 <div id="main-container">
 
-  <!-- HEADER -->
-  <header id="header">
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-1">
-
-          <!-- LOGO -->
-          <div id="logo">
-            <a href="index.html">
-              <img src="assets/images/logo-icon.svg" alt="logo" width="40">
-            </a>
-          </div>
-          <!-- LOGO -->
-
-        </div>
-        <!-- col -->
-        <div class="col-md-11">
-
-          <!-- MENU -->
-          <nav>
-
-            <a class="mobile-menu-button" href="#"><i class="decode-icon-menu"></i></a>
-
-            <ul class="menu clearfix" id="menu">
-              <li class="megamenu">
-                <a href="index.html">Főoldal</a>
-              </li>
-              <li class="">
-                <a href="tanfolyamkereso.html">Tanfolyamkereső</a>
-              </li>
-              <li class="">
-                <a href="indulo-tanfolyamok.html">Induló tanfolyamok</a>
-              </li>
-              <li class="">
-                <a href="rolunk.html">Rólunk</a>
-              </li>
-
-              <li class="dropdown active">
-                <a href="certificate.html">Előfizetések</a>
-                <ul>
-                  <li><a class="waves" href="blog-right-sidebar.html">Certificate</a></li>
-                  <li class="dropdown">
-                    <a class="waves" href="#">Tanfolyamcsomagok</a>
-                    <ul>
-                      <li><a class="waves" href="blog-post-right-sidebar.html">Angular</a></li>
-                      <li><a class="waves" href="blog-post-left-sidebar.html">Vue</a></li>
-                      <li><a class="waves" href="blog-post-no-sidebar.html">Windows server</a>
-                      </li>
-                      <li><a class="waves" href="blog-post-no-sidebar.html">Unity</a></li>
-                      <li><a class="waves" href="blog-post-no-sidebar.html">E-commerce</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a class="waves" href="#">Előfizetések</a>
-                    <ul>
-                      <li><a class="waves" href="blog-post-right-sidebar.html">Ultimate
-                        előfizetés</a></li>
-                      <li><a class="waves" href="office.html">Office/MIA előfizetés</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="">
-                <a class="waves" href="karrier.html">Karrier</a>
-              </li>
-              <li class="">
-                <a href="kapcsolat.html">Kapcsolat</a>
-              </li>
-              <li class="">
-                <a href="blog.html">Blog</a>
-              </li>
-              <li class="">
-                <a href="adataim.html">Adataim</a>
-              </li>
-              <li class="">
-                <a href="bejelentkezes.html">Bejelentkezés</a>
-              </li>
-            </ul>
-
-          </nav>
-
-        </div>
-        <!-- col -->
-      </div>
-      <!-- row -->
-    </div>
-    <!-- container-fluid -->
-
-  </header>
-  <!-- HEADER -->
-
-
   <!-- PAGE CONTENT -->
   <div id="page-header">
 
@@ -302,50 +208,34 @@
 
               <h6>JELENTKEZZ OKTATÓNAK!</h6>
 
-              <form id="contact-form" class="form-validator-class" name="contact-form" method="post"
-                    action="https://us-central1-na-oktatojelentkezes.cloudfunctions.net/addTeacherIssue">
+              <form method="post" action="https://us-central1-na-oktatojelentkezes.cloudfunctions.net/addTeacherIssue">
                 <fieldset>
 
                   <div id="alert-area"></div>
 
                   <p>
-                    <input class="col-12" id="name" type="text" name="name" placeholder="" required>
-                    <span></span>
-                    <label for="name">Név:</label>
+                    <input class="col-12" id="name" type="text" name="name" placeholder="Név" required>
                   </p>
 
                   <p>
-                    <input class="col-12" id="birthYear" type="text" name="birthYear" placeholder=""
+                    <input class="col-12" id="birthYear" type="text" name="birthYear" placeholder="Születési év"
                            required>
-                    <span></span>
-                    <label for="name">Születési év:</label>
                   </p>
 
                   <p>
-                    <input class="col-12" id="email" type="text" name="email" placeholder=""
-                           required>
-                    <span></span>
-                    <label for="email">E-mail:</label>
+                    <input class="col-12" id="email" type="email" name="email" placeholder="E-mail" required>
                   </p>
 
                   <p>
-                    <input class="col-12" id="phone" type="text" name="phone" placeholder=""
-                           required>
-                    <span></span>
-                    <label for="email">Telefon:</label>
+                    <input class="col-12" id="phone" type="text" name="phone" placeholder="Telefon" required>
                   </p>
 
                   <p>
-                    <input class="col-12" id="skype" type="text" name="skype" placeholder=""
-                           required>
-                    <span></span>
-                    <label for="email">Skype:</label>
+                    <input class="col-12" id="skype" type="text" name="skype" placeholder="Skype" required>
                   </p>
 
                   <p>
-                    <input class="col-12" id="job" type="text" name="job" placeholder="" required>
-                    <span></span>
-                    <label for="email">Szakterület:</label>
+                    <input class="col-12" id="job" type="text" name="job" placeholder="Szakterület" required>
                   </p>
 
                   <button class="btn btn-black btn-outline waves waves-dark" id="submit" type="submit"
@@ -363,35 +253,6 @@
 
     </div><!-- full-section-container -->
   </section><!-- full-section -->
-
-  <div class="container text-center">
-
-    <!-- Modal -->
-    <div class="modal fade" id="successModal" tabindex="-1" role="dialog"
-         aria-hidden="true" style="margin-top: 150px;">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-body py-5">
-            <h4>Köszönjük!</h4>
-            <p>Kollégáink hamarosan felveszik Veled a kapcsolatot!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="failModal" tabindex="-1" role="dialog"
-         aria-hidden="true" style="margin-top: 150px;">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-body py-5">
-            <h4>Hiba történt a beküldés során</h4>
-            <p>Kérlek jelezd ezt kollégáink felé, hogy javíthassák. Köszönjük!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
 
 </div>
 <!-- MAIN CONTAINER -->
@@ -435,28 +296,29 @@
 
 <!-- form submit -->
 <script>
-  $(function () {
-    $("#contact-form").submit(function (event) {
+  $(function() {
+    $("form").submit(function(event) {
       event.preventDefault();
+      const $this = $(this);
 
       const postData = $(this).serializeArray().reduce((acc, field) => {
         acc[field.name] = field.value;
         return acc;
       }, {});
 
-      const postUrl = $("#contact-form").prop("action");
+      const postUrl = $this.prop("action");
 
       $.ajax({
         url: postUrl,
         data: postData,
-        dataType: 'json',
-        method: 'post',
+        dataType: "json",
+        method: "post",
 
-        success: function (response) {
-          parent.$('body').trigger('successModal');
+        success: function(response) {
+          parent.$("body").trigger("successModal");
         },
-        error: function (error) {
-          parent.$('body').trigger('failModal');
+        error: function(error) {
+          parent.$("body").trigger("failModal");
           console.error(error);
         }
       });

@@ -1,15 +1,15 @@
 <template>
   <div>
-    <Navigation theme="light"></Navigation>
+    <DNavigation theme="light"></DNavigation>
     <nuxt />
   </div>
 </template>
 
 <script>
-import Navigation from "@/components/Navigation.vue";
+import DNavigation from "@/components/decode/DNavigation.vue";
 
 export default {
-  components: { Navigation }
+  components: { DNavigation }
 };
 </script>
 

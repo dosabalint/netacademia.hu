@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navigation theme="light"></Navigation>
+    <DNavigation theme="light"></DNavigation>
     <DContainer class="mt-5">
       <nuxt/>
     </DContainer>
@@ -8,12 +8,12 @@
   </div>
 </template>
 <script>
-  import Navigation from "@/components/Navigation";
   import Footer from "@/components/Footer";
   import DContainer from "@/components/decode/DContainer";
+  import DNavigation from "@/components/decode/DNavigation";
 
   export default {
     name: "decode",
-    components: { DContainer, Navigation, Footer }
+    components: { DContainer, Footer, DNavigation }
   };
 </script>

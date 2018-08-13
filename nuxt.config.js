@@ -1,4 +1,4 @@
-const webpack = require('webpack');
+const webpack = require("webpack");
 
 const scroll = function(to, from, savedPosition) {
   if (to.hash) {
@@ -72,7 +72,7 @@ module.exports = {
     { src: "~/plugins/vue-observe-visibility", ssr: false },
     { src: "~/plugins/vue-youtube-embed", ssr: false },
     { src: "~/plugins/vue-mq", ssr: false },
-    { src: "~/plugins/vue-lazyload", ssr: false },
+    { src: "~/plugins/vue-lazyload", ssr: false }
   ],
   modules: [
     ["@nuxtjs/google-tag-manager", { id: gtmId }],
@@ -95,7 +95,7 @@ module.exports = {
       },
       {
         set: "@fortawesome/fontawesome-free-solid",
-        icons: ["faHeart", "faBook", "faCheck", "faStar", "faAngleUp"]
+        icons: ["faHeart", "faBook", "faCheck", "faStar", "faAngleUp", "faAngleDown"]
       },
       {
         set: "@fortawesome/fontawesome-free-regular",

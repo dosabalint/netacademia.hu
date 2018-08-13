@@ -200,8 +200,4 @@
     left: -300px;
     width: 300px;
   }
-
-  #mobile-menu ul a {
-    padding-left: 20px;
-  }
 </style>

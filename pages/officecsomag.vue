@@ -277,7 +277,7 @@ import DFullSectionMultilayer from "@/components/decode/DFullSectionMultilayer";
 export default {
   name: "officecsomag",
   mixins: [GtmPageLoad("Termékoldal")],
-  layout: "decode",
+  // layout: "decode",
   components: {
     DFullSectionMultilayer,
     Parallax,

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navigation theme="transparent"></Navigation>
+    <DNavigation theme="transparent"></DNavigation>
     <DContainer>
       <nuxt class="decode-container"/>
     </DContainer>
@@ -11,13 +11,13 @@
 </template>
 
 <script>
-  import Navigation from "@/components/Navigation";
   import Footer from "@/components/Footer";
   import DContainer from "@/components/decode/DContainer";
   import DScrollUp from "@/components/decode/DScrollUp";
   import CookieAlert from "@/components/CookieAlert";
+  import DNavigation from "@/components/decode/DNavigation";
 
   export default {
-    components: { DContainer, Footer, Navigation, DScrollUp, CookieAlert }
+    components: { DContainer, Footer, DNavigation, DScrollUp, CookieAlert }
   };
 </script>

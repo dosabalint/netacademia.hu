@@ -30,6 +30,26 @@
                   <li v-for="m in menu" :key="m.link">
                     <nuxt-link :to="m.link" :class="{'waves': isMobileMenu}">{{ m.text }}</nuxt-link>
                   </li>
+
+                  <!-- user login/logout -->
+                  <li v-if="!user.isLoggedIn">
+                    <a class="nav-link text-center" :href="loginUrl">Bejelentkezés</a>
+                  </li>
+                  <li class="nav-item dropdown text-center" v-else>
+                    <nuxt-link class="nav-link dropdown-toggle" to="" id="navbarDropdownMenuLink"
+                               data-toggle="dropdown">
+                      {{user.name}}
+                    </nuxt-link>
+                    <div class="dropdown-menu" :class="themeClass.dropdownMenu"
+                         aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" :class="themeClass.dropdownItem"
+                         href="/Adataim">Adataim</a>
+                      <button class="dropdown-item" :class="themeClass.dropdownItem" @click.prevent="logOut">
+                        Kijelentkezés
+                      </button>
+                    </div>
+                  </li>
+
                 </ul>
 
                 <!-- mobile menu -->
@@ -40,6 +60,22 @@
 
                   <li v-for="m in menu" :key="m.link" class="w-100">
                     <nuxt-link :to="m.link" :class="{'waves': isMobileMenu}">{{ m.text }}</nuxt-link>
+                  </li>
+
+                  <!-- user login/logout -->
+                  <li v-if="!user.isLoggedIn">
+                    <a class="nav-link" :href="loginUrl">Bejelentkezés</a>
+                  </li>
+                  <li class="w-100 dropdown" v-else>
+                    <a class="waves" data-toggle="collapse" data-target="#adataim">
+                      {{ user.name }}
+                      <fa :icon="['fas', 'angle-down']" class="ml-2"/>
+                    </a>
+
+                    <ul class="collapse" id="adataim">
+                      <li><a class="waves" href="/Adataim">Adataim</a></li>
+                      <li><a class="waves" @click.prevent="logOut">Kijelentkezés</a></li>
+                    </ul>
                   </li>
 
                 </ul>
@@ -75,6 +111,28 @@
       }),
       isMobileMenu() {
         return this.$mq !== "xl";
+      },
+      themeClass: function() {
+        switch (this.theme) {
+          case "transparent":
+            return {
+              nav: ["navbar-dark", "bg-under-md"],
+              dropdownMenu: ["bg-under-md"],
+              dropdownItem: ["text-light-under-md"]
+            };
+          case "dark":
+            return {
+              nav: ["navbar-dark", "bg-dark"],
+              dropdownMenu: ["bg-dark"],
+              dropdownItem: ["text-light dark-hover"]
+            };
+          default:
+            return {
+              nav: ["navbar-light", "bg-light"],
+              dropdownMenu: [],
+              dropdownItem: []
+            };
+        }
       }
     },
     data() {
@@ -84,10 +142,10 @@
         menu: [
           { text: "Tanfolyamkereső", link: "/tanfolyamkereso" },
           { text: "Induló tanfolyamok", link: "/indulotanfolyamok" },
-          { text: "NetAcademia Certificate", link: "/certificate" },
-          { text: "Lenyűgöző tanfolyamok", link: "/lenyugozo-tanfolyamok" },
-          { text: "Előfizetés", link: "/elofizetes" },
-          { text: "Business előfizetés", link: "/business" }
+          { text: "Certificate", link: "/certificate" },
+          { text: "Útvonalak", link: "/elofizetes" },
+          { text: "Business előfizetés", link: "/business" },
+          { text: "Rólunk", link: "/rolunk" }
         ]
       };
     },
@@ -100,7 +158,7 @@
       logOut() {
         this.$store.dispatch(`user/${AUTH_LOGOUT_ACTION}`);
       },
-      toggleMenu(){
+      toggleMenu() {
         this.menuOpen = !this.menuOpen;
       }
     },
@@ -130,5 +188,20 @@
     left: 0;
     z-index: 100;
     background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  div.dropdown-menu {
+    button.dropdown-item {
+      padding: 7px 13px;
+    }
+  }
+
+  #mobile-menu {
+    left: -300px;
+    width: 300px;
+  }
+
+  #mobile-menu ul a {
+    padding-left: 20px;
   }
 </style>

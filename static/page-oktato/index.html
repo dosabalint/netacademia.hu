@@ -316,6 +316,7 @@
 
         success: function(response) {
           parent.$("body").trigger("successModal");
+          $("form input").val('');
         },
         error: function(error) {
           parent.$("body").trigger("failModal");

@@ -24,6 +24,10 @@
 
 <style lang="scss">
 
+  .Cookie__content{
+    font-size: 14px;
+  }
+
   .Cookie--na-theme {
     background: #424851;
     color: #fff;
@@ -33,7 +37,7 @@
       background: rgb(255, 165, 0);
       padding: 0.625em 1.125em;
       color: #fff;
-      font-weight: 700;
+      font-size: 14px;
       border-radius: 0;
     }
   }

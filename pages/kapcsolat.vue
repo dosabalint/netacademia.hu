@@ -50,9 +50,6 @@
                   <i class="decode-icon-multimedia"></i>
                   <a href="mailto:support@netacademia.hu">support@netacademia.hu</a>
                 </li>
-                <li class="phone">
-                  <i class="decode-icon-phone-call"></i> +36 21 252 5556
-                </li>
               </ul>
             </DWidget>
           </Column>

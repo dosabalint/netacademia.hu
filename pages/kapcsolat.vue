@@ -36,9 +36,6 @@
             <DWidget type="contact" class="mt-4">
               <ul>
                 <p><b>Számlázással, általános kérdésekkel, adminisztrációval kapcsolatban:</b></p>
-                <li class="phone">
-                  <i class="decode-icon-phone-call"></i> +36 20 385 3332
-                </li>
                 <li class="email">
                   <i class="decode-icon-multimedia"></i>
                   <a href="mailto:iroda@netacademia.net">iroda@netacademia.net</a>
@@ -206,18 +203,7 @@
             <!-- about-me -->
           </Column>
 
-          <Column class="col-8 col-lg-2 col-sm-5 px-lg-0">
-            <div class="about-me">
-              <div class="about-me-thumbnail rounded-circle">
-                <img src="~/assets/kapcsolat/hevesi-attila.jpg" alt="Hevesi Attila">
-              </div>
-              <!-- about-me-thumbnail -->
-              <h6>Hevesi Attila</h6>
-              <span>Értékesítő</span>
-              <!--p class="mb-0">+3620 329 6179</p-->
-              <p><small>hevesi.attila@netacademia.hu</small></p>
-            </div>
-          </Column>
+         
         </Row>
         <Row class="justify-content-around mb-5">
           <div class="col-8 col-lg-2 col-sm-5 px-lg-0">

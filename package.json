@@ -9,6 +9,7 @@
     "dev:test": "cross-env BASE_URL=http://localhost:3000 BACKEND_URL=https://pedellus-pedellustest.azurewebsites.net GTM=GTM-MWT4847 nuxt",
     "dev:prod": "cross-env BASE_URL=http://localhost:3000 BACKEND_URL=https://app.netacademia.hu GTM=GTM-MWT4847 nuxt",
     "dev:local:puff": "cross-env BASE_URL=http://localhost:3000 BACKEND_URL=http://172.16.68.129 GTM=GTM-MWT4847 nuxt",
+    "dev:local:dosa": "cross-env BASE_URL=http://localhost:3000 BACKEND_URL=http://pedellus.local GTM=GTM-MWT4847 nuxt",
     "generate:test": "cross-env BASE_URL=https://test.netacademia.hu BACKEND_URL=https://pedellus-pedellustest.azurewebsites.net GTM=GTM-MWT4847 npm run generate",
     "generate:prod": "cross-env BASE_URL=https://www.netacademia.hu BACKEND_URL=https://app.netacademia.hu GTM=GTM-T3WLP7 npm run generate",
     "generate:local:puff": "cross-env BASE_URL=http://localhost:8080 BACKEND_URL=http://172.16.68.129 GTM=GTM-MWT4847 npm run generate",

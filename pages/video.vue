@@ -25,17 +25,10 @@
       fetchPageData() {
         let courseName = "ELAI-I-az-elektronika-alapismeretei-i";
 
-        let headers = {
-          Cookie: this.$store.state.user.token
-        };
-
-        console.log(headers);
-
         return this.$axios
           .$get(
             `${this.$store.state.url.backend}${this.$store.state.url.videos}/${courseName}`,
             {
-              headers: headers,
               withCredentials: true
             }
           );

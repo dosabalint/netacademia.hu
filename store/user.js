@@ -11,8 +11,7 @@ export const state = () => ({
   isLoggedIn: false,
   isLoading: false,
   name: "",
-  email: "",
-  token: ".ASPXAUTH=tralala"
+  email: ""
 });
 
 export const actions = {

@@ -26,21 +26,27 @@
                    :class="{
                       'border-bottom': index !== playlist.length - 1
                     }">
+
                 <div class="col-2 my-auto">
-                  <a href="#" @click.prevent="openVideo('f9f46536-4ff0-4a96-af08-74a1755bfc91')">
+                  <a href="#" @click.prevent="PlaylistIndex = index">
                     <img src="~/assets/video/play-button.svg" width="20" alt="" class="ml-5 ml-lg-3 w-20px">
                   </a>
                 </div>
+
                 <div class="col-7 my-auto">
                   <a href="#">
-                    {{ index }} Linux alapok, Raspbian rendszer sajátosságai 1
+                    {{ playlistItem.Title }} {{ playlistItem.Index }}.
                   </a>
                 </div>
-                <div class="col-2 mx-auto my-auto">
-                  22:25
+
+                <div v-if="playlistItem.Length"
+                     class="col-3 mx-auto my-auto">
+                  {{ playlistItem.Length }}
                 </div>
-                <div class="col-lg-8 text-center mt-2">
-                  <a href="#">
+
+                <div v-if="playlistItem.Mp3DownloadLink"
+                     class="offset-2 col-8 mt-2">
+                  <a :href="playlistItem.Mp3DownloadLink" target="_blank">
                     <img src="~/assets/video/musical-note.svg" height="15" alt="" class="mr-2 w-15px">
                     <small>mp3 letöltése</small>
                   </a>
@@ -52,10 +58,7 @@
         </div>
 
         <div class="col-lg-12 p-4 mt-3">
-          <h5>Aktuális videó címe</h5>
-          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae vero reiciendis dolorum sunt
-            dolor commodi tenetur, harum consequatur quidem, totam eius maxime, sint dolore quod dolorem cum, doloribus
-            recusandae repudiandae?</p>
+          <h5>{{ CurrentPlaylistItem.Title }} - {{ CurrentPlaylistItem.Index }}.</h5>
         </div>
       </div>
       <!--videobox row-end-->
@@ -72,7 +75,8 @@
       return {
         vimeoId: null,
         pageData: null,
-        playlist: new Array(7),
+        playlist: [],
+        playlistIndex: null,
         vimeoUrl: null,
         courseName: null
       };
@@ -93,6 +97,26 @@
       CourseId() {
         return this.$route.params.courseId;
       },
+      /**
+       * @return {null|object}
+       */
+      CurrentPlaylistItem() {
+        if (this.playlistIndex === null) {
+          return {};
+        }
+
+        return this.playlist[this.playlistIndex];
+      },
+      PlaylistIndex: {
+        get: function() {
+          return this.playlistIndex;
+        },
+        set: function(newIndex) {
+          this.playlistIndex = newIndex;
+
+          this.openVideo(this.CurrentPlaylistItem.URLCode);
+        }
+      },
       VimeoId: {
         get: function() {
           return this.vimeoId;
@@ -109,8 +133,6 @@
         .then(pageData => {
           this.pageData = pageData;
           this.loadPlaylist(pageData.Modules);
-
-          console.log(pageData);
           this.courseName = pageData.Title;
         });
     },
@@ -119,12 +141,26 @@
         return this.$axios.get(`${this.ApiVideoUrl}`, { withCredentials: true });
       },
       loadPlaylist(modules) {
-        // let playlist = pageData.Modules.map(module => {
-        //   return module.Recordings.map(recording => {
-        //     return {};
-        //   });
-        // });
-        console.log(modules);
+
+        this.playlist = modules
+          .map(module => {
+
+            return module.Recordings
+              .map((recording, index) => {
+                return Object.assign({}, recording, {
+                  Index: index + 1,
+                  Title: module.Title
+                });
+              });
+          })
+          .reduce((acc, recordings) => {
+
+            return acc.concat(recordings);
+          }, []);
+
+        if (this.playlist.length) {
+          this.PlaylistIndex = 0;
+        }
       },
       openVideo(videoID) {
         this.$axios.get(`${this.ApiVideoPlayerBaseUrl}/${videoID}`, { withCredentials: true })
@@ -134,7 +170,6 @@
           });
       },
       updateVimeoUrl() {
-        console.log(`${this.$store.state.url.vimeoPlayer}/${this.vimeoId}`);
         this.vimeoUrl = `${this.$store.state.url.vimeoPlayer}/${this.vimeoId}`;
       }
     }
@@ -174,7 +209,7 @@
   }
 
   .playlist {
-    height: 428px;
+    max-height: 428px;
     overflow-y: auto;
     overflow-x: hidden;
   }

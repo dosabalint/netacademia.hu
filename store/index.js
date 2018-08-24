@@ -15,7 +15,9 @@ export const state = () => ({
     commingSoonCourses: "/api/Course/GetInProgressComingSoon",
     courseCardPicture: '/Picture/CourseCard',
     categories: "/api/Courses/1.0.0/PublicCategories",
-    videos: "/api/v1/Videos"
+    videos: "/api/v1/Videos",
+    videosPopup: "/api/v1/Videos/Player",
+    vimeoPlayer: "https://player.vimeo.com/video"
   }
 });
 

@@ -199,10 +199,16 @@
     }
   }
 
+  /* playlist */
+
   .playlist {
     max-height: 428px;
     overflow-y: auto;
     overflow-x: hidden;
+
+    @media screen and (max-width: 1200px) and (min-width: 992px) {
+      height: 315px;
+    }
   }
 
   /* margin */

@@ -12,7 +12,7 @@
     <div class="container minus-margin">
 
       <!-- player and playlist -->
-      <div class="row video-box">
+      <div class="row video-box mb-4">
 
         <div class="col-lg-7 col-xl-8 my-auto px-0">
           <div class="embed-responsive embed-responsive-16by9">
@@ -27,9 +27,7 @@
 
               <div v-for="(playlistItem, index) in playlist" :key="index"
                    class="row py-3"
-                   :class="{
-                      'border-bottom': index !== playlist.length - 1
-                    }">
+                   :class="{ 'border-bottom': index !== playlist.length - 1 }">
 
                 <div class="col-2 my-auto">
                   <a @click.prevent="PlaylistIndex = index" href="#">
@@ -68,8 +66,27 @@
 
       <!-- description -->
       <div v-if="description"
-        class="row video-box mt-4">
-        <div class="col-lg-12 mb-5 my-lg-5 px-5">
+        class="row video-box mb-4">
+
+        <div v-if="HasInfo"
+          class="col-lg-4 my-5 px-5 border-right-color">
+
+          <h4 class="mb-4">Tanfolyam információk</h4>
+
+          <p v-if="prerequisits">
+            <i class="decode-icon-graduation video-icon"></i><b>Előkövetelmények:</b>
+          </p>
+          <p v-if="prerequisits">
+            {{ prerequisits }}
+          </p>
+
+          <p v-if="startDate">
+            <i class="decode-icon-time video-icon"></i><b>Kezdés:</b>
+            {{ startDate }}
+          </p>
+        </div>
+
+        <div class="mb-5 my-lg-5 px-5" :class="{'col-lg-8': HasInfo}">
           <h4 class="mb-3">Leírás</h4>
           <div v-html="description">1</div>
         </div>
@@ -77,7 +94,7 @@
 
       <!-- download link -->
       <div v-if="downloadLink"
-        class="row video-box mt-4">
+        class="row video-box mb-4">
         <div class="col-12 my-5 px-5">
           <h5 class="mb-3"><i class="decode-icon-link video-icon"></i>Letölthető anyagok, linkek</h5>
           <a href="#" target="_blank">{{ downloadLink }}</a>
@@ -86,7 +103,7 @@
 
       <!-- trainers -->
       <div v-if="trainers"
-        class="row video-box my-4 py-5">
+        class="row video-box py-5">
         <div class="col-12 px-5">
           <h5 class="mb-5">Oktatók</h5>
         </div>
@@ -119,7 +136,9 @@
         courseName: null,
         description: null,
         downloadLink: null,
-        trainers: []
+        trainers: [],
+        prerequisits: null,
+        startDate: null
       };
     },
     computed: {
@@ -166,6 +185,12 @@
           this.vimeoId = newVimeoId;
           this.updateVimeoUrl(this.newValue);
         }
+      },
+      /**
+       * @return {boolean}
+       */
+      HasInfo(){
+        return !!this.prerequisits || !!this.startDate;
       }
     },
     created() {
@@ -179,6 +204,8 @@
             .replace(/<([^ >]+)[^>]*>/ig, "<$1>");
           this.downloadLink = pageData.DownloadLink;
           this.trainers = pageData.Trainers;
+          this.prerequisits = pageData.Prerequisits;
+          this.startDate = new Date(pageData.StartDate).toLocaleDateString();
         });
     },
     methods: {
@@ -264,6 +291,10 @@
     background-size: cover;
     background-position: top;
     display: inline-block;
+  }
+
+  .border-right-color {
+    border-right: 1px solid #2d9ad2;
   }
 
   /* playlist */

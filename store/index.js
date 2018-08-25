@@ -10,7 +10,7 @@ export const state = () => ({
     newBackend: 'https://pedellus2.azurewebsites.net',
     user: "/api/Profile/1.0.0/profile",
     login: "/Account/Logon",
-    logout: "/Account/LogOffAjax",
+    logout: "/api/v1/Account/LogOut",
     courses: "/api/Courses/1.0.0/CourseCards",
     commingSoonCourses: "/api/Course/GetInProgressComingSoon",
     courseCardPicture: '/Picture/CourseCard',

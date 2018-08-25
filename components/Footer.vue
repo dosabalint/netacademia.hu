@@ -67,10 +67,9 @@
               <h6 class="widget-title">Kapcsolat</h6>
 
               <ul>
-                <li><nuxt-link to="/kapcsolat">További részletek</nuxt-link></li>
-                <li>+36 20 385 3332</li>
                 <li><a href="mailto:iroda@netacademia.net">iroda@netacademia.net</a></li>
                 <li>adószám: 13702355-2-42</li>
+                <li><nuxt-link to="/kapcsolat">További részletek</nuxt-link></li>
               </ul>
 
             </div>

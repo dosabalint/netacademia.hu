@@ -25,7 +25,7 @@ export const actions = {
   },
   [AUTH_LOGOUT_ACTION](ctx) {
     return this.$axios
-      .$post(ctx.rootState.url.logout, { withCredentials: true })
+      .$post(ctx.rootState.url.logout, {}, { withCredentials: true, headers: { 'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8' } })
       .then(resp => ctx.commit(AUTH_LOGOUT_MUTATION))
       .catch(err => ctx.dispatch(ERROR_ACTION, err, { root: true }));
   }

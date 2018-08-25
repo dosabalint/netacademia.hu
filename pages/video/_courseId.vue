@@ -28,14 +28,14 @@
                     }">
 
                 <div class="col-2 my-auto">
-                  <a href="#" @click.prevent="PlaylistIndex = index">
+                  <a @click.prevent="PlaylistIndex = index" href="#">
                     <img src="~/assets/video/play-button.svg" width="20" alt="" class="ml-5 ml-lg-3 w-20px">
                   </a>
                 </div>
 
                 <div class="col-7 my-auto">
-                  <a href="#">
-                    {{ playlistItem.Title }} {{ playlistItem.Index }}.
+                  <a @click.prevent="PlaylistIndex = index" href="#">
+                    {{ playlistItem.Title }}
                   </a>
                 </div>
 
@@ -58,10 +58,9 @@
         </div>
 
         <div class="col-lg-12 p-4 mt-3">
-          <h5>{{ CurrentPlaylistItem.Title }} - {{ CurrentPlaylistItem.Index }}.</h5>
+          <h5>{{ CurrentPlaylistItem.Title }}</h5>
         </div>
       </div>
-      <!--videobox row-end-->
     </div>
   </main>
 </template>
@@ -143,20 +142,12 @@
       loadPlaylist(modules) {
 
         this.playlist = modules
-          .map(module => {
-
-            return module.Recordings
-              .map((recording, index) => {
-                return Object.assign({}, recording, {
-                  Index: index + 1,
-                  Title: module.Title
-                });
-              });
-          })
-          .reduce((acc, recordings) => {
-
-            return acc.concat(recordings);
-          }, []);
+          .map(module => module.Recordings
+            .map((recording, index) => Object.assign({}, recording, {
+                Title: module.Recordings.length > 1 ? `${module.Title} ${index + 1}.` : module.Title
+              })
+            ))
+          .reduce((acc, recordings) => acc.concat(recordings), []);
 
         if (this.playlist.length) {
           this.PlaylistIndex = 0;

@@ -10,12 +10,16 @@
     </div>
 
     <div class="container mt--80px">
+
+      <!-- player and playlist -->
       <div class="row video-box">
+
         <div class="col-lg-7 col-xl-8 my-auto px-0">
           <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" :src="vimeoUrl" allowfullscreen></iframe>
           </div>
         </div>
+
         <div class="col-lg-5 col-xl-4 playlist px-0 border-bottom">
           <div class="almost-standart">
 
@@ -61,6 +65,15 @@
           <h5>{{ CurrentPlaylistItem.Title }}</h5>
         </div>
       </div>
+
+      <!-- description -->
+      <div class="row video-box mt-4">
+        <div class="col-lg-12 mb-5 my-lg-5 px-5">
+          <h4 class="mb-3">Leírás</h4>
+          <div v-html="description">1</div>
+        </div>
+      </div>
+
     </div>
   </main>
 </template>
@@ -72,12 +85,14 @@
     layout: "decode",
     data: function() {
       return {
-        vimeoId: null,
+        // temp
         pageData: null,
         playlist: [],
         playlistIndex: null,
+        vimeoId: null,
         vimeoUrl: null,
-        courseName: null
+        courseName: null,
+        description: null
       };
     },
     computed: {
@@ -133,6 +148,8 @@
           this.pageData = pageData;
           this.loadPlaylist(pageData.Modules);
           this.courseName = pageData.Title;
+          this.description = pageData.Description
+            .replace(/<([^ >]+)[^>]*>/ig,'<$1>');
         });
     },
     methods: {

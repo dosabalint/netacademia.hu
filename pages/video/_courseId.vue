@@ -67,7 +67,8 @@
       </div>
 
       <!-- description -->
-      <div class="row video-box mt-4">
+      <div v-if="description"
+        class="row video-box mt-4">
         <div class="col-lg-12 mb-5 my-lg-5 px-5">
           <h4 class="mb-3">Leírás</h4>
           <div v-html="description">1</div>
@@ -75,7 +76,8 @@
       </div>
 
       <!-- download link -->
-      <div class="row video-box mt-4">
+      <div v-if="downloadLink"
+        class="row video-box mt-4">
         <div class="col-12 my-5 px-5">
           <h5 class="mb-3"><i class="decode-icon-link video-icon"></i>Letölthető anyagok, linkek</h5>
           <a href="#" target="_blank">{{ downloadLink }}</a>
@@ -83,7 +85,8 @@
       </div>
 
       <!-- trainers -->
-      <div class="row video-box my-4 py-5">
+      <div v-if="trainers"
+        class="row video-box my-4 py-5">
         <div class="col-12 px-5">
           <h5 class="mb-5">Oktatók</h5>
         </div>

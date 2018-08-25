@@ -77,8 +77,22 @@
       <!-- download link -->
       <div class="row video-box mt-4">
         <div class="col-12 my-5 px-5">
-          <h5 class="mb-3"><i class="decode-icon-link video-icon"></i>Letölthető anyagok, linkek:</h5>
+          <h5 class="mb-3"><i class="decode-icon-link video-icon"></i>Letölthető anyagok, linkek</h5>
           <a href="#" target="_blank">{{ downloadLink }}</a>
+        </div>
+      </div>
+
+      <!-- trainers -->
+      <div class="row video-box my-4 py-5">
+        <div class="col-12 px-5">
+          <h5 class="mb-5">Oktatók</h5>
+        </div>
+
+        <div v-for="(trainer, index) in trainers" :key="index"
+             class="col-md-3 text-center">
+          <div class="trainer-picture"
+               :style="{ 'background-image' : `url(${getTrainerPicture(trainer)}`}"></div>
+          <p class="pt-3">{{ trainer.Name }}</p>
         </div>
       </div>
 
@@ -101,7 +115,8 @@
         vimeoUrl: null,
         courseName: null,
         description: null,
-        downloadLink: null
+        downloadLink: null,
+        trainers: []
       };
     },
     computed: {
@@ -160,6 +175,7 @@
           this.description = pageData.Description
             .replace(/<([^ >]+)[^>]*>/ig, "<$1>");
           this.downloadLink = pageData.DownloadLink;
+          this.trainers = pageData.Trainers;
         });
     },
     methods: {
@@ -189,6 +205,9 @@
       },
       updateVimeoUrl() {
         this.vimeoUrl = `${this.$store.state.url.vimeoPlayer}/${this.vimeoId}`;
+      },
+      getTrainerPicture(trainer) {
+        return `${this.$store.state.url.backend}/Picture/TrainerNew/${trainer.PictureID}`;
       }
     }
   };
@@ -230,6 +249,18 @@
     font-size: 30px;
     margin-right: 15px;
     color: #2d9ad2;
+  }
+
+  .trainer-picture {
+    border-radius: 50%;
+    -moz-box-shadow: 1px 2px 8px 0 rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 1px 2px 8px 0 rgba(0, 0, 0, .3);
+    box-shadow: 1px 2px 8px 0 rgba(0, 0, 0, .3);
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: top;
+    display: inline-block;
   }
 
   /* playlist */

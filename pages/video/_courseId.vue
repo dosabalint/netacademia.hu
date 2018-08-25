@@ -87,14 +87,22 @@
           <h4 class="mb-4">Tanfolyam információk</h4>
 
           <p v-if="prerequisits">
-            <i class="decode-icon-graduation video-icon"></i><b>Előkövetelmények:</b>
+            <i class="decode-icon-graduation video-icon"></i>
+            <b>Előkövetelmények:</b>
           </p>
           <p v-if="prerequisits">
             {{ prerequisits }}
           </p>
 
+          <p v-if="length">
+            <i class="decode-icon-cursor video-icon"></i>
+            <b>Tanfolyam hossza:</b>
+            {{ length }} óra
+          </p>
+
           <p v-if="startDate">
-            <i class="decode-icon-time video-icon"></i><b>Kezdés:</b>
+            <i class="decode-icon-time video-icon"></i>
+            <b>Kezdés:</b>
             {{ startDate }}
           </p>
         </div>
@@ -152,7 +160,8 @@
         trainers: [],
         prerequisits: null,
         startDate: null,
-        errorMessage: null
+        errorMessage: null,
+        length: null
       };
     },
     computed: {
@@ -223,12 +232,12 @@
             this.pageData = pageData;
             this.loadPlaylist(pageData.Modules);
             this.courseName = pageData.Title;
-            this.description = pageData.Description
-              .replace(/<([^ >]+)[^>]*>/ig, "<$1>");
+            this.description = pageData.Description.replace(/<([^ >]+)[^>]*>/ig, "<$1>");
             this.downloadLink = pageData.DownloadLink;
             this.trainers = pageData.Trainers;
             this.prerequisits = pageData.Prerequisits;
             this.startDate = new Date(pageData.StartDate).toLocaleDateString();
+            this.length = pageData.LengthHours;
           },
           error => {
             switch (error.status) {

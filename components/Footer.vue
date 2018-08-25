@@ -6,7 +6,7 @@
         <div class="row">
           <div class="col-md-3">
 
-            <div class="widget widget-text">
+            <div class="widget-text">
 
               <div>
 
@@ -24,7 +24,7 @@
           <!-- col -->
           <div class="col-md-3">
 
-            <div class="widget widget-pages">
+            <div class="widget-pages">
 
               <h6 class="widget-title">Menü</h6>
 

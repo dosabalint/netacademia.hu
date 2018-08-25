@@ -1,5 +1,5 @@
 <template>
-  <main class="pb-5">
+  <main class="pb-5" v-cloak>
     <!-- cover -->
     <div class="bg-indulo">
       <div class="container h-100">
@@ -9,7 +9,20 @@
       </div>
     </div>
 
+    <!-- error message -->
     <div class="container minus-margin">
+      <div v-if="errorMessage"
+           class="row video-box mb-4">
+        <div class="p-5">
+          <h4 class="mb-3">Hiba történt az oldal betöltésekor</h4>
+          <div>A hiba oka: {{ errorMessage }}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- content -->
+    <div v-if="playlist.length"
+         class="container minus-margin">
 
       <!-- player and playlist -->
       <div class="row video-box mb-4">
@@ -66,10 +79,10 @@
 
       <!-- description -->
       <div v-if="description"
-        class="row video-box mb-4">
+           class="row video-box mb-4">
 
         <div v-if="HasInfo"
-          class="col-lg-4 my-5 px-5 border-right-color">
+             class="col-lg-4 my-5 px-5 border-right-color">
 
           <h4 class="mb-4">Tanfolyam információk</h4>
 
@@ -88,13 +101,13 @@
 
         <div class="mb-5 my-lg-5 px-5" :class="{'col-lg-8': HasInfo}">
           <h4 class="mb-3">Leírás</h4>
-          <div v-html="description">1</div>
+          <div v-html="description"></div>
         </div>
       </div>
 
       <!-- download link -->
       <div v-if="downloadLink"
-        class="row video-box mb-4">
+           class="row video-box mb-4">
         <div class="col-12 my-5 px-5">
           <h5 class="mb-3"><i class="decode-icon-link video-icon"></i>Letölthető anyagok, linkek</h5>
           <a href="#" target="_blank">{{ downloadLink }}</a>
@@ -102,8 +115,8 @@
       </div>
 
       <!-- trainers -->
-      <div v-if="trainers"
-        class="row video-box py-5">
+      <div v-if="trainers.length"
+           class="row video-box py-5">
         <div class="col-12 px-5">
           <h5 class="mb-5">Oktatók</h5>
         </div>
@@ -125,7 +138,7 @@
   export default {
     name: "videoPage",
     layout: "decode",
-    data: function() {
+    data() {
       return {
         // temp
         pageData: null,
@@ -138,7 +151,8 @@
         downloadLink: null,
         trainers: [],
         prerequisits: null,
-        startDate: null
+        startDate: null,
+        errorMessage: null
       };
     },
     computed: {
@@ -189,24 +203,40 @@
       /**
        * @return {boolean}
        */
-      HasInfo(){
+      HasInfo() {
         return !!this.prerequisits || !!this.startDate;
       }
     },
     created() {
       this.fetchPageData()
-        .then(response => response.data)
-        .then(pageData => {
-          this.pageData = pageData;
-          this.loadPlaylist(pageData.Modules);
-          this.courseName = pageData.Title;
-          this.description = pageData.Description
-            .replace(/<([^ >]+)[^>]*>/ig, "<$1>");
-          this.downloadLink = pageData.DownloadLink;
-          this.trainers = pageData.Trainers;
-          this.prerequisits = pageData.Prerequisits;
-          this.startDate = new Date(pageData.StartDate).toLocaleDateString();
-        });
+        .then(
+          response => response.data,
+          rejection => Promise.reject(rejection.response)
+        )
+        .then(
+          pageData => {
+            this.pageData = pageData;
+            this.loadPlaylist(pageData.Modules);
+            this.courseName = pageData.Title;
+            this.description = pageData.Description
+              .replace(/<([^ >]+)[^>]*>/ig, "<$1>");
+            this.downloadLink = pageData.DownloadLink;
+            this.trainers = pageData.Trainers;
+            this.prerequisits = pageData.Prerequisits;
+            this.startDate = new Date(pageData.StartDate).toLocaleDateString();
+          },
+          error => {
+            switch (error.status) {
+
+              case 404:
+                this.$router.push({ name: "404" });
+                break;
+
+              default:
+                this.errorMessage = error.statusText;
+            }
+          }
+        );
     },
     methods: {
       fetchPageData() {
@@ -243,7 +273,7 @@
   };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
   main {
     background: #f1f6f9;

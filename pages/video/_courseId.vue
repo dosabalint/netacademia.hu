@@ -9,7 +9,7 @@
       </div>
     </div>
 
-    <div class="container mt--80px">
+    <div class="container minus-margin">
 
       <!-- player and playlist -->
       <div class="row video-box">
@@ -74,6 +74,14 @@
         </div>
       </div>
 
+      <!-- download link -->
+      <div class="row video-box mt-4">
+        <div class="col-12 my-5 px-5">
+          <h5 class="mb-3"><i class="decode-icon-link video-icon"></i>Letölthető anyagok, linkek:</h5>
+          <a href="#" target="_blank">{{ downloadLink }}</a>
+        </div>
+      </div>
+
     </div>
   </main>
 </template>
@@ -92,7 +100,8 @@
         vimeoId: null,
         vimeoUrl: null,
         courseName: null,
-        description: null
+        description: null,
+        downloadLink: null
       };
     },
     computed: {
@@ -149,7 +158,8 @@
           this.loadPlaylist(pageData.Modules);
           this.courseName = pageData.Title;
           this.description = pageData.Description
-            .replace(/<([^ >]+)[^>]*>/ig,'<$1>');
+            .replace(/<([^ >]+)[^>]*>/ig, "<$1>");
+          this.downloadLink = pageData.DownloadLink;
         });
     },
     methods: {
@@ -216,6 +226,12 @@
     }
   }
 
+  .video-icon {
+    font-size: 30px;
+    margin-right: 15px;
+    color: #2d9ad2;
+  }
+
   /* playlist */
 
   .playlist {
@@ -230,8 +246,11 @@
 
   /* margin */
 
-  .mt--80px {
-    margin-top: -80px;
+  .minus-margin {
+    margin-top: 20px;
+    @media (min-width: 992px) {
+      margin-top: -80px;
+    }
   }
 
   /* width */

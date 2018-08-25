@@ -208,6 +208,11 @@
       }
     },
     created() {
+      if (typeof this.$route.params.courseId === "undefined") {
+        this.$router.push({ name: "404" });
+        return;
+      }
+
       this.fetchPageData()
         .then(
           response => response.data,

@@ -27,52 +27,77 @@
       <!-- player and playlist -->
       <div class="row video-box mb-4">
 
+        <!-- player -->
         <div class="col-lg-7 col-xl-8 my-auto px-0">
           <div class="embed-responsive embed-responsive-16by9">
-            <CourseVideoPlayer :src="vimeoUrl" :course="{name: courseName, id: CourseId}"></CourseVideoPlayer>
+
+            <!-- porter image -->
+            <a :href="loginUrl" @click="onCoursePictureClicked">
+              <img v-if="!videoErrorMessage && this.playlistIndex == null"
+                   :src="coursePictureUrl" alt=""/>
+            </a>
+
+            <!-- video player -->
+            <CourseVideoPlayer v-if="!videoErrorMessage && this.playlistIndex !== null"
+                               :src="vimeoUrl"
+                               :course="{name: courseName, id: CourseId}"></CourseVideoPlayer>
+
+            <!-- error message -->
+            <div v-if="videoErrorMessage">
+              {{ videoErrorMessage }}
+            </div>
+
           </div>
         </div>
 
+        <!-- playlist -->
         <div class="col-lg-5 col-xl-4 playlist px-0 border-bottom">
           <div class="almost-standart">
-
             <div class="big-block border-bottom">
 
+              <!-- playlist item -->
               <div v-for="(playlistItem, index) in playlist" :key="index"
                    class="row py-3"
                    :class="{ 'border-bottom': index !== playlist.length - 1 }">
 
+                <!-- play button -->
                 <div class="col-2 my-auto">
-                  <a @click.prevent="PlaylistIndex = index" href="#">
+                  <a @click="onPlaylistItemClicked($event, index)" :href="loginUrl">
+                    <!--suppress HtmlUnknownTarget -->
                     <img src="~/assets/video/play-button.svg" width="20" alt="" class="ml-5 ml-lg-3 w-20px">
                   </a>
                 </div>
 
+                <!-- title -->
                 <div class="col-7 my-auto">
-                  <a @click.prevent="PlaylistIndex = index" href="#">
+                  <a @click="onPlaylistItemClicked($event, index)" :href="loginUrl">
                     {{ playlistItem.Title }}
                   </a>
                 </div>
 
-                <div v-if="playlistItem.Length"
-                     class="col-3 mx-auto my-auto">
+                <!-- length -->
+                <div v-if="playlistItem.Length" class="col-3 mx-auto my-auto">
                   {{ playlistItem.Length }}
                 </div>
 
+                <!-- mp3 download link -->
                 <div v-if="playlistItem.Mp3DownloadLink"
                      class="offset-2 col-8 mt-2">
                   <a :href="playlistItem.Mp3DownloadLink" target="_blank">
+                    <!--suppress HtmlUnknownTarget -->
                     <img src="~/assets/video/musical-note.svg" height="15" alt="" class="mr-2 w-15px">
                     <small>mp3 letöltése</small>
                   </a>
                 </div>
+
               </div>
 
             </div>
           </div>
         </div>
 
-        <div class="col-lg-12 p-4 mt-3">
+        <!-- video title -->
+        <div v-if="CurrentPlaylistItem.Title" class="col-lg-12 p-4 mt-3">
           <h5>{{ CurrentPlaylistItem.Title }}</h5>
         </div>
       </div>
@@ -165,7 +190,9 @@
         prerequisits: null,
         startDate: null,
         errorMessage: null,
-        length: null
+        videoErrorMessage: null,
+        length: null,
+        pictureId: null
       };
     },
     computed: {
@@ -218,6 +245,13 @@
        */
       HasInfo() {
         return !!this.prerequisits || !!this.startDate;
+      },
+      coursePictureUrl() {
+        return `${this.$store.state.url.backend}/Picture/get/${this.pictureId}`;
+      },
+
+      loginUrl() {
+        return `${this.$store.state.url.backend}${this.$store.state.url.login}?returnUrl=${this.$store.state.url.base}${this.$route.path}`;
       }
     },
     created() {
@@ -242,6 +276,7 @@
             this.prerequisits = pageData.Prerequisits;
             this.startDate = new Date(pageData.StartDate).toLocaleDateString();
             this.length = pageData.LengthHours;
+            this.pictureId = pageData.PictureId;
           },
           error => {
             switch (error.status) {
@@ -269,10 +304,6 @@
               })
             ))
           .reduce((acc, recordings) => acc.concat(recordings), []);
-
-        if (this.playlist.length) {
-          this.PlaylistIndex = 0;
-        }
       },
       openVideo(videoID) {
         this.$axios.get(`${this.ApiVideoPlayerBaseUrl}/${videoID}`, { withCredentials: true })
@@ -287,6 +318,22 @@
       },
       getTrainerPicture(trainer) {
         return `${this.$store.state.url.backend}/Picture/TrainerNew/${trainer.PictureID}`;
+      },
+      onCoursePictureClicked(e) {
+        if (!this.$store.state.user.email) {
+          return;
+        }
+
+        e.preventDefault();
+        this.PlaylistIndex = 0;
+      },
+      onPlaylistItemClicked(e, i) {
+        if (!this.$store.state.user.email) {
+          return;
+        }
+
+        e.preventDefault();
+        this.PlaylistIndex = i;
       }
     }
   };
@@ -301,6 +348,7 @@
   .bg-indulo {
     overflow: auto;
     height: 300px;
+    //noinspection CssUnknownTarget
     background: #fff url("~/assets/video/indulo-bg.svg") no-repeat;
     background-size: cover;
   }
@@ -320,6 +368,18 @@
       &:hover {
         text-decoration: none;
         color: #2d9ad2;
+      }
+    }
+
+    .embed-responsive {
+      img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
       }
     }
   }

@@ -29,7 +29,7 @@
 
         <div class="col-lg-7 col-xl-8 my-auto px-0">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" :src="vimeoUrl" allowfullscreen></iframe>
+            <CourseVideoPlayer :src="vimeoUrl" :course="{name: courseName, id: CourseId}"></CourseVideoPlayer>
           </div>
         </div>
 
@@ -142,10 +142,14 @@
 </template>
 
 <script>
+  import CourseVideoPlayer from "~/components/CourseVideoPlayer.vue";
 
   export default {
     name: "videoPage",
     layout: "decode",
+    components: {
+      CourseVideoPlayer
+    },
     data() {
       return {
         // temp
@@ -278,7 +282,8 @@
           });
       },
       updateVimeoUrl() {
-        this.vimeoUrl = `${this.$store.state.url.vimeoPlayer}/${this.vimeoId}`;
+        const timeStamp = new Date().getTime();
+        this.vimeoUrl = `${this.$store.state.url.vimeoPlayer}/${this.vimeoId}?timeStamp=${timeStamp}`;
       },
       getTrainerPicture(trainer) {
         return `${this.$store.state.url.backend}/Picture/TrainerNew/${trainer.PictureID}`;

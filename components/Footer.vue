@@ -1,12 +1,12 @@
 <template>
-  <footer class="pt-5">
+  <footer>
     <div id="footer">
 
       <div class="container">
         <div class="row">
           <div class="col-md-3">
 
-            <div class="widget widget-text">
+            <div class="widget-text">
 
               <div>
 
@@ -24,7 +24,7 @@
           <!-- col -->
           <div class="col-md-3">
 
-            <div class="widget widget-pages">
+            <div class="widget-pages">
 
               <h6 class="widget-title">Menü</h6>
 
@@ -67,10 +67,9 @@
               <h6 class="widget-title">Kapcsolat</h6>
 
               <ul>
-                <li><nuxt-link to="/kapcsolat">További részletek</nuxt-link></li>
-                <li>+36 20 385 3332</li>
                 <li><a href="mailto:iroda@netacademia.net">iroda@netacademia.net</a></li>
                 <li>adószám: 13702355-2-42</li>
+                <li><nuxt-link to="/kapcsolat">További részletek</nuxt-link></li>
               </ul>
 
             </div>

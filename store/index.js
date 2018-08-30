@@ -10,11 +10,14 @@ export const state = () => ({
     newBackend: 'https://pedellus2.azurewebsites.net',
     user: "/api/Profile/1.0.0/profile",
     login: "/Account/Logon",
-    logout: "/Account/LogOffAjax",
+    logout: "/api/v1/Account/LogOut",
     courses: "/api/Courses/1.0.0/CourseCards",
     commingSoonCourses: "/api/Course/GetInProgressComingSoon",
     courseCardPicture: '/Picture/CourseCard',
-    categories: "/api/Courses/1.0.0/PublicCategories"
+    categories: "/api/Courses/1.0.0/PublicCategories",
+    videos: "/api/v1/Videos",
+    videosPopup: "/api/v1/Videos/Player",
+    vimeoPlayer: "https://player.vimeo.com/video"
   }
 });
 

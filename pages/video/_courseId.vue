@@ -130,11 +130,18 @@
             <b>Kezdés:</b>
             {{ startDate }}
           </p>
+
         </div>
 
         <div class="mb-5 my-lg-5 px-5" :class="{'col-lg-8': HasInfo}">
           <h4 class="mb-3">Leírás</h4>
-          <div v-html="description"></div>
+          <div class="mb-3" v-html="description"></div>
+
+          <button v-show="isLoggedIn"
+                  type="button" class="btn btn-primary" data-toggle="modal" data-target="#feedbackOverlay">
+            Értékelem a kurzust
+          </button>
+
         </div>
       </div>
 
@@ -163,17 +170,22 @@
       </div>
 
     </div>
+
+    <FeedbackOverlay v-show="isLoggedIn"></FeedbackOverlay>
+
   </main>
 </template>
 
 <script>
   import CourseVideoPlayer from "~/components/CourseVideoPlayer.vue";
+  import FeedbackOverlay from "~/components/FeedbackOverlay.vue";
 
   export default {
     name: "videoPage",
     layout: "decode",
     components: {
-      CourseVideoPlayer
+      CourseVideoPlayer,
+      FeedbackOverlay
     },
     data() {
       return {
@@ -252,6 +264,10 @@
 
       loginUrl() {
         return `${this.$store.state.url.backend}${this.$store.state.url.login}?returnUrl=${this.$store.state.url.base}${this.$route.path}`;
+      },
+
+      isLoggedIn(){
+        return !!this.$store.state.user && !!this.$store.state.user.email;
       }
     },
     created() {
@@ -435,5 +451,21 @@
 
   .w-20px {
     width: 20px;
+  }
+
+  /* button */
+
+  .btn-primary,
+  .btn-primary:hover,
+  .btn-primary:focus,
+  .btn-primary:active:focus {
+    background: #00f0d1;
+    color: #fff;
+  }
+
+  .btn-primary.btn-outline:after {
+    border: 2px solid #00f0d1;
+    background: transparent;
+    color: #252525;
   }
 </style>

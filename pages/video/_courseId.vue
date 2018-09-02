@@ -223,9 +223,6 @@
       CourseId() {
         return this.$route.params.courseId;
       },
-      /**
-       * @return {null|object}
-       */
       CurrentPlaylistItem() {
         if (this.playlistIndex === null) {
           return {};
@@ -266,7 +263,7 @@
         return `${this.$store.state.url.backend}${this.$store.state.url.login}?returnUrl=${this.$store.state.url.base}${this.$route.path}`;
       },
 
-      isLoggedIn(){
+      isLoggedIn() {
         return !!this.$store.state.user && !!this.$store.state.user.email;
       }
     },
@@ -281,31 +278,21 @@
           response => response.data,
           rejection => Promise.reject(rejection.response)
         )
-        .then(
-          pageData => {
-            this.pageData = pageData;
-            this.loadPlaylist(pageData.Modules);
-            this.courseName = pageData.Title;
-            this.description = pageData.Description.replace(/<([^ >]+)[^>]*>/ig, "<$1>");
-            this.downloadLink = pageData.DownloadLink;
-            this.trainers = pageData.Trainers;
-            this.prerequisits = pageData.Prerequisits;
-            this.startDate = new Date(pageData.StartDate).toLocaleDateString();
-            this.length = pageData.LengthHours;
-            this.pictureId = pageData.PictureId;
-          },
-          error => {
-            switch (error.status) {
-
-              case 404:
-                this.$router.push({ name: "404" });
-                break;
-
-              default:
-                this.errorMessage = error.statusText;
-            }
-          }
-        );
+        .then(pageData => {
+          this.pageData = pageData;
+          this.loadPlaylist(pageData.Modules);
+          this.courseName = pageData.Title;
+          this.description = pageData.Description.replace(/<([^ >]+)[^>]*>/ig, "<$1>");
+          this.downloadLink = pageData.DownloadLink;
+          this.trainers = pageData.Trainers;
+          this.prerequisits = pageData.Prerequisits;
+          this.startDate = new Date(pageData.StartDate).toLocaleDateString();
+          this.length = pageData.LengthHours;
+          this.pictureId = pageData.PictureId;
+        })
+        .catch(() => {
+          this.$router.push({ name: "404" });
+        });
     },
     methods: {
       fetchPageData() {
@@ -330,7 +317,7 @@
       },
       updateVimeoUrl() {
         const timeStamp = new Date().getTime();
-        this.vimeoUrl = `${this.$store.state.url.vimeoPlayer}/${this.vimeoId}?timeStamp=${timeStamp}`;
+        this.vimeoUrl = `${this.$store.state.url.vimeoPlayer}/${this.vimeoId}?autoplay=1&timeStamp=${timeStamp}`;
       },
       getTrainerPicture(trainer) {
         return `${this.$store.state.url.backend}/Picture/TrainerNew/${trainer.PictureID}`;

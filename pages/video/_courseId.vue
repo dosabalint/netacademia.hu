@@ -223,9 +223,6 @@
       CourseId() {
         return this.$route.params.courseId;
       },
-      /**
-       * @return {null|object}
-       */
       CurrentPlaylistItem() {
         if (this.playlistIndex === null) {
           return {};
@@ -330,7 +327,7 @@
       },
       updateVimeoUrl() {
         const timeStamp = new Date().getTime();
-        this.vimeoUrl = `${this.$store.state.url.vimeoPlayer}/${this.vimeoId}?timeStamp=${timeStamp}`;
+        this.vimeoUrl = `${this.$store.state.url.vimeoPlayer}/${this.vimeoId}?autoplay=1&timeStamp=${timeStamp}`;
       },
       getTrainerPicture(trainer) {
         return `${this.$store.state.url.backend}/Picture/TrainerNew/${trainer.PictureID}`;

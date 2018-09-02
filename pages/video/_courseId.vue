@@ -263,7 +263,7 @@
         return `${this.$store.state.url.backend}${this.$store.state.url.login}?returnUrl=${this.$store.state.url.base}${this.$route.path}`;
       },
 
-      isLoggedIn(){
+      isLoggedIn() {
         return !!this.$store.state.user && !!this.$store.state.user.email;
       }
     },
@@ -278,31 +278,21 @@
           response => response.data,
           rejection => Promise.reject(rejection.response)
         )
-        .then(
-          pageData => {
-            this.pageData = pageData;
-            this.loadPlaylist(pageData.Modules);
-            this.courseName = pageData.Title;
-            this.description = pageData.Description.replace(/<([^ >]+)[^>]*>/ig, "<$1>");
-            this.downloadLink = pageData.DownloadLink;
-            this.trainers = pageData.Trainers;
-            this.prerequisits = pageData.Prerequisits;
-            this.startDate = new Date(pageData.StartDate).toLocaleDateString();
-            this.length = pageData.LengthHours;
-            this.pictureId = pageData.PictureId;
-          },
-          error => {
-            switch (error.status) {
-
-              case 404:
-                this.$router.push({ name: "404" });
-                break;
-
-              default:
-                this.errorMessage = error.statusText;
-            }
-          }
-        );
+        .then(pageData => {
+          this.pageData = pageData;
+          this.loadPlaylist(pageData.Modules);
+          this.courseName = pageData.Title;
+          this.description = pageData.Description.replace(/<([^ >]+)[^>]*>/ig, "<$1>");
+          this.downloadLink = pageData.DownloadLink;
+          this.trainers = pageData.Trainers;
+          this.prerequisits = pageData.Prerequisits;
+          this.startDate = new Date(pageData.StartDate).toLocaleDateString();
+          this.length = pageData.LengthHours;
+          this.pictureId = pageData.PictureId;
+        })
+        .catch(() => {
+          this.$router.push({ name: "404" });
+        });
     },
     methods: {
       fetchPageData() {

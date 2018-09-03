@@ -2,7 +2,7 @@
   <div>
     <!-- player iframe -->
     <div v-if="!otherCourse.name">
-      <iframe class="embed-responsive-item" allowfullscreen :src="src"></iframe>
+      <iframe class="embed-responsive-item" allowfullscreen allow="autoplay" :src="src"></iframe>
     </div>
 
     <!-- error -->

@@ -269,7 +269,7 @@
     },
     created() {
       if (typeof this.$route.params.courseId === "undefined") {
-        this.$router.push({ name: "404" });
+        this.$router.push({ name: "page-not-found" });
         return;
       }
 
@@ -291,7 +291,7 @@
           this.pictureId = pageData.PictureId;
         })
         .catch(() => {
-          this.$router.push({ name: "404" });
+          this.$router.push({ name: "page-not-found" });
         });
     },
     methods: {

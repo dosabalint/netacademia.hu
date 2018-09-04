@@ -11,7 +11,7 @@
           <div class="row">
             <div class="col-lg-6">
 
-              <p class="text-lg-right"><img src="~/assets/404/not-found.svg" alt=""></p>
+              <p class="text-lg-right"><img src="~/assets/page-not-found/not-found.svg" alt=""></p>
 
             </div><!-- col -->
 
@@ -41,7 +41,7 @@
 
 <script>
   export default {
-    name: "NotFound404",
+    name: "PageNotFound",
     layout: "nav-light"
   };
 </script>

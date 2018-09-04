@@ -14,7 +14,10 @@ export const state = () => ({
     courses: "/api/Courses/1.0.0/CourseCards",
     commingSoonCourses: "/api/Course/GetInProgressComingSoon",
     courseCardPicture: '/Picture/CourseCard',
-    categories: "/api/Courses/1.0.0/PublicCategories"
+    categories: "/api/Courses/1.0.0/PublicCategories",
+    videos: "/api/v1/Videos",
+    videosPopup: "/api/v1/Videos/Player",
+    vimeoPlayer: "https://player.vimeo.com/video"
   }
 });
 

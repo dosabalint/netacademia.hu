@@ -1,764 +1,553 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="en-US">
+<!doctype html>
+<html lang="en">
 
 <head>
-  <!-- Document Meta
-    ============================================= -->
+  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!--IE Compatibility Meta-->
-  <meta name="author" content="zytheme" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Fonts
-    ============================================= -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <!-- Stylesheets
-    ============================================= -->
-  <link href="css/external.css" rel="stylesheet">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css">
 
-  <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
-  <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.js"></script>
-      <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
-  <!-- Document Title
-    ============================================= -->
-  <title>Diákcsomag</title>
-</head>
+  <title>NetAcademia| Diákcsomag</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-<body>
-  <div class="preloader">
-    <div class="spinner">
-      <div class="bounce1"></div>
-      <div class="bounce2"></div>
-      <div class="bounce3"></div>
-    </div>
-  </div>
-  <!-- Document Wrapper
-  ============================================= -->
-  <div id="wrapper" class="wrapper clearfix">
-    <header id="navbar-spy" class="header header-1 header-transparent header-bordered header-fixed">
-      <nav id="primary-menu" class="navbar navbar-fixed-top">
+    html {
+      font-family: 'Open Sans', sans-serif;
+    }
 
-        <!-- /.container-fluid -->
-      </nav>
-    </header>
-    <!-- Hero Section
-====================================== -->
-    <div class="header-nightsky">
-      <nav class="navbar navbar-default">
-        <div class="container">
+    .jumbotron {
+      background-color: #0BBCD9;
+      color: #ffffff;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 83%, 0% 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 83%, 0% 100%);
+    }
+
+    .section-2 {
+      background-color: #0BBCD9;
+      color: #ffffff;
+      -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 91%);
+      clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 91%);
+    }
+
+    .bg-blue {
+      background-color: #0BBCD9;
+      color: #ffffff;
+    }
+
+    .carousel-wrap {
+      margin: 90px auto;
+      padding: 0 5%;
+      width: 80%;
+      position: relative;
+    }
+
+    /* fix blank or flashing items on carousel */
+
+    .owl-carousel .item {
+      position: relative;
+      z-index: 100;
+      -webkit-backface-visibility: hidden;
+    }
+
+    /* end fix */
+
+    .owl-nav>div {
+      margin-top: -26px;
+      position: absolute;
+      top: 50%;
+      color: #cdcbcd;
+    }
+
+    .owl-nav i {
+      font-size: 52px;
+    }
+
+    .owl-nav .owl-prev {
+      left: -30px;
+    }
+
+    .owl-nav .owl-next {
+      right: -30px;
+    }
+
+    .card-height {
+      height: 530px;
+    }
+
+    /*testimonial*/
+
+    /*button*/
+
+    .btn {
+      position: relative;
+      z-index: 1;
+      padding: 15px 25px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 0;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      cursor: pointer;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+      border: 2px solid orange;
+      color:white;
+ 
+    }
+
+    .btn2 {
+      position: relative;
+      z-index: 1;
+      padding: 15px 25px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 0;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      cursor: pointer;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+      border: 2px solid orange;
+
+ 
+    }
 
 
 
-        </div>
-      </nav>
-      <div class="hero">
-        <h1>NetAcademia Diákcsomag</h1>
-        <p>Unod, hogy 20 éve elavult, papíralapú jegyzetekből kell programozást tanulnod? <br> Szeretnél játékot fejleszteni, weblapot varázsolni, videókat vágni? <br> Azt mondod, bármit eladnál, csak egy webshop kellene? <br></p>
-        <div class="feher">
-          <h3>Több, mint 350 tanfolyam, mindösszesen 50 000 Ft-ért!</h3></div>
-        <a class="btn btn--white btn--bordered btn--lg" href="https://app.netacademia.hu/Subscription/Create/diak" align="center">Ide az előfizetésemmel!</a>
-      </div>
-    </div>
+    .btn:hover {
+      box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.16), 0 3px 12px 0 rgba(0, 0, 0, 0.12);
+      -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05);
+      color: #ffffff;
 
-    <section id="tabs1" class="tabs text-center bg-white pb-90">
-      <div class="container">
-        <div class="row clearfix">
-          <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
-            <div class="heading heading-1 mb-50 text--center">
-              <p>
-                <h2 class="heading--title mb-0">Mi van a csomagomban?</h2></p>
+    }
 
-            </div>
-          </div>
-          <!-- .col-md-8 end -->
-        </div>
-        <!-- .row end -->
-      </div>
-      <!-- .container end -->
+    .btn2:hover {
+      box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.16), 0 3px 12px 0 rgba(0, 0, 0, 0.12);
+      -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05);
+      color: black;
+
+    }
+
+
+    /*nav pills*/
+
+    .nav-link {
+      color: #495057;
+    }
+
+    .nav-link.active,
+    .nav-item.show .nav-link {
+      color: #495057;
+      font-weight: bold;
+      border-bottom: 2px solid #00f0d1;
+    }
+
+    .bg-light-2 {
+      background: #f1f6f9;
+    }
+
+    .link-tanfolyamok{
+      text-decoration: underline;
+    }
+  </style>
+
+  <body>
+
+    <div class="jumbotron">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12">
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs">
-              <li class="active"><a href="#About" data-toggle="tab">Programozás</a></li>
-              <li><a href="#History2" data-toggle="tab">Játékfejlesztés és multimédia</a></li>
-              <li><a href="#History" data-toggle="tab">Office és kereskedelem</a></li>
-
-            </ul>
-            <!-- Tab panes -->
-            <div class="tab-content">
-              <div class="tab-pane fade in active banner banner-1" id="About">
-                <div class="row">
-                  <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="banner-panel">
-                      <div class="banner--img">
-                        <img src="images/banners/1.jpg" alt="banner img" class="img-responsive">
-                      </div>
-                      <div class="banner--content">
-                        <h3>C# programozás</h3>
-                        <h4>A végtelen lehetőség</h4>
-                        <p>TELJESEN A KEZDŐ SZINTTŐL több izgalmas projekten keresztül sajátíthatod el profi oktatóinktól a C# alapjait, melyet ma már nagyon sokféle fejlesztésre használhatunk.
-                        </p>
-
-                      </div>
-
-                    </div>
-                    <a class="btn btn--secondary btn--lg" href="https://www.netacademia.hu/junior-csharp-developer">Irány a képzés!</a>
-                    <!-- .banner-panel end -->
-                  </div>
-                  <!-- .col-md-4 end -->
-                  <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="banner-panel">
-                      <div class="banner--img">
-                        <img src="images/banners/2.jpg" alt="banner img" class="img-responsive">
-                      </div>
-                      <div class="banner--content">
-                        <h3>Angular és Vue.js</h3>
-                        <h4>A webfejlesztés királyai</h4>
-                        <p>Merülj el a modern webfejlesztés világában, készíts lenyűgöző weboldalakat, akár mobilapp formában is!
-                          <br>
-                          <br>
-                          <br>
-
-                        </p>
-
-
-                      </div>
-
-                    </div>
-                    <a class="btn btn--secondary btn--lg" href="https://www.netacademia.hu/webfejleszto-vuejs">Ugorj a tanfolyamokra!!</a>
-                    <!-- .banner-panel end -->
-                  </div>
-
-
-                  <!-- .col-md-4 end -->
-                  <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="banner-panel">
-                      <div class="banner--img">
-                        <img src="images/banners/3.jpg" alt="banner img" class="img-responsive">
-                      </div>
-                      <div class="banner--content">
-                        <h3>Android appok</h3>
-                        <h4>Zsebben elférő világok</h4>
-                        <p>Projektalapú Android fejlesztés az alapoktól, sallangmentesen! Van egy ötlteted, ami milliárdokat érhet? Mi segítünk appba önteni!
-                          <br>
-                          <br>
-                          <p>
-
-                      </div>
-                    </div>
-                    <a class="btn btn--secondary btn--lg" href="https://app.netacademia.hu/androidfejleszto">Még mindig itt vagyunk?!</a>
-                    <!-- .banner-panel end -->
-                  </div>
-                  <!-- .col-md-4 end -->
-                </div>
-
-                <!-- .row end -->
-              </div>
-              <!-- .tab-pane end -->
-              <div class="tab-pane fade banner banner-5" id="History">
-
-                <div class="row">
-                  <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="banner-panel">
-                      <div class="banner--img">
-                        <img src="images/banners/31.jpg" alt="banner img" class="img-responsive">
-                      </div>
-                      <div class="banner--content">
-                        <h3>Excel ALL IN</h3>
-                        <h4>A képletek mestere</h4>
-                        <p>Volt már vele dolgod, de még mindig idegenkedsz a kis zöld szörnyetegtől? Tanfolyamunkon az alapoktól járjuk körül minden végtagját, a végére kezesbárányként engedelmeskedik majd nekünk.
-                        </p>
-
-                      </div>
-
-                    </div>
-                    <a class="btn btn--secondary btn--lg" href="https://app.netacademia.hu/Tanfolyam/2017ExcelAllIn-excel-all-in">Irány a képzés!</a>
-                    <!-- .banner-panel end -->
-                  </div>
-                  <!-- .col-md-4 end -->
-                  <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="banner-panel">
-                      <div class="banner--img">
-                        <img src="images/banners/32.jpg" alt="banner img" class="img-responsive">
-                      </div>
-                      <div class="banner--content">
-                        <h3>E-commerce útvonal</h3>
-                        <h4>Az üzletember</h4>
-                        <p>
-                          Azt mondod, bármit eladnál, csak egy webshop kellene? Építs fel egyet Wordpressel, vagy használd a Shopify felületét, hirdesd a termékeidet Facebookon, akár raktárkészlet nélkül!
-
-
-
-                        </p>
-
-
-                      </div>
-
-                    </div>
-                    <a class="btn btn--secondary btn--lg" href="https://www.netacademia.hu/ecommerce">Ugorj a tanfolyamokra!!</a>
-                    <!-- .banner-panel end -->
-                  </div>
-
-
-                  <!-- .col-md-4 end -->
-                  <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="banner-panel">
-                      <div class="banner--img">
-                        <img src="images/banners/33.jpg" alt="banner img" class="img-responsive">
-                      </div>
-                      <div class="banner--content">
-                        <h3>Google AdWords</h3>
-                        <h4>Hirdetésguru</h4>
-                        <p>A Facebook hirdetések mellett a Google AdWords tagadhatatlanul az online marketing egyik alapköve, hiszen emberek milliárdjai böngésznek a weben: elengednéd ezeket a potenciális vásárlókat?
-
-                          <p>
-
-                      </div>
-                    </div>
-                    <a class="btn btn--secondary btn--lg" href="https://app.netacademia.hu/Tanfolyam/2018EcomGoog-google-adwords-alapok">Még mindig itt vagyunk?!</a>
-                    <!-- .banner-panel end -->
-                  </div>
-                  <!-- .col-md-4 end -->
-                </div>
-
-              </div>
-
-              <div class="tab-pane fade banner banner-5" id="History2">
-
-                <div class="row">
-                  <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="banner-panel">
-                      <div class="banner--img">
-                        <img src="images/banners/21.jpg" alt="banner img" class="img-responsive">
-                      </div>
-                      <div class="banner--content">
-                        <h3>Final Cut Pro</h3>
-                        <h4>Irány Hollywood!</h4>
-                        <p>X-men, 300, John Carter, A közösségi háló - mi köti össze ezeket a hollywoodi sikerfilmeket? Mindet a Final Cut Pro-val vágták!
-                          <br>
-                          <br>
-                          <br>
-                        </p>
-
-
-
-                      </div>
-
-                    </div>
-                    <a class="btn btn--secondary btn--lg" href="https://app.netacademia.hu/Tanfolyam/2018prox-videovagas-alapok--final-cut-pro-x-el">Irány a képzés!</a>
-                    <!-- .banner-panel end -->
-                  </div>
-                  <!-- .col-md-4 end -->
-                  <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="banner-panel">
-                      <div class="banner--img">
-                        <img src="images/banners/22.jpg" alt="banner img" class="img-responsive">
-                      </div>
-                      <div class="banner--content">
-                        <h3>Unity 3D</h3>
-                        <h4>Játékfejlesztés otthonról</h4>
-                        <p>Mindig is ott motoszkált benned a gondolat, mennyire király is lenne, ha egy nap a saját játékodat emelhetnéd le a polcokról? A Unity 3D megfelelő kezdés lesz számodra!
-                          <br>
-                          <br>
-
-
-                        </p>
-
-
-                      </div>
-
-                    </div>
-                    <a class="btn btn--secondary btn--lg" href="https://www.netacademia.hu/unity-developer">Ugorj a tanfolyamokra!!</a>
-                    <!-- .banner-panel end -->
-                  </div>
-
-
-                  <!-- .col-md-4 end -->
-                  <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="banner-panel">
-                      <div class="banner--img">
-                        <img src="images/banners/23.jpg" alt="banner img" class="img-responsive">
-                      </div>
-                      <div class="banner--content">
-                        <h3>A vektorgrafika alapjai</h3>
-                        <h4>Grafikus kerestetik!</h4>
-                        <p>Állandóan tele a jegyzetfüzeted jobbnál jobb rajzokkal? Ugorj bele a digitális alkotás világába, és készítsd el legmerészebb álmaidat is!
-                          <br>
-                          <br>
-                          <br>
-                          <p>
-
-                      </div>
-                    </div>
-                    <a class="btn btn--secondary btn--lg" href="https://app.netacademia.hu/Tanfolyam/2017vektor-bevezetes-a-vektorgrafikaba">Még mindig itt vagyunk?!</a>
-                    <!-- .banner-panel end -->
-                  </div>
-                  <!-- .col-md-4 end -->
-                </div>
-
-              </div>
-              <!-- .tab-pane end -->
-            </div>
-            <!-- .tabs-content end -->
+          <div class="col-lg-8 my-auto">
+            <h1 class="display-4 my-5">NetAcademia Diákcsomag</h1>
+            <p class="lead">Unod, hogy 20 éve elavult, papíralapú jegyzetekből kell programozást tanulnod? Szeretnél játékot fejleszteni, weblapot varázsolni, videókat vágni? Azt mondod, bármit eladnál, csak egy webshop kellene? </p>
+            <p class="lead font-weight-bold">Az összes tanfolyamunk, mindösszesen 50 000 Ft-ért!</p>
+            <a class="btn mt-4 mb-5" href="#hogyan" role="button">Ide az előfizetésemmel!</a>
           </div>
-          <!-- .col-md-12 end -->
+          <div class="col-lg-4">
+            <img src="diak_1.png" alt="" class="img-fluid">
+          </div>
         </div>
-        <!-- .row end -->
       </div>
-      <!-- .container end -->
+    </div>
 
-      <a class="btn btn--sajat" href="#">Nézd meg az összes tanfolyamot!</a>
+    <section class="">
+      <div class="container py-5">
+        <h1 class="my-5 pb-5 text-center">Mi van a csomagomban?</h1>
+
+        <div class="mb-5 pb-3">
+          <ul class="nav  mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Programozás</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Játékfejlesztés és Multimédia
+</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Office és Kereskedelem</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab-content pb-5" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="card-deck">
+
+              <div class="row">
+
+                <div class="col-12 col-md-6 col-lg-4 mx-auto mt-4 mt-lg-0">
+                  <div class="card border-0">
+                    <img class="card-img-top" src="1.png" alt="Card image cap">
+                    <div class="card-body text-center px-5 pb-5">
+                      <h5 class="card-title">C# programozás</h5>
+                      <p class="lead">A végtelen lehetőség</p>
+                      <p class="card-text">TELJESEN A KEZDŐ SZINTTŐL több izgalmas projekten keresztül sajátíthatod el profi oktatóinktól a C# alapjait, melyet ma már nagyon sokféle fejlesztésre használhatunk.</p>
+                      <a class="mt-4" href="https://www.netacademia.hu/junior-csharp-developer">Irány a képzés!</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mx-auto mt-4 mt-lg-0">
+                  <div class="card border-0">
+                    <img class="card-img-top" src="2.png" alt="Card image cap">
+                    <div class="card-body text-center px-5 pb-5">
+                      <h5 class="card-title">Angular és Vue.js</h5>
+                      <p class="lead">A webfejlesztés királyai</p>
+                      <p class="card-text">Merülj el a modern webfejlesztés világában, készíts lenyűgöző weboldalakat, akár mobilapp formában is! Indulj el az elejétől, válj profi front-endessé!</p>
+                      <a class="mt-4 mb-3" href="https://www.netacademia.hu/webfejleszto-vuejs">Ugorj a tanfolyamokra!</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mx-auto mt-4 mt-lg-0">
+                  <div class="card border-0">
+                    <img class="card-img-top" src="3.png" alt="Card image cap">
+                    <div class="card-body text-center px-5 pb-5">
+                      <h5 class="card-title">Android appok</h5>
+                      <p class="lead">Zsebben elférő világok</p>
+                      <p class="card-text">Projektalapú Android fejlesztés az alapoktól, sallangmentesen! Van egy ötlteted, ami milliárdokat érhet? Mi segítünk appba önteni megálmodott terveidet!  </p>
+                      <a class="mt-4 mb-3" href="https://app.netacademia.hu/androidfejleszto">Még mindig itt vagyunk?!</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="card-deck">
+              <div class="row">
+
+                <div class="col-12 col-md-6 col-lg-4 mx-auto mt-4 mt-lg-0">
+                  <div class="card border-0">
+                    <img class="card-img-top" src="5.png" alt="Card image cap">
+                    <div class="card-body text-center px-5 pb-5">
+                      <h5 class="card-title">Final Cut Pro</h5>
+                      <p class="lead">Irány Hollywood!</p>
+                      <p class="card-text">X-men, 300, John Carter, A közösségi háló - mi köti össze ezeket a hollywoodi sikerfilmeket? Mindet a Final Cut Pro-val vágták! Készülhet a te szuperprodukciód is?</p>
+                      <a class="mt-4 mb-3" href="https://app.netacademia.hu/Tanfolyam/2018prox-videovagas-alapok--final-cut-pro-x-el">Irány a képzés!</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mx-auto mt-4 mt-lg-0">
+                  <div class="card border-0">
+                    <img class="card-img-top" src="4.png" alt="Card image cap">
+                    <div class="card-body text-center px-5 pb-5">
+                      <h5 class="card-title">Unity 3D</h5>
+                      <p class="lead">Játékfejlesztés otthonról</p>
+                      <p class="card-text">Mindig is ott motoszkált benned a gondolat, mennyire király is lenne, ha egy nap a saját játékodat emelhetnéd le a polcokról? A Unity 3D megfelelő kezdés lesz számodra!</p>
+                      <a class="mt-4 mb-3" href="https://www.netacademia.hu/unity-developer" role="button">Ugorj a tanfolyamokra!</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mx-auto mt-4 mt-lg-0">
+                  <div class="card border-0">
+                    <img class="card-img-top" src="6.png" alt="Card image cap">
+                    <div class="card-body text-center px-5 pb-5">
+                      <h5 class="card-title">A vektorgrafika alapjai</h5>
+                      <p class="lead">Grafikus kerestetik!</p>
+                      <p class="card-text">Állandóan tele a jegyzetfüzeted jobbnál jobb rajzokkal, és szeretnéd a digitális világba varázsolni? Ugorj bele a alkotás világába, és készítsd el legmerészebb álmaidat is! </p>
+                      <a class="mt-4 mb-3" href="https://app.netacademia.hu/Tanfolyam/2017vektor-bevezetes-a-vektorgrafikaba" role="button">Még mindig itt vagyunk?!</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <div class="card-deck">
+
+              <div class="row">
+
+                <div class="col-12 col-md-6 col-lg-4 mx-auto mt-4 mt-lg-0">
+                  <div class="card border-0">
+                    <img class="card-img-top" src="7.png" alt="Card image cap">
+                    <div class="card-body text-center px-5 pb-5">
+                      <h5 class="card-title">Excel ALL IN</h5>
+                      <p class="lead">A képletek mestere</p>
+                      <p class="card-text">Volt már vele dolgod, de még mindig idegenkedsz a kis zöld szörnyetegtől? Tanfolyamunkon az alapoktól járjuk körül minden végtagját, a végére kezesbárányként engedelmeskedik majd nekünk.</p>
+                      <a class="mt-4 mb-3" href="https://app.netacademia.hu/Tanfolyam/2017ExcelAllIn-excel-all-in" role="button">Irány a képzés!</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mx-auto mt-4 mt-lg-0">
+                  <div class="card border-0">
+                    <img class="card-img-top" src="8.png" alt="Card image cap">
+                    <div class="card-body text-center px-5 pb-5">
+                      <h5 class="card-title">E-commerce útvonal</h5>
+                      <p class="lead">Az üzletember</p>
+                      <p class="card-text">Azt mondod, bármit eladnál, csak egy webshop kellene? Építs fel egyet Wordpressel, vagy használd a Shopify felületét, hirdesd a termékeidet Facebookon, <br>akár raktárkészlet nélkül!</p>
+                      <a class="mt-4 mb-3" href="https://www.netacademia.hu/ecommerce" role="button">Ugorj a tanfolyamokra!</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mx-auto mt-4 mt-lg-0">
+                  <div class="card border-0">
+                    <img class="card-img-top" src="9.png" alt="Card image cap">
+                    <div class="card-body text-center px-5 pb-5">
+                      <h5 class="card-title">Google AdWords</h5>
+                      <p class="lead">Hirdetésguru</p>
+                      <p class="card-text">A Facebook hirdetések mellett a Google AdWords tagadhatatlanul az online marketing egyik alapköve, emberek milliárdjai böngésznek a weben: elengednéd ezeket a potenciális vásárlókat?</p>
+                      <a class="mt-4 mb-3" href="https://app.netacademia.hu/Tanfolyam/2018EcomGoog-google-adwords-alapok" role="button">Még mindig itt vagyunk?!</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="text-center my-5">
+          <a class="link-tanfolyamok" href="https://www.netacademia.hu/tanfolyamkereso/"><h4>NÉZD MEG AZ ÖSSZES TANFOLYAMOT!</h4></a>
+        </div>
+
+      </div>
+      <!-- container end -->
+
     </section>
-    <!-- #tabs1 end -->
-    <!-- specials #1
+    <!-- Optional JavaScript -->
 
-
-============================================= -->
-  <!--  <section id="specials" class="specials specials-1 bg-overlay bg-overlay-dark4 bg-parallax text--center">
-      <div class="bg-section">
-        <img src="images/background/8.jpg" alt="Background" />
-      </div>
-      <div class="container">
-        <div class="divider--shape-1up"></div>
+    <section class="py-5 section-2" id=hogyan>
+      <div class="container py-3">
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
-            <div class="heading heading-1 mb-50 text--center">
-
-              <h2 class="heading--title color-white">Képesítést szeretnél?</h2>
-            </div>
-
+          <div class="col-lg-4">
+            <img src="diak.png" alt="" class="img-fluid">
           </div>
+          <div class="col-lg-8 my-auto">
+            <h2 class="mb-5">Hogyan szerezhetem meg a Diákcsomagot?</h2>
+            <p class="lead">Keresd informatikatanárodat a promóciós kódokért, vagy írd be a lenti mezőbe a diákigazolványod számát, ezután pedig már regisztráhatsz is!</p>
+            <form action="https://app.netacademia.hu/Subscription/AddSimpleAddress/c3b6370c-05b5-4bd7-aae3-86a51043161b">
 
+Diákigazolvány száma: <input type="text" name="diak" required pattern="[0-9]{11}">
 
-          
-        </div>
-        
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
-            <div class="dishes-wrapper text--center">
-             
-              <section id="banner2" class="banner banner-2 text-center bg-white pb-0">
-                <div class="heading heading-1 mb-50 text--center">
+        <br>
 
-                  <p class="heading--subtitle">NetAcademia Certificate</p>
-                </div>
+    <input type=submit value=Megrendelem class="btn2 mt-4 mb-5">
 
-                <div class="videoWrapper">
-
-                  <iframe width="560" height="349" src="https://www.youtube.com/embed/LRMBZhdFjDI" frameborder="0" allowfullscreen></iframe>
-                </div>
-
-                <a class="btn btn--sajat" href="https://www.netacademia.hu/certificate/">Mesélj még!</a>
-              </section>
-            </div>
-
-
-        
+</form>
           </div>
-          
         </div>
-       
+
       </div>
-     
-      <div class="divider--shape-1down"></div>
-  </div>
-  
-  </section>
-  
--->
+      <!-- container end -->
+    </section>
 
-  <section id="blog" class="blog blog-carousel pb-90">
-    <div class="container">
-      <div class="row clearfix">
-        <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
-          <div class="heading heading-1 mb-50 text--center">
-            <p class="heading--subtitle">Próbáld ki</p>
-            <h2 class="heading--title mb-0">Ingyenes képzéseinket!</h2>
+    <section class="py-3">
 
 
-          </div>
-          <!-- .col-md-8 end -->
-        </div>
-        <!-- .row end -->
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="carousel carousel-dots" data-slide="4" data-slide-rs="2" data-autoplay="true" data-nav="false" data-dots="true" data-space="0" data-loop="true" data-speed="800">
-              <!-- Blog Entry #1 -->
-              <div class="blog-entry">
-                <div class="entry--img">
-                  <a href="#">
-                                <img src="images/blog/grid/1.jpg" alt="entry image"/>
-                            </a>
-                </div>
-                <div class="entry--content">
+      <div class="carousel-wrap">
+        <h2 class="pb-5 mb-5">Próbáld ki INGYENES képzéseinket!</h2>
+        <div class="owl-carousel">
 
-                  <div class="entry--title">
-                    <h4><a href="#">Lenyűgöző weblapok</a></h4>
-                  </div>
-                  <div class="entry--bio">
-                    Kalapálj össze egy működő, modern kezdőlapot, mindösszesen 3 óra alatt HTML és CSS segítségével!
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <div class="entry--footer" align="center">
-                    <a class="btn btn--secondary btn--sm" href="https://app.netacademia.hu/Tanfolyam/2017htmllanding-lenyugozo-weblapok-keszitese">Ugrás</a>
-                  </div>
-                </div>
-                <!-- .entry-content end -->
+          <div class="item">
+            <div class="card card-height border-0">
+              <img class="card-img-top" src="weblapok.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Lenyűgöző weblapok</h5>
+                <p class="card-text">Kalapálj össze egy működő, modern kezdőlapot, mindösszesen 3 óra alatt HTML és CSS segítségével!</p>
+                <a class="card-link" href="https://app.netacademia.hu/Tanfolyam/2017htmllanding-lenyugozo-weblapok-keszitese">UGRÁS!</a>
               </div>
-              <!-- .blog-entry end -->
-              <!-- Blog Entry #2 -->
-              <div class="blog-entry">
-                <div class="entry--img">
-                  <a href="#">
-                                <img src="images/blog/grid/2.jpg" alt="entry image"/>
-                            </a>
-                </div>
-                <div class="entry--content">
-
-                  <div class="entry--title">
-                    <h4><a href="#">Lenyűgöző Unity</a></h4>
-                  </div>
-                  <div class="entry--bio">
-                    3D-s, autós játék, 3 óra alatt, INGYENESEN!? Bizony, rááadásul magaddal is viheted, hiszen telefonra készítjük el!
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <div class="entry--footer" align="center">
-                    <a class="btn btn--secondary btn--sm" href="https://app.netacademia.hu/Tanfolyam/2018unitylenyug-lenyugozo-unity">Ugrás</a>
-                  </div>
-                </div>
-                <!-- .entry-content end -->
-              </div>
-              <!-- .blog-entry end -->
-              <!-- Blog Entry #3 -->
-              <div class="blog-entry">
-                <div class="entry--img">
-                  <a href="#">
-                                <img src="images/blog/grid/3.jpg" alt="entry image"/>
-                            </a>
-                </div>
-                <div class="entry--content">
-
-                  <div class="entry--title">
-                    <h4><a href="#">Lenyűgöző C#</a></h4>
-                  </div>
-                  <div class="entry--bio">
-                    A chatbotok gyökerestől változtatják meg a modern kommunikációt, és az online kereskedelmet is átformálják: készítsünk egyet mi is!
-                    <br>
-                    <br>
-                  </div>
-                  <div class="entry--footer" align="center">
-                    <a class="btn btn--secondary btn--sm" href="https://app.netacademia.hu/Tanfolyam/2018csharp-lenyugozo-c-programozas">Ugrás</a>
-                  </div>
-                </div>
-                <!-- .entry-content end -->
-              </div>
-              <!-- .blog-entry end -->
-              <!-- Blog Entry #4 -->
-              <div class="blog-entry">
-                <div class="entry--img">
-                  <a href="#">
-                                <img src="images/blog/grid/4.jpg" alt="entry image"/>
-                            </a>
-                </div>
-                <div class="entry--content">
-
-                  <div class="entry--title">
-                    <h4><a href="#">DSLR Alapok</a></h4>
-                  </div>
-                  <div class="entry--bio">
-                    Megvetted a legcsúcsabb fényképezőt, objektívet is választottál, de a Nagyi szebb képet csinál a 3310-essel? Kukkants be, azonnal érzed majd a változást!
-                  </div>
-                  <div class="entry--footer" align="center">
-                    <a class="btn btn--secondary btn--sm" href="https://app.netacademia.hu/Tanfolyam/2018dslr-dslr-fotozas-alapjai">Ugrás</a>
-                  </div>
-                </div>
-                <!-- .entry-content end -->
-              </div>
-              <!-- .blog-entry end -->
-              <!-- Blog Entry #5 -->
-              <div class="blog-entry">
-                <div class="entry--img">
-                  <a href="#">
-                                <img src="images/blog/grid/5.jpg" alt="entry image"/>
-                            </a>
-                </div>
-                <div class="entry--content">
-
-                  <div class="entry--title">
-                    <h4><a href="#">Fejlesztés Kotlinban</a></h4>
-                  </div>
-                  <div class="entry--bio">
-                    Jó jó, de mi a fene ez a Kot...hagyjuk a felesleges maszlagot, inkább programozzunk Androidra vele!
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <div class="entry--footer" align="center">
-                    <a class="btn btn--secondary btn--sm" href="https://app.netacademia.hu/Tanfolyam/2017kotlin-bevezetes-a-kotlin-fejlesztesbe">Ugrás</a>
-                  </div>
-                </div>
-                <!-- .entry-content end -->
-              </div>
-              <!-- .blog-entry end -->
-              <!-- Blog Entry #6 -->
-              <div class="blog-entry">
-                <div class="entry--img">
-                  <a href="#">
-                                <img src="images/blog/grid/6.jpg" alt="entry image"/>
-                            </a>
-                </div>
-                <div class="entry--content">
-
-                  <div class="entry--title">
-                    <h4><a href="#">Raspberry PI világa</a></h4>
-                  </div>
-                  <div class="entry--bio">
-                    Mi az, elfér a zsebedben, jobb mint a sulis PC-d, és még programozni is tudsz rá? Hát, persze, hogy a Raspberry PI!
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <div class="entry--footer" align="center">
-                    <a class="btn btn--secondary btn--sm" href="https://app.netacademia.hu/Tanfolyam/rpifree-bevezetes-a-raspberry-pi-es-a-beagyazott-szoftverfejlesztes-kepzesbe">Ugrás</a>
-                  </div>
-                </div>
-                <!-- .entry-content end -->
-              </div>
-              <!-- .blog-entry end -->
-              <!-- Blog Entry #7 -->
-              <div class="blog-entry">
-                <div class="entry--img">
-                  <a href="#">
-                                <img src="images/blog/grid/7.jpg" alt="entry image"/>
-                            </a>
-                </div>
-                <div class="entry--content">
-
-                  <div class="entry--title">
-                    <h4><a href="#">Wordpress alapok</a></h4>
-                  </div>
-                  <div class="entry--bio">
-                    Webshop-motor, blogalap, tartalomkezelő rendszer. Igen, ezt mind tudja és tudja. Kattints egyet, és okosítsd fel magadat is!
-                    <br>
-                    <br>
-                  </div>
-                  <div class="entry--footer" align="center">
-                    <a class="btn btn--secondary btn--sm" href="https://app.netacademia.hu/Tanfolyam/wordpressfree-ingyenes-wordpress-bemutato">Ugrás</a>
-                  </div>
-                </div>
-                <!-- .entry-content end -->
-              </div>
-              <!-- .blog-entry end -->
-              <!-- Blog Entry #8 -->
-              <div class="blog-entry">
-                <div class="entry--img">
-                  <a href="#">
-                                <img src="images/blog/grid/8.jpg" alt="entry image"/>
-                            </a>
-                </div>
-                <div class="entry--content">
-
-                  <div class="entry--title">
-                    <h4><a href="#">VueJs Alapok</a></h4>
-                  </div>
-                  <div class="entry--bio">
-                    VUUUU, ez jól hangzik. A web alapú fejlesztéseknél használt egyik legújabb gyönygszem, népszerű útvonalunk egyik alapköve!
-                    <br>
-                    <br>
-                  </div>
-                  <div class="entry--footer" align="center">
-                    <a class="btn btn--secondary btn--sm" href="https://app.netacademia.hu/Tanfolyam/2018vuejs-vuejs-alapok">Ugrás</a>
-                  </div>
-                </div>
-                <!-- .entry-content end -->
-              </div>
-              <!-- .blog-entry end -->
-              <!-- Blog Entry #9 -->
-              <div class="blog-entry">
-                <div class="entry--img">
-                  <a href="#">
-                                <img src="images/blog/grid/9.jpg" alt="entry image"/>
-                            </a>
-                </div>
-                <div class="entry--content">
-
-                  <div class="entry--title">
-                    <h4><a href="#">Blockchain</a></h4>
-                  </div>
-                  <div class="entry--bio">
-                    Az egész világgazdaság Blockchain-lázban ég, kétségtelen, hogy meghatározó szereplő. Itt az ideje, hogy felneveljünk egy saját kis képződményt!
-                  </div>
-                  <div class="entry--footer" align="center">
-                    <a class="btn btn--secondary btn--sm" href="https://app.netacademia.hu/Tanfolyam/2018Ethereum-rakj-ossze-egy-ethereum-blockchaint-fel-ora-alatt">Ugrás</a>
-                  </div>
-                </div>
-                <!-- .entry-content end -->
-              </div>
-              <!-- .blog-entry end -->
             </div>
-            <!-- .carousel end -->
           </div>
-          <!-- .col-md-6 end -->
+          <div class="item">
+            <div class="card card-height border-0">
+              <img class="card-img-top" src="unity.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Lenyűgöző Unity</h5>
+                <p class="card-text">3D-s, autós játék, 3 óra alatt, INGYENESEN!? Bizony, rááadásul magaddal is viheted, hiszen telefonra készítjük el!</p>
+                <a class="card-link" href="https://app.netacademia.hu/Tanfolyam/2018unitylenyug-lenyugozo-unity">UGRÁS!</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card card-height border-0">
+              <img class="card-img-top" src="csharp.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Lenyűgöző C#</h5>
+                <p class="card-text">A chatbotok gyökerestől változtatják meg a modern kommunikációt, és az online kereskedelmet is átformálják: készítsünk egyet mi is!</p>
+                <a class="card-link" href="https://app.netacademia.hu/Tanfolyam/2018csharp-lenyugozo-c-programozas">UGRÁS!</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card card-height border-0">
+              <img class="card-img-top" src="dslr.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">DSLR Alapok</h5>
+                <p class="card-text">Megvetted a legcsúcsabb fényképezőt, objektívet is választottál, de a Nagyi szebb képet csinál a 3310-essel? Kukkants be, azonnal érzed majd a változást!</p>
+                <a class="card-link" href="https://app.netacademia.hu/Tanfolyam/2018dslr-dslr-fotozas-alapjai">UGRÁS!</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card card-height border-0">
+              <img class="card-img-top" src="kotlin.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Fejlesztés Kotlinban</h5>
+                <p class="card-text">Jó jó, de mi a fene ez a Kot...hagyjuk a felesleges maszlagot, inkább programozzunk Androidra vele!</p>
+                <a class="card-link" href="https://app.netacademia.hu/Tanfolyam/2017kotlin-bevezetes-a-kotlin-fejlesztesbe">UGRÁS!</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card card-height border-0">
+              <img class="card-img-top" src="wordpress.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Wordpress alapok</h5>
+                <p class="card-text">Webshop-motor, blogalap, tartalomkezelő rendszer. Igen, ezt mind tudja és tudja. Kattints egyet, és okosítsd fel magadat is!</p>
+                <a class="card-link" href="https://app.netacademia.hu/Tanfolyam/wordpressfree-ingyenes-wordpress-bemutato">UGRÁS!</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card card-height border-0">
+              <img class="card-img-top" src="vue.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">VueJs Alapok</h5>
+                <p class="card-text">VUUUU, ez jól hangzik. A web alapú fejlesztéseknél használt egyik legújabb gyönygszem, népszerű útvonalunk egyik alapköve!</p>
+                <a class="card-link" href="https://app.netacademia.hu/Tanfolyam/2018vuejs-vuejs-alapok">UGRÁS!</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card card-height border-0">
+              <img class="card-img-top" src="blockchain.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Blockchain</h5>
+                <p class="card-text">Az egész világgazdaság Blockchain-lázban ég, kétségtelen, hogy meghatározó szereplő. Itt az ideje, hogy felneveljünk egy saját kis képződményt!</p>
+                <a class="card-link" href="https://app.netacademia.hu/Tanfolyam/2018Ethereum-rakj-ossze-egy-ethereum-blockchaint-fel-ora-alatt">UGRÁS!</a>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <!-- .row end -->
       </div>
-      <!-- .container end -->
-  </section>
+
+    </section>
 
 
-  <section id="testimonial1" class="testimonial testimonial-1 bg-overlay bg-overlay-dark bg-parallax pb-90">
-    <div class="bg-section">
-      <img src="images/background/1.jpg" alt="Background" />
-    </div>
-    <div class="container">
-      <div class="divider--shape-1up"></div>
-      <div class="row clearfix">
-        <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
-          <div class="heading heading-1 mb-40 text--center">
 
-            <h2 class="heading--title color-white">Ti írtátok</h2>
+    <section class="py-5 bg-blue">
+
+      <div class="container py-5">
+
+        <h1 class="text-center mb-5 pb-3">Ti írtátok</h1>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="col-8 mx-auto">
+                <blockquote class="blockquote text-center">
+                  <p class="mb-0">"Rájöttem, hogy az egyetem sajnos nem lesz elég...képes voltam órák közben videókat nézni, most pedig már webfejlesztőként dolgozok!"</p>
+                  <footer class="mt-5"><img src="t1.png" alt="" class="mr-4"><cite title="Source Title">Nagy Benedek</cite></footer>
+                </blockquote>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-8 mx-auto">
+                <blockquote class="blockquote text-center">
+                  <p class="mb-0">"Mindig is weblapokat akartam készíteni, de a suli ehhez gagyi volt, a bejárós képzéseket pedig egy középiskolás képtelen megfizetni...NetAcademia rulez!"</p>
+                  <footer class="mt-5"><img src="t2.png" alt="" class="mr-4"><cite title="Source Title">Szlivák Károly</cite></footer>
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="col-8 mx-auto">
+                <blockquote class="blockquote text-center">
+                  <p class="mb-0">"Őszintén, Excelből mindig a kegyelem kettesért mentem. Kipróbáltam a NetAcademia tanfolyamát, Balkányi Adrásnak pedig jövök egy sörrel az ötösért :D"</p>
+                  <footer class="mt-5"><img src="t3.png" alt="" class="mr-4"><cite title="Source Title">Boros Ádám</cite></footer>
+                </blockquote>
+              </div>
+            </div>
           </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
         </div>
-        <!-- .col-md-8 end -->
+
       </div>
-      <!-- .row end -->
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-          <div id="testimonial-carousel" class="carousel carousel-dots carousel-white" data-slide="3" data-slide-rs="2" data-autoplay="true" data-nav="false" data-dots="true" data-space="30" data-loop="true" data-speed="800">
-            <!-- Testimonial #1 -->
-            <div class="testimonial-panel">
-              <div class="testimonial--rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <!-- .testimonial-rating end -->
-              <div class="testimonial--body">
-                <p>Rájöttem, hogy az egyetem sajnos nem lesz elég...képes voltam órák közpen videókat nézni, most pedig már webfejlesztőként dolgozok!</p>
-              </div>
-              <!-- .testimonial-body end -->
-              <div class="testimonial--meta">
-                <div class="testimonial--img">
-                  <img src="images/testimonial/1.png" alt="Testimonial Author">
-                </div>
-                <div class="testimonial--author">
-                  <h4>Nagy Benedek</h4>
-                </div>
-              </div>
-              <!-- .testimonial-meta end -->
-            </div>
-            <!-- .testimonial-panel end -->
-            <!-- Testimonial #2 -->
-            <div class="testimonial-panel">
-              <div class="testimonial--rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
+    </section>
 
-              </div>
-              <!-- .testimonial-rating end -->
-              <div class="testimonial--body">
-                <p>Őszintén, Excelből mindig a kegyelem kettesért mentem. Kipróbáltam a NetAcademia tanfolyamát, Balkányi Adrásnak pedig jövök egy sörrel az ötösért :D</p>
-              </div>
-              <!-- .testimonial-body end -->
-              <div class="testimonial--meta">
-                <div class="testimonial--img">
-                  <img src="images/testimonial/2.png" alt="Testimonial Author">
-                </div>
-                <div class="testimonial--author">
-                  <h4>Boros Ádám</h4>
-                </div>
-              </div>
-              <!-- .testimonial-meta end -->
-            </div>
-            <!-- .testimonial-panel end -->
-            <!-- Testimonial #3 -->
-            <div class="testimonial-panel">
-              <div class="testimonial--rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <!-- .testimonial-rating end -->
-              <div class="testimonial--body">
-                <p>Mindig is weblapokat akartam készíteni, de a suli ehhez gagyi volt, a bejárós képzéseket pedig egy középiskolás képtelen megfizetni...NetAcademia rulez!</p>
-              </div>
-              <!-- .testimonial-body end -->
-              <div class="testimonial--meta">
-                <div class="testimonial--img">
-                  <img src="images/testimonial/3.png" alt="Testimonial Author">
-                </div>
-                <div class="testimonial--author">
-                  <h4>Szlivák Károly</h4>
-                </div>
-              </div>
-              <!-- .testimonial-meta end -->
-            </div>
-            <!-- .testimonial-panel end -->
-            <!-- Testimonial #4 -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-            <!-- .testimonial-panel end -->
-          </div>
-        </div>
-        <!-- .col-md-12 end -->
-      </div>
-      <!-- .row end -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
 
-    </div>
-    <!-- .container end -->
-  </section>
+    <script>
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        navText: [
+          "<i class='fa fa-caret-left'></i>",
+          "<i class='fa fa-caret-right'></i>"
+        ],
+        autoplay: true,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 3
+          },
+          1300: {
+            items: 4
+          }
+        }
+      })
+    </script>
 
+  </body>
 
-  <!-- Menu Mixed Grid
-============================================= -->
-
-  <!-- #menuMixedGrid end -->
-  <!-- Testimonial #1
-============================================= -->
-
-
-
-  <!-- #blog end -->
-  <!-- footer#1
-============================================= -->
-  <footer id="footer" class="footer footer-1 text-center">
-
-    <!-- Copyrights
-  ============================================= -->
-    <div class="footer--copyright text-center">
-      <div class="divider--shape-dark"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12">
-           <img src="css/img/netalogo.png">
-                </div>
-            </div>
-        </div>
-        <!-- .container end -->
-    </div>
-    <!-- .footer-copyright end -->
-</footer>
-</div>
-<!-- #wrapper end -->
-<!-- Footer Scripts
-============================================= -->
-<script src="js/jquery-2.2.4.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/functions.js"></script>
-</body>
 </html>

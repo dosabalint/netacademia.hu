@@ -378,15 +378,19 @@
         <h2 class="mb-5">Hogyan szerezhetem meg a Diákcsomagot?</h2>
         <p class="lead">Keresd informatikatanárodat a promóciós kódokért, vagy írd be a lenti mezőbe a diákigazolványod
           számát, ezután pedig már regisztráhatsz is!</p>
-        <form action="https://app.netacademia.hu/Subscription/AddSimpleAddress/c3b6370c-05b5-4bd7-aae3-86a51043161b">
 
-          Diákigazolvány száma: <input type="text" name="diak" required pattern="[0-9]{11}">
+        <form action="https://app.netacademia.hu/Subscription/AddSimpleAddress/c3b6370c-05b5-4bd7-aae3-86a51043161b"
+              id="diakcsomag-adatbekero">
+
+          Diákigazolvány száma:
+          <input type="text" name="diak" id="diak" required pattern="[0-9]{11}">
 
           <br>
 
-          <input type=submit value=Megrendelem class="btn2 mt-4 mb-5">
+          <input type="submit" value="Megrendelem" class="btn2 mt-4 mb-5">
 
         </form>
+
       </div>
     </div>
 
@@ -592,6 +596,8 @@
     }
   });
 </script>
+
+<script src="scripts.js"></script>
 
 </body>
 

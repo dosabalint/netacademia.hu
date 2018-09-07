@@ -20,7 +20,6 @@ const formToUrl =
 
 // order button click
 $orderButton.click(function(event) {
-  event.preventDefault();
 
   // field validation
   if ($diakField.val().length !== 11
@@ -28,6 +27,9 @@ $orderButton.click(function(event) {
     || $varosField.val().length === 0) {
     return;
   }
+
+  // no submit yet
+  event.preventDefault();
 
   // request
   $.ajax({
@@ -37,6 +39,7 @@ $orderButton.click(function(event) {
     data: $orderForm.serializeArray()
   })
     .done(function() {
+      // submit
       $orderForm.submit();
     });
 });

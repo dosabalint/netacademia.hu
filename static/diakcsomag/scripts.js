@@ -13,9 +13,6 @@ const $orderForm = $("#diakcsomag-adatbekero"),
   $successMessage = $(".success-message"),
   $failMessage = $(".fail-message");
 
-// hide messages
-$failMessage.hide();
-$successMessage.hide();
 
 // spreadsheet form url
 const formToUrl =
@@ -46,17 +43,18 @@ $orderButton.click(function(event) {
 
 // teacher button click
 $teacherButton.click(function(event) {
-  event.preventDefault();
 
-  console.log(1);
   // field validation
+  const emailRegexp = /\S+@\S+\.\S+/;
   if (!$nevField.val()
-    || !$emailField.val()
+    || !emailRegexp.test($emailField.val())
     || !$mobilField.val()) {
     return;
   }
 
-  console.log(2);
+  // no submit
+  event.preventDefault();
+
   // request
   $.ajax({
     url: formToUrl,

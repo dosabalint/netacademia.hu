@@ -433,8 +433,7 @@
     },
 
     watch: {
-      "$store.state.user.email": function(newValue) {
-        console.log("newValue:", newValue);
+      "$store.state.user.email": function() {
 
         // guest
         if (!this.userHash) {

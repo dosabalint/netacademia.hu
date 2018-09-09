@@ -189,7 +189,6 @@
     },
     data() {
       return {
-        // temp
         pageData: null,
         playlist: [],
         playlistIndex: null,
@@ -221,7 +220,7 @@
         return `${this.$store.state.url.backend}${this.$store.state.url.videosPopup}`;
       },
       CourseId() {
-        return this.$route.params.courseId;
+        return this.$route.query.courseId;
       },
       CurrentPlaylistItem() {
         if (this.playlistIndex === null) {
@@ -268,7 +267,7 @@
       }
     },
     created() {
-      if (typeof this.$route.params.courseId === "undefined") {
+      if (typeof this.CourseId === "undefined") {
         this.$router.push({ name: "page-not-found" });
         return;
       }

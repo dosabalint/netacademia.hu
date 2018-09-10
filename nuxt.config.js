@@ -1,3 +1,29 @@
+// dotenv variables read and check
+
+const dotEnv = require("dotenv");
+dotEnv.config();
+
+const checkEnv = require("check-env");
+checkEnv([
+  "FB_API_KEY",
+  "FB_API_KEY",
+  "FB_AUTH_DOMAIN",
+  "FB_DATABASE_URL",
+  "FB_PROJECT_ID",
+  "FB_STORAGE_BUCKET",
+  "FB_MESSAGING_SENDER_ID",
+  "TEST_BASE_URL",
+  "BASE_URL",
+  "TEST_BACKEND_URL",
+  "BACKEND_URL",
+  "TEST_GTM",
+  "GTM"
+]);
+
+const isProd = function() {
+  return process.env.NODE_ENV === "production";
+};
+
 const webpack = require("webpack");
 
 const scroll = function(to, from, savedPosition) {
@@ -104,14 +130,22 @@ module.exports = {
     ]
   },
   env: {
-    baseUrl: process.env.BASE_URL || "http://localhost:3000",
-    backendUrl: process.env.BACKEND_URL || "https://app.netacademia.hu"
+    baseUrl: isProd() ? process.env.BASE_URL : process.env.TEST_BASE_URL,
+    backendUrl: isProd() ? process.env.BACKEND_URL : process.env.TEST_BACKEND_URL,
+    firebase: {
+      apiKey: process.env.FB_API_KEY,
+      authDomain: process.env.FB_AUTH_DOMAIN,
+      databaseUrl: process.env.FB_DATABASE_URL,
+      projectId: process.env.FB_PROJECT_ID,
+      storageBucket: process.env.FB_STORAGE_BUCKET,
+      messagingSenderId: process.env.FB_MESSAGING_SENDER_ID
+    }
   },
   axios: {
     https: process.env.NODE_ENV === "production" ? true : false,
     // credentials: true,
-    baseURL: process.env.BACKEND_URL || "https://app.netacademia.hu",
-    browserBaseURL: process.env.BACKEND_URL || "https://app.netacademia.hu"
+    baseURL: isProd() ? process.env.BACKEND_URL : process.env.TEST_BACKEND_URL,
+    browserBaseURL: isProd() ? process.env.BACKEND_URL : process.env.TEST_BACKEND_URL
   },
   /*
   ** Build configuration

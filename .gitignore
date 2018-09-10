@@ -20,3 +20,6 @@ dist-ghpages
 
 # csak webstorm path alias miatt kell, nuxt.config-bol jon egyebkent minden
 webpack.config.js
+
+# .env
+.env

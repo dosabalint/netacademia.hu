@@ -1,17 +1,15 @@
-import firebase from '@firebase/app'
+import firebase from "@firebase/app";
 import "@firebase/database";
 
 if (!firebase.apps.length) {
-  firebase.initializeApp(
-    {
-      apiKey: "AIzaSyBZYQSg0pHfLghSA2Zfp7NCyvuS-28Y1Gw",
-      authDomain: "csendor-fdc9d.firebaseapp.com",
-      databaseURL: "https://csendor-fdc9d.firebaseio.com",
-      projectId: "csendor-fdc9d",
-      storageBucket: "csendor-fdc9d.appspot.com",
-      messagingSenderId: "288431688625"
-    }
-  )
+  firebase.initializeApp({
+    apiKey: process.env.firebase.apiKey,
+    authDomain: process.env.firebase.authDomain,
+    databaseURL: process.env.firebase.databaseUrl,
+    projectId: process.env.firebase.projectId,
+    storageBucket: process.env.firebase.storageBucket,
+    messagingSenderId: process.env.firebase.messagingSenderId
+  });
 }
 
-export default firebase
+export default firebase;

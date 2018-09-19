@@ -18,10 +18,10 @@
 <p>1. AZ ADATKEZELŐ</p>
 
 <p><strong>NetAcademia Oktat&oacute;k&ouml;zpont Korl&aacute;tolt Felelőss&eacute;gű T&aacute;rsas&aacute;g</strong><br />
-Sz&eacute;khelye: 1074 Budapest, R&aacute;k&oacute;czi &uacute;t 70-72. T3 torony, 1. emelet<br />
-Telefonsz&aacute;m: +36 21 200 6960</p>
+Sz&eacute;khelye: 1074 Budapest, R&aacute;k&oacute;czi &uacute;t 70-72. T3 torony, 1. emelet
+</p>
 
-<p>E-mail c&iacute;m: iroda@netacademia.net<br />
+<p>E-mail c&iacute;m: iroda@netacademia.hu<br />
 <a href="http://netacademia.hu/">http://netacademia.hu/</a></p>
 
 <p>2. AZ ADATKEZEL&Eacute;S JOGSZAB&Aacute;LYI ALAPJA</p>

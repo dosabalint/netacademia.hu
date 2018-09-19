@@ -6,8 +6,8 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "generate:test": "cross-env-shell nuxt generate && echo $TEST_BASE_URL > ./dist/CNAME",
-    "generate:prod": "cross-env-shell NODE_ENV=production nuxt generate && echo $BASE_URL > ./dist/CNAME",
+    "generate:test": "cross-env-shell nuxt generate && echo 'test.netacademia.hu' > ./dist/CNAME",
+    "generate:prod": "cross-env-shell NODE_ENV=production nuxt generate && echo 'www.netacademia.hu' > ./dist/CNAME",
     "deploy:test": "push-dir --dir=dist --branch=gh-pages",
     "deploy:prod": "push-dir --dir=dist --branch=master --remote=https://github.com/NetAcademia/netacademia.github.io.git",
     "build": "cross-env-shell nuxt build",

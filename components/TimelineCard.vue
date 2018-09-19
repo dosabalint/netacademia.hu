@@ -52,7 +52,7 @@ export default {
       required: true,
       validator: function(value) {
         // The value must match one of these strings
-        return ["in", "left", "right"].indexOf(value) !== -1;
+        return  ["bounceIn", "bounceInLeft", "bounceInRight", "fadeInUp"].indexOf(value) !== -1;
       }
     }
   }

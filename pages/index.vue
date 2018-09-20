@@ -553,7 +553,7 @@
   .rev_slider_wrapper {
     margin-bottom: 0px;
     height: 100vh;
-    background-color: #0C99AD;
+    background-color: #232C3D;
   }
 
   /* ARROWS */

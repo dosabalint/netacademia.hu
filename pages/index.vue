@@ -270,7 +270,7 @@
               <p>A NetAcademia Tudástár App kizárólag Ultimate előfizetőink számára elérhető!</p>
               <p>Most ismét lehetőséged nyílik minden tanfolyamunkat tartalmazó, Ultimate nevet viselő előfizetésünk vásárlására, így te is bekerülhetsz, előfizetőink zárt körébe, szeptember 20 és 30 között!</p>
               <p class="mb-5">Kerülj be és próbáld ki még ma!</p>
-              <DButton theme="default-outline" href="https://app.netacademia.hu/subscription/business">
+              <DButton theme="default-outline" href="https://app.netacademia.hu/Subscription/Create">
                 Megveszem <i class="decode-icon-cursor"></i>
               </DButton>
             </DHeadline>
@@ -359,8 +359,7 @@
           <h2>Neked szól a NetAcademia Diákcsomag!</h2>
           <p>Unod, hogy 20 éve elavult, papíralapú jegyzetekből kell programozást tanulnod? Szeretnél játékot fejleszteni, weblapot varázsolni, videókat vágni? Azt mondod, bármit eladnál, csak egy webshop kellene?</p>
           <p>Az összes tanfolyamunk, mindösszesen 50 000 Ft-ért, szeptember 20 és 30 között!</p>
-          <p>További információ: <a href="#">link</a></p>
-          <DButton theme="default-outline" href="/elofizetes">
+          <DButton theme="default-outline" href="https://www.netacademia.hu/diakcsomag/">
             Érdekel <i class="decode-icon-cursor"></i>
           </DButton>
         </Column>

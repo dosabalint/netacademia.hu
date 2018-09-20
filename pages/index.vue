@@ -94,7 +94,7 @@
                      data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
                 >
-                  Válaszd ULTIMATE előfizetésünket MOST! <br>
+                  <u><a href="https://app.netacademia.hu/ultimate" class="text-light">Válaszd ULTIMATE előfizetésünket MOST! <br></a></u>
                 </div>
 
                 <!--<div class="tp-caption small-text tp-resizeme"
@@ -144,7 +144,141 @@
               </li>
               <li data-transition="fade">
 
-                <img src="~/assets/landing/new-index-bg-2.svg" alt="">
+                <img src="~/assets/landing/new-index-bg.svg" alt="">
+
+                <div class="tp-caption text-special"
+                     data-x="['580', '200', '30', '10']"
+                     data-y="middle"
+                     data-hoffset="['-150', -150', -150', 0']"
+                     data-voffset="['-240', '-240', '-240', '-240']"
+                     data-fontsize="['20', '20', '20', '18']"
+                     data-lineheight="['32', '32', '32', '24']"
+                     data-start="1500"
+                     data-speed="300"
+                     data-transform_in="o:0;y:-50;s:400;e:Power2.easeInOut;"
+                     data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
+                >
+                  NetAcademia - online oktatás bárhol, bármikor
+                </div>
+
+                <div class="tp-caption large-title tp-resizeme"
+                     data-x="['580', '200', '30', '10']"
+                     data-y="middle"
+                     data-hoffset="['-150', '-150', '-150', '0']"
+                     data-voffset="['-130', '-130', '-130', '-100']"
+                     data-fontsize="['33', '30', '30', '30']"
+                     data-lineheight="['55', '45', '45', '40']"
+                     data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
+                     data-width="450"
+                     data-color="white"
+                     data-start="1200"
+                     data-speed="300"
+                     data-transform_in="o:0;x:100;s:400;e:Power2.easeInOut;"
+                     data-transform_out="o:0;y:-100;s:400;e:Power2.easeInOut;"
+                >
+                  Legyél te is informatikus! <br> Korlátozott ideig ismét elérhető <br> Ultimate előfizetésünk!
+                </div>
+
+                <div class="tp-caption large-text tp-resizeme font-weight-bold"
+                     data-x="['580', '200', '30', '10']"
+                     data-y="middle"
+                     data-hoffset="['-150', '-150', '-150', '0']"
+                     data-voffset="['0', '5', '5', '5']"
+                     data-fontsize="['24', '24', '22', '18']"
+                     data-lineheight="['32', '32', '32', '24']"
+                     data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
+                     data-width="450"
+                     data-color="white"
+                     data-start="1300"
+                     data-speed="300"
+                     data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
+                     data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
+                >
+                  Mire vársz még? <br>
+                </div>
+
+                <div class="tp-caption large-text tp-resizeme"
+                     data-x="['580', '200', '30', '10']"
+                     data-y="middle"
+                     data-hoffset="['-150', '-150', '-150', '0']"
+                     data-voffset="['90', '90', '170', '90']"
+                     data-fontsize="['20', '20', '18', '18']"
+                     data-lineheight="['32', '32', '32', '24']"
+                     data-whitespace="['nowrap', 'nowrap', 'normal', 'normal']"
+                     data-width="450"
+                     data-color="white"
+                     data-start="1300"
+                     data-speed="300"
+                     data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
+                     data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
+                >
+                C# sámán lennél? Office ninja? Az Excel királya? Netalán a webfejlesztés guruja?<br>
+                Kezdj bele 350 tanfolyamunk valamelyikébe, és váltsd valóra álmaidat az IT <br> bármely területén!
+
+                </div>
+
+                <div class="tp-caption large-text tp-resizeme font-weight-bold"
+                     data-x="['580', '200', '30', '10']"
+                     data-y="middle"
+                     data-hoffset="['-150', '-150', '-150', '0']"
+                     data-voffset="['180', '180', '320', '180']"
+                     data-fontsize="['24', '20', '20', '18']"
+                     data-lineheight="['32', '32', '32', '24']"
+                     data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
+                     data-width="450"
+                     data-color="white"
+                     data-start="1300"
+                     data-speed="300"
+                     data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
+                     data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
+                >
+                  <u><a href="https://app.netacademia.hu/ultimate" class="text-light">Válaszd ULTIMATE előfizetésünket MOST! <br></a></u>
+                </div>
+
+                <!--<div class="tp-caption small-text tp-resizeme"
+                   data-x="['580', '200', '30', '10']"
+                   data-y="middle"
+                   data-hoffset="['-150', '-150', '-150', '0']"
+                   data-voffset="['70', '70', '70', '70']"
+                   data-fontsize="['14', '14', '14', '14']"
+                   data-lineheight="['18', '18', '24', '18']"
+                   data-start="1300"
+                   data-speed="300"
+                   data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
+                   data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
+              >
+              Jelen hirdetmény nem vonatkozik a külön megállapodásban elérhető <br> előfizetésekre, pl.
+                informatikatanárok vagy Telekom
+              </div> -->
+
+                <div class="tp-caption tp-resizeme"
+                     data-x="['580', '200', '30', '10']"
+                     data-y="middle"
+                     data-hoffset="['-150', '-150', '-150', '0']"
+                     data-voffset="['280', '250', '400', '250']"
+                     data-start="1400"
+                     data-speed="300"
+                     data-transform_in="o:0;y:100;s:500;e:Power2.easeInOut;"
+                     data-transform_out="o:0;y:100;s:500;e:Power2.easeInOut;"
+                >
+                  <DButton theme="white-outline" href="https://app.netacademia.hu/Subscription/Create" class="text-dark bg-light">
+                    Megveszem<i class="ml-2 decode-icon-cursor"></i>
+                  </DButton>
+                </div>
+
+                <div class="tp-caption navigation"
+                     data-x="center"
+                     data-y="middle"
+                     data-hoffset="['600', '400', '200', '150']"
+                     data-voffset="['400', '400', '400', '400']"
+                     data-start="0"
+                     data-speed="300"
+                     data-transform_in="o:0;s:500;e:Power2.easeInOut;"
+                     data-transform_out="o:0;s:500;e:Power2.easeInOut;"
+                >
+                  <span>01</span>/02
+
+                <!--<img src="~/assets/landing/new-index-bg-2.svg" alt="">
 
                 <div class="tp-caption"
                      data-x="-170"
@@ -235,7 +369,7 @@
                      data-transform_in="o:0;s:500;e:Power2.easeInOut;"
                      data-transform_out="o:0;s:500;e:Power2.easeInOut;"
                 >
-                  01/<span>02</span>
+                  01/<span>02</span> -->
                 </div>
 
               </li>

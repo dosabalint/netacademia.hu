@@ -142,7 +142,7 @@ module.exports = {
     }
   },
   axios: {
-    https: process.env.NODE_ENV === "production" ? true : false,
+    https: isProd(),
     // credentials: true,
     baseURL: isProd() ? process.env.BACKEND_URL : process.env.TEST_BACKEND_URL,
     browserBaseURL: isProd() ? process.env.BACKEND_URL : process.env.TEST_BACKEND_URL

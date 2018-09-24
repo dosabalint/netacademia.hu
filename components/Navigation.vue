@@ -27,7 +27,7 @@
           <nuxt-link class="nav-link" to="/certificate">Certificate</nuxt-link>
         </li>
         <li class="nav-item flex-center">
-          <nuxt-link class="nav-link" to="/elofizetes">Útvonalak</nuxt-link>
+          <nuxt-link class="nav-link" to="/elofizetes">Előfizetések</nuxt-link>
         </li>
         <li class="nav-item flex-center">
           <nuxt-link class="nav-link" to="/business">Business előfizetés</nuxt-link>

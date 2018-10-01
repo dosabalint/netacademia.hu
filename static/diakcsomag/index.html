@@ -368,33 +368,77 @@
 </section>
 <!-- Optional JavaScript -->
 
-<section class="py-5 section-2" id=hogyan>
-  <div class="container py-3">
-    <div class="row">
+<section class="py-5 section-2" id="hogyan">
+  <div class="container py-5">
+    <div class="row py-5">
       <div class="col-lg-4">
         <img src="diak.png" alt="" class="img-fluid">
       </div>
       <div class="col-lg-8 my-auto">
         <h2 class="mb-5">Hogyan szerezhetem meg a Diákcsomagot?</h2>
-        <p class="lead">Add meg a lenti sorokban adataid, ezután pedig már regisztráhatsz is!</p>
 
-        <form action="https://app.netacademia.hu/Subscription/AddSimpleAddress/c3b6370c-05b5-4bd7-aae3-86a51043161b"
-              id="diakcsomag-adatbekero">
+        <div class="row">
 
-          Diákigazolvány száma:   <br>
-          <input type="text" name="diakszam" id="diakszam" required pattern="[0-9]{11}">   <br>
-          Városod:   <br>
-           <input type="text" name="diakvaros" id="diakvaros" required> <br>	
-          Iskolád:   <br>
-          <input type="text" name="diakiskola" id="diakiskola" required>
-          
+          <div class="col-12 col-xl">
 
-          <br>
+            <form action="https://app.netacademia.hu/Subscription/AddSimpleAddress/c3b6370c-05b5-4bd7-aae3-86a51043161b"
+                  id="diakcsomag-adatbekero">
+              <p class="lead small">Keresd informatikatanárodat a promóciós kódokért, vagy írd be a lenti mezőbe a
+                diákigazolványod számát, ezután pedig már regisztráhatsz is!</p>
 
-          <input type="submit" value="Megrendelem" class="btn2 mt-4 mb-5">
+              Diákigazolvány száma: <br>
+              <input type="text" name="diakszam" id="diakszam" required pattern="[0-9]{11}"> <br>
+              Városod: <br>
+              <input type="text" name="diakvaros" id="diakvaros" required> <br>
+              Iskolád: <br>
+              <input type="text" name="diakiskola" id="diakiskola" required>
 
-        </form>
 
+              <br>
+
+              <input type="submit" value="Megrendelem" class="btn2 mt-4">
+
+            </form>
+          </div>
+
+          <div class="col-12 col-xl-auto display-4 mb-4">
+            VAGY!
+          </div>
+
+          <div class="col-12 col-xl">
+            <form id="diaktanar-adatbekero">
+
+              <p class="lead small">Legyél te is oktató! Készíts egy frankó tananyagot nekünk arról, ami a
+                szakterületed, és
+                mi
+                megjutalmazunk
+                egy díjmentes NetAcademia Diákcsomaggal.</p>
+
+              Név: <br>
+              <input type="text" name="nev" id="nev" required> <br>
+              E-mail: <br>
+              <input type="email" name="email" id="email" required> <br>
+              Mobil: <br>
+              <input type="text" name="mobil" id="mobil" required>
+
+              <br>
+
+              <input type="submit" value="Jelentkezek oktatónak" class="btn2 mt-4">
+
+              <div class="success-message alert alert-success small" role="alert" style="display: none">
+                Köszönjük, jelentkezésed rögzítettük!
+              </div>
+
+              <div class="fail-message alert alert-danger small" role="alert" style="display: none">
+                <p>Hiba történt a beküldés során!</p>
+                <p>Kérlek jelezd ezt kollégáink felé, hogy javíthassák.</p>
+                <p>Köszönjük!</p>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
       </div>
     </div>
 

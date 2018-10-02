@@ -12,7 +12,7 @@ export const state = () => ({
     login: "/Account/Logon",
     logout: "/api/v1/Account/LogOut",
     courses: "/api/Courses/1.0.0/CourseCards",
-    commingSoonCourses: "/api/Course/GetInProgressComingSoon",
+    commingSoonCourses: "/api/Courses/1.0.0/GetInProgressComingSoon",
     courseCardPicture: '/Picture/CourseCard',
     categories: "/api/Courses/1.0.0/PublicCategories",
     videos: "/api/v1/Videos",

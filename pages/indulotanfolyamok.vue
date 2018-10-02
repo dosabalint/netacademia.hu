@@ -82,7 +82,7 @@ export default {
   async mounted() {
     await this.$axios
       .$get(
-        `${this.$store.state.url.newBackend}${
+        `${this.$store.state.url.backend}${
             this.$store.state.url.commingSoonCourses
         }`
       )

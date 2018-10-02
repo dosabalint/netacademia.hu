@@ -143,7 +143,7 @@
           { text: "Tanfolyamkereső", link: "/tanfolyamkereso" },
           { text: "Induló tanfolyamok", link: "/indulotanfolyamok" },
           { text: "Certificate", link: "/certificate" },
-          { text: "Útvonalak", link: "/elofizetes" },
+          { text: "Előfizetések", link: "/elofizetes" },
           { text: "Business előfizetés", link: "/business" },
           { text: "Rólunk", link: "/rolunk" }
         ]

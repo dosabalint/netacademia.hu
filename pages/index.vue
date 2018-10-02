@@ -6,7 +6,7 @@
           <div class="rev_slider" data-version="5.0">
             <ul>
               <li data-transition="fade">
-                <img src="~/assets/landing/new-index-bg.svg" alt="">
+                <img src="~/assets/landing/bg-2-v3.svg" alt="">
 
                 <div class="tp-caption text-special"
                      data-x="['580', '200', '30', '10']"
@@ -24,68 +24,30 @@
                 </div>
 
                 <div class="tp-caption large-title tp-resizeme"
-                     data-x="['580', '200', '30', '10']"
-                     data-y="middle"
-                     data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['-130', '-130', '-130', '-100']"
-                     data-fontsize="['33', '30', '30', '30']"
-                     data-lineheight="['55', '45', '45', '40']"
-                     data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
-                     data-width="450"
-                     data-color="white"
-                     data-start="1200"
-                     data-speed="300"
-                     data-transform_in="o:0;x:100;s:400;e:Power2.easeInOut;"
-                     data-transform_out="o:0;y:-100;s:400;e:Power2.easeInOut;"
+                data-x="['580', '200', '30', '10']"
+                data-y="middle"
+                data-hoffset="['-150', '-150', '-150', '0']"
+                data-voffset="['-180', '-180', '-180', '-160']"
+                data-fontsize="['33', '30', '30', '30']"
+                data-lineheight="['55', '45', '45', '40']"
+                data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
+                data-width="450"
+                data-color="white"
+                data-start="1200"
+                data-speed="300"
+                data-transform_in="o:0;x:100;s:400;e:Power2.easeInOut;"
+                data-transform_out="o:0;y:-100;s:400;e:Power2.easeInOut;"
                 >
-                  Legyél te is informatikus! <br> Korlátozott ideig ismét elérhető <br> Ultimate előfizetésünk!
+                  NetAcademia Bussiness előfizetés
                 </div>
 
-                <div class="tp-caption large-text tp-resizeme font-weight-bold"
+                <div class="tp-caption tp-resizeme"
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['0', '5', '5', '5']"
-                     data-fontsize="['24', '24', '22', '18']"
-                     data-lineheight="['32', '32', '32', '24']"
-                     data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
-                     data-width="450"
-                     data-color="white"
-                     data-start="1300"
-                     data-speed="300"
-                     data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
-                     data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
-                >
-                  Mire vársz még? <br>
-                </div>
-
-                <div class="tp-caption large-text tp-resizeme"
-                     data-x="['580', '200', '30', '10']"
-                     data-y="middle"
-                     data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['90', '90', '170', '90']"
+                     data-voffset="['0', '5', '-30', '50']"
                      data-fontsize="['20', '20', '18', '18']"
-                     data-lineheight="['32', '32', '32', '24']"
-                     data-whitespace="['nowrap', 'nowrap', 'normal', 'normal']"
-                     data-width="450"
-                     data-color="white"
-                     data-start="1300"
-                     data-speed="300"
-                     data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
-                     data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
-                >
-                C# sámán lennél? Office ninja? Az Excel királya? Netalán a webfejlesztés guruja?<br>
-                Kezdj bele 350 tanfolyamunk valamelyikébe, és váltsd valóra álmaidat az IT <br> bármely területén!
-
-                </div>
-
-                <div class="tp-caption large-text tp-resizeme font-weight-bold"
-                     data-x="['580', '200', '30', '10']"
-                     data-y="middle"
-                     data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['180', '180', '320', '180']"
-                     data-fontsize="['24', '20', '20', '18']"
-                     data-lineheight="['32', '32', '32', '24']"
+                     data-lineheight="['36', '32', '32', '24']"
                      data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
                      data-width="450"
                      data-color="white"
@@ -94,7 +56,12 @@
                      data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
                 >
-                  <u><a href="https://app.netacademia.hu/ultimate" class="text-light">Válaszd ULTIMATE előfizetésünket MOST! <br></a></u>
+                Céges előfizetésünket kifejezetten a vállalati szempontoknak <br>
+                megfelelően alakítottuk ki. Képzéseink elősegítik a hatékony <br>
+                munkavégzést és bemutatják a legújabb IT technológiákat. <br>
+                Gyakorlatias online tanfolyamaink széles portfóliója lehetővé teszi, <br>
+                hogy minden terület dolgozója megtalálja a számára hasznos előadásokat, <br>
+                és a saját tempójában haladva bővítse ismereteit.<br>
                 </div>
 
                 <!--<div class="tp-caption small-text tp-resizeme"
@@ -117,13 +84,13 @@
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['280', '250', '400', '250']"
+                     data-voffset="['190', '250', '140', '250']"
                      data-start="1400"
                      data-speed="300"
                      data-transform_in="o:0;y:100;s:500;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:100;s:500;e:Power2.easeInOut;"
                 >
-                  <DButton theme="white-outline" href="https://app.netacademia.hu/Subscription/Create" class="text-dark bg-light">
+                  <DButton theme="white-outline" href="https://app.netacademia.hu/subscription/business" class="text-dark bg-light">
                     Megveszem<i class="ml-2 decode-icon-cursor"></i>
                   </DButton>
                 </div>
@@ -142,15 +109,16 @@
                 </div>
 
               </li>
+
               <li data-transition="fade">
 
-                <img src="~/assets/landing/new-index-bg.svg" alt="">
+                <img src="~/assets/landing/bg-2-v3.svg" alt="">
 
                 <div class="tp-caption text-special"
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', -150', -150', 0']"
-                     data-voffset="['-240', '-240', '-240', '-240']"
+                     data-voffset="['-240', '-240', '-180', '-240']"
                      data-fontsize="['20', '20', '20', '18']"
                      data-lineheight="['32', '32', '32', '24']"
                      data-start="1500"
@@ -165,7 +133,7 @@
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['-130', '-130', '-130', '-100']"
+                     data-voffset="['-180', '-130', '-130', '-160']"
                      data-fontsize="['33', '30', '30', '30']"
                      data-lineheight="['55', '45', '45', '40']"
                      data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
@@ -176,54 +144,16 @@
                      data-transform_in="o:0;x:100;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:-100;s:400;e:Power2.easeInOut;"
                 >
-                  Legyél te is informatikus! <br> Korlátozott ideig ismét elérhető <br> Ultimate előfizetésünk!
+                  Gyakorlatias online oktatás!
                 </div>
 
-                <div class="tp-caption large-text tp-resizeme font-weight-bold"
+                <div class="tp-caption tp-resizeme"
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['0', '5', '5', '5']"
-                     data-fontsize="['24', '24', '22', '18']"
-                     data-lineheight="['32', '32', '32', '24']"
-                     data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
-                     data-width="450"
-                     data-color="white"
-                     data-start="1300"
-                     data-speed="300"
-                     data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
-                     data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
-                >
-                  Mire vársz még? <br>
-                </div>
-
-                <div class="tp-caption large-text tp-resizeme"
-                     data-x="['580', '200', '30', '10']"
-                     data-y="middle"
-                     data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['90', '90', '170', '90']"
+                     data-voffset="['-30', '5', '5', '5']"
                      data-fontsize="['20', '20', '18', '18']"
-                     data-lineheight="['32', '32', '32', '24']"
-                     data-whitespace="['nowrap', 'nowrap', 'normal', 'normal']"
-                     data-width="450"
-                     data-color="white"
-                     data-start="1300"
-                     data-speed="300"
-                     data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
-                     data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
-                >
-                C# sámán lennél? Office ninja? Az Excel királya? Netalán a webfejlesztés guruja?<br>
-                Kezdj bele 350 tanfolyamunk valamelyikébe, és váltsd valóra álmaidat az IT <br> bármely területén!
-
-                </div>
-
-                <div class="tp-caption large-text tp-resizeme font-weight-bold"
-                     data-x="['580', '200', '30', '10']"
-                     data-y="middle"
-                     data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['180', '180', '320', '180']"
-                     data-fontsize="['24', '20', '20', '18']"
-                     data-lineheight="['32', '32', '32', '24']"
+                     data-lineheight="['36', '32', '32', '24']"
                      data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
                      data-width="450"
                      data-color="white"
@@ -232,8 +162,13 @@
                      data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
                 >
-                  <u><a href="https://app.netacademia.hu/ultimate" class="text-light">Válaszd ULTIMATE előfizetésünket MOST! <br></a></u>
+                Tanuld azt amit szeretnél, akkor és ott, ahol csak szeretnéd!<br>
+                Tegyél szert online, a saját tempódban azokra az ismeretekre
+                és készségekre,<br> mellyekkel előremozdíthatod karrieredet.<br>
+                Oktatóanyagaink segítségével óriási sikereket érhetsz <br>
+                el az élet számos területén!<br>
                 </div>
+
 
                 <!--<div class="tp-caption small-text tp-resizeme"
                    data-x="['580', '200', '30', '10']"
@@ -255,14 +190,14 @@
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['280', '250', '400', '250']"
+                     data-voffset="['120', '250', '160', '170']"
                      data-start="1400"
                      data-speed="300"
                      data-transform_in="o:0;y:100;s:500;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:100;s:500;e:Power2.easeInOut;"
                 >
-                  <DButton theme="white-outline" href="https://app.netacademia.hu/Subscription/Create" class="text-dark bg-light">
-                    Megveszem<i class="ml-2 decode-icon-cursor"></i>
+                  <DButton theme="white-outline" href="https://app.netacademia.hu/Account/Register?returnUrl=https://www.netacademia.hu/" class="text-dark bg-light">
+                    Regisztrálok!<i class="ml-2 decode-icon-cursor"></i>
                   </DButton>
                 </div>
 
@@ -277,6 +212,8 @@
                      data-transform_out="o:0;s:500;e:Power2.easeInOut;"
                 >
                   <span>01</span>/02
+
+                  ------
 
                 <!--<img src="~/assets/landing/new-index-bg-2.svg" alt="">
 
@@ -379,12 +316,37 @@
       </Row>
     </Container>
 
-    <DFullSection theme="dark" is-blending style="background: #339DCC;">
+    <DFullSection theme="dark">
       <Container>
         <Row>
-          <div class="col-md-12">
-            <h2 class="text-center mb-4">Miért nyitjuk ki ismét kapuinkat?</h2>
-          </div>
+          <Column class="col-md-3 col-sm-6">
+            <DCounter>
+              <i class="decode-icon-video"></i>
+              <div class="counter-value">320+</div>
+              <div class="counter-details">tanfolyam</div>
+            </DCounter>
+          </Column>
+          <Column class="col-md-3 col-sm-6">
+            <DCounter>
+              <i class="decode-icon-presentation"></i>
+              <div class="counter-value">4000+</div>
+              <div class="counter-details">óra oktatás</div>
+            </DCounter>
+          </Column>
+          <Column class="col-md-3 col-sm-6">
+            <DCounter>
+              <i class="decode-icon-viral-marketing"></i>
+              <div class="counter-value">50k+</div>
+              <div class="counter-details">felhasználó</div>
+            </DCounter>
+          </Column>
+          <Column class="col-md-3 col-sm-6">
+            <DCounter>
+              <i class="decode-icon-translator"></i>
+              <div class="counter-value">100+</div>
+              <div class="counter-details">profi oktató</div>
+            </DCounter>
+          </Column>
         </Row>
       </Container>
     </DFullSection>
@@ -397,15 +359,13 @@
         <Row>
           <Column class="col-12 col-md-7 mb-3">
             <DHeadline class="text-left">
-              <h3 class="mb-4">Bemutatkozik a NetAcademia Tudástár App, melyet bárhová magaddal vihetsz mobilappunk formájában!</h3>
+              <h3 class="mb-4">Bemutatkozik a NetAcademia Tudástár, melyet bárhová magaddal vihetsz mobilappunk formájában is!</h3>
               <p>Nem kisebb vállalkozásba fogtunk bele, minthogy megalkossuk a tudás elsőszámú közösségi oldalát. Videós tartalmaink egysége a gondolat, mely azt jelenti, hogy 1-1 mozgókép nem tart tovább 5 percnél.
                 Ezzel a megoldással kukába dobjuk a felesleges ,,szövegelést”,  ezzel megtízszerezve a tanulásod hatékonyságát!
               </p>
-              <p>A NetAcademia Tudástár App kizárólag Ultimate előfizetőink számára elérhető!</p>
-              <p>Most ismét lehetőséged nyílik minden tanfolyamunkat tartalmazó, Ultimate nevet viselő előfizetésünk vásárlására, így te is bekerülhetsz, előfizetőink zárt körébe, szeptember 20 és 30 között!</p>
-              <p class="mb-5">Kerülj be és próbáld ki még ma!</p>
-              <DButton theme="default-outline" href="https://app.netacademia.hu/Subscription/Create">
-                Megveszem <i class="decode-icon-cursor"></i>
+              <p class="mb-5">Próbáld ki még ma!</p>
+              <DButton theme="default-outline" href="https://tudastar.netacademia.hu">
+                Megnézem <i class="decode-icon-cursor"></i>
               </DButton>
             </DHeadline>
 
@@ -415,18 +375,34 @@
           </Column>
         </Row>
 
-        <!--<Row id="reszletek">
+      </Container>
+
+    </DFullSection>
+
+    <DFullSection theme="dark">
+      <Container>
+        <Row>
+          <div class="col-md-12">
+            <h2 class="text-center mb-5">NetAcademia Business</h2>
+          </div>
+        </Row>
+      </Container>
+    </DFullSection>
+
+    <DFullSection>
+      <Container>
+
+        <Row id="reszletek">
           <Column class="col-12 mb-3">
             <DHeadline class="text-left">
               <h3 class="mb-4">NetAcademia Bussiness</h3>
             </DHeadline>
           </Column>
 
-          <Column class="col-lg-6 mr-xl-auto pr-5 my-auto">
+          <Column class="col-lg-6 mr-xl-auto pr-5">
 
             <p><b>Vállalati</b> ügyfeleink számára mostantól elérhető a <b>NetAcademia Bussiness előfizetés</b>, melyet
-              a
-              legfontosabb vállalati szempontok alapján alakítottunk ki:</p>
+              a legfontosabb vállalati szempontok alapján alakítottunk ki:</p>
 
             <ul class="check-list">
               <li>Legyen elérhető Magyarország legszélesebb oktatási palettája</li>
@@ -466,13 +442,12 @@
             <p><b>Semmi. Nem változik semmi.</b> Aki jelenleg aktív NetAcademia Ultimate előfizető, annak a lejárati
               dátumig nincs változás. </p>
           </Column>
-        </Row> -->
+        </Row>
 
       </Container>
-
     </DFullSection>
 
-    <DFullSection theme="dark" style="background: #FF5971;">
+    <DFullSection theme="dark">
       <Container>
         <Row>
           <div class="col-md-12">
@@ -482,21 +457,24 @@
       </Container>
     </DFullSection>
 
-    <Container class="mb-5 md-lg-0 pt-lg-5">
+    <Container class="mb-5 md-lg-0 py-lg-5">
       <Row class="mt-5">
+
+        <Column class="col-lg-7 my-auto">
+          <h2 class="mb-4">Neked szól a NetAcademia Diákcsomag!</h2>
+          <p>Unod, hogy 20 éve elavult, papíralapú jegyzetekből kell programozást tanulnod? Szeretnél játékot fejleszteni, weblapot varázsolni, videókat vágni? Azt mondod, bármit eladnál, csak egy webshop kellene?</p>
+          <p class="mb-4">Most minden tanfolyamunk Tiéd lehet, mindösszesen 50 000 Ft-ért!</p>
+          <DButton theme="default-outline" href="https://www.netacademia.hu/diakcsomag/">
+            Érdekel <i class="decode-icon-cursor"></i>
+          </DButton>
+        </Column>
+
         <Column class="col-lg-5 my-auto pl-5">
           <Bounce direction="bounceInRight">
             <p><img src="~/assets/landing/diakcsomag.png" alt=""></p>
           </Bounce>
         </Column>
-        <Column class="col-lg-7 my-auto">
-          <h2>Neked szól a NetAcademia Diákcsomag!</h2>
-          <p>Unod, hogy 20 éve elavult, papíralapú jegyzetekből kell programozást tanulnod? Szeretnél játékot fejleszteni, weblapot varázsolni, videókat vágni? Azt mondod, bármit eladnál, csak egy webshop kellene?</p>
-          <p>Az összes tanfolyamunk, mindösszesen 50 000 Ft-ért, szeptember 20 és 30 között!</p>
-          <DButton theme="default-outline" href="https://www.netacademia.hu/diakcsomag/">
-            Érdekel <i class="decode-icon-cursor"></i>
-          </DButton>
-        </Column>
+
       </Row>
     </Container>
 
@@ -520,40 +498,6 @@
       </Row>
     </Container>-->
 
-    <DFullSection theme="dark">
-      <Container>
-        <Row>
-          <Column class="col-md-3 col-sm-6">
-            <DCounter>
-              <i class="decode-icon-video"></i>
-              <div class="counter-value">320+</div>
-              <div class="counter-details">tanfolyam</div>
-            </DCounter>
-          </Column>
-          <Column class="col-md-3 col-sm-6">
-            <DCounter>
-              <i class="decode-icon-presentation"></i>
-              <div class="counter-value">4000+</div>
-              <div class="counter-details">óra oktatás</div>
-            </DCounter>
-          </Column>
-          <Column class="col-md-3 col-sm-6">
-            <DCounter>
-              <i class="decode-icon-viral-marketing"></i>
-              <div class="counter-value">50k+</div>
-              <div class="counter-details">felhasználó</div>
-            </DCounter>
-          </Column>
-          <Column class="col-md-3 col-sm-6">
-            <DCounter>
-              <i class="decode-icon-translator"></i>
-              <div class="counter-value">100+</div>
-              <div class="counter-details">profi oktató</div>
-            </DCounter>
-          </Column>
-        </Row>
-      </Container>
-    </DFullSection>
 
   </main>
 </template>

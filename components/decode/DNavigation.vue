@@ -27,6 +27,11 @@
                       'navbar-nav collapse navbar-collapse': isMobileMenu,
                       'menu': !isMobileMenu
                     }">
+
+                  <li>
+                    <a href="https://tudastar.netacademia.hu/">Tudástár</a>
+                  </li>
+
                   <li v-for="m in menu" :key="m.link">
                     <nuxt-link :to="m.link" :class="{'waves': isMobileMenu}">{{ m.text }}</nuxt-link>
                   </li>

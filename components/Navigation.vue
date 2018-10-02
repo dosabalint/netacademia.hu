@@ -33,6 +33,9 @@
           <nuxt-link class="nav-link" to="/business">Business előfizetés</nuxt-link>
         </li>
         <li class="nav-item flex-center">
+          <a href="https://tudastar.netacademia.hu">Tudástár</a>
+        </li>
+        <li class="nav-item flex-center">
           <nuxt-link class="nav-link" to="/rolunk">Rólunk</nuxt-link>
         </li>
       </ul>

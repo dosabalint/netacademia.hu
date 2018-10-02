@@ -6,9 +6,10 @@
     >
       <h1>Business</h1>
     </DPageHeader>
+
     <Container class="py-5 mt-5" id="next-section">
       <Row class="py-5">
-        <Column class="col-xl-7 col-lg-5 my-auto">
+        <Column class="col-xl-7 col-md-7 my-auto">
 
           <h2>NetAcademia <br class="visible-lg-block"> <em><strong>Business</strong> előfizetés</em></h2>
           <br>
@@ -18,24 +19,60 @@
             tanfolyamaink széles portfóliója lehetővé teszi, hogy minden terület dolgozója megtalálja a számára
             hasznos előadásokat, és a saját tempójában haladva bővítse ismereteit.</p>
 
+            <p>Oktatási csomagunk, tartalmazza a NetAcademia minden tanfolyamát, amit az <b>Ultimate</b> előfizetés tartalmazott,
+              vagyis minden képzésünket korlátlanul elérhetővé teszi egy éven át.</p>
+
+            <p>Az előfizetés megrendelésével hozzáférést adunk a <b>NetAcademia Tudástárhoz</b> is, melyet napi szinten érdekes videókkal
+              bővítünk az informatika számos területéről.</p>
+
           <br><br>
 
         </Column>
 
-        <Column class="ml-xl-auto col-lg-5">
+        <Column class="ml-xl-auto col-md-5 my-auto">
           <Bounce direction="bounceInRight">
-            <img src="~/assets/business/business2.svg" width="400" alt="">
+            <img src="~/assets/business/web-db.svg" width="400" alt="">
           </Bounce>
         </Column>
       </Row>
     </Container>
 
-    <DFullSection theme="smoke">
+  <DFullSection theme="smoke">
+    <Container class="py-5" id="next-section">
+      <Row class="">
+
+        <Column class="ml-xl-auto col-md-5 my-auto">
+          <Bounce direction="bounceInLeft">
+            <img src="~/assets/business/business2.svg" width="400" alt="">
+          </Bounce>
+        </Column>
+
+        <Column class="col-xl-7 col-md-7 my-auto">
+
+          <h2>NetAcademia <br class="visible-lg-block"> <em><strong>Office</strong> előfizetés</em></h2>
+          <br>
+
+          <p>Továbbra is elérhető office előfizetésünk, melybe azon tanfolyamokat válogattuk össze, melyek
+            elsősorban az irodai hatékonyságnövelés területére fókuszálnak.</p>
+
+          <a href="/officecsomag">Részletek</a>
+
+
+          <br><br>
+
+        </Column>
+
+      </Row>
+    </Container>
+
+    </DFullSection>
+
+    <DFullSection>
       <Container>
         <Row>
           <Column class="col-md-12 mb-5">
 
-            <div class="headline text-center">
+            <div class="headline text-center mt-4">
 
               <h3>A vállalati előfizetés előnyei</h3>
             </div>

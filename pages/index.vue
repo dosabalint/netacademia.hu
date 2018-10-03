@@ -379,6 +379,30 @@
 
     </DFullSection>
 
+    <DFullSection theme="smoke" class="mt-4">
+      <Container>
+        <Row>
+          <div class="col-md-12">
+            <h3 class="text-center mt-5 mb-3">Sajátíts el a legmodernebb fejlesztési technikákat, alapozd meg karriered és legyél Te is webfejlesztő!</h3>
+          </div>
+
+          <Column class="col-12 col-md-5">
+            <img src="~/assets/landing/2.png" alt="" class="my-auto">
+          </Column>
+          <Column class="col-12 col-md-7 my-auto">
+            <DHeadline class="text-left">
+              <h4 class="mb-3">A VueJS + Angular tanfolyamsorozataink együtt most csak 34.900 Ft+Áfa!</h4>
+              <h4 class="mb-5">Juss hozzá akciósan október 9 éjfélig!</h4>
+              <DButton class="bg-light text-dark" theme="default-outline" href="">
+                Megveszem <i class="decode-icon-cursor"></i>
+              </DButton>
+            </DHeadline>
+
+          </Column>
+
+        </Row>
+      </Container>
+    </DFullSection>
     <DFullSection theme="dark">
       <Container>
         <Row>

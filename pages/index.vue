@@ -393,7 +393,7 @@
             <DHeadline class="text-left">
               <h4 class="mb-3">A VueJS + Angular tanfolyamsorozataink együtt most csak 34.900 Ft+Áfa!</h4>
               <h4 class="mb-5">Juss hozzá akciósan október 9 éjfélig!</h4>
-              <DButton class="bg-light text-dark" theme="default-outline" href="">
+              <DButton class="bg-light text-dark" theme="default-outline" href="https://app.netacademia.hu/Subscription/Create/webfejleszto-leszek-angular-es-vuejs">
                 Megveszem <i class="decode-icon-cursor"></i>
               </DButton>
             </DHeadline>

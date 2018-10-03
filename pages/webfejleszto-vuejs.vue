@@ -128,7 +128,7 @@
       <div class="col-12 col-lg-3 px-4 bg-card m-2 py-5 d-flex flex-column justify-content-between align-items-center">
         <p>Vedd meg a Webfejlesztő leszek! Angular editiont és a Webfejlesztő leszek! Vue.js editiont
           <br>bruttó
-          <span class="ar">69.800 </span>Ft-ért!
+          <span class="ar">44324 </span>Ft-ért!
         </p>
         <gtm-link isAddToCart :gtm-data="GTMProductCollection.addToCartVueAndAngular"
                   href="https://app.netacademia.hu/Subscription/Create/webfejleszto-leszek-angular-es-vuejs"
@@ -148,7 +148,7 @@
         </gtm-link>
       </div>
       <div class="col-12 col-lg-3 px-4 bg-card m-2 py-5 d-flex flex-column justify-content-between align-items-center">
-        <p class=" mb-4">Webfejlesztő leszek! – Vue edition – tanfolyamcsomag ára
+        <p class=" mb-4">Webfejlesztő leszek! – Vue edition – tanfolyamcsomag Akciós ára
           <br>bruttó
           <span class="ar">49.900</span> Ft!
         </p>

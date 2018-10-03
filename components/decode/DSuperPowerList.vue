@@ -1,7 +1,7 @@
 <template>
   <ul class="superpower-list">
     <a v-for="c in courses" :key="c.code" :href="`${$store.state.url.backend}/${c.userfriedlyURL}`" class="text-dark">
-      <Row>
+      <Row class="justify-content-center">
         <Column class="col-sm-6"
                 data-toggle="tooltip" data-placement="right"
                 data-html="true"
@@ -11,7 +11,7 @@
             {{ c.title }}
           </li>
         </Column>
-        <div class="col text-sm-center">
+        <div v-if="c.dateColumn" class="col text-sm-center">
           <p>{{c.dateColumn}}</p>
         </div>
       </Row>

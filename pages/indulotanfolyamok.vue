@@ -31,8 +31,8 @@
             </DHeadline>
           </Column>
           <Column class="col">
-            <DSuperPowerList :courses="this.coursesCommingSoon" :displayStartDate="false">
-            </DSuperPowerList>
+              <DSuperPowerList :courses="this.coursesCommingSoon" :displayStartDate="false">
+              </DSuperPowerList>
           </Column>
         </Container>
       </Container>
@@ -41,57 +41,57 @@
 </template>
 
 <script>
-import DPageHeader from "@/components/decode/DPageHeader";
-import Column from "@/components/base/Column";
-import Container from "@/components/base/Container";
-import Row from "@/components/base/Row";
-import DFullSection from "@/components/decode/DFullSection";
-import DHeadline from "@/components/decode/DHeadline";
-import DSuperPowerList from "@/components/decode/DSuperPowerList";
+  import DPageHeader from "@/components/decode/DPageHeader";
+  import Column from "@/components/base/Column";
+  import Container from "@/components/base/Container";
+  import Row from "@/components/base/Row";
+  import DFullSection from "@/components/decode/DFullSection";
+  import DHeadline from "@/components/decode/DHeadline";
+  import DSuperPowerList from "@/components/decode/DSuperPowerList";
 
-export default {
-  name: "indulotanfolyamok",
-  layout: "decode",
-  components: {
-    DSuperPowerList,
-    DHeadline,
-    DFullSection,
-    Row,
-    Container,
-    Column,
-    DPageHeader
-  },
-  data() {
-    return {
-      courses: []
-    };
-  },
-  computed: {
-    coursesInProgress() {
-      return this.courses.filter(c => c.dateColumn !== "");
+  export default {
+    name: "indulotanfolyamok",
+    layout: "decode",
+    components: {
+      DSuperPowerList,
+      DHeadline,
+      DFullSection,
+      Row,
+      Container,
+      Column,
+      DPageHeader
     },
-    coursesCommingSoon() {
-      return this.courses.filter(c => c.dateColumn === "");
-    }
-  },
-  updated() {
-    this.$nextTick(() => {
-      $('[data-toggle="tooltip"]').tooltip();
-    });
-  },
-  async mounted() {
-    await this.$axios
-      .$get(
-        `${this.$store.state.url.backend}${
+    data() {
+      return {
+        courses: []
+      };
+    },
+    computed: {
+      coursesInProgress() {
+        return this.courses.filter(c => c.dateColumn !== "");
+      },
+      coursesCommingSoon() {
+        return this.courses.filter(c => c.dateColumn === "");
+      }
+    },
+    updated() {
+      this.$nextTick(() => {
+        $("[data-toggle=\"tooltip\"]").tooltip();
+      });
+    },
+    async mounted() {
+      await this.$axios
+        .$get(
+          `${this.$store.state.url.backend}${
             this.$store.state.url.commingSoonCourses
-        }`
-      )
-      .then(r => {
-        this.courses = r;
-      })
-      .catch(console.warn);
-  }
-};
+            }`
+        )
+        .then(r => {
+          this.courses = r;
+        })
+        .catch(console.warn);
+    }
+  };
 </script>
 
 <style scoped>

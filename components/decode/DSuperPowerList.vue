@@ -5,7 +5,7 @@
         <Column class="col-sm-6"
                 data-toggle="tooltip" data-placement="right"
                 data-html="true"
-                :title="`<h6>${c.title}</h6> <p> ${c.categoryTitle} </p> <p>Oktatók: ${c.trainerNames} </p> <p>Tanfolyam kezdete: ${new Date(c.startDate).toLocaleDateString('hu-HU')}</p>`">
+                :title="`<h6>${c.title}</h6> <p> ${c.categoryTitle} </p> <p>Oktatók: ${c.trainerNames} </p>` + (displayStartDate ? `<p>Tanfolyam kezdete: ${new Date(c.startDate).toLocaleDateString('hu-HU')}</p>` : '')">
           <li>
             <fa :icon="['fab', 'superpowers']" :style="{ color: iconColor(c)}"/>
             {{ c.title }}
@@ -30,6 +30,10 @@ export default {
     courses: {
       type: Array,
       required: true
+    },
+    displayStartDate: {
+      type: Boolean,
+      default: true
     }
   },
   updated() {

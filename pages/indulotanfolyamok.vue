@@ -31,7 +31,7 @@
             </DHeadline>
           </Column>
           <Column class="col">
-            <DSuperPowerList :courses="this.coursesCommingSoon">
+            <DSuperPowerList :courses="this.coursesCommingSoon" :displayStartDate="false">
             </DSuperPowerList>
           </Column>
         </Container>
@@ -68,10 +68,10 @@ export default {
   },
   computed: {
     coursesInProgress() {
-      return this.courses.filter(c => c.dateColumn[0] !== "2");
+      return this.courses.filter(c => c.dateColumn !== "");
     },
     coursesCommingSoon() {
-      return this.courses.filter(c => c.dateColumn[0] === "2");
+      return this.courses.filter(c => c.dateColumn === "");
     }
   },
   updated() {

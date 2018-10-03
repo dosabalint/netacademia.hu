@@ -193,6 +193,7 @@
               Dávid szakértő az önéletrajzuk alapján egy fél órás, személyes vagy Skype-os próbainterjú során ad
               visszajelzést a jelentkezőknek.
             </h5>
+            <p class="text-primary">Megtelt!</p>
             <p class="mb-0">"Habár a munkaerőpiac még sosem kedvezett ennyire a munkakeresőknek, mint manapság, az
               ideális állás megtalálása továbbra sem könnyű feladat. A kihívás jóval nagyobb, mint egy önéletrajz
               megírása, de hiszek benne, hogy önismerettel, egyértelmű célokkal és a kitartással idővel bárki elérheti

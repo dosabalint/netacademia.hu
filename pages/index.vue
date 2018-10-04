@@ -59,7 +59,7 @@
                      data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
                 >
                 Végezd el képzéseinket és legyél Te is profi webfejlesztő! <br>
-                Október 9-ig az Angul és VueJS tanfolyamsorozatainkhoz <br> akciósan 34.900 Ft+áfáért hozzájuthatsz
+                Október 9-ig az Angular és VueJS tanfolyamsorozatainkhoz <br> akciósan 34.900 Ft+áfáért hozzájuthatsz
                 </div>
 
                 <!--<div class="tp-caption small-text tp-resizeme"

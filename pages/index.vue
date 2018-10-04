@@ -6,13 +6,13 @@
           <div class="rev_slider" data-version="5.0">
             <ul>
               <li data-transition="fade">
-                <img src="~/assets/landing/bg-2-v3.svg" alt="">
+                <img src="~/assets/landing/angular-bg.svg" alt="">
 
                 <div class="tp-caption text-special"
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', -150', -150', 0']"
-                     data-voffset="['-240', '-240', '-240', '-240']"
+                     data-voffset="['-240', '-270', '-280', '-300']"
                      data-fontsize="['20', '20', '20', '18']"
                      data-lineheight="['32', '32', '32', '24']"
                      data-start="1500"
@@ -27,28 +27,30 @@
                 data-x="['580', '200', '30', '10']"
                 data-y="middle"
                 data-hoffset="['-150', '-150', '-150', '0']"
-                data-voffset="['-180', '-180', '-180', '-160']"
+                data-voffset="['-120', '-180', '-180', '-150']"
                 data-fontsize="['33', '30', '30', '30']"
                 data-lineheight="['55', '45', '45', '40']"
                 data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
                 data-width="450"
-                data-color="white"
+                data-color="orange"
                 data-start="1200"
                 data-speed="300"
                 data-transform_in="o:0;x:100;s:400;e:Power2.easeInOut;"
                 data-transform_out="o:0;y:-100;s:400;e:Power2.easeInOut;"
                 >
-                  NetAcademia Bussiness előfizetés
+                  Hallottad már a hírekben, hogy milyen sok <br>
+                   informatikust keresnek a cégek?<br>
+                   Arról is, hogy milyen jól profitálhatsz belőle?
                 </div>
 
                 <div class="tp-caption tp-resizeme"
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['0', '5', '-30', '50']"
-                     data-fontsize="['20', '20', '18', '18']"
-                     data-lineheight="['36', '32', '32', '24']"
-                     data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
+                     data-voffset="['50', '5', '0', '70']"
+                     data-fontsize="['28', '20', '22', '18']"
+                     data-lineheight="['40', '32', '32', '24']"
+                     data-whitespace="['nowrap', 'normal', 'normal', 'normal']"
                      data-width="450"
                      data-color="white"
                      data-start="1300"
@@ -56,12 +58,8 @@
                      data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
                 >
-                Céges előfizetésünket kifejezetten a vállalati szempontoknak <br>
-                megfelelően alakítottuk ki. Képzéseink elősegítik a hatékony <br>
-                munkavégzést és bemutatják a legújabb IT technológiákat. <br>
-                Gyakorlatias online tanfolyamaink széles portfóliója lehetővé teszi, <br>
-                hogy minden terület dolgozója megtalálja a számára hasznos előadásokat, <br>
-                és a saját tempójában haladva bővítse ismereteit.<br>
+                Végezd el képzéseinket és legyél Te is profi webfejlesztő! <br>
+                Október 9-ig az Angul és VueJS tanfolyamsorozatainkhoz <br> akciósan 34.900 Ft+áfáért hozzájuthatsz
                 </div>
 
                 <!--<div class="tp-caption small-text tp-resizeme"
@@ -84,13 +82,13 @@
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['190', '250', '140', '250']"
+                     data-voffset="['180', '170', '140', '200']"
                      data-start="1400"
                      data-speed="300"
                      data-transform_in="o:0;y:100;s:500;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:100;s:500;e:Power2.easeInOut;"
                 >
-                  <DButton theme="white-outline" href="https://app.netacademia.hu/subscription/business" class="text-dark bg-light">
+                  <DButton theme="white-outline" href="https://app.netacademia.hu/Subscription/Create/webfejleszto-leszek-angular-es-vuejs" class="text-dark bg-light">
                     Megveszem<i class="ml-2 decode-icon-cursor"></i>
                   </DButton>
                 </div>
@@ -118,7 +116,7 @@
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', -150', -150', 0']"
-                     data-voffset="['-240', '-240', '-180', '-240']"
+                     data-voffset="['-240', '-240', '-180', '-180']"
                      data-fontsize="['20', '20', '20', '18']"
                      data-lineheight="['32', '32', '32', '24']"
                      data-start="1500"
@@ -133,7 +131,7 @@
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['-180', '-130', '-130', '-160']"
+                     data-voffset="['-180', '-130', '-130', '-140']"
                      data-fontsize="['33', '30', '30', '30']"
                      data-lineheight="['55', '45', '45', '40']"
                      data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
@@ -152,7 +150,7 @@
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
                      data-voffset="['-30', '5', '5', '5']"
-                     data-fontsize="['20', '20', '18', '18']"
+                     data-fontsize="['20', '20', '20', '18']"
                      data-lineheight="['36', '32', '32', '24']"
                      data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
                      data-width="450"

@@ -90,7 +90,7 @@
                      data-transform_in="o:0;y:100;s:500;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:100;s:500;e:Power2.easeInOut;"
                 >
-                  <DButton theme="white-outline" href="https://app.netacademia.hu/Subscription/Create/webfejleszto-leszek-angular-es-vuejs" class="text-dark bg-light">
+                  <DButton theme="white-outline" href="https://www.netacademia.hu/business/" class="text-dark bg-light">
                     Részletek<i class="ml-2 decode-icon-cursor"></i>
                   </DButton>
                 </div>
@@ -379,7 +379,7 @@
 
     </DFullSection>
 
-  
+
     <DFullSection theme="dark">
       <Container>
         <Row>

@@ -6,13 +6,13 @@
           <div class="rev_slider" data-version="5.0">
             <ul>
               <li data-transition="fade">
-                <img src="~/assets/landing/angular-bg.svg" alt="">
+                <img src="~/assets/landing/business-bg.svg" alt="">
 
                 <div class="tp-caption text-special"
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', -150', -150', 0']"
-                     data-voffset="['-240', '-270', '-280', '-300']"
+                     data-voffset="['-200', '-240', '-240', '-200']"
                      data-fontsize="['20', '20', '20', '18']"
                      data-lineheight="['32', '32', '32', '24']"
                      data-start="1500"
@@ -27,8 +27,8 @@
                 data-x="['580', '200', '30', '10']"
                 data-y="middle"
                 data-hoffset="['-150', '-150', '-150', '0']"
-                data-voffset="['-120', '-180', '-180', '-150']"
-                data-fontsize="['33', '30', '30', '30']"
+                data-voffset="['-150', '-180', '-180', '-150']"
+                data-fontsize="['50', '40', '40', '40']"
                 data-lineheight="['55', '45', '45', '40']"
                 data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
                 data-width="450"
@@ -38,17 +38,15 @@
                 data-transform_in="o:0;x:100;s:400;e:Power2.easeInOut;"
                 data-transform_out="o:0;y:-100;s:400;e:Power2.easeInOut;"
                 >
-                  Hallottad már a hírekben, hogy milyen sok <br>
-                   informatikust keresnek a cégek?<br>
-                   Arról is, hogy milyen jól profitálhatsz belőle?
+                  Business előfizetés <br>
                 </div>
 
                 <div class="tp-caption tp-resizeme"
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
-                     data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['50', '5', '0', '70']"
-                     data-fontsize="['28', '20', '22', '18']"
+                     data-hoffset="['-100', '-150', '-150', '0']"
+                     data-voffset="['30', '5', '0', '-10']"
+                     data-fontsize="['24', '20', '22', '18']"
                      data-lineheight="['40', '32', '32', '24']"
                      data-whitespace="['nowrap', 'normal', 'normal', 'normal']"
                      data-width="450"
@@ -58,8 +56,12 @@
                      data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
                 >
-                Végezd el képzéseinket és legyél Te is profi webfejlesztő! <br>
-                Október 9-ig az Angular és VueJS tanfolyamsorozatainkhoz <br> akciósan 34.900 Ft+áfáért hozzájuthatsz
+                Képezd munkatársaidat anélkül, hogy <br> napokra kiesnének a munkából!<br> <br>
+                Gyakorlatias online tanfolyamaink széles portfóliója <br>
+                lehetővé teszi, hogy minden terület dolgozója megtalálja a <br>
+                számára hasznos előadásokat! <br>
+
+
                 </div>
 
                 <!--<div class="tp-caption small-text tp-resizeme"
@@ -82,14 +84,14 @@
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['180', '170', '140', '200']"
+                     data-voffset="['210', '190', '200', '150']"
                      data-start="1400"
                      data-speed="300"
                      data-transform_in="o:0;y:100;s:500;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:100;s:500;e:Power2.easeInOut;"
                 >
                   <DButton theme="white-outline" href="https://app.netacademia.hu/Subscription/Create/webfejleszto-leszek-angular-es-vuejs" class="text-dark bg-light">
-                    Megveszem<i class="ml-2 decode-icon-cursor"></i>
+                    Részletek<i class="ml-2 decode-icon-cursor"></i>
                   </DButton>
                 </div>
 
@@ -116,7 +118,7 @@
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', -150', -150', 0']"
-                     data-voffset="['-240', '-240', '-180', '-180']"
+                     data-voffset="['-240', '-180', '-180', '-180']"
                      data-fontsize="['20', '20', '20', '18']"
                      data-lineheight="['32', '32', '32', '24']"
                      data-start="1500"
@@ -188,7 +190,7 @@
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['120', '250', '160', '170']"
+                     data-voffset="['120', '150', '160', '170']"
                      data-start="1400"
                      data-speed="300"
                      data-transform_in="o:0;y:100;s:500;e:Power2.easeInOut;"
@@ -377,30 +379,7 @@
 
     </DFullSection>
 
-    <DFullSection theme="smoke" class="mt-4">
-      <Container>
-        <Row>
-          <div class="col-md-12">
-            <h3 class="text-center mt-5 mb-3">Sajátíts el a legmodernebb fejlesztési technikákat, alapozd meg karriered és legyél Te is webfejlesztő!</h3>
-          </div>
-
-          <Column class="col-12 col-md-5">
-            <img src="~/assets/landing/2.png" alt="" class="my-auto">
-          </Column>
-          <Column class="col-12 col-md-7 my-auto">
-            <DHeadline class="text-left">
-              <h4 class="mb-3">A VueJS + Angular tanfolyamsorozataink együtt most csak 34.900 Ft+Áfa!</h4>
-              <h4 class="mb-5">Juss hozzá akciósan október 9 éjfélig!</h4>
-              <DButton class="bg-light text-dark" theme="default-outline" href="https://app.netacademia.hu/Subscription/Create/webfejleszto-leszek-angular-es-vuejs">
-                Megveszem <i class="decode-icon-cursor"></i>
-              </DButton>
-            </DHeadline>
-
-          </Column>
-
-        </Row>
-      </Container>
-    </DFullSection>
+  
     <DFullSection theme="dark">
       <Container>
         <Row>

@@ -38,7 +38,7 @@
                 <p><b>Előfizetéssel, tanfolyam értékesítéssel kapcsolatban:</b></p>
                 <li class="email">
                   <i class="decode-icon-multimedia"></i>
-                  <a href="sales@netacademia.hu">sales@netacademia.hu</a>
+                  <a href="mailto:sales@netacademia.hu">sales@netacademia.hu</a>
                 </li>
                 <p><b>Számlázással, általános kérdésekkel, adminisztrációval kapcsolatban:</b></p>
                 <li class="email">

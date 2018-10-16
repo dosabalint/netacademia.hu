@@ -6,7 +6,7 @@
     >
       <h1>Kapcsolat</h1>
     </DPageHeader>
-    <DFullSection theme="light">
+    <DFullSection theme="light" class="pb-0">
       <Container>
         <Row class="flex-center mb-5">
           <h3>Elérhetőségeink</h3>
@@ -35,6 +35,11 @@
           <Column class="col-6">
             <DWidget type="contact" class="mt-4">
               <ul>
+                <p><b>Előfizetéssel, tanfolyam értékesítéssel kapcsolatban:</b></p>
+                <li class="email">
+                  <i class="decode-icon-multimedia"></i>
+                  <a href="mailto:sales@netacademia.hu">sales@netacademia.hu</a>
+                </li>
                 <p><b>Számlázással, általános kérdésekkel, adminisztrációval kapcsolatban:</b></p>
                 <li class="email">
                   <i class="decode-icon-multimedia"></i>
@@ -63,7 +68,9 @@
             <h3>Munkatársaink</h3>
           </DHeadline>
         </Row>
+
         <Row class="justify-content-around mb-5">
+
           <Column class="col-8 col-lg-2 col-sm-5 px-lg-0">
             <div class="about-me">
               <div class="about-me-thumbnail rounded-circle">
@@ -78,6 +85,7 @@
             </div>
             <!-- about-me -->
           </Column>
+
           <Column class="col-8 col-lg-2 col-sm-5 px-lg-0">
             <div class="about-me">
               <div class="about-me-thumbnail rounded-circle">
@@ -92,6 +100,7 @@
             </div>
             <!-- about-me -->
           </Column>
+
           <Column class="col-8 col-lg-2 col-sm-5 px-lg-0">
             <div class="about-me">
               <div class="about-me-thumbnail rounded-circle">
@@ -106,21 +115,9 @@
             </div>
             <!-- about-me -->
           </Column>
-          <Column class="col-8 col-lg-2 col-sm-5 px-lg-0">
-            <div class="about-me">
-              <div class="about-me-thumbnail rounded-circle">
-                <img src="~/assets/kapcsolat/dosa-balint.jpg" alt="Dósa Bálint">
-              </div>
-              <!-- about-me-thumbnail -->
-              <h6>Dósa Bálint</h6>
-              <span>Frontend felesztő, oktató</span>
-              <p>
-                <small>dosa.balint@netacademia.hu</small>
-              </p>
-            </div>
-            <!-- about-me -->
-          </Column>
+
         </Row>
+
         <Row class="justify-content-around mb-5">
           <Column class="col-8 col-lg-2 col-sm-5 px-lg-0">
             <div class="about-me">
@@ -147,19 +144,6 @@
             </div>
             <!-- about-me -->
           </Column>
-
-          <Column class="col-8 col-lg-2 col-sm-5 px-lg-0">
-            <div class="about-me">
-              <div class="about-me-thumbnail rounded-circle">
-                <img src="~/assets/kapcsolat/novreczky-lajos.jpg" alt="Novreczky Lajos">
-              </div>
-              <!-- about-me-thumbnail -->
-              <h6>Novreczky Lajos</h6>
-              <span>C# fejlesztő, oktató</span>
-              <p><small>novreczky.lajos@netacademia.hu</small></p>
-            </div>
-            <!-- about-me -->
-          </Column>
           <Column class="col-8 col-lg-2 col-sm-5 px-lg-0">
             <div class="about-me">
               <div class="about-me-thumbnail rounded-circle">
@@ -173,35 +157,7 @@
             <!-- about-me -->
           </Column>
         </Row>
-        <Row class="justify-content-around mb-5">
-          <Column class="col-8 col-lg-2 col-sm-5 px-lg-0">
-            <div class="about-me">
-              <div class="about-me-thumbnail rounded-circle">
-                <img src="~/assets/kapcsolat/szubally-bruno.jpg" alt="Szubally Brúnó">
-              </div>
-              <!-- about-me-thumbnail -->
-              <h6>Szubally Brúnó</h6>
-              <span>Marketing Manager, Oktató</span>
-              <p><small>szubally.bruno@netacademia.hu</small></p>
-            </div>
-            <!-- about-me -->
-          </Column>
 
-          <Column class="col-8 col-lg-2 col-sm-5 px-lg-0">
-            <div class="about-me">
-              <div class="about-me-thumbnail rounded-circle">
-                <img src="~/assets/kapcsolat/vincze-adam.jpg" alt="Vincze Ádám">
-              </div>
-              <!-- about-me-thumbnail -->
-              <h6>Vincze Ádám</h6>
-              <span>IT technikus</span>
-              <p><small>vincze.adama@netacademia.hu</small></p>
-            </div>
-            <!-- about-me -->
-          </Column>
-
-         
-        </Row>
         <Row class="justify-content-around mb-5">
           <div class="col-8 col-lg-2 col-sm-5 px-lg-0">
             <div class="about-me">
@@ -304,7 +260,7 @@
   .about-me h6 + span {
     display: inline-block;
     margin-bottom: 20px;
-    color: #00f0d1;
+    color: #117ba8;
     font-size: 13px;
   }
 

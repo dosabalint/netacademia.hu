@@ -228,7 +228,8 @@
           <div class="col-md-12">
             <div class="headline text-center no-margin-bottom">
 
-              <h3>Rendelje meg most a NetAcademia Business előfizetését cége számára!</h3>
+              <h3 class="mb-3">Rendelje meg most a NetAcademia Business előfizetését cége számára!</h3>
+              <p>Egyedi ajánlatunkért vedd fel velünk a kapcsolatot a <a href="mailto:sales@netacademia.hu">sales@netacademia.hu</a> e-mail címen!</p>
               <p class="mt-4">
                 <DButton theme="default-outline" class="text-light"
                          :href="`${$store.state.url.backend}/subscription/business`">

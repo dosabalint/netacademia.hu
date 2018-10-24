@@ -379,6 +379,25 @@
 
     </DFullSection>
 
+    <DFullSection theme="smoke">
+      <Container>
+        <Row>
+          <div class="col-md-6 order-2 order-md-1">
+            <img src="~/assets/landing/tanar.svg" alt="">
+          </div>
+          <div class="col-md-6 my-auto order-0 order-md-2">
+            <h2 class="mb-5">Oktatókat keresünk!</h2>
+            <p>A NetAcademia egy online oktatóközpont, tanfolyamainkat elsősorban videós formában kínáljuk.
+              Új és új témakörök oktatásához folyamatosan keresünk oktatókat, illetve egy-egy terület szakembereit.</p>
+              <br>
+              <DButton theme="default-outline" href="https://www.netacademia.hu/oktato/">
+                Részletek <i class="decode-icon-cursor"></i>
+              </DButton>
+          </div>
+        </Row>
+      </Container>
+    </DFullSection>
+
 
     <DFullSection theme="dark">
       <Container>

@@ -11,7 +11,12 @@
         <div class="row justify-content-center">
           <div class="col-md-10 col-lg-8">
 
-            <form @submit="onFormSubmit">
+            <div v-show="!loaded" class="text-center">
+              <!--suppress HtmlUnknownTarget -->
+              <img src="~/assets/loading.gif" alt="">
+            </div>
+
+            <form @submit="onFormSubmit" v-show="loaded">
               <fieldset>
 
                 <!-- contact -->
@@ -184,7 +189,8 @@
           terms: false,
           privacy: false
         },
-        payment: "paypal"
+        payment: "paypal",
+        loaded: false
       };
     },
     computed: {
@@ -213,16 +219,26 @@
 
         // submit
         event.preventDefault();
+        this.loaded = false;
         this.submitOrder().then(
           result => {
-            if (result.OrderUrlCode === this.subscriptionGuid
-              && result.PayPalUrl === null) {
-              this.gotoSuccess();
+
+            // paypal payment
+            if (this.payment === "paypal" && result.PayPalUrl) {
+              this.gotoUrl(result.PayPalUrl);
+              return;
             }
-            console.log(result);
+            // bank transfer payment
+            else if (this.payment !== "paypal" && result.OrderUrlCode === this.subscriptionGuid) {
+              this.gotoSuccess();
+              return;
+            }
+
+            this.gotoFail();
           },
           rejection => {
             console.log(JSON.stringify(rejection));
+            this.gotoFail();
           }
         );
       },
@@ -275,9 +291,12 @@
       gotoSuccess() {
         this.$router.push({ name: "business-subscribe-success" });
       },
-      gotoPaypal() {
-        // this.$router.push({ name: "page-not-found" });
+      gotoFail() {
+        this.$router.push({ name: "business-subscribe-fail" });
       },
+      gotoUrl(url) {
+        location.href = url;
+      }
     },
     created() {
       // validate
@@ -287,6 +306,7 @@
       this.fetchSubscriptionData(this.subscriptionGuid).then(
         data => {
           this.saveSubscriptionData(data);
+          this.loaded = true;
         },
         () => {
           this.goto404();
@@ -296,13 +316,13 @@
   };
 </script>
 
+<!--suppress CssUnknownTarget -->
 <style scoped lang="scss">
   @import "~/scss/decode/components/_buttons.scss";
 
   .bg-indulo {
     overflow: auto;
     height: 300px;
-    /*noinspection CssUnknownTarget*/
     background: #fff url("~/assets/business-megrendeles/indulo-bg.svg") no-repeat;
     background-size: cover;
   }

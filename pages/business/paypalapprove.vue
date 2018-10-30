@@ -1,7 +1,7 @@
 <template>
   <div>
     <DPageHeader asset-image="~/assets/default-header-bg.svg" icon="decode-icon-avatar">
-      <h1>Sikerestelen megrendelés</h1>
+      <h1>Sikeres megrendelés!</h1>
     </DPageHeader>
 
     <section class="full-section" id="section-6">
@@ -11,9 +11,9 @@
         <div class="row justify-content-center">
           <div class="col-md-10 col-lg-8 mb-5">
 
-            <h4 class="mt-0 mb-4">A megrendelés során hiba lépett fel</h4>
+            <h4 class="mt-0 mb-4">Megrendelésed rögzítettük</h4>
 
-            Kérlek jelezd ezt kollégáinknak, hogy javíthassák a hibát.
+            A további lépésekről emailben tájékoztatunk.
 
           </div>
           <!-- col -->
@@ -30,7 +30,7 @@
   import DPageHeader from "~/components/decode/DPageHeader.vue";
 
   export default {
-    name: "business-subscribe-fail",
+    name: "business-paypal-approve",
     layout: "decode",
     components: { DPageHeader },
   };
@@ -43,7 +43,6 @@
   .bg-indulo {
     overflow: auto;
     height: 300px;
-    /*noinspection CssUnknownTarget*/
     background: #fff url("~/assets/business-megrendeles/indulo-bg.svg") no-repeat;
     background-size: cover;
   }

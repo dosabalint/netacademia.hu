@@ -11,9 +11,10 @@
         <div class="row justify-content-center">
           <div class="col-md-10 col-lg-8 mb-5">
 
-            <h4 class="mt-0 mb-4">A megrendelés során hiba lépett fel</h4>
+            <h4 class="mt-0 mb-4">A megrendelés megszakadt</h4>
 
-            Kérlek jelezd ezt kollégáinknak, hogy javíthassák a hibát.
+            Ha újra nekifutnál a megrendelésnek, akkor kattints
+            <nuxt-link :to="{ name: 'business-subscribe', query: { id: $route.query.id } }">ide</nuxt-link>
 
           </div>
           <!-- col -->
@@ -30,9 +31,13 @@
   import DPageHeader from "~/components/decode/DPageHeader.vue";
 
   export default {
-    name: "business-subscribe-fail",
+    name: "business-paypal-failed",
     layout: "decode",
     components: { DPageHeader },
+    created() {
+      // validate
+      if (!this.$route.query.id) this.$router.push({ name: "page-not-found" });
+    }
   };
 </script>
 
@@ -43,7 +48,6 @@
   .bg-indulo {
     overflow: auto;
     height: 300px;
-    /*noinspection CssUnknownTarget*/
     background: #fff url("~/assets/business-megrendeles/indulo-bg.svg") no-repeat;
     background-size: cover;
   }

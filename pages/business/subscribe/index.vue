@@ -165,7 +165,7 @@
   import DPageHeader from "~/components/decode/DPageHeader.vue";
 
   export default {
-    name: "vorosszonyeg",
+    name: "business-subscribe",
     layout: "decode",
     components: { DPageHeader },
     data() {

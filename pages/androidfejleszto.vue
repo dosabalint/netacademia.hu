@@ -143,8 +143,8 @@
             </div>
           </div>
           <div align="center">
-            <h2>Ultimate kedvezmény</h2>
-            <p class="mt-4">Tudtad, hogy ha Ultimate-előfizetést veszel, ennek a tanfolyamcsomagnak az ára két hónapig beszámít az előfizetés árába?</p>
+            <h2>Business kedvezmény</h2>
+            <p class="mt-4">Tudtad, hogy ha Business-előfizetést veszel, ennek a tanfolyamcsomagnak az ára két hónapig beszámít az előfizetés árába?</p>
           </div>
         </div>
       </div>

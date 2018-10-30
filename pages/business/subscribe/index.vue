@@ -128,6 +128,7 @@
                   <thead>
                   <tr>
                     <th scope="col">Előfizetés típusa</th>
+                    <th scope="col">Egységár</th>
                     <th scope="col">Darabszám</th>
                     <th scope="col">Összeg</th>
                   </tr>
@@ -135,8 +136,9 @@
                   <tbody>
                   <tr>
                     <th scope="row">{{ order.subscriptionType }}</th>
+                    <td>{{ order.price }} Ft + Áfa</td>
                     <td>{{ order.amount }}</td>
-                    <td>{{ order.price }} Ft</td>
+                    <td>{{ order.totalPrice }} Ft + Áfa</td>
                   </tr>
                   </tbody>
                 </table>
@@ -266,6 +268,7 @@
         this.order.subscriptionType = data.Order.SubscriptionType;
         this.order.price = data.Order.Price.toLocaleString();
         this.order.amount = data.Order.Amount;
+        this.order.totalPrice = (data.Order.Amount * data.Order.Price).toLocaleString();
       },
       submitOrder() {
         const postData = {

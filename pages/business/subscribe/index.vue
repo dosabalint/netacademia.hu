@@ -128,16 +128,12 @@
                   <thead>
                   <tr>
                     <th scope="col">Előfizetés típusa</th>
-                    <th scope="col">Egységár</th>
-                    <th scope="col">Darabszám</th>
                     <th scope="col">Összeg</th>
                   </tr>
                   </thead>
                   <tbody>
                   <tr>
-                    <th scope="row">{{ order.subscriptionType }}</th>
-                    <td>{{ order.price }} Ft + Áfa</td>
-                    <td>{{ order.amount }}</td>
+                    <th scope="row">{{ order.subscriptionType }} ({{ order.amount }} darab)</th>
                     <td>{{ order.totalPrice }} Ft + Áfa</td>
                   </tr>
                   </tbody>
@@ -260,7 +256,7 @@
         // billing
         this.billing.name = data.Invoice.Name;
         this.billing.city = data.Invoice.City;
-        this.billing.address = data.Invoice.Address;
+        this.billing.address = data.Invoice.Street;
         this.billing.zipCode = data.Invoice.ZIP;
         this.billing.taxNumber = data.Invoice.TaxNumber;
 

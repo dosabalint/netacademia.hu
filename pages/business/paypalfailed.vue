@@ -13,8 +13,15 @@
 
             <h4 class="mt-0 mb-4">A megrendelés megszakadt</h4>
 
-            Ha újra nekifutnál a megrendelésnek, akkor kattints
-            <nuxt-link :to="{ name: 'business-subscribe', query: { id: $route.query.id } }">ide</nuxt-link>
+            <nuxt-link :to="{ name: 'business-subscribe', query: { id: orderId } }"
+                       class="btn btn-default btn-outline waves waves-dark">
+              Újra próbálkozok
+            </nuxt-link>
+
+            <nuxt-link to="/"
+                       class="btn btn-default btn-outline waves waves-dark">
+              Mégse
+            </nuxt-link>
 
           </div>
           <!-- col -->
@@ -34,9 +41,22 @@
     name: "business-paypal-failed",
     layout: "decode",
     components: { DPageHeader },
+    data() {
+      return {
+        orderId: null
+      };
+    },
     created() {
       // validate
       if (!this.$route.query.id) this.$router.push({ name: "page-not-found" });
+
+      // fetch paypal url
+      this.$axios.get(`api/v1/Subscription/PayPalFailed/${this.$route.query.id}`)
+        .then(response => response.data)
+        .then(response => response.orderUrl)
+        .then(orderId => {
+          this.orderId = orderId;
+        });
     }
   };
 </script>

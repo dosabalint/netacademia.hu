@@ -13,7 +13,13 @@
 
             <h4 class="mt-0 mb-4">A megrendelés során hiba lépett fel</h4>
 
-            Kérlek jelezd ezt kollégáinknak, hogy javíthassák a hibát.
+            <div v-if="$route.query.id === '404'">
+              Nem található a rendszerben olyan megrendelés amit fizetnél éppen.
+            </div>
+
+            <div v-else>
+              Kérlek jelezd ezt kollégáinknak, hogy javíthassák a hibát.
+            </div>
 
           </div>
           <!-- col -->

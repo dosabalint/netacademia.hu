@@ -51,7 +51,7 @@
       if (!this.$route.query.id) this.$router.push({ name: "page-not-found" });
 
       // fetch paypal url
-      this.$axios.get(`api/v1/Subscription/PayPalFailed/${this.$route.query.id}`)
+      this.$axios.get(`/api/v1/Subscription/PayPalFailed/${this.$route.query.id}`)
         .then(response => response.data)
         .then(response => response.orderUrl)
         .then(orderId => {

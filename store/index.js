@@ -17,7 +17,8 @@ export const state = () => ({
     categories: "/api/Courses/1.0.0/PublicCategories",
     videos: "/api/v1/Videos",
     videosPopup: "/api/v1/Videos/Player",
-    vimeoPlayer: "https://player.vimeo.com/video"
+    vimeoPlayer: "https://player.vimeo.com/video",
+    tudastarLast10VideosUrl: "https://europe-west1-tudastar-mvp.cloudfunctions.net/publicPage/videos"
   }
 });
 

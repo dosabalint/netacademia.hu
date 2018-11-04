@@ -31,8 +31,8 @@
             </DHeadline>
           </Column>
           <Column class="col">
-              <DSuperPowerList :courses="this.coursesCommingSoon" :displayStartDate="false">
-              </DSuperPowerList>
+            <DSuperPowerList :courses="this.coursesCommingSoon" :displayStartDate="false">
+            </DSuperPowerList>
           </Column>
         </Container>
       </Container>
@@ -48,8 +48,8 @@
             </DHeadline>
           </Column>
           <Column class="col">
-              <DTTLast10 :videos="tudastar">
-              </DTTLast10>
+            <DTTLast10 :videos="tudastar">
+            </DTTLast10>
           </Column>
         </Container>
       </Container>
@@ -100,18 +100,15 @@
       });
     },
     async mounted() {
-      this.tudastar = await this.$axios.$get(this.$store.state.url.tudastarLast10VideosUrl);
+      const [tt, courses] = await Promise.all([
+        this.$axios.$get(this.$store.state.url.tudastarLast10VideosUrl),
+        this.$axios
+          .$get(`${this.$store.state.url.backend}${ this.$store.state.url.commingSoonCourses }`)
+          .catch(console.warn)
+        ]);
 
-      await this.$axios
-        .$get(
-          `${this.$store.state.url.backend}${
-            this.$store.state.url.commingSoonCourses
-            }`
-        )
-        .then(r => {
-          this.courses = r;
-        })
-        .catch(console.warn);
+      this.tudastar = tt;
+      this.courses = courses;
     }
   };
 </script>

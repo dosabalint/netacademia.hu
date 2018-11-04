@@ -37,6 +37,23 @@
         </Container>
       </Container>
     </DFullSection>
+
+    <DFullSection theme="light">
+      <Container class="py-5">
+        <Container class="row justify-content-center">
+          <Column class="col-md-12">
+            <DHeadline class="text-center">
+              <h6>NetAcademia</h6>
+              <h3 class="pb-5">Tudástár videóink</h3>
+            </DHeadline>
+          </Column>
+          <Column class="col">
+              <DTTLast10 :videos="tudastar">
+              </DTTLast10>
+          </Column>
+        </Container>
+      </Container>
+    </DFullSection>
   </div>
 </template>
 
@@ -48,6 +65,7 @@
   import DFullSection from "@/components/decode/DFullSection";
   import DHeadline from "@/components/decode/DHeadline";
   import DSuperPowerList from "@/components/decode/DSuperPowerList";
+  import DTTLast10 from "@/components/decode/DTTLast10";
 
   export default {
     name: "indulotanfolyamok",
@@ -59,11 +77,13 @@
       Row,
       Container,
       Column,
-      DPageHeader
+      DPageHeader,
+      DTTLast10
     },
     data() {
       return {
-        courses: []
+        courses: [],
+        tudastar: []
       };
     },
     computed: {
@@ -80,6 +100,8 @@
       });
     },
     async mounted() {
+      this.tudastar = await this.$axios.$get(this.$store.state.url.tudastarLast10VideosUrl);
+
       await this.$axios
         .$get(
           `${this.$store.state.url.backend}${

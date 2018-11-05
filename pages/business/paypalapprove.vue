@@ -1,7 +1,7 @@
 <template>
   <div>
     <DPageHeader asset-image="~/assets/default-header-bg.svg" icon="decode-icon-avatar">
-      <h1>Sikeres megrendelés!</h1>
+      <h1>Megrendelés rögzítése folyamatban</h1>
     </DPageHeader>
 
     <section class="full-section" id="section-6">
@@ -11,9 +11,8 @@
         <div class="row justify-content-center">
           <div class="col-md-10 col-lg-8 mb-5">
 
-            <h4 class="mt-0 mb-4">Megrendelésed rögzítettük</h4>
-
-            A további lépésekről emailben tájékoztatunk.
+            <!--suppress HtmlUnknownTarget -->
+            <img src="~/assets/loading.gif" alt="">
 
           </div>
           <!-- col -->

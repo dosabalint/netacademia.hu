@@ -168,8 +168,7 @@
       return {
         order: {
           subscriptionType: "",
-          price: 0,
-          amount: 0
+          totalPrice: 0
         },
         contact: {
           name: "",
@@ -262,9 +261,8 @@
 
         // order
         this.order.subscriptionType = data.Order.SubscriptionType;
-        this.order.price = data.Order.Price.toLocaleString();
         this.order.amount = data.Order.Amount;
-        this.order.totalPrice = (data.Order.Amount * data.Order.Price).toLocaleString();
+        this.order.totalPrice = data.SumPrice.toLocaleString();
       },
       submitOrder() {
         const postData = {

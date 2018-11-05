@@ -32,7 +32,7 @@
     name: "business-paypal-approve",
     layout: "decode",
     components: { DPageHeader },
-    created() {
+    mounted() {
       this.$axios.post(`/api/v1/Subscription/PayPalApprove?id=${this.$route.query.id}&payerId=${this.$route.query.PayerID}`)
         .then(response => {
           if (response.status === 200) this.$router.push({ name: "business-subscribe-success" });

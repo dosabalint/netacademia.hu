@@ -357,8 +357,9 @@ export default {
 };
 </script>
 
+<!--suppress CssUnknownTarget -->
 <style lang="scss">
-@import "../scss/decode/components/logos-list";
-@import "../scss/decode/components/headline";
-@import "../scss/decode/pages/services";
+@import "~/scss/decode/components/_logos-list.scss";
+@import "~/scss/decode/components/_headline.scss";
+@import "~/scss/decode/pages/_services.scss";
 </style>

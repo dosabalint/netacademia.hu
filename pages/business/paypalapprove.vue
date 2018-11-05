@@ -9,7 +9,7 @@
       <div class="container">
 
         <div class="row justify-content-center">
-          <div class="col-md-10 col-lg-8 mb-5">
+          <div class="col-md-10 col-lg-8 mb-5 text-center">
 
             <!--suppress HtmlUnknownTarget -->
             <img src="~/assets/loading.gif" alt="">
@@ -32,7 +32,7 @@
     name: "business-paypal-approve",
     layout: "decode",
     components: { DPageHeader },
-    created() {
+    mounted() {
       this.$axios.post(`/api/v1/Subscription/PayPalApprove?id=${this.$route.query.id}&payerId=${this.$route.query.PayerID}`)
         .then(response => {
           if (response.status === 200) this.$router.push({ name: "business-subscribe-success" });

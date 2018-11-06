@@ -23,7 +23,7 @@
                      data-transform_in="o:0;y:-50;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
                 >
-                  December 20-ig ismét <br> elérhető Ultimate előfizetésünk
+                  Jövőre 200 tanfolyammal kevesebb <br>lesz az előfizetésben, mint idén!
                 </div>
 
                 <div class="tp-caption large-title tp-resizeme"
@@ -41,7 +41,7 @@
                      data-transform_in="o:0;x:100;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:-100;s:400;e:Power2.easeInOut;"
                 >
-                  Jövőre 200 tanfolyammal kevesebb <br>lesz az előfizetésben, mint idén!
+                  December 20-ig ismét <br> elérhető Ultimate előfizetésünk
                 </div>
 
                 <div class="tp-caption tp-resizeme"
@@ -86,14 +86,23 @@
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
                      data-voffset="['200', '250', '260', '180']"
+                     data-fontsize="['20', '20', '20', '18']"
+                     data-lineheight="['36', '32', '32', '24']"
+                     data-whitespace="['nowrap', 'normal', 'normal', 'normal']"
+                     data-width="450"
+                     data-color="white"
                      data-start="1400"
                      data-speed="300"
                      data-transform_in="o:0;y:100;s:500;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:100;s:500;e:Power2.easeInOut;"
                 >
-                  <DButton theme="white-outline" href="http://netacademia.hu/subscription/create" class="text-dark bg-light">
+
+                Ez a változás mindhárom előfizetési rendszerünket érinti: <br>
+                <a href="https://app.netacademia.hu/subscription/create" class="text-warning lead font-weight-bold"> Ulitmate</a>, <a href="https://www.netacademia.hu/business" class="text-warning lead font-weight-bold"><b>Business</b></a> és <a href="https://app.netacademia.hu/cafeteria" class="text-warning lead font-weight-bold"><b>Cafeteria</b></a>
+
+                  <!--<DButton theme="white-outline" href="http://netacademia.hu/subscription/create" class="text-dark bg-light">
                     Megveszem<i class="ml-2 decode-icon-cursor"></i>
-                  </DButton>
+                  </DButton> -->
                 </div>
 
             <div class="tp-caption navigation"

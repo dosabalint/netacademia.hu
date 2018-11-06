@@ -5,137 +5,34 @@
         <div class="rev_slider_wrapper">
           <div class="rev_slider" data-version="5.0">
             <ul>
-              <li data-transition="fade">
-                <img src="~/assets/landing/business-bg.svg" alt="">
 
-                <div class="tp-caption text-special"
+
+              <li data-transition="fade">
+
+                <img src="~/assets/landing/ultimate_bg.png" alt="">
+
+                <div class="tp-caption large-title"
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', -150', -150', 0']"
-                     data-voffset="['-200', '-240', '-240', '-200']"
-                     data-fontsize="['20', '20', '20', '18']"
-                     data-lineheight="['32', '32', '32', '24']"
+                     data-voffset="['-140', '-180', '-180', '-180']"
+                     data-fontsize="['40', '35', '35', '25']"
+                     data-lineheight="['50', '45', '45', '40']"
                      data-start="1500"
                      data-speed="300"
                      data-transform_in="o:0;y:-50;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
                 >
-                  NetAcademia - online oktatás bárhol, bármikor
-                </div>
-
-                <div class="tp-caption large-title tp-resizeme"
-                data-x="['580', '200', '30', '10']"
-                data-y="middle"
-                data-hoffset="['-150', '-150', '-150', '0']"
-                data-voffset="['-150', '-180', '-180', '-150']"
-                data-fontsize="['50', '40', '40', '40']"
-                data-lineheight="['55', '45', '45', '40']"
-                data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
-                data-width="450"
-                data-color="orange"
-                data-start="1200"
-                data-speed="300"
-                data-transform_in="o:0;x:100;s:400;e:Power2.easeInOut;"
-                data-transform_out="o:0;y:-100;s:400;e:Power2.easeInOut;"
-                >
-                  Business előfizetés <br>
-                </div>
-
-                <div class="tp-caption tp-resizeme"
-                     data-x="['580', '200', '30', '10']"
-                     data-y="middle"
-                     data-hoffset="['-100', '-150', '-150', '0']"
-                     data-voffset="['30', '5', '0', '-10']"
-                     data-fontsize="['24', '20', '22', '18']"
-                     data-lineheight="['40', '32', '32', '24']"
-                     data-whitespace="['nowrap', 'normal', 'normal', 'normal']"
-                     data-width="450"
-                     data-color="white"
-                     data-start="1300"
-                     data-speed="300"
-                     data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
-                     data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
-                >
-                Képezd munkatársaidat anélkül, hogy <br> napokra kiesnének a munkából!<br> <br>
-                Gyakorlatias online tanfolyamaink széles portfóliója <br>
-                lehetővé teszi, hogy minden terület dolgozója megtalálja a <br>
-                számára hasznos előadásokat! <br>
-
-
-                </div>
-
-                <!--<div class="tp-caption small-text tp-resizeme"
-                   data-x="['580', '200', '30', '10']"
-                   data-y="middle"
-                   data-hoffset="['-150', '-150', '-150', '0']"
-                   data-voffset="['70', '70', '70', '70']"
-                   data-fontsize="['14', '14', '14', '14']"
-                   data-lineheight="['18', '18', '24', '18']"
-                   data-start="1300"
-                   data-speed="300"
-                   data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
-                   data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
-              >
-              Jelen hirdetmény nem vonatkozik a külön megállapodásban elérhető <br> előfizetésekre, pl.
-                informatikatanárok vagy Telekom
-              </div> -->
-
-                <div class="tp-caption tp-resizeme"
-                     data-x="['580', '200', '30', '10']"
-                     data-y="middle"
-                     data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['210', '190', '200', '150']"
-                     data-start="1400"
-                     data-speed="300"
-                     data-transform_in="o:0;y:100;s:500;e:Power2.easeInOut;"
-                     data-transform_out="o:0;y:100;s:500;e:Power2.easeInOut;"
-                >
-                  <DButton theme="white-outline" href="https://www.netacademia.hu/business/" class="text-dark bg-light">
-                    Részletek<i class="ml-2 decode-icon-cursor"></i>
-                  </DButton>
-                </div>
-
-                <div class="tp-caption navigation"
-                     data-x="center"
-                     data-y="middle"
-                     data-hoffset="['600', '400', '200', '150']"
-                     data-voffset="['400', '400', '400', '400']"
-                     data-start="0"
-                     data-speed="300"
-                     data-transform_in="o:0;s:500;e:Power2.easeInOut;"
-                     data-transform_out="o:0;s:500;e:Power2.easeInOut;"
-                >
-                  <span>01</span>/02
-                </div>
-
-              </li>
-
-              <li data-transition="fade">
-
-                <img src="~/assets/landing/bg-2-v3.svg" alt="">
-
-                <div class="tp-caption text-special"
-                     data-x="['580', '200', '30', '10']"
-                     data-y="middle"
-                     data-hoffset="['-150', -150', -150', 0']"
-                     data-voffset="['-240', '-180', '-180', '-180']"
-                     data-fontsize="['20', '20', '20', '18']"
-                     data-lineheight="['32', '32', '32', '24']"
-                     data-start="1500"
-                     data-speed="300"
-                     data-transform_in="o:0;y:-50;s:400;e:Power2.easeInOut;"
-                     data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
-                >
-                  NetAcademia - online oktatás bárhol, bármikor
+                  December 20-ig ismét <br> elérhető Ultimate előfizetésünk
                 </div>
 
                 <div class="tp-caption large-title tp-resizeme"
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['-180', '-130', '-130', '-140']"
-                     data-fontsize="['33', '30', '30', '30']"
-                     data-lineheight="['55', '45', '45', '40']"
+                     data-voffset="['-22', '-80', '-80', '-80']"
+                     data-fontsize="['25', '20', '20', '20']"
+                     data-lineheight="['40', '35', '35', '30']"
                      data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
                      data-width="450"
                      data-color="white"
@@ -144,17 +41,17 @@
                      data-transform_in="o:0;x:100;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:-100;s:400;e:Power2.easeInOut;"
                 >
-                  Gyakorlatias online oktatás!
+                  Jövőre 200 tanfolyammal kevesebb <br>lesz az előfizetésben, mint idén!
                 </div>
 
                 <div class="tp-caption tp-resizeme"
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['-30', '5', '5', '5']"
+                     data-voffset="['90', '90', '90', '40']"
                      data-fontsize="['20', '20', '20', '18']"
                      data-lineheight="['36', '32', '32', '24']"
-                     data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
+                     data-whitespace="['nowrap', 'normal', 'normal', 'normal']"
                      data-width="450"
                      data-color="white"
                      data-start="1300"
@@ -162,11 +59,9 @@
                      data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
                 >
-                Tanuld azt amit szeretnél, akkor és ott, ahol csak szeretnéd!<br>
-                Tegyél szert online, a saját tempódban azokra az ismeretekre
-                és készségekre,<br> mellyekkel előremozdíthatod karrieredet.<br>
-                Oktatóanyagaink segítségével óriási sikereket érhetsz <br>
-                el az élet számos területén!<br>
+                Hihetetlen akcióval készülünk az ég végére: aki december 20-ig előfizet,<br>
+                az hozzáfér az összes, 350-nél is több tanfolyamunkhoz az előfizetése végéig!<br>
+                December 20 után az egyedi tanfolyamok ismét a saját áraikon lesznek kaphatók!<br>
                 </div>
 
 
@@ -190,18 +85,18 @@
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['120', '150', '160', '170']"
+                     data-voffset="['200', '250', '260', '180']"
                      data-start="1400"
                      data-speed="300"
                      data-transform_in="o:0;y:100;s:500;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:100;s:500;e:Power2.easeInOut;"
                 >
-                  <DButton theme="white-outline" href="https://app.netacademia.hu/Account/Register?returnUrl=https://www.netacademia.hu/" class="text-dark bg-light">
-                    Regisztrálok!<i class="ml-2 decode-icon-cursor"></i>
+                  <DButton theme="white-outline" href="http://netacademia.hu/subscription/create" class="text-dark bg-light">
+                    Megveszem<i class="ml-2 decode-icon-cursor"></i>
                   </DButton>
                 </div>
 
-                <div class="tp-caption navigation"
+            <div class="tp-caption navigation"
                      data-x="center"
                      data-y="middle"
                      data-hoffset="['600', '400', '200', '150']"

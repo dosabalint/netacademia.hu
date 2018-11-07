@@ -1,7 +1,7 @@
 <template>
   <div>
     <DPageHeader asset-image="~/assets/default-header-bg.svg" icon="decode-icon-avatar">
-      <h1>{{ order.subscriptionType }}</h1>
+      <h1 v-show="loaded">{{ order.subscriptionType }}<br> árajánlat - megrendelés</h1>
     </DPageHeader>
 
     <section class="full-section" id="section-6">

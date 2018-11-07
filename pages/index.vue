@@ -319,13 +319,13 @@
         <Row id="reszletek">
           <Column class="col-12 mb-3">
             <DHeadline class="text-left">
-              <h3 class="mb-4">NetAcademia Bussiness</h3>
+              <h3 class="mb-4">NetAcademia Business</h3>
             </DHeadline>
           </Column>
 
           <Column class="col-lg-6 mr-xl-auto pr-5">
 
-            <p><b>Vállalati</b> ügyfeleink számára mostantól elérhető a <b>NetAcademia Bussiness előfizetés</b>, melyet
+            <p><b>Vállalati</b> ügyfeleink számára mostantól elérhető a <b>NetAcademia Business előfizetés</b>, melyet
               a legfontosabb vállalati szempontok alapján alakítottunk ki:</p>
 
             <ul class="check-list">

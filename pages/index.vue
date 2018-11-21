@@ -9,21 +9,22 @@
 
               <li data-transition="fade">
 
-                <img src="~/assets/landing/ultimate_bg.png" alt="">
+                <img src="~/assets/landing/blackf-bg.png" alt="">
 
                 <div class="tp-caption large-title"
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', -150', -150', 0']"
-                     data-voffset="['-140', '-180', '-180', '-180']"
-                     data-fontsize="['40', '35', '35', '25']"
+                     data-voffset="['-160', '-180', '-220', '-240']"
+                     data-fontsize="['90', '90', '90', '60']"
                      data-lineheight="['50', '45', '45', '40']"
                      data-start="1500"
                      data-speed="300"
                      data-transform_in="o:0;y:-50;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
+                     data-color="red"
                 >
-                  Jövőre 200 tanfolyammal kevesebb <br>lesz az előfizetésben, mint idén!
+                  BLACK FRIDAY
                 </div>
 
                 <div class="tp-caption large-title tp-resizeme"
@@ -31,8 +32,8 @@
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
                      data-voffset="['-22', '-80', '-80', '-80']"
-                     data-fontsize="['25', '20', '20', '20']"
-                     data-lineheight="['40', '35', '35', '30']"
+                     data-fontsize="['30', '24', '24', '22']"
+                     data-lineheight="['40', '40', '40', '30']"
                      data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
                      data-width="450"
                      data-color="white"
@@ -41,17 +42,18 @@
                      data-transform_in="o:0;x:100;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:-100;s:400;e:Power2.easeInOut;"
                 >
-                  December 20-ig ismét <br> elérhető Ultimate előfizetésünk
+                  Legyen  Tiéd  NetAcademia előfizetésünk november  <br>
+                  23-án éjfélig <del>119.900 Ft</del> helyett csak 49.900 Ft-ért!
                 </div>
 
                 <div class="tp-caption tp-resizeme"
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['90', '90', '90', '40']"
-                     data-fontsize="['20', '20', '20', '18']"
-                     data-lineheight="['36', '32', '32', '24']"
-                     data-whitespace="['nowrap', 'normal', 'normal', 'normal']"
+                     data-voffset="['90', '50', '50', '40']"
+                     data-fontsize="['25', '24', '24', '22']"
+                     data-lineheight="['36', '40', '40', '30']"
+                     data-whitespace="['nowrap', 'normal', 'nowrap', 'normal']"
                      data-width="450"
                      data-color="white"
                      data-start="1300"
@@ -59,9 +61,7 @@
                      data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
                 >
-                Hihetetlen akcióval készülünk az ég végére: aki december 20-ig előfizet,<br>
-                az hozzáfér az összes, 350-nél is több tanfolyamunkhoz az előfizetése végéig!<br>
-                December 20 után az egyedi tanfolyamok ismét a saját áraikon lesznek kaphatók!<br>
+                Csomagunk minden képzésünket <br> korlátlanul elérhetővé teszi egy éven át.
                 </div>
 
 
@@ -85,8 +85,8 @@
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['200', '250', '260', '180']"
-                     data-fontsize="['20', '20', '20', '18']"
+                     data-voffset="['200', '200', '200', '160']"
+                     data-fontsize="['30', '20', '20', '18']"
                      data-lineheight="['36', '32', '32', '24']"
                      data-whitespace="['nowrap', 'normal', 'normal', 'normal']"
                      data-width="450"
@@ -97,12 +97,9 @@
                      data-transform_out="o:0;y:100;s:500;e:Power2.easeInOut;"
                 >
 
-                Ez a változás mindhárom előfizetési rendszerünket érinti: <br>
-                <a href="https://app.netacademia.hu/subscription/create" class="text-warning lead font-weight-bold"> Ulitmate</a>, <a href="https://www.netacademia.hu/business" class="text-warning lead font-weight-bold"><b>Business</b></a> és <a href="https://app.netacademia.hu/cafeteria" class="text-warning lead font-weight-bold"><b>Cafeteria</b></a>
-
-                  <!--<DButton theme="white-outline" href="http://netacademia.hu/subscription/create" class="text-dark bg-light">
+                  <DButton theme="white-outline" href="https://app.netacademia.hu/subscription/create" class="text-light" style="background-color: red; font-size: 20px;">
                     Megveszem<i class="ml-2 decode-icon-cursor"></i>
-                  </DButton> -->
+                  </DButton>
                 </div>
 
             <div class="tp-caption navigation"

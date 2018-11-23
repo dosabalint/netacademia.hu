@@ -15,7 +15,6 @@
         <p>Cégjegyzékszám: 01-09-868776</p>
         <p>Nyilvántartja: Fővárosi Törvényszék Cégbírósága</p>
         <p>Elektronikus levélcím:&nbsp;<a href="mailto:iroda@netacademia.net">iroda@netacademia.net</a></p>
-        <p>Telefonszám: +36 21 200 6960</p>
         <ol>
           <li><strong>2.&nbsp;&nbsp;&nbsp;</strong>&nbsp;<strong>A SZOLGÁLTATÁS ÁLTALÁNOS BEMUTATÁSA</strong></li>
         </ol>
@@ -388,7 +387,6 @@
         <p>Adminisztratív ügyek: iroda@netacademia.net</p>
         <p>Technikai segítség: support@netacademia.hu</p>
         <p>Posta cím: 1074 Budapest, Rákóczi út 70-72. T3 torony, 1. emelet</p>
-        <p>Telefon:&nbsp;+36 20 385 3332, +36 21 200 6960</p>
         <p>&nbsp;</p>
         <ol>
           <li><strong>13.&nbsp;</strong>&nbsp;<strong>&nbsp;JOGÉRVÉNYESÍTÉS, VITARENDEZÉS</strong></li>

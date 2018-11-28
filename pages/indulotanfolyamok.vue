@@ -4,7 +4,7 @@
       asset-image="~/assets/default-header-bg.svg"
       icon="decode-icon-time"
     >
-      <h1>Folyamatban lévő és hamarosan induló tanfolyamaink</h1>
+      <h1>Friss tanfolyamok</h1>
     </DPageHeader>
     <Container class="py-5">
       <Row class="justify-content-center">

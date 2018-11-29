@@ -8,9 +8,6 @@
             {{ c.title }}
           </li>
         </Column>
-        <div v-if="c.dateColumn" class="col text-sm-center">
-          <p>{{c.dateColumn}}</p>
-        </div>
       </Row>
     </a>
   </ul>

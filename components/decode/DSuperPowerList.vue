@@ -2,10 +2,7 @@
   <ul class="superpower-list">
     <a v-for="c in courses" :key="c.code" :href="`${$store.state.url.backend}/${c.userfriedlyURL}`" class="text-dark">
       <Row class="justify-content-center">
-        <Column class="col-sm-6"
-                data-toggle="tooltip" data-placement="right"
-                data-html="true"
-                :title="`<h6>${c.title}</h6> <p> ${c.categoryTitle} </p> <p>Oktatók: ${c.trainerNames} </p>` + (displayStartDate ? `<p>Tanfolyam kezdete: ${new Date(c.startDate).toLocaleDateString('hu-HU')}</p>` : '')">
+        <Column class="col-sm-6">
           <li>
             <fa :icon="['fab', 'superpowers']" :style="{ color: iconColor(c)}"/>
             {{ c.title }}
@@ -37,9 +34,9 @@ export default {
     }
   },
   updated() {
-    this.$nextTick(() => {
-      $('[data-toggle="tooltip"]').tooltip();
-    });
+    // this.$nextTick(() => {
+    //   $('[data-toggle="tooltip"]').tooltip();
+    // });
   },
   methods: {
     iconColor(course) {

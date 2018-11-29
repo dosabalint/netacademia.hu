@@ -16,7 +16,6 @@
     </a>
   </ul>
 </template>
-f2dd
 <script>
   import Row from "@/components/base/Row";
   import Column from "@/components/base/Column";

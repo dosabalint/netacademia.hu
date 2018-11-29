@@ -11,10 +11,11 @@
         <Column class="col-md-12">
           <DHeadline class="pb-4 text-center">
             <h6>NetAcademia</h6>
-            <h3 class="mb-4">Folyamatban lévő tanfolyamaink</h3>
+            <h3 class="mb-4">Legfrissebb tanfolyamaink</h3>
           </DHeadline>
         </Column>
         <Column class="col">
+          <h4 class="text-center">Itt nemsokára izgalmas újdonság jön! ;)</h4>
           <DSuperPowerList :courses="this.coursesInProgress">
           </DSuperPowerList>
         </Column>

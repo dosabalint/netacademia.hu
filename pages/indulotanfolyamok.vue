@@ -15,7 +15,6 @@
           </DHeadline>
         </Column>
         <Column class="col">
-          <h4 class="text-center">Itt nemsokára izgalmas újdonság jön! ;)</h4>
           <DSuperPowerList :courses="this.coursesInProgress">
           </DSuperPowerList>
         </Column>

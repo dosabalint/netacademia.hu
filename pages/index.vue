@@ -9,6 +9,7 @@
 
               <li data-transition="fade">
 
+
                 <img src="~/assets/landing/mikulas-bg-2.png" alt="">
 
                 <div class="tp-caption large-title"
@@ -22,7 +23,6 @@
                      data-speed="300"
                      data-transform_in="o:0;y:-50;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
-                     data-color="red"
                 >
                   Lekésted a Black Friday akciót?
                 </div>
@@ -42,7 +42,9 @@
                      data-transform_in="o:0;x:100;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:-100;s:400;e:Power2.easeInOut;"
                 >
+
                   Sebaj, mert Mikulás napjának alkalmából <br> december 6-án reggeltől éjfélig <br> az előfizetés 49.000 Ft + áfa
+
                 </div>
 
                 <!-- <div class="tp-caption tp-resizeme"
@@ -62,6 +64,7 @@
                 >
                 Hihetetlen akcióval készülünk az ég végére: aki december 20-ig előfizet,<br>
                 az hozzáfér az összes, 350-nél is több tanfolyamunkhoz az előfizetése végéig!<br>
+
                 December 20 után az egyedi tanfolyamok ismét a saját áraikon lesznek kaphatók!
               </div> -->
 
@@ -69,7 +72,9 @@
                      data-x="['580', '200', '180', '10']"
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
+
                      data-voffset="['150', '100', '100', '100']"
+
                      data-fontsize="['20', '20', '20', '18']"
                      data-lineheight="['36', '32', '32', '24']"
                      data-whitespace="['nowrap', 'normal', 'normal', 'normal']"
@@ -82,9 +87,7 @@
                 >
 
                   <DButton theme="white-outline" href="https://app.netacademia.hu/Subscription/create?utm_source=NetAcademia+levlista&utm_campaign=e9ca62c1e8-EMAIL_CAMPAIGN_2018_09_18_12_58_COPY_01&utm_medium=email&utm_term=0_557a0691a4-e9ca62c1e8-285585821" class="text-light" style="background-color: red; font-size: 20px;">
-                    Megveszem<i class="ml-2 decode-icon-cursor"></i>
-                  </DButton>
-                </div>
+
 
             <div class="tp-caption navigation"
                      data-x="center"
@@ -101,7 +104,6 @@
                   ------
 
                 <!--<img src="~/assets/landing/new-index-bg-2.svg" alt="">
-
                 <div class="tp-caption"
                      data-x="-170"
                      data-y="center"
@@ -114,7 +116,6 @@
                      data-mask_out="x:0;y:0;">
                   <img src="~/assets/landing/pic-1.png" alt="">
                 </div>
-
                 <div class="tp-caption tp-resizeme"
                      data-x="['265', '500', '400', '265']"
                      data-y="center"
@@ -127,7 +128,6 @@
                      data-mask_out="x:0;y:0;">
                   <img src="~/assets/landing/pic-2.png" alt="">
                 </div>
-
                 <div class="tp-caption large-title-2"
                      data-x="['580', '200', '30', '10']"
                      data-y="center"
@@ -144,7 +144,6 @@
                 >
                   Gyakorlatias online oktatás
                 </div>
-
                 <div class="tp-caption text"
                      data-x="['580', '200', '30', '10']"
                      data-y="center"
@@ -164,7 +163,6 @@
                   Oktatóanyagaink segítségével óriási sikereket érhetsz <br>
                   el az élet számos területén! <br>
                 </div>
-
                 <div class="tp-caption tp-resizeme"
                      data-x="['580', '200', '30', '10']"
                      data-y="center"
@@ -180,7 +178,6 @@
                     Ingyenes regisztráció<i class="ml-2 decode-icon-cursor"></i>
                   </DButton>
                 </div>
-
                 <div class="tp-caption navigation"
                      data-x="center"
                      data-y="middle"
@@ -420,7 +417,6 @@
   import DButton from "@/components/decode/DButton";
   import BouncingDownArrow from "@/components/BouncingDownArrow";
   import Navigation from "@/components/Navigation";
-
   export default {
     name: "landing",
     components: {
@@ -507,7 +503,6 @@
         responsiveLevels: [1240, 1024, 778, 480],
         gridwidth: [1240, 1024, 778, 480],
         gridheight: [1000, 768, 800, 720],
-
         /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
         visibilityLevels: [1240, 1024, 1024, 480]
         // gridwidth: 1170,
@@ -538,7 +533,6 @@
     height: 100vh;
     background-color: #232C3D;
   }
-
   /* ARROWS */
   .tp-leftarrow.custom,
   .tp-rightarrow.custom {
@@ -550,23 +544,18 @@
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
   }
-
   .tparrows.custom:before {
     line-height: 36px;
   }
-
   .tp-leftarrow.custom:hover,
   .tp-rightarrow.custom:hover {
     background-color: #00f0d1;
     opacity: 1;
   }
-
   .tp-leftarrow.custom {
   }
-
   .tp-rightarrow.custom {
   }
-
   /* BULLETS */
   .tp-bullets.custom .tp-bullet {
     width: 7px;
@@ -577,13 +566,11 @@
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
   }
-
   .tp-bullets.custom .tp-bullet:hover,
   .tp-bullets.custom .tp-bullet.selected {
     border-color: #00f0d1;
     background-color: transparent;
   }
-
   /* TYPOGRAPHY */
   .tp-caption.title {
     color: #fff;
@@ -591,77 +578,64 @@
     line-height: 72px;
     font-weight: 300;
   }
-
   .tp-caption.large-title {
     color: orange;
     font-size: 50px;
     line-height: 60px;
     font-weight: 600;
   }
-
   .tp-caption.large-title-2 {
     color: #fff;
     font-size: 54px;
     line-height: 72px;
     font-weight: 600;
   }
-
   .tp-caption.title-bold {
     color: #fff;
     font-size: 80px;
     line-height: 100px;
     font-weight: 800;
   }
-
   .tp-caption.text {
     color: #fff;
     font-size: 18px;
   }
-
   .tp-caption.small-text {
     color: #fff;
     font-size: 14px;
     line-height: 18px;
   }
-
   .tp-caption.large-text {
     color: #fff;
     font-size: 24px;
     font-weight: 400;
   }
-
   .tp-caption.text-special {
     color: #ffffff;
     font-size: 18px;
     letter-spacing: 1px;
   }
-
   .tp-caption .btn-white,
   .tp-caption .btn-white:focus {
     background-color: #fff;
     color: #00f0d1;
   }
-
   .tp-caption .btn-white.btn-outline,
   .tp-caption .btn-white.btn-outline:focus {
     background-color: transparent;
     color: #fff;
   }
-
   .tp-caption .btn-white.btn-outline:after {
     border-color: #fff;
   }
-
   .tp-caption.navigation {
     color: #838383;
     font-size: 14px;
     letter-spacing: 0.8px;
   }
-
   .tp-caption.navigation span {
     color: #00f0d1;
   }
-
   .tp-static-layer {
     overflow: visible;
     color: #838383;
@@ -672,18 +646,15 @@
     visibility: visible !important;
     opacity: 1 !important;
   }
-
   .tp-static-layer a {
     color: #838383;
     text-decoration: none;
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
   }
-
   .tp-static-layer a:hover {
     color: #00f0d1;
   }
-
   .tp-static-layer i {
     padding-left: 2px;
     width: 14px;
@@ -696,50 +667,41 @@
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
   }
-
   .tp-static-layer a:hover i {
     border-color: #00f0d1;
   }
-
   @media (min-width: 1200px) {
     .tp-static-layer i {
       padding-left: 1px;
     }
   }
-
   @media (max-width: 991px) {
     .custom.tparrows.tp-leftarrow,
     .custom.tparrows.tp-rightarrow {
       display: none;
     }
-
     .tp-caption .btn {
       padding: 12px 17px;
       font-size: 9px;
     }
-
     .tp-static-layer i {
       display: none;
     }
   }
-
   @media (max-width: 767px) {
     .tp-bullets.custom {
       top: auto !important;
       bottom: -30px !important;
     }
-
     .tp-caption .btn {
       padding: 6px 7px;
       font-size: 4px;
       letter-spacing: 0.3px;
     }
-
     .tp-static-layer {
       display: none !important;
     }
   }
-
   @media (min-width: 480px) and (max-width: 767px) {
     .tp-caption .btn {
       padding: 8px 10px;
@@ -747,7 +709,6 @@
       letter-spacing: 0.5px;
     }
   }
-
   /*header {*/
   /*.text-special {*/
   /*color: #ffffff;*/
@@ -755,27 +716,23 @@
   /*letter-spacing: 1px;*/
   /*margin-top: 6rem;*/
   /*}*/
-
   /*.large-title {*/
   /*color: orange;*/
   /*font-size: 1.6rem;*/
   /*line-height: 35px;*/
   /*font-weight: 600;*/
   /*}*/
-
   /*.large-text {*/
   /*color: #fff;*/
   /*font-size: 0.9rem;*/
   /*line-height: 20px;*/
   /*font-weight: 400;*/
   /*}*/
-
   /*.small-text {*/
   /*color: #fff;*/
   /*font-size: 0.8rem;*/
   /*line-height: 18px;*/
   /*}*/
-
   /*!*&.hero-bg {*!*/
   /*!*height: 100vh;*!*/
   /*!*background-color: #fafafa;*!*/
@@ -784,25 +741,21 @@
   /*!*background-position: right;*!*/
   /*!*background-attachment: fixed;*!*/
   /*!*}*!*/
-
   /*@media (min-width: 400px) {*/
   /*.large-title {*/
   /*font-size: 2rem;*/
   /*line-height: 40px;*/
   /*}*/
-
   /*.large-text {*/
   /*font-size: 1.1rem;*/
   /*line-height: 25px;*/
   /*font-weight: 400;*/
   /*}*/
-
   /*.small-text {*/
   /*font-size: 0.9rem;*/
   /*line-height: 23px;*/
   /*}*/
   /*}*/
-
   /*@media (min-width: 765px) {*/
   /*.text-special {*/
   /*font-size: 1.2rem;*/
@@ -810,25 +763,21 @@
   /*margin-bottom: 15px;*/
   /*margin-top: 200px;*/
   /*}*/
-
   /*.large-title {*/
   /*font-size: 2.5rem;*/
   /*line-height: 50px;*/
   /*}*/
-
   /*.large-text {*/
   /*font-size: 1.5rem;*/
   /*line-height: 25px;*/
   /*font-weight: 400;*/
   /*margin-top: 30px;*/
   /*}*/
-
   /*.small-text {*/
   /*font-size: 1.1rem;*/
   /*line-height: 23px;*/
   /*}*/
   /*}*/
-
   /*@media (min-width: 1200px) {*/
   /*.text-special {*/
   /*color: #ffffff;*/
@@ -836,20 +785,17 @@
   /*letter-spacing: 1px;*/
   /*margin-top: 16rem;*/
   /*}*/
-
   /*.small-text {*/
   /*color: #fff;*/
   /*font-size: 0.8rem;*/
   /*line-height: 18px;*/
   /*}*/
-
   /*.large-text {*/
   /*color: #fff;*/
   /*line-height: 32px;*/
   /*font-size: 1.5rem;*/
   /*font-weight: 400;*/
   /*}*/
-
   /*.large-title {*/
   /*color: orange;*/
   /*font-size: 3rem;*/
@@ -858,23 +804,19 @@
   /*}*/
   /*}*/
   /*}*/
-
   /* CHECK LIST */
   .check-list {
     list-style: none;
     margin-bottom: 20px;
     padding-left: 0;
   }
-
   .check-list li {
     margin-bottom: 5px;
     color: grey;
   }
-
   .check-list li:last-child {
     margin-bottom: 0;
   }
-
   .check-list li:before {
     display: inline-block;
     width: 8px;

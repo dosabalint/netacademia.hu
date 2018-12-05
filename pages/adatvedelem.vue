@@ -339,7 +339,7 @@ Amennyiben &uacute;gy v&eacute;li, hogy Adatkezelő nem tartja be, vagy megs&eac
 
 <p>NetAcademia Oktat&oacute;k&ouml;zpont Korl&aacute;tolt Felelőss&eacute;gű T&aacute;rsas&aacute;g<br />
 Sz&eacute;khelye: 1074 Budapest, R&aacute;k&oacute;czi &uacute;t 70-72. T3 torony, 1. emelet<br />
-Telefonsz&aacute;m: +36 21 200 6960</p>
+</p>
 
 <p>E-mail c&iacute;m: iroda@netacademia.net<br />
 <a href="http://netacademia.hu/">http://netacademia.hu/</a></p>
@@ -604,13 +604,15 @@ a NetAcademia &aacute;ltal kezelt adatok felhaszn&aacute;lhat&oacute;k arra, hog
 <p align="center" style="margin: 10px 0px 0px; padding: 0px; font-family: Arial, sans-serif; font-size: 14px;"><strong>&nbsp;</strong></p>
 
 <p style="margin: 10px 0px 0px; padding: 0px; font-family: Arial, sans-serif; font-size: 14px;">NetAcademia Oktat&oacute;k&ouml;zpont Korl&aacute;tolt Felelőss&eacute;gű T&aacute;rsas&aacute;g<br />
-Sz&eacute;khelye: 1075 Budapest, Kazinczy utca 24-26.<br />
-Telefonsz&aacute;m: +36-1 321-6547</p>
+Sz&eacute;khelye: R70 Irodaház, T3 torony, 1. emelet
+1074 Budapest, Rákóczi út 70-72.
+<br />
+</p>
 
 <p style="margin: 10px 0px 0px; padding: 0px; font-family: Arial, sans-serif; font-size: 14px;">E-mail c&iacute;m:&nbsp;<a class="external-link" href="mailto:iroda@netacademia.net" rel="nofollow" style="color: rgb(53, 114, 176); text-decoration-line: none;">iroda@netacademia.net</a><br />
 <a class="external-link" href="http://netacademia.hu/" rel="nofollow" style="color: rgb(53, 114, 176); text-decoration-line: none;">http://netacademia.hu/</a></p>
 
-<p style="margin: 10px 0px 0px; padding: 0px; font-family: Arial, sans-serif; font-size: 14px;">K&eacute;pviselői: Litkei P&eacute;ter</p>
+<p style="margin: 10px 0px 0px; padding: 0px; font-family: Arial, sans-serif; font-size: 14px;">K&eacute;pviselői: Fóti Marcell, Litkei P&eacute;ter</p>
 
 <p style="margin: 10px 0px 0px; padding: 0px; font-family: Arial, sans-serif; font-size: 14px;">&nbsp;</p>
 

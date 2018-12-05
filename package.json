@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
+    "dev:ip": "nuxt --hostname 192.168.0.13",
     "generate:test": "cross-env-shell nuxt generate && echo 'test.netacademia.hu' > ./dist/CNAME",
     "generate:prod": "cross-env-shell NODE_ENV=production nuxt generate && echo 'www.netacademia.hu' > ./dist/CNAME",
     "deploy:test": "push-dir --dir=dist --branch=gh-pages",

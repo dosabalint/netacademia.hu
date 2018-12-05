@@ -4,14 +4,14 @@
       asset-image="~/assets/default-header-bg.svg"
       icon="decode-icon-time"
     >
-      <h1>Folyamatban lévő és hamarosan induló tanfolyamaink</h1>
+      <h1>Friss tanfolyamok</h1>
     </DPageHeader>
     <Container class="py-5">
       <Row class="justify-content-center">
         <Column class="col-md-12">
           <DHeadline class="pb-4 text-center">
             <h6>NetAcademia</h6>
-            <h3 class="mb-4">Folyamatban lévő tanfolyamaink</h3>
+            <h3 class="mb-4">Legfrissebb tanfolyamaink</h3>
           </DHeadline>
         </Column>
         <Column class="col">

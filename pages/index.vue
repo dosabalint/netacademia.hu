@@ -9,7 +9,7 @@
 
               <li data-transition="fade">
 
-                <img src="~/assets/landing/mikulas-bg.svg" alt="">
+                <img src="~/assets/landing/mikulas-bg-2.png" alt="">
 
                 <div class="tp-caption large-title"
                      data-x="['580', '200', '180', '10']"

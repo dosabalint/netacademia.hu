@@ -9,52 +9,49 @@
 
               <li data-transition="fade">
 
-
-                <img src="~/assets/landing/mikulas-bg-2.png" alt="">
+                <img src="~/assets/landing/ultimate_bg.png" alt="">
 
                 <div class="tp-caption large-title"
-                     data-x="['580', '200', '180', '10']"
+                     data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', -150', -150', 0']"
-                     data-voffset="['-140', '-140', '-150', '-140']"
-                     data-fontsize="['50', '35', '35', '28']"
+                     data-voffset="['-140', '-180', '-180', '-180']"
+                     data-fontsize="['40', '35', '35', '25']"
                      data-lineheight="['50', '45', '45', '40']"
                      data-start="1500"
                      data-speed="300"
                      data-transform_in="o:0;y:-50;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
                 >
-                  Lekésted a Black Friday akciót?
+                  Jövőre 200 tanfolyammal kevesebb <br>lesz az előfizetésben, mint idén!
                 </div>
 
                 <div class="tp-caption large-title tp-resizeme"
-                     data-x="['580', '200', '180', '10']"
+                     data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['-10', '-30', '-30', '-30']"
-                     data-fontsize="['30', '20', '20', '20']"
-                     data-lineheight="['50', '40', '40', '30']"
+                     data-voffset="['-22', '-80', '-80', '-80']"
+                     data-fontsize="['25', '20', '20', '20']"
+                     data-lineheight="['40', '35', '35', '30']"
                      data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
                      data-width="450"
-                     data-color="black"
+                     data-color="white"
                      data-start="1200"
                      data-speed="300"
                      data-transform_in="o:0;x:100;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:-100;s:400;e:Power2.easeInOut;"
                 >
-
-                  Sebaj, mert Mikulás napjának alkalmából <br> december 6-án reggeltől éjfélig <br> az előfizetés 49.000 Ft + áfa
-
+                  December 20-ig ismét <br> elérhető Ultimate előfizetésünk
                 </div>
 
-                <!-- <div class="tp-caption tp-resizeme"
+                <div class="tp-caption tp-resizeme"
                      data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['90', '50', '50', '40']"
+                     data-voffset="['90', '90', '90', '40']"
                      data-fontsize="['20', '20', '20', '18']"
                      data-lineheight="['36', '32', '32', '24']"
-                     data-whitespace="['nowrap', 'normal', 'nowrap', 'normal']"
+                     data-whitespace="['nowrap', 'normal', 'normal', 'normal']"
                      data-width="450"
                      data-color="white"
                      data-start="1300"
@@ -64,17 +61,31 @@
                 >
                 Hihetetlen akcióval készülünk az ég végére: aki december 20-ig előfizet,<br>
                 az hozzáfér az összes, 350-nél is több tanfolyamunkhoz az előfizetése végéig!<br>
+                December 20 után az egyedi tanfolyamok ismét a saját áraikon lesznek kaphatók!<br>
+                </div>
 
-                December 20 után az egyedi tanfolyamok ismét a saját áraikon lesznek kaphatók!
+
+                <!--<div class="tp-caption small-text tp-resizeme"
+                   data-x="['580', '200', '30', '10']"
+                   data-y="middle"
+                   data-hoffset="['-150', '-150', '-150', '0']"
+                   data-voffset="['70', '70', '70', '70']"
+                   data-fontsize="['14', '14', '14', '14']"
+                   data-lineheight="['18', '18', '24', '18']"
+                   data-start="1300"
+                   data-speed="300"
+                   data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
+                   data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
+              >
+              Jelen hirdetmény nem vonatkozik a külön megállapodásban elérhető <br> előfizetésekre, pl.
+                informatikatanárok vagy Telekom
               </div> -->
 
                 <div class="tp-caption tp-resizeme"
-                     data-x="['580', '200', '180', '10']"
+                     data-x="['580', '200', '30', '10']"
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
-
-                     data-voffset="['150', '100', '100', '100']"
-
+                     data-voffset="['200', '250', '260', '180']"
                      data-fontsize="['20', '20', '20', '18']"
                      data-lineheight="['36', '32', '32', '24']"
                      data-whitespace="['nowrap', 'normal', 'normal', 'normal']"
@@ -86,14 +97,19 @@
                      data-transform_out="o:0;y:100;s:500;e:Power2.easeInOut;"
                 >
 
-                  <DButton theme="white-outline" href="https://app.netacademia.hu/Subscription/create?utm_source=NetAcademia+levlista&utm_campaign=e9ca62c1e8-EMAIL_CAMPAIGN_2018_09_18_12_58_COPY_01&utm_medium=email&utm_term=0_557a0691a4-e9ca62c1e8-285585821" class="text-light" style="background-color: red; font-size: 20px;">
+                Ez a változás mindhárom előfizetési rendszerünket érinti: <br>
+                <a href="https://app.netacademia.hu/subscription/create" class="text-warning lead font-weight-bold"> Ulitmate</a>, <a href="https://www.netacademia.hu/business" class="text-warning lead font-weight-bold"><b>Business</b></a> és <a href="https://app.netacademia.hu/cafeteria" class="text-warning lead font-weight-bold"><b>Cafeteria</b></a>
 
+                  <!--<DButton theme="white-outline" href="http://netacademia.hu/subscription/create" class="text-dark bg-light">
+                    Megveszem<i class="ml-2 decode-icon-cursor"></i>
+                  </DButton> -->
+                </div>
 
             <div class="tp-caption navigation"
                      data-x="center"
                      data-y="middle"
                      data-hoffset="['600', '400', '200', '150']"
-                     data-voffset="['400', '400', '400', '30']"
+                     data-voffset="['400', '400', '400', '400']"
                      data-start="0"
                      data-speed="300"
                      data-transform_in="o:0;s:500;e:Power2.easeInOut;"

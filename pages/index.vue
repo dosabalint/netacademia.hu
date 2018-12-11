@@ -24,7 +24,7 @@
                      data-transform_in="o:0;y:-50;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
                 >
-                  Lekésted a Black Friday akciót?
+                  Kellemes ünnepeket kíván a NetAcademia!
                 </div>
 
                 <div class="tp-caption large-title tp-resizeme"
@@ -42,7 +42,7 @@
                      data-transform_in="o:0;x:100;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:-100;s:400;e:Power2.easeInOut;"
                 >
-                  Sebaj, mert Mikulás napjának alkalmából <br> december 6-án reggeltől éjfélig <br> az előfizetés 49.000 Ft + áfa
+                  Idén még 350+ tanfolyammal veheted meg előfizetésedet, lépj most! <br> Érdekel cafeteria ajánlatunk cégeknek?
                 </div>
 
                 <!-- <div class="tp-caption tp-resizeme"
@@ -98,8 +98,8 @@
                      data-transform_out="o:0;y:100;s:500;e:Power2.easeInOut;"
                 >
 
-                  <DButton theme="white-outline" href="https://app.netacademia.hu/Subscription/create?utm_source=NetAcademia+levlista&utm_campaign=e9ca62c1e8-EMAIL_CAMPAIGN_2018_09_18_12_58_COPY_01&utm_medium=email&utm_term=0_557a0691a4-e9ca62c1e8-285585821" class="text-light" style="background-color: red; font-size: 20px;">
-                    Megveszem<i class="ml-2 decode-icon-cursor"></i>
+                  <DButton theme="white-outline" href="https://app.netacademia.hu/cafeteria" class="text-light" style="background-color: red; font-size: 20px;">
+                    Érdekel!<i class="ml-2 decode-icon-cursor"></i>
                   </DButton>
                 </div>
 

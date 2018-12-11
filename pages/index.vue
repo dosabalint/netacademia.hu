@@ -9,40 +9,40 @@
 
               <li data-transition="fade">
 
-                <img src="~/assets/landing/mikulas-bg-2.png" alt="">
+                <img src="~/assets/landing/christmas-bg.png" alt="">
 
-                <div class="tp-caption large-title"
+                <div class="tp-caption large-title font-weight-bold"
                      data-x="['580', '200', '180', '10']"
                      data-y="middle"
                      data-hoffset="['-150', -150', -150', 0']"
                      data-voffset="['-140', '-140', '-150', '-140']"
-                     data-fontsize="['50', '35', '35', '28']"
-                     data-lineheight="['50', '45', '45', '40']"
+                     data-fontsize="['50', '35', '35', '32']"
+                     data-lineheight="['60', '45', '45', '40']"
                      data-color="red"
                      data-start="1500"
                      data-speed="300"
                      data-transform_in="o:0;y:-50;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
                 >
-                  Kellemes ünnepeket kíván a NetAcademia!
+                  Kellemes ünnepeket <br> kíván a NetAcademia!
                 </div>
 
                 <div class="tp-caption large-title tp-resizeme"
                      data-x="['580', '200', '180', '10']"
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['-10', '-30', '-30', '-30']"
+                     data-voffset="['30', '-30', '-30', '-30']"
                      data-fontsize="['30', '20', '20', '20']"
-                     data-lineheight="['50', '35', '35', '30']"
+                     data-lineheight="['45', '35', '35', '30']"
                      data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
                      data-width="450"
-                     data-color="black"
+                     data-color="white"
                      data-start="1200"
                      data-speed="300"
                      data-transform_in="o:0;x:100;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:-100;s:400;e:Power2.easeInOut;"
                 >
-                  Idén még 350+ tanfolyammal veheted meg előfizetésedet, lépj most! <br> Érdekel cafeteria ajánlatunk cégeknek?
+                  Idén még 350+ tanfolyammal veheted meg <br>előfizetésedet, lépj most! <br> Érdekel cafeteria ajánlatunk cégeknek?
                 </div>
 
                 <!-- <div class="tp-caption tp-resizeme"
@@ -86,7 +86,7 @@
                      data-x="['580', '200', '180', '10']"
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
-                     data-voffset="['150', '100', '100', '100']"
+                     data-voffset="['180', '100', '100', '100']"
                      data-fontsize="['20', '20', '20', '18']"
                      data-lineheight="['36', '32', '32', '24']"
                      data-whitespace="['nowrap', 'normal', 'normal', 'normal']"

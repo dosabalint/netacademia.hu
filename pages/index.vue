@@ -24,7 +24,7 @@
                      data-transform_in="o:0;y:-50;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
                 >
-                  Kellemes ünnepeket <br> kíván a NetAcademia!
+                  Fél év késéssel, de megszűnik <br> az Ultimate-előfizetés!
                 </div>
 
                 <div class="tp-caption large-title tp-resizeme"
@@ -42,7 +42,13 @@
                      data-transform_in="o:0;x:100;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:-100;s:400;e:Power2.easeInOut;"
                 >
-                  Idén még 350+ tanfolyammal veheted meg <br>előfizetésedet, lépj most! <br> Érdekel cafeteria ajánlatunk cégeknek?
+                  Ha szeretnél hozzáférést a jövőben induló tanfolyamokhoz, 
+                  <br> 
+                  és a jelenlegi összes "újvilági" - Tudástár és az összes (350+)
+                  <br>
+                  "NetAcademia Classic" kurzusokhoz.
+                  <br>
+                  December 31-ig még megteheted!
                 </div>
 
                 <!-- <div class="tp-caption tp-resizeme"
@@ -60,9 +66,11 @@
                      data-transform_in="o:0;y:100;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:100;s:400;e:Power2.easeInOut;"
                 >
-                Hihetetlen akcióval készülünk az ég végére: aki december 20-ig előfizet,<br>
-                az hozzáfér az összes, 350-nél is több tanfolyamunkhoz az előfizetése végéig!<br>
-                December 20 után az egyedi tanfolyamok ismét a saját áraikon lesznek kaphatók!<br>
+                Ha szeretnél hozzáférést a jövőben induló tanfolyamokhoz, <br>
+                és a jelenlegi összes "újvilági" - Tudástár és az összes (350+)<br>
+                 "NetAcademia Classic" kurzusokhoz.<br>
+                  <br>
+                  December 31-ig még megteheted! Utána végleg vége!
               </div> -->
 
 
@@ -98,8 +106,8 @@
                      data-transform_out="o:0;y:100;s:500;e:Power2.easeInOut;"
                 >
 
-                  <DButton theme="white-outline" href="https://app.netacademia.hu/cafeteria" class="text-light" style="background-color: red; font-size: 20px;">
-                    Érdekel!<i class="ml-2 decode-icon-cursor"></i>
+                  <DButton theme="white-outline" href="https://app.netacademia.hu/subscription/create" class="text-light" style="background-color: red; font-size: 20px;">
+                    Megveszem!<i class="ml-2 decode-icon-cursor"></i>
                   </DButton>
                 </div>
 

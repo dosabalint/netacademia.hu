@@ -32,7 +32,7 @@
                      data-y="middle"
                      data-hoffset="['-150', '-150', '-150', '0']"
                      data-voffset="['30', '-30', '-30', '-30']"
-                     data-fontsize="['30', '20', '20', '20']"
+                     data-fontsize="['25', '20', '20', '20']"
                      data-lineheight="['45', '35', '35', '30']"
                      data-whitespace="['nowrap', 'nowrap', 'nowrap', 'normal']"
                      data-width="450"
@@ -42,8 +42,8 @@
                      data-transform_in="o:0;x:100;s:400;e:Power2.easeInOut;"
                      data-transform_out="o:0;y:-100;s:400;e:Power2.easeInOut;"
                 >
-                  Ha szeretnél hozzáférést a jövőben induló tanfolyamokhoz, 
-                  <br> 
+                  Ha szeretnél hozzáférést a jövőben induló tanfolyamokhoz,
+                  <br>
                   és a jelenlegi összes "újvilági" - Tudástár és az összes (350+)
                   <br>
                   "NetAcademia Classic" kurzusokhoz.
@@ -255,6 +255,72 @@
       </Container>
     </DFullSection>
 
+    <DFullSection>
+      <Container>
+
+        <Row id="reszletek">
+          <Column class="col-12 col-md-3 mb-4">
+            <img src="~/assets/landing/future.png" alt="" class="img-fluid">
+          </Column>
+          <Column class="col-12 col-md-9 my-auto">
+            <DHeadline class="text-left">
+              <p>Még a <b>nyáron beharangoztuk</b>, hogy <b>megszűnik az Ultimate-előfizetés</b>,
+                pár hete pedig azt, hogy 200 tanfolyammal kevesebb lesz az előfizetésben december 20 után.</p>
+                <p>A hír igaz, csak nem Moszkvában🏭, hanem Vlagyivosztokban⛴, nem Mercedeseket 🚙, hanem Volgákat 🚘, és nem osztogatnak💰, hanem fosztogatnak🕵️‍♂️.</p>
+                <h4 class="my-4 font-weight-bold">Az igazság (pravda):</h4>
+                <p>Fél év késéssel, <b>december 31-én</b> (és nem 20-án) megszűnik az Ultimate-előfizetés, benne a 350+ (és nem 200) tanfolyammal. <b>Akinek hozzáférése van/lesz,
+                  annak meg is marad, az előfizetése lejártáig</b>. Akinek nincs, többé nem is lesz - a régi tanfolyamokhoz.</p>
+            </DHeadline>
+          </Column>
+        </Row>
+
+        <Row id="reszletek">
+          <Column class="col-lg-6 mb-xl-auto pr-4">
+            <h5 class="mb-4 font-weight-bold">Miért?</h5>
+            <p>Az Ultimate olyan tanfolyamokat tartalmaz, amelyek a maguk idejében nagyon előremutatóak és hiánypótlók voltak,
+              de ma már nem így készítenénk ezeket a tanfolyamokat. Hanem gondolati egységekre bontva, sallangoktól megtisztítva,
+              megvágva, tízszeresére gyorsítva.</p>
+            <p>Az Ultimate 350+ tanfolyama ma is jelentős értéket képvisel, de mi a jövőben nem fogjuk értékesíteni ezeket. Ha már fél évet csúsztunk az áttérés határidejével,
+              az új előfizetőinknek is felajánljuk, hogy bespájzoljanak ezekből a képzésekből, ezzel biztosítsák hozzáférésüket.</p>
+              <h5 class="my-4 font-weight-bold">Mi veszi át az Ultimate-előfizetés helyét? Mit hoz a jövő?</h5>
+              <p>Az elmúlt hetekben rengeteg új, tömör, tízszeresre gyorsított tanfolyamot tudtunk végre kibocsátani, és ezzel - reméljük - láthatóvá vált a régi és az új világ közötti különbség.
+                A teljes kínálatunkat át fogjuk alakítani, a tanfolyamokat meg fogjuk vágni, illetve újra elkészíteni. </p>
+          </Column>
+
+          <Column class="col-lg-6 mr-xl-auto pl-4">
+            <h5 class="mb-4 font-weight-bold">"Bespájzolás" december 31-ig</h5>
+            <p>A “bespájzolást” azárt ajánljuk, mert a régi tanfolyamok “remasteringje” hosszú időt fog igénybe venni. Ha valaki nem “spájzol be”, lehet, hogy egy évig is várnia kell
+               kedvenc tanfolyama “remastered” változatára.</p>
+            <h5 class="mb-4 font-weight-bold">Aki most Ultimate-előfizetést vesz, az a jövőben az összes tanfolyamhoz hozzáférést kap?</h5>
+            <p>Igen! A jövőben induló összes tanfolyamunkhoz, és a jelenlegi összes "újvilági" - Tudástár és az összes (350+)  "NetAcademia Classic" kurzusokhoz.</p>
+            <h5 class="mb-4 font-weight-bold">Akkor most végleg vége?</h5>
+            <p>Igen! A nyáron még nem készültünk el az Ultimate kiváltására szolgáló megoldással (Tudástár), és nem tudtunk abban az ütemben váltani, ahogy szerettünk volna.
+               Nehéz menet volt, vágtázás közben kellett megműtenünk a lovat. Emiatt csúsztunk fél évet.</p>
+          </Column>
+
+          <Column class="col-12 text-center mt-5">
+            <h4 class="mb-5 font-weight-bold">December 31-ig itt tudod még megrendelni!</h4>
+            <DButton theme="default-outline" href="https://app.netacademia.hu/subscription/create?utm_source=NetAcademia+levlista&utm_campaign=067cd66544-EMAIL_CAMPAIGN_2018_09_18_12_58_COPY_01&utm_medium=email&utm_term=0_557a0691a4-067cd66544-285585821">
+              Megveszem! <i class="decode-icon-cursor"></i>
+            </DButton>
+          </Column>
+
+
+        </Row>
+
+
+      </Container>
+    </DFullSection>
+
+    <DFullSection theme="dark">
+      <Container>
+        <Row>
+          <div class="col-md-12">
+            <h2 class="text-center mb-5">NetAcademia Tudástár</h2>
+          </div>
+        </Row>
+      </Container>
+    </DFullSection>
 
     <DFullSection class="pb-3">
 
@@ -275,7 +341,7 @@
 
           </Column>
           <Column class="col-12 col-md-5 mb-3">
-            <img src="~/assets/landing/web-db.svg" alt="">
+            <img src="~/assets/landing/web-db.svg" alt="" >
           </Column>
         </Row>
 

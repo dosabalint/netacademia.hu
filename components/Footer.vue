@@ -12,8 +12,7 @@
 
                 <p><img src="../assets/logo.svg" alt=""></p>
                 <br>
-                <p>Gyakorlatorientált, élő-online oktatás. Tanulj úgy, ahogyan Neked a legjobb: kényelmesen, otthonról,
-                  online.</p>
+                <p>Gyakorlatorientált, 100x-ára gyorsított, az ország legnagyobb online tanulási platformja!</p>
 
               </div>
 
